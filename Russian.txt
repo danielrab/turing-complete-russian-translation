@@ -1,31 +1,31 @@
 === components/MemoryProbeBit ===
 
-$13846578075327* Display a value on your custom component or in the program editor
-$25103579211328* Memory Probe (bit)
+$13846578075327* Выведи значение на твоём пользовательском компоненте или в редакторе программы 
+$25103579211328* Проба памяти (бит) 
 
 
 === components/Output 1 ===
 
-$12242923444593* 1 bit output
+$12242923444593* 1-битовый выход 
 
 
 === levels/RAM ===
 
-$17967666262990* In this test, first copy from input 32 times and store these values. After you have loaded the 32 values, output them in the same order as you got them. Outputting before you have read all the inputs will fail the level.
-$13520918982355* Add a ram block, so the computer can address 256 additional bytes of memory. You need a way to decide which of the 256 bytes inside the ram we are addressing. Select a register and wire it up, so its value always selects the RAM address. When you later want to load or save to the RAM, you will have to first copy the RAM address to this register.
+$17967666262990* На этом уровне, во-первых скопируй значения из входа 32 раза и сохрани их.  После этого, выведи эти значения в таком же порядке в каком и сохранил. Вывод до сохранения всех входных значений приведёт к провалу уровня. . Outputting before you have read all the inputs will fail the level.
+$13520918982355* Добавь блок ОЗУ, таким образом компьютер может оперировать дополнительными 256 байтами памяти. Тебе нужно найти как выбирать какие из 256 байтов будут использоваться. Выбери регистр и соедини его таким образом, чтобы его значение всегда было адресом ОЗУ.В будущем когда ты захочешь вывести или сохранить что-либо в ОЗУ,тебе нужно будет сначала скопировать адресс в этот регистр.  When you later want to load or save to the RAM, you will have to first copy the RAM address to this register.
 
 
 === levels/byte_less_i ===
 
-$16755383054285* [center]Determine if the first input is less than the second.[/center]
-$19006843777401* Create a circuit that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]SIGNED[/color].
-$46083799633716* Is {input_1} less than {input_2}?
+$16755383054285* [center]Выясни, меньше ли первый вход чем второй.[/center]
+$46083799633716* {input_1} меньше чем {input_2}?
 
 
 === components/DualPortRam ===
 
-$13408945557666* RAM with an extra load pin
-$30400404542678* Dual Load RAM
+$13408945557666* ОЗУ с дополнительным загрузочным пином.
+$30400404542678* Дву-загрузочная ОЗУ.
+
 
 
 === levels/maze ===
