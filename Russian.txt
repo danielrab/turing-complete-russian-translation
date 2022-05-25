@@ -150,16 +150,16 @@ $10260210687588 [center]Тест 2: Левый вход [img]dialogue/on.png[/im
 $13309706297402 [center]Тест 3: Правый вход [img]dialogue/on.png[/img], левый выход должен быть [img]dialogue/off.png[/img].[/center]
 $17005228759908 [center]Убедитесь что [img]dialogue/on.png[/img] может течь только слева направо.[/center]
 $18349621873762 [center]Тест 1: Оба входа [img]dialogue/off.png[/img], ни одна из сторон не должна быть [img]dialogue/on.png[/img].[/center]
-$15504762262759*
-This level starts with 2 special components. They simultaneously act as input and output.
+$1550476226275
+На этом уровне есть два особых компонента. Они одновременно работают как вход и выход.
 
-Убедитесь e the signal flows only from left to right. There are 3 tests.
+Убедитесь что сигнал течёт только слева напрво. There are 3 tests.
 
-[b]Test 1[/b]: Both sides will be [OFF].
+[b]Тест 1[/b]: Оба входа будут [OFF].
 
-[b]Test 2[/b]: The left side input will turn [ON] and the right side should be [ON].
+[b]Test 2[/b]: Левая сторона станет [ON] сделайте правую сторону [ON].
 
-[b]Test 3[/b]: The right side output will turn [ON] and the left side should be [OFF].
+[b]Test 3[/b]: Правая сторона станет [ON] убедитесь что правая сторона останется [OFF].
 
 
 === levels/component_factory ===
