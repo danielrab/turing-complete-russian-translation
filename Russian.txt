@@ -81,7 +81,7 @@ $77669928463861* Full Adder
 
 === misc/options ===
 
-$49251062339706* options
+$49251062339706 Настройки
 
 
 === components/Rol16 ===
@@ -315,26 +315,26 @@ $34560561101846* 16 bit input
 
 === nim/backend_lib/level_list ===
 
-$58391129129347* Registers
-$45936227746026* Counter
-$12946639957230* NOT Gate
-$16881141174140* Binary Racer
+$58391129129347 Регистры
+$45936227746026 Счётчик
+$12946639957230 Элемент NOT
+$16881141174140 Двоичные Гонки
 $37136208388559* SR Latch
-$32191988336459* Saving Gracefully
-$59136962133320* Logic Engine
-$30920780473397* Circular Dependency
-$83321010943153* Counting Signals
-$58769021955965* 3 Bit Decoder
-$78673715398197* Immediate Values
-$49679174636208* Byte XOR
-$40356575891647* Byte OR
-$44393538021725* Calibrating Laser Cannons
-$87426564872318* Divide
-$61228036919534* Tower of Alloy
+$32191988336459 Сохраняем Изящно
+$59136962133320 Логический Блок
+$30920780473397 Круговая Зависимость
+$83321010943153 Считаем Сигналы
+$58769021955965 3-х Битовый Декодер
+$78673715398197 Непосредственные Значения
+$49679174636208 Байтовый XOR
+$40356575891647 Байтовый OR
+$44393538021725 Калибруем Лазерные Пушки
+$87426564872318 Деление
+$61228036919534 Башня Сплава
 $24593959732668* Signed Negator
 $19487493622742* Half Adder
 $26705128002562* Conditions
-$94163943335575* The Sandbox
+$94163943335575 Песочница
 $64662599400870* Bit Inverter
 $27566801288091* Component Factory
 $14193654974055* Signed Less
@@ -355,7 +355,7 @@ $20858506932774* AND Gate
 $28827008935802* The Lab
 $92696642439976* AI Showdown
 $74688348772072* The bus
-$74512388889988* Arithmetic Engine
+$74512388889988 Арифметический Блок
 $50884376329157* Little Box
 $70651296323768* XOR Gate
 $62326481348276* The Maze
@@ -479,12 +479,12 @@ $78616473760551* 1 Bit memory
 
 === ui/state_ui/title_screen/play ===
 
-$66967233942803* play campaign
+$66967233942803 Кампания
 
 
 === ui/options/Controls ===
 
-$53266310714298* Control
+$53266310714298 Управление
 
 
 === misc/run ===
@@ -617,7 +617,7 @@ $30896164786171* 32 Bit Constant
 
 === misc/sandbox_toggle ===
 
-$30516879701896* Sandbox
+$30516879701896 Песочница
 
 
 === components/Xor16 ===
@@ -675,7 +675,7 @@ $58912167455465* AND
 
 === main_menu/sandbox_button ===
 
-$16857608955464* sandbox
+$16857608955464 Песочница
 
 
 === levels/xnor ===
@@ -1085,7 +1085,7 @@ The solution is not scored.
 
 === misc/credits ===
 
-$15234594767991* credits
+$15234594767991 Титры
 
 
 === misc/program_edit_signals ===
@@ -1193,8 +1193,8 @@ $55380524073095* Checks if one input is less than the other
 
 $17054292175058* Welcome to the sandbox, here you are free to play around. I have given you 64 bit wires and a few IO components.
 $10731996208080* There are also 64 bit versions of the program, the counter, the register and the ram. Notice though, the 64 bit ram takes 1 tick to load.
-$72764802067974*
-Welcome to the sandbox. 
+$72764802067974
+Добро пожаловать в песочницу. 
 
 Components are available in the menus on the right side. Once placed, click on the pins of the components and drag to connect them with wire. On the left you will find the UI for the simulation control. Note that you can right click on the "Run faster" button to set target speed.
 
@@ -1589,7 +1589,7 @@ $71951682957395* Level map
 
 === ui/state_ui/title_screen/exit ===
 
-$12639868461113* exit
+$12639868461113 Выйти
 
 
 === misc/button_next ===
@@ -1772,7 +1772,7 @@ $90244529484227* Checks if one input is less than the other
 
 === ui/options/Robot Controls ===
 
-$58799802152286* Robot Controls
+$58799802152286 Управление Роботом
 
 
 === levels/divide ===
@@ -2136,7 +2136,7 @@ $97247779246257* OR
 
 === ui/options/General ===
 
-$36195388998735* General
+$36195388998735 Общее
 
 
 === components/Clock ===
@@ -2307,7 +2307,7 @@ $71512568789377* 6x8 pixel display
 
 === misc/score_sync ===
 
-$76911045833478* score sync
+$76911045833478 Синхронизация Счёта
 
 
 === components/Ror32 ===
@@ -2444,7 +2444,7 @@ $37476623180671* 32 bit output
 
 === misc/profile ===
 
-$32835651830157* profile
+$32835651830157 Профиль
 
 
 === components/Rol32 ===
