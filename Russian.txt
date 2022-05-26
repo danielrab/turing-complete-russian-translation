@@ -6,7 +6,7 @@ $25103579211328 Проба памяти (бит)
 
 === components/Output 1 ===
 
-$12242923444593 1-битовый выход 
+$12242923444593 битовый выход 
 
 
 === levels/RAM ===
@@ -123,7 +123,7 @@ $57512333327652* Bitwise negates an input
 
 === components/Input 1 ===
 
-$12746117288689 1-битовый вход
+$12746117288689 битовый вход
 
 
 === levels/Second Tick ===
@@ -153,13 +153,13 @@ $18349621873762 [center]Тест 1: Оба входа [img]dialogue/off.png[/img
 $1550476226275
 На этом уровне есть два особых компонента. Они одновременно работают как вход и выход.
 
-Убедитесь что сигнал течёт только слева напрво. There are 3 tests.
+Убедитесь что сигнал течёт только слева напрво. Здесь 3 теста.
 
 [b]Тест 1[/b]: Оба входа будут [OFF].
 
-[b]Test 2[/b]: Левая сторона станет [ON] сделайте правую сторону [ON].
+[b]Тест 2[/b]: Левая сторона станет [ON] сделайте правую сторону [ON].
 
-[b]Test 3[/b]: Правая сторона станет [ON] убедитесь что правая сторона останется [OFF].
+[b]Тест 3[/b]: Правая сторона станет [ON] убедитесь что правая сторона останется [OFF].
 
 
 === levels/component_factory ===
@@ -216,8 +216,8 @@ $7879041649425 ОЗУ
 
 === components/Nand16 ===
 
-$63870790225686* Побитово NAND два значения
-$56507506086622* 8 битовый NAND
+$63870790225686 Побитово NAND два значения
+$56507506086622 8 битовый NAND
 
 
 === components/InputOutput ===
@@ -255,7 +255,7 @@ $62247409328063 Умножить
 === components/Decoder2 ===
 
 $25937877347447 Переключается между четыремя значениями
-$21727998752868 2 битовый decoder
+$21727998752868 2 битовый декодер
 
 
 === misc/ui_comment ===
@@ -291,25 +291,25 @@ $22167405631310* 8 Bit Mux
 
 === components/Switch32 ===
 
-$70717074742809* 32 Bit Switch
-$93061034213009* Toggles a value
+$70717074742809* 32 Битный Выключатель
+$93061034213009* Переключает значение
 
 
 === components/SegmentDisplay ===
 
 $56761198694928* 
-$90582128204153* 7 Segment Display
+$90582128204153 7 Сегментый Дисплей
 
 
 === components/Or16 ===
 
-$76807373575014* Bitwise OR two values
-$62695381407925* 16 Bit OR
+$76807373575014 Побитово OR два значения
+$62695381407925 16 битный OR
 
 
 === components/Input16 ===
 
-$34560561101846* 16 bit input
+$34560561101846 16 бит вход
 
 
 === nim/backend_lib/level_list ===
@@ -403,8 +403,8 @@ $36221227239949 Танц-Машина
 
 === components/Register16 ===
 
-$16015376037787* 16 Bit Register
-$71792123436163* 16 bit memory
+$16015376037787 16 Битный Регистр
+$71792123436163 16 битная память
 
 
 === levels/test_lab ===
@@ -441,11 +441,11 @@ $16072814175447* Programming on buggy hardware is very frustrating. It is painfu
 
 === levels/Opcodes ===
 
-$19693461238792* Set the counter increment to 4
+$19693461238792 Установи шаг счетчика на 4
 $38976231780455* Watched state {nr} should point to a register or custom component with a register inside
 $20916717363300* Watched state {nr} should point to the output
 $18189600217529* Implement the OPCODE instructions
-$13450117997204* Add a counter to the circuit
+$13450117997204 Добавь счётчик к схеме
 $77044880242883* Watched state {nr} should point to the counter
 $13870568875751* Create a new schematic and add a program with 4 byte output
 $10303603301757*
@@ -458,7 +458,7 @@ Implement the following opcodes:
 5 XOR[/color][/code]
 
 The opcode NOT ignores the second argument.
-$17495651785164* Add 6 registers to the map
+$17495651785164 Добавь 6 регистров в схему
 
 
 === levels/Nor GATE ===
@@ -472,8 +472,8 @@ $11362258372706
 
 === components/Mem Unit ===
 
-$57670626909848* 1 bit of memory
-$78616473760551* 1 Bit memory
+$57670626909848* 1 бит памяти
+$78616473760551* 1 битная память
 
 
 === ui/state_ui/title_screen/play ===
@@ -488,27 +488,27 @@ $53266310714298 Управление
 
 === misc/run ===
 
-$67345621265845* Run ticks (Hotkey: F6)
+$67345621265845 Запуск тактов (Горячая клавиша: F6)
 
 
 === levels/byte_not ===
 
 $14196498898485* Tool making and usage is key in the early evolutionary stages of developing intelligence.
-$12982025748137* "NOT" each bit of the byte input.
+$12982025748137* "NOT" каждый бит значения на входе.
 $10294533225655* Our previous model of brain size being the main predictor of intelligence was naive.
 $14958585065722* Therefore the number of arms on a creature is clearly the main predictor of intelligence. Did you know there are sea creatures from your planet with four times as many arms as you and they are doing better in tests?
 
 
 === components/Or64 ===
 
-$50631450923181* Bitwise OR two values
-$62930122175674* 64 Bit OR
+$50631450923181 Побитово OR два значения
+$62930122175674 64 Битный OR
 
 
 === components/Maker64 ===
 
-$17464069717985* 64bit Maker
-$79677187590355* Turns 64 bits into 8 bytes
+$17464069717985* 64 битный производитель
+$79677187590355* Превращает 64 бита в 8 байтов
 
 
 === misc/watchable_state ===
@@ -518,24 +518,24 @@ $58678516111149* Edit watched state
 
 === components/Xnor64 ===
 
-$64937916903935* Bitwise XNOR two values
-$47129074382309* 64 Bit XNOR
+$64937916903935 Побитово XNOR два значения
+$47129074382309 64 Битный XNOR
 
 
 === levels/wide_instrucitons ===
 
 $13709034294291* Save on even tick, output both bytes on odd ticks
-$17693995237077* Output both bytes
+$17693995237077 Выведи оба байта
 $19068760748550* Output 0 on even ticks
-$65009239162932* The correct outputs were {a} and {b}
+$65009239162932 Правильные выходы были {a} и {b}
 $19203973423116* Create a device that saves the program output on even ticks, and outputs both bytes on odd ticks.
-$17409169138995* Save the byte
+$17409169138995 Сохрани байт
 
 
 === components/Nor32 ===
 
-$82743668258816* Bitwise NOR two values
-$82121937858245* 32 Bit NOR
+$82743668258816 Побитово NOR два значения
+$82121937858245 32 Битный NOR
 
 
 === levels/bit_switch ===
@@ -551,7 +551,7 @@ $42793594302151* Using 2 NOT gates and 2 Switches, build an XOR gate.
 
 === misc/lab_toggle ===
 
-$16432178820878* Lab
+$16432178820878 Лаборатория
 
 
 === levels/Calculations ===
@@ -560,10 +560,10 @@ $14458828731919*
 Time to merge in the "Arithmetic Engine" circuit you made previously with the register circuit. The calculation circuit was saved in the component factory and can now be added as a component. If you forgot which pin does what, check the circuit in the component factory.
 
 Use the decoder you built to figure out if we should copy between registers or do calculations. Here are the 4 different modes again:
-[OFF][OFF] Immediate
-[OFF][ON] Calculate
-[ON][OFF] Copy
-[ON][ON] Condition
+[OFF][OFF] Немедленно
+[OFF][ON] Рассчитать
+[ON][OFF] Скопировать
+[ON][ON] Условие
 
 For this level you only have to worry about the copy and calculate mode, check [INSTRUCTIONS] in the top panel for the details. When in calculate mode, take [color=#e49f44]REG 1[/color] and [color=#e49f44]REG 2[/color] as inputs, and save the result in [color=#e49f44]REG 3[/color].
 
@@ -573,25 +573,24 @@ $13013863429580* For this level an extra pin has been added to the registers. Th
 
 === components/Not64 ===
 
-$74829633052959* Bitwise negates 64 bits
-$81823773658328* 64 Bit NOT
+$74829633052959 Побитово инвертирует 64 бита
+$81823773658328 64 Битный NOT
 
 
 === components/Stack ===
 
-$71022099146246* Memory that can be pushed or popped onto
-$47202418972371* Stack
+$71022099146246 Память в которую можно помещать и извлекать
+$47202418972371 Стэк
 
 
 === components/Program4 ===
 
-$27522667367787* Program
-$45650720555565* Programmable memory component
-
+$27522667367787 Программа
+$45650720555565 Программируеммый компонент памяти
 
 === levels/Counter ===
 
-$17701404772563* Add 1
+$17701404772563 Добавь 1
 $17940006660359* Count
 $17263901743088*
 Build a counter that will increase by 1 each tick.
@@ -601,7 +600,7 @@ Additionally, there should be an option for overwriting the counter with a given
 You are given 2 inputs, a bit and a byte.
 
 The bit input should toggle between counting and overwriting with the value of the byte.
-$68874699768861* Overwrite with {value}
+$68874699768861* Перезапиши на {value}
 $10555159894041*
 Counting is so fundamental even insects do it. From counting, species can evolve to compare and do arithmetic. And before you know it, you have apes building computers.
 
@@ -610,8 +609,8 @@ Make a device that counts increments once per tick.
 
 === components/Constant32 ===
 
-$39402227599142* Constant value
-$30896164786171* 32 Bit Constant
+$39402227599142 Константное значение
+$30896164786171 32 Битная Константа
 
 
 === misc/sandbox_toggle ===
@@ -621,8 +620,8 @@ $30516879701896 Песочница
 
 === components/Xor16 ===
 
-$55408021160573* Bitwise XOR two values
-$47846591761838* 16 bits XOR
+$55408021160573 Побитово XOR два значения
+$47846591761838 16 битный XOR
 
 
 === components/Rol64 ===
@@ -633,8 +632,8 @@ $13677051385046* Rotate left
 
 === components/And32 ===
 
-$98890160152994* Bitwise AND two values
-$30264879217145* 32 bit AND
+$98890160152994 Побитово AND два значения
+$30264879217145 32 битный AND
 
 
 === levels/byte_shift ===
@@ -662,14 +661,14 @@ $18518173140953* I recommend that you add [color=#e49f44]shift left[/color] and 
 
 === components/AND ===
 
-$22719674432950*
-[ON] when both inputs are [ON]
+$22719674432950
+[ON] Когда два входа [ON]
 [table=5]
-[cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Output[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Вход 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
+[cell]Вход 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Выход[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell]
 [/table]
-$58912167455465* AND
+$58912167455465 AND
 
 
 === main_menu/sandbox_button ===
@@ -719,9 +718,9 @@ $12901484249817* Can you fit 4 bytes of memory in this limited space?
 $14218335256117*
 In our advanced civilization, forcing prisoners to do extremely menial tasks is slavery and is technically illegal.
 	  That is why we instead had our intern create the 256 byte version of your component.
-$15908016538045* VALUE
-$16196915566111* 0
-$14259545926196* A
+$15908016538045* ЗНАЧЕНИЕ
+$16196915566111 0
+$14259545926196 A
 $12306130287676*
 In this level you have to build a circuit that 
 can [SAVE] or [LOAD] from 4 different bytes of memory.
@@ -734,9 +733,9 @@ With 2 bits, there are 4 combinations, one for each byte of memory in this level
 [i][tip]Spacebar rotates components.[/tip][/i]
 
 The output has an enable pin, enable it only on [LOAD].
-$18084166025569* Nothing
-$13082830776248* DON'T LOAD
-$12933801309767* A
+$18084166025569* Ничего
+$13082830776248 НЕ ЗАГРУЖАТЬ
+$12933801309767 A
 
 
 === components/Shr64 ===
@@ -747,8 +746,8 @@ $73798355428095* Shift right
 
 === components/Constant64 ===
 
-$92424468899005* Constant value
-$25858905835416* 64 Bit Constant
+$92424468899005 Константное значение
+$25858905835416 64 битная Константа
 
 
 === component_panels/LatencyRam ===
@@ -761,14 +760,14 @@ Practically this means that [color=#e49f44]reading takes {ticks} ticks[/color] (
 
 === main_scripts/overture_level ===
 
-$27259865408750* Next tick the counter value will be {next}, it should be {expected}
-$95030012922256* Input should only be enabled when reading from input
-$12873109232054* Expected output {expected}, got {got}
-$47188699762650* Output not enabled
-$28026304798371* Output should only be enabled when outputting
-$85260864781281* Input not enabled
-$96569633331621* Load {value} into REG 0
-$83829200305236* Expected output {expected}, got {got}
+$27259865408750 На следующем такте значение счетчика будет {next}, Это должно быть {expected}
+$95030012922256 Вход должен быть включен только при чтении с входа
+$12873109232054 Ожидаемый вывод: {expected}, получено: {got}
+$47188699762650 Выход не включён
+$28026304798371 Выход должен быть включен только при выводе значения
+$85260864781281 Вход не включен
+$96569633331621 Загрузи {value} в РЕГ 0
+$83829200305236 Ожидаемый выход: {expected}, получено: {got}
 
 
 === levels/Further Delayed Lines ===
@@ -789,9 +788,9 @@ We need a scheme that allows negative numbers, normally referred to as a "signed
 
 Additionally, it would greatly simplify future circuits if the representation works with the adder you already made. 
 $17231048881956 Для оценки различий в вещах и величинах, Вам потребуется ВЫЧИТАНИЕ. А, для процесса вычитания Вам, строго говоря, необходимы отрицательные числа. 
-$70755151984986* {a} should be {b}
+$70755151984986 {a} должен быть {b}
 $11067230116844* {number} is not representable
-$62744038163781* OK
+$62744038163781 OK
 $19118970740682*
 [color=#dd6576]Edit the numbers[/color] for each bit so that the following is true:
 
@@ -821,12 +820,12 @@ $17994568832660 [b]Инструкция:[/b]\nКомпонент NAND перек
 
 === components/Input 2 ===
 
-$86870364449392* Input
+$86870364449392 Вход
 
 
 === components/OutputCounter ===
 
-$52247325526438* Counter
+$52247325526438 Счётчик
 
 
 === components/DelayLine8 ===
@@ -837,20 +836,20 @@ $63449911993783* 8 Bit Delay Line
 
 === components/Xnor16 ===
 
-$73699169812942* Bitwise XNOR two values
-$40088995721509* 16 Bit XNOR
+$73699169812942 Побитово XNOR два значения
+$40088995721509 16 Битный XNOR
 
 
 === components/Bit Compressor ===
 
-$74338505460996* Turns 8 bits into 1 byte
-$98747779812970* 8 bit Maker
+$74338505460996 Превращает 8 битов в 1 байт
+$98747779812970 8 битный Производитель
 
 
 === components/Off ===
 
-$61860786587357* OFF
-$72749460799924* Always [OFF]
+$61860786587357 ВЫКЛ
+$72749460799924 Всегда [OFF]
 
 
 === components/Shr16 ===
@@ -873,7 +872,7 @@ $50037736094411* Screen
 
 === misc/ide_control_link ===
 
-$80788685813993* Robot controls
+$80788685813993 Управление Роботом
 
 
 === levels/Calibrating Laser Cannons ===
@@ -894,8 +893,8 @@ $16954408093587* On our ship we naturally shoot incoming asteroids with lasers.
 
 === components/Mux64 ===
 
-$14050204031082* Toggles between two values
-$66892629981737* 64 Bit Mux
+$14050204031082 Переключается между двумя значениями 
+$66892629981737 64 Битный Mux
 
 
 === levels/circular_dependency ===
@@ -912,25 +911,25 @@ $11316928751185 Наша система образования, по давне�
 
 === misc/ui_panel/left_inputs ===
 
-$16586225094516* INPUTS
+$16586225094516 ВХОДЫ
 
 
 === components/Xnor32 ===
 
-$17419057954798* Bitwise XNOR two values
-$52489451755306* 32 Bit XNOR
+$17419057954798 Побитово XNOR два значения
+$52489451755306 32 Битный XNOR
 
 
 === components/NOR ===
 
-$27510848535619*
-[ON] when neither inputs are [ON]
+$27510848535619
+[ON] Когда никакой из входов [ON]
 [table=5]
-[cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Output[/cell][cell][ON][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell]
+[cell]Вход 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
+[cell]Вход 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Выход[/cell][cell][ON][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell]
 [/table]
-$83375115196253* NOR
+$83375115196253 NOR
 
 
 === levels/hex_racer ===
@@ -978,8 +977,8 @@ You must beat level 3 to pass.
 
 === components/Or3 ===
 
-$17576327690867* 3 pin OR gate
-$99630419947500* 3 Pin OR
+$17576327690867 3 пиновый OR
+$99630419947500 3 Пиновый OR
 
 
 === components/Ror8 ===
@@ -1002,19 +1001,19 @@ Then output the total volume that the landscape can carry as the answer.
 
 === components/NAND ===
 
-$71130919681688* NAND
-$12903183841172*
-[ON] unless both inputs are [ON]
+$71130919681688 NAND
+$12903183841172
+[ON] пока оба входа не [ON]
 [table=5]
-[cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Output[/cell][cell][ON][/cell][cell][ON][/cell][cell][ON][/cell][cell][OFF][/cell]
+[cell]Вход 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
+[cell]Вход  2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Выход[/cell][cell][ON][/cell][cell][ON][/cell][cell][ON][/cell][cell][OFF][/cell]
 [/table]
 
 
 === components/Output1Sum ===
 
-$90026011029075* Sum
+$90026011029075 Сумма
 
 
 === ui/top_bar/scores ===
@@ -1047,12 +1046,12 @@ Next output next_seed mod 4, to move the robot. Finally use next_seed (before mo
 
 === components/Input 4 ===
 
-$11447837612693* Input
+$11447837612693 Вход
 
 
 === components/Input64 ===
 
-$31709565019284* 64 bit input
+$31709565019284 64 битный вход
 
 
 === levels/Add 5 ===
@@ -1094,13 +1093,13 @@ $98772447663910* Edit watched state
 
 === components/ByteMul ===
 
-$56549841656852* Multiply
-$68631919890554* Multiplies two inputs
+$56549841656852 Умножить
+$68631919890554 Умножает два входа
 
 
 === component_panels/Counter ===
 
-$57936010210151* Increment by: {amount}
+$57936010210151 Увеличивать на: {amount}
 
 
 === levels/1_decoder ===
@@ -1120,7 +1119,7 @@ We might want to team you two up, since you compliment each other's shortcomings
 
 === misc/component_factory_toggle ===
 
-$55499239951858* Component Factory
+$55499239951858 Завод компонентов
 
 
 === components/Output8z ===
@@ -1131,61 +1130,61 @@ $58449766432492* Only outputs if the switch pin is [ON]
 
 === components/ByteConstant ===
 
-$29445030761909* Constant value
-$25159790815891* 8 Bit Constant
+$29445030761909 Константное значение
+$25159790815891 8 Битная Константа
 
 
 === components/Counter32 ===
 
-$87245349851451* 32 Bit Counter
-$92765669828982* Increments each tick, unless overwritten
+$87245349851451 32 Битный Счётчик
+$92765669828982 Увеличивается каждый тик, если не перезаписан
 
 
 === components/Output64 ===
 
-$43552728118031* 64 bit output
+$43552728118031 64 битный выход
 
 
 === components/Add32 ===
 
-$91616185859914* Adds two inputs
-$64111401384153* Add
+$91616185859914 Ссумирует два значения
+$64111401384153 Сумма
 
 
 === components/NEG ===
 
-$88379907297327* Negate
-$62021716182809* Bitwise negates an input
+$88379907297327 Инвертор
+$62021716182809 Побитово инвертирует вход
 
 
 === components/Switch16 ===
 
-$15221175893882* 16 Bit Switch
-$59845475842015* Toggles a value
+$15221175893882 16 Битный Переключатель
+$59845475842015 Переключает значение 
 
 
 === components/Or32 ===
 
-$92752025948920* Bitwise OR two values
-$40180779432911* 32 Bit OR
+$92752025948920 Побитово OR два значения
+$40180779432911 32 Битный OR
 
 
 === components/And3 ===
 
-$19664974941910* 3 Pin AND
-$86839706221116* 3 pin AND gate
+$19664974941910 3 Пиновый AND
+$86839706221116 3 пиновый AND
 
 
 === components/Maker16 ===
 
-$55864807379312* Turns 16 bits into 2 bytes
-$39941195789458* 16 bit Maker
+$55864807379312 Превращает 16 битов в 2 байта
+$39941195789458* 16 битный произодитель
 
 
 === components/LessU32 ===
 
-$72614358420262* Less (unsigned)
-$55380524073095* Checks if one input is less than the other
+$72614358420262 Меньше (Беззнаковый)
+$55380524073095 Проверяет меньше ли первый вход чем второй 
 
 
 === levels/sandbox ===
@@ -1212,12 +1211,12 @@ $42506906257154* Only outputs if the switch pin is [ON]
 
 === components/NOT ===
 
-$34453052824732* NOT
-$90844421681709*
-Inverts the input
+$34453052824732 NOT
+$90844421681709
+Инвертирует вход
 [table=3]
-[cell]Input[/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Output[/cell][cell][ON][/cell][cell][OFF][/cell]
+[cell]Вход[/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Выход[/cell][cell][ON][/cell][cell][OFF][/cell]
 [/table]
 
 
@@ -1234,7 +1233,7 @@ $17675121574388 Обратите внимание, что компонент OUT
 
 === ui/toggles/race_condition ===
 
-$75558678297830* Circular dependency
+$75558678297830 Круговая зависимость
 
 
 === levels/byte_or ===
@@ -1254,18 +1253,18 @@ $15226896485081* You may think it is unethical to eat all the earthlings that do
 
 === misc/wire_draw ===
 
-$59836059268386* New wire (Hotkey: Alt & drag)
+$59836059268386 Новый провод (Горячая клавиша: Alt и потянуть)
 
 
 === components/And16 ===
 
-$56198785587874* Bitwise AND two values
-$26727645933234* 16 bit AND
+$56198785587874 Побитово AND два значения
+$26727645933234 16 битный AND
 
 
 === misc/program_edit_button ===
 
-$38481453712356* Edit memory
+$38481453712356 Редактироать память
 
 
 === levels/Conditionals ===
@@ -1310,13 +1309,13 @@ $36561706158040* Watched state {nr} should point to a register or custom compone
 
 === misc/instr_clone ===
 
-$69090690657232* Clone
+$69090690657232 Клонировать
 
 
 === levels/byte_less ===
 
 $11252365204151* Create a circuit that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]UNSIGNED[/color].
-$62766453128684* Is {a} less than {b}?
+$62766453128684 {a} меньше чем {b}?
 $11632471752785* [center]Determine if the first input is less than the second.[/center]
 
 
@@ -1345,13 +1344,13 @@ $17712385236630 Создайте цепь на выходе которой вс�
 
 === components/And64 ===
 
-$80790829001391* 64 bit AND
-$89424947351456* Bitwise AND two values
+$80790829001391 64 битный AND
+$89424947351456 Побитово AND два значения
 
 
 === misc/inst_new_rule ===
 
-$41064305626707* New rule
+$41064305626707 Новое правило
 
 
 === misc/multi_select ===
@@ -1366,14 +1365,14 @@ $39440928972984* Reset (Hotkey: F4)
 
 === components/ByteEqual ===
 
-$39369982838671* Equal
-$35668435514829* Checks if the two inputs are equal
+$39369982838671 Равно
+$35668435514829 Проверяет если два входа равны
 
 
 === levels/binary_racer ===
 
 $16076448195257 Это испытание, в последнее время, стало моим любимым. Конвертация десятичных чисел в двоичные на скорость.
-$37319690622142* Good job, you reached level {current_level}.
+$37319690622142 Хоршая работа, ты дошел до {current_level} уровня.
 $19111664765554
 Переключайте биты (степени числа "два") внизу, чтобы составить десятичное число.
 
@@ -1381,13 +1380,13 @@ $19111664765554
 
 (Нажмите [color=#e63e5b][url=accessibility_mode]здесь[/url][/color] чтобы играть без таймера.
 $11176073682097* What is {number} in binary?
-$71866932309393* You made it to level {level}!
+$71866932309393 Ты дошел до {level} уровня!
 
 
 === components/Mul64 ===
 
-$72281597169494* Multiply
-$11665562499390* Multiplies two inputs
+$72281597169494 Умножить
+$11665562499390 Умножает два входа
 
 
 === levels/xor_gate ===
@@ -1398,8 +1397,8 @@ $19182751521677 В прошлый раз мы строили цепь, кото�
 
 === components/Splitter64 ===
 
-$80420054807186* Splits 64 bits into 8 byts
-$14205692632393* 64bit Splitter
+$80420054807186 Разделяет 64 бита на 8 байтов
+$14205692632393 64 битный Разделитель
 
 
 === components/Bidirectional64 ===
@@ -1410,8 +1409,8 @@ $24932613021646* Can circumvent certain circular dependency errors
 
 === components/Splitter16 ===
 
-$92674917729864* 16 bit Splitter
-$28271182652741* Splits 16 bits into 2 byts
+$92674917729864 16 битный Разделитель
+$28271182652741 Разделяет 16 бита на 2 байта
 
 
 === misc/component_button ===
@@ -1437,13 +1436,13 @@ $16564356062672
 
 === components/Maker32 ===
 
-$82420653444614* Turns 32 bits into 4 bytes
-$85308499118176* 32 bit Maker
+$82420653444614 Превращает 32 бита в 4 байта
+$85308499118176 32 битный производитель
 
 
 === components/Output 3 ===
 
-$96269858195218* Output
+$96269858195218 Выход
 
 
 === main_scripts/dialouge ===
@@ -1459,7 +1458,7 @@ NOTE: Hitn for byte switch
 $86319296925137* What would this look like if you were only switching 1 bit? What would the truth table for such a component look like?
 
 NOTE: Hint for byte adder
-$37093555217568* You only need 8 full adders.
+$37093555217568 Тебе нужно всего лишь 8 полных ссуматоров.
 
 NOTE: Hint for the maze
 $36837749971886*
@@ -1507,30 +1506,30 @@ Finally, the last bit is considered seperately for signed numbers, here it has t
 
 === components/Output 1B ===
 
-$77044600156969* 8 bit output
+$77044600156969* 8 битный выход
 
 
 === components/Xor64 ===
 
-$95012060885697* 64 bit XOR
-$13031452187028* Bitwise XOR two values
+$95012060885697 64 битный XOR
+$13031452187028 Побитово XOR два значения
 
 
 === components/ByteXor ===
 
-$98219910712564* 8 bit XOR
-$83236921580268* Bitwise XOR two values
+$98219910712564 8 битный XOR
+$83236921580268 Побитово XOR два значения
 
 
 === components/Hdd ===
 
-$75645507178296* HDD
-$78558655732992* Persistent memory
+$75645507178296* Жёсткий диск
+$78558655732992* Постоянная память
 
 
 === components/LessI32 ===
 
-$87609006355839* Less (signed)
+$87609006355839* Меньше (Знаковое)
 $99994775592318* Checks if one input is less than the other
 
 
@@ -1624,7 +1623,7 @@ $15582618410991* LOAD and SAVE
 
 === misc/level_gate_component_icon ===
 
-$83440578602427* Unlocks component
+$83440578602427 Разблокирует компонент
 
 
 === levels/any_doubles ===
@@ -1639,7 +1638,7 @@ $14373083988184
 
 === levels/byte_constant ===
 
-$12641789008694* Create a circuit that always outputs the number 164.
+$12641789008694 Создайте схему которая всегда выводит 164.
 
 
 === components/Output 1 + 1B ===
@@ -1697,8 +1696,8 @@ $38206009264853* Outputs this tick's input, next tick
 
 === components/Adder Simple ===
 
-$33973952772642* Add
-$98429814030509* Adds two inputs
+$33973952772642 Сумма
+$98429814030509 Ссумирует два значения
 
 
 === components/DelayLine32 ===
@@ -1709,8 +1708,8 @@ $49292282287971* 32 Bit Delay Line
 
 === components/Nand64 ===
 
-$27197172037913* 64 Bit NAND
-$66590147372797* Bitwise NAND two values
+$27197172037913 64 Битный NAND
+$66590147372797 Побитово NAND два значения
 
 
 === components/DelayLine16 ===
@@ -1727,37 +1726,37 @@ $69394421220436* Shifts the bits of an input right
 
 === components/Neg64 ===
 
-$88458190974122* Negate
-$52206550732945* Bitwise negates an input
+$88458190974122 Инвертор
+$52206550732945 Побитово инвертирует вход
 
 
 === main_scripts/leg_level ===
 
 $70383685548547* REG {nr}
-$53021804895845* ANDi
-$69956969985790* ORi
+$53021804895845 ANDi
+$69956969985790 ORi
 $85913831661289* IF_LESS
-$11144256835662* XORi
-$61412773713567* SUB
+$11144256835662 XORi
+$61412773713567 SUB
 $20104629254326* ARGUMENT 2
 $52344899983501* IF_LESS_OR_EQUAL
-$89945092889418* SUBi
-$89011349770597* NOT
+$89945092889418 SUBi
+$89011349770597 NOT
 $71559031724238* IF_NOT_EQUAL
-$40520283279584* XOR
-$71204580217527* NOTi
-$71195301111400* ADDi
+$40520283279584 XOR
+$71204580217527 NOTi
+$71195301111400 ADDi
 $98178474649432* IF_GREATER_OR_EQUAL
 $68187490877029* IF_EQUAL
 $38681417496680* ARGUMENT 1
 $50722296752142* INPUT
 $43723329256095* REG {nr}
 $37810243909140* COUNTER
-$44009845985661* ADD
-$68666991962246* OR
+$44009845985661 ADD
+$68666991962246 OR
 $79492115258673* IF_GREATER
 $60997201855346* RESULT ADDRESS
-$64519909700148* AND
+$64519909700148 AND
 $49810487048038* COUNTER
 $18236360532765* OUTPUT
 $84307766381146* OPCODE
