@@ -1857,8 +1857,8 @@ $99604485981015* Can circumvent certain circular dependency errors
 
 === components/Register ===
 
-$19705753304166* 8 bit memory
-$68946767861738* 8 Bit Register
+$19705753304166* 8 битная память
+$68946767861738* 8 Битный Регистр
 
 
 === levels/push_pop ===
@@ -2050,8 +2050,8 @@ When in immediate mode the whole byte is interpreted as a number that we [SAVE] 
 
 === components/BNOT ===
 
-$53686485035156* 8 Bit NOT
-$26822227902426* Bitwise negates 8 bits
+$53686485035156 8 Битный NOT
+$26822227902426 Побитово инвертирует 8 битов
 
 
 === components/Output16 ===
@@ -2316,13 +2316,13 @@ $50013003040535* Rotates the bits of an input right
 
 === components/BOR ===
 
-$19406015796751* Bitwise OR two values
-$54190050450484* 8 Bit OR
+$19406015796751* Побитово OR два значения
+$54190050450484* 8 Битный OR
 
 
 === levels/Masking Time ===
 
-$19351773688761* Ticks left: {ticks_left}  Input: {input}
+$19351773688761 Тактов осталось: {ticks_left}  Вход: {input}
 $16810715868480* Calculate modulo 4 of the input.
 $17375862136921*
 The length of our week is 4 days. Our weekdays are named Zero's day, One's day, Two's day and Three's day. I hear some earthlings number their Two's day incorrectly? 
@@ -2453,7 +2453,7 @@ $83642246004160* Rotate left
 
 === components/BeepBox ===
 
-$15009144144117* Waveform Generator
+$15009144144117* Генератор сигналов
 
 
 === components/Bidirectional1 ===
@@ -2464,14 +2464,14 @@ $34912798641933* 1 bit bidirectional pin
 
 === components/Mul32 ===
 
-$98530670555665* Multiply
-$51210946736766* Multiplies two inputs
+$98530670555665 Умножить
+$51210946736766 Умножает два входа
 
 
 === components/ByteAnd ===
 
-$61791872137683* Bitwise AND two values
-$21541105796357* 8 Bit AND
+$61791872137683 Побитово AND два значения
+$21541105796357 8 Битный AND
 
 
 === components/Halt ===
@@ -2857,6 +2857,6 @@ $14788981567936 Создайте компонент AND с тремя входа
 
 === components/Output8zLevel ===
 
-$49513138880387* Output
+$49513138880387 Выход
 
 
