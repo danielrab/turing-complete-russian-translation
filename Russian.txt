@@ -2023,8 +2023,8 @@ $57531353625235* Register
 
 === components/Counter64 ===
 
-$62528867413395* 64 Bit Counter
-$62736827510023* Increments each tick, unless overwritten
+$62528867413395* 64 Битный Счётчик
+$6273682751002* Увеличивается каждый тик, если не перезаписан
 
 
 === levels/Storage cracker ===
@@ -2491,8 +2491,8 @@ $35105566244017* Can circumvent certain circular dependency errors
 
 === components/Counter ===
 
-$51446864816252* Increments each tick, unless overwritten
-$67910883947749* 8 Bit Counter
+$51446864816252 Увеличивается каждый тик, если не перезаписан
+$67910883947749 8 Битный Счётчик
 
 
 === misc/specifications ===
@@ -2512,8 +2512,8 @@ $38773676077206* Edit Instructions
 
 === components/Keyboard ===
 
-$40965596602414* Keyboard
-$76766452660421* Records keypresses from your physical keyboard
+$40965596602414 Клавиатура
+$76766452660421 Записывает нажатия клавиш с физической клавиатуры
 
 
 === components/Input1_1B ===
@@ -2550,8 +2550,8 @@ $50924073287410* Toggle number format
 
 === components/Xnor8 ===
 
-$31985293401482* 8 Bit XNOR
-$45789912406647* Bitwise XNOR two values
+$31985293401482 8 Битный XNOR
+$45789912406647 Побитово XNOR два значения
 
 
 === levels/conditions ===
@@ -2570,15 +2570,15 @@ Bit code:        Turn [ON] when:[code]
 [ON] [OFF] [ON]    If value ≠ 0
 [ON] [ON] [OFF]    If value ≥ 0
 [ON] [ON] [ON]    If value > 0[/code]
-$16407231803964* If VALUE < 0 output [img]dialogue/on.png[/img]
-$16742265812068* Regardless of VALUE output [img]dialogue/on.png[/img]
-$17616699231679* If VALUE > 0 output [img]dialogue/on.png[/img]
-$16632557438774* If VALUE ≠ 0 output [img]dialogue/on.png[/img]
-$18234235689107* If VALUE ≥ 0 output [img]dialogue/on.png[/img]
-$12429396872036* Regardless of VALUE output [img]dialogue/off.png[/img]
-$19014698800906* If VALUE = 0 output [img]dialogue/on.png[/img]
-$13680487623452* If VALUE ≤ 0 output [img]dialogue/on.png[/img]
-$12706881725738* Your circuit has been saved to the component factory.
+$16407231803964 Если ЗНАЧЕНИЕ < 0 выведи [img]dialogue/on.png[/img]
+$16742265812068* Regardless of VALUE выведи [img]dialogue/on.png[/img]
+$17616699231679 Если ЗНАЧЕНИЕ > 0 выведи [img]dialogue/on.png[/img]
+$16632557438774 Если ЗНАЧЕНИЕ ≠ 0 выведи [img]dialogue/on.png[/img]
+$18234235689107 Если ЗНАЧЕНИЕ ≥ 0 выведи [img]dialogue/on.png[/img]
+$12429396872036* Regardless of VALUE выведи [img]dialogue/off.png[/img]
+$19014698800906 Если ЗНАЧЕНИЕ = 0 выведи [img]dialogue/on.png[/img]
+$13680487623452 Если ЗНАЧЕНИЕ ≤ 0 выведи [img]dialogue/on.png[/img]
+$12706881725738 Твоя схема была сохранена в завод компонентов.
 
 
 === levels/full_adder ===
@@ -2597,8 +2597,8 @@ $11472059692644 Взамен Вы получили возможность общ
 
 === components/3_decoder ===
 
-$59129788113517* Toggles between eight outputs
-$94375716460090* 3 Bit decoder
+$59129788113517 Переключается между восьмью значениями
+$94375716460090 3 Битный декодер
 
 
 === components/ByteShl ===
@@ -2609,14 +2609,14 @@ $66482114876737* Shifts the bits of an input left
 
 === components/Counter16 ===
 
-$37313834107391* Increments each tick, unless overwritten
-$49104925799943* 16 Bit Counter
+$37313834107391 Увеличивается каждый тик, если не перезаписан
+$49104925799943 16 Битный Счётчик
 
 
 === components/Add16 ===
 
-$28092601427278* Adds two inputs
-$30820974870562* Add
+$28092601427278 Ссумирует два входа
+$30820974870562 Сумма
 
 
 === levels/and_gate ===
@@ -2630,14 +2630,14 @@ $15231724707514 Не хочется делать преждевременных 
 
 === components/Not32 ===
 
-$33620523355085* 32 Bit NOT
-$24607331341411* Bitwise negates 32 bits
+$33620523355085 32 Битный NOT
+$24607331341411 Побитово инвртирует 32 бита
 
 
 === components/Equal32 ===
 
-$32710942647020* Equal
-$32433537137277* Checks if the two inputs are equal
+$32710942647020 Равно
+$32433537137277 Проверяет равны ли два входа
 
 
 === components/MemoryProbe ===
@@ -2648,7 +2648,7 @@ $44867305035474* Memory Probe
 
 === misc/factory_back_inner ===
 
-$12211557416281* Back
+$12211557416281* Назад
 
 
 === components/Byte Expander ===
@@ -2659,7 +2659,7 @@ $21904470559153* Byte Splitter
 
 === ui/toggles/level_log ===
 
-$38557550573896* Level log
+$38557550573896 Лог Уровня
 
 
 === misc/StateProbe ===
@@ -2676,7 +2676,7 @@ $24096666569346* 32 bit Splitter
 
 === misc/change_schematic ===
 
-$79554853897000* Switch schematic
+$79554853897000 Сменить схему
 
 
 === levels/sr_latch ===
@@ -2696,7 +2696,7 @@ When you have a circuit where the wires can settle in either of 2 different stab
 
 === components/Program64 ===
 
-$76480303942112* Programmable memory component
+$76480303942112 Программируеммый компонент памяти
 
 
 === components/Shl32 ===
@@ -2707,13 +2707,13 @@ $88685329847417* Shifts the bits of an input left
 
 === components/FastRam ===
 
-$79436020115192* Fast but high gate cost memory
-$12924829814634* Fast RAM
+$79436020115192* Быстрая но дорогая ОЗУ
+$12924829814634 Быстрая ОЗУ
 
 
 === levels/byte_xor ===
 
-$19636386696963* Create a circuit that XORs two bytes bitwise.
+$19636386696963 Создай схему которая XOR два байта побитово.
 
 
 === components/Shl64 ===
@@ -2745,34 +2745,34 @@ $10141611261952* [center]Implement immediate values[/center]
 
 === misc/menu ===
 
-$56916384895438* Main menu
+$56916384895438 Главное меню
 
 
 === levels/xor ===
 
-$11589029892097* XOR the bits of the inputs {a} and {b}
+$11589029892097* XOR биты входа {a} и {b}
 $12758156517177* Using the instructions of your computer, read the input twice and XOR the two values together
 $16047615798435* [center]Read the input twice and XOR the bits of the two inputs[/center]
 
 
 === components/switch ===
 
-$87345192339084* Toggles a value
-$29301846684808* 8 Bit Switch
+$87345192339084 Переключает значение
+$29301846684808 8 Битный Переключатель
 
 
 === components/Register64 ===
 
-$86007777261800* 64 Bit Register
-$99461037008796* 64 bit memory
+$86007777261800 64 Битный Регистр
+$99461037008796 64 битная память
 
 
 === levels/Wire Spaghetti ===
 
-$29329105515650* Add 1 more register to the map
-$17106892574116* Add a counter to the circuit
-$50177586789991* Add {nr} more registers to the map
-$15754373587500* Set the counter increment to 4
+$29329105515650 Добавь еще 1 регистр в схему 
+$17106892574116 Добавь счётчик к схеме 
+$50177586789991 Добавь еще {nr} регистров в схему
+$15754373587500 Установи шаг счетчика на 4
 $56024330661504* Watched state {nr} should point to a register or custom component with a register inside
 $19099471819164*
 The following are the set up steps that needs to be done in order to complete this level:
@@ -2803,51 +2803,51 @@ Finally, in this level the [color=#e49f44]OPCODE[/color] is always 0. This means
 
 The value of an argument or destination refers to one of these places:
 [code]
-[color=#e49f44]0[/color]: Register 0
-[color=#e49f44]1[/color]: Register 1
-[color=#e49f44]2[/color]: Register 2
-[color=#e49f44]3[/color]: Register 3
-[color=#e49f44]4[/color]: Register 4
-[color=#e49f44]5[/color]: Register 5
-[color=#e49f44]6[/color]: Counter
-[color=#e49f44]7[/color]: Input/Output
+[color=#e49f44]0[/color]: Регистр 0
+[color=#e49f44]1[/color]: Регистр 1
+[color=#e49f44]2[/color]: Регистр 2
+[color=#e49f44]3[/color]: Регистр 3
+[color=#e49f44]4[/color]: Регистр 4
+[color=#e49f44]5[/color]: Регистр 5
+[color=#e49f44]6[/color]: Счётчик
+[color=#e49f44]7[/color]: Вход/Выход
 [/code]
 
 In the next level you will implement more [color=#e49f44]OPCODES[/color], which will require a different ALU than that of [color=#e49f44]OVERTURE[/color].
 
 
-$10922418807673* Argument 7 means read from input, but input is not enabled.
+$10922418807673 Аргумент 7 означает считывание входа, но вход не включен.
 $62258842382434* Watched state {counter} should point to the counter
 $18769284297247* Create a new schematic and add a program with 4 byte output
 
 
 === components/Neg32 ===
 
-$26991597084705* Negate
-$35735598635057* Bitwise negates an input
+$26991597084705 Инвертор
+$35735598635057 Побитово инвертирует вход
 
 
 === components/InputConditions ===
 
-$75386511637758* Input
+$75386511637758 Вход
 
 
 === levels/the_bus ===
 
-$72472660427162* [center]Copy the value from input {input_nr} to output {output_nr}[/center]
-$85140574084420* [center]Copy the value from the correct input to the correct output[/center]
+$72472660427162 [center]Скопируй значение из входа {input_nr} в выход {output_nr}[/center]
+$85140574084420 [center]Скопируй значение из правильного входа в правильный выходt[/center]
 
 
 === components/Ram ===
 
-$95418291334002* 256 Byte Ram
-$27094240214067* Memory component
+$95418291334002 256 Байтная ОЗУ
+$27094240214067* Запоминающий компонент
 
 
 === components/Constant16 ===
 
-$85825068431072* 16 Bit Constant
-$61330657823382* Constant value
+$85825068431072 16 Битная Константа
+$61330657823382 Константное значение
 
 
 === levels/and_gate_3 ===
