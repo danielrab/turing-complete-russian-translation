@@ -42,11 +42,6 @@ $14712417427860* Since this level is a tool and not a challenge, you can go to t
 $28761562806647* [center]Pairwise AND together each bit[/center]
 
 
-=== trans/manual_the_robot ===
-
-$92896462984546* The robot
-
-
 === trans/level_conditions_description ===
 
 $62540112577327* [center]When the value meets the condition output [img]dialogue/on.png[/img], output [img]dialogue/off.png[/img] otherwise.[/center]
@@ -808,11 +803,6 @@ $52956877721342* Shoot
 === trans/levels_double_the_number ===
 
 $41609125516676* [center]Double the number[/center]
-
-
-=== trans/level_delay_level_description ===
-
-$24326379952614* Create a circuit that costs 5 GATEs and 6 DELAY
 
 
 === components/IndexBit ===
@@ -1835,12 +1825,6 @@ $37735744928195*
 It turns out that you can build all the logic for a computer out of either NAND or NOR gates. The Apollo guidance computers, were built entirely of NOR gates. Designed in the sixties, they had only 4KB of RAM and 32KB of disk space, but guided astronauts to the moon nonetheless.
 
 Modern computers are not built entirely of just one of the universal gates, but when applicable NAND gates are preferred over NOR, because they have less delay and occupy less area.
-
-
-=== misc/component_button ===
-
-$75542474510177* GATE
-$63839315669055* DELAY
 
 
 === components/SRLatch ===

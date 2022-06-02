@@ -147,7 +147,7 @@ $91861509153454* Удалить
 
 === trans/manual_the_robot ===
 
-$92896462984546* The robot
+$92896462984546* Робот
 
 
 === trans/level_bit_inverter_RichTextLabel2 ===
@@ -1578,7 +1578,7 @@ $18780831606716* [b]Инструкция:[/b]\nПеремещайте курсо
 
 === trans/level_delay_level_description ===
 
-$24326379952614* Create a circuit that costs 5 GATEs and 6 DELAY
+$24326379952614* Создайте схему которая стоит 5 ЭЛЕМЕНТОВ и 6 ЗАДЕРЖКИ
 
 
 === components/IndexBit ===
@@ -3358,8 +3358,8 @@ $14205692632393* 64 битный Разделитель
 
 === misc/component_button ===
 
-$75542474510177* GATE
-$63839315669055* DELAY
+$75542474510177* ЭЛЕМЕНТЫ
+$63839315669055* ЗАДЕРЖКА
 
 
 === components/SRLatch ===
