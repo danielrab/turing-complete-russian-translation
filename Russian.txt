@@ -1707,7 +1707,7 @@ $16105755937680* экран 80x24 текстовых символов
 
 === trans/turing_complete ===
 
-$35911376069529* Turing complete
+$35911376069529* Полный по Тьюрингу
 
 
 === components/ByteLessI ===
@@ -4488,7 +4488,7 @@ $49182380646128* Use
 
 === trans/map_working_computer ===
 
-$38843517090942* WORKING COMPUTER
+$38843517090942* РАБОТАЮЩИЙ КОМПЬЮТЕР
 
 
 === trans/manual_text_rgb ===
