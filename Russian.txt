@@ -484,12 +484,12 @@ $18518173140953* I strongly recommended that you add [color=#e49f44]shift left[/
 
 === misc/restore_overture ===
 
-$52008982212566* Reset
+$52008982212566* Сброс
 
 
 === trans/credit_header ===
 
-$21717110565858* Credits
+$21717110565858* Титры
 
 
 === main_menu/sandbox_button ===
@@ -828,7 +828,7 @@ $86839706221116* 3 пиновый AND
 
 === misc/reset ===
 
-$39440928972984* Reset (Hotkey: F4)
+$39440928972984* Сброс (F4)
 
 
 === components/Or32 ===
@@ -1180,7 +1180,7 @@ $21618236951146* View solution
 
 === misc/confirm_factory_reset ===
 
-$65699778604521* Delete everything
+$65699778604521* Удалить Всё?
 
 
 === trans/map_programming ===
@@ -1840,7 +1840,7 @@ $60538893544456* [center]Build a wide instruction program component[/center]
 
 === misc/delete ===
 
-$53448014080434* Delete (Hotkey: Right click)
+$53448014080434* Удалить (Правый Клик)
 
 
 === trans/manual_component_factory_text ===
@@ -3325,7 +3325,7 @@ Also you can't move the red components in this level, for reasons that will be r
 
 === misc/multi_select ===
 
-$85147529532131* Multi select (Hotkey: SHIFT & drag)
+$85147529532131* Множественный выбор (SHIFT и перетащите)
 
 
 === trans/level_byte_less_i_description ===
@@ -3484,7 +3484,7 @@ $10515630949378* We have hooked your machine up to our advanced robot and we wan
 
 === misc/button_next ===
 
-$50213503063080* Next tick (Hotkey: F5)
+$50213503063080* Следующий Такт (F5)
 
 
 === components/Nand8 ===
@@ -3664,7 +3664,7 @@ $74117520663650*
 
 === misc/select_color ===
 
-$97461374731210* Wire color
+$97461374731210* Цвет Провода
 
 
 === trans/manual_text_instructions ===
