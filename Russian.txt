@@ -361,7 +361,7 @@ The state of either a byte input / output or wire line is represented by a numbe
 
 === trans/manual_robot_controls ===
 
-$94513149242653* Robot controls
+$94513149242653* Управление роботом
 
 
 === misc/watchable_state ===
@@ -1122,7 +1122,7 @@ Another interesting representation, perhaps worth looking up is base -2, where t
 
 === trans/options_window_mode ===
 
-$54328660964287* Window mode
+$54328660964287* Оконный режим
 
 
 === misc/ui_panel/memory ===
@@ -2789,12 +2789,12 @@ $61886892927185* [center]Pairwise AND together each bit[/center]
 
 === trans/manual_truth_tables ===
 
-$75695254533352* Truth tables
+$75695254533352* Таблицы истинности
 
 
 === trans/options_effects_volume ===
 
-$24145565754506* Effects volume
+$24145565754506* Громкость эффектов
 
 
 === trans/level_signed_negator_description ===
@@ -3109,7 +3109,7 @@ $86092436010494* Matrix display
 
 === trans/options_music_volume ===
 
-$93981778736076* Music volume
+$93981778736076* Громкость музыки
 
 
 === component_panels/Counter ===
@@ -4241,7 +4241,7 @@ $71611588991682* 32 Bit NAND
 
 === trans/options_robot_controls ===
 
-$44632988778557* Robot controls
+$44632988778557* Управление роботом
 
 
 === trans/manual_text_edit_instructions ===
