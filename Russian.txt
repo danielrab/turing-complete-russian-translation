@@ -376,11 +376,11 @@ $10186190492148* ALT click to move wire head
 
 === levels/wide_instrucitons ===
 
-$13709034294291* Save on even tick, output both bytes on odd ticks
+$13709034294291* Сохраняй на чётьных тактах, выводи оба байта на нечётных.
 $17693995237077* Выведи оба байта
-$19068760748550* Output 0 on even ticks
+$19068760748550* Выводи 0 на чётных тактах
 $65009239162932* Правильные выходы были {a} и {b}
-$19203973423116* Create a device that saves the program output on even ticks, and outputs both bytes on odd ticks.
+$19203973423116* Создай устройство которое сохраняет выход программы на чётных тактах и выводит оба байта на нечётных.
 $17409169138995* Сохрани байт
 
 
@@ -744,7 +744,7 @@ $18134632592542* You have built your computer, but to win the competition you st
 
 === trans/not_gate_click_next2 ===
 
-$20820887361993* Click "Next tick" to see
+$20820887361993* Нажми "Следующий Такт" чтобы увидеть
 
 
 === components/Output16z ===
@@ -1164,8 +1164,8 @@ $52206550732945* Побитово инвертирует вход
 
 === components/DelayLine1 ===
 
-$30487770736917* Delay Line
-$38206009264853* Outputs this tick's input, next tick
+$30487770736917* Линия Задержки
+$38206009264853* Выводит то что получила на вход на предыдущем такте
 
 
 === ui/options/Robot Controls ===
@@ -1196,19 +1196,19 @@ $66590147372797* Побитово NAND два значения
 
 === components/DelayLine32 ===
 
-$56616725618490* Outputs this tick's input, next tick
-$49292282287971* 32 Bit Delay Line
+$56616725618490* Выводит то что получила на вход на предыдущем такте
+$49292282287971* 32-х битовая Линия Задержки
 
 
 === misc/run_fast ===
 
-$49363678936533* Run ticks faster (right click: change target speed)
+$49363678936533* Перемотка Тактов (правый клик: изменить целевую скорость)
 
 
 === components/DelayLine16 ===
 
-$61925612221077* 16 Bit Delay Line
-$65706144678496* Outputs this tick's input, next tick
+$61925612221077* 16-и битовая Линия Задержки
+$65706144678496* Выводит то что получила на вход на предыдущем такте
 
 
 === levels/divide ===
@@ -1659,8 +1659,8 @@ $22002156022920* Unlocks manual entry
 
 === components/LatencyRam ===
 
-$74156976676497* Latency RAM
-$31261866779127* Lowers delay by having save and load take several ticks to complete
+$74156976676497* Мульти-тактовое ОЗУ
+$31261866779127* Низкая задержка, но требует несколько тактов чтобы завершить чтение или запись
 
 
 === components/DotMatrixDisplay ===
