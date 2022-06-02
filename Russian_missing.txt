@@ -118,11 +118,6 @@ $14712417427860* Since this level is a tool and not a challenge, you can go to t
 $78806697204524* Delay
 
 
-=== trans/level_multiply_description ===
-
-$28761562806647* [center]Pairwise AND together each bit[/center]
-
-
 === levels/ai_showdown ===
 
 $14940806461794*

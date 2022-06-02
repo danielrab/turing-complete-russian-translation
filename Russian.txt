@@ -137,7 +137,7 @@ $22031255978461* 32 битный регистр
 
 === trans/level_multiply_description ===
 
-$28761562806647* [center]Pairwise AND together each bit[/center]
+$28761562806647* [center]Попарно AND каждый бит[/center]
 
 
 === misc/instr_delete ===
