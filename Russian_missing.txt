@@ -395,11 +395,6 @@ They cannot perform any calculation that requires looping or recursing an arbitr
 Turing complete machines on the other hand are as powerful as it is possible to be. A Turing complete machine may have a slow CPU, but it is powerful in the sense that there is no (computable) algorithm it can't perform.
 
 
-=== trans/map_assembly_challenges ===
-
-$31733554125775* ASSEMBLY CHALLENGES
-
-
 === levels/byte_mux ===
 
 $49305362057225* Your answer {your_answer}\nCorrect answer {correct_answer} (Input {input})
@@ -413,16 +408,6 @@ We might want to team you two up, since you compliment each other's shortcomings
 === trans/level_byte_constant_description ===
 
 $84789919073603* [center]Always output the number 164[/center]
-
-
-=== trans/architecture_2 ===
-
-$38100016313511* CPU ARCHITECTURE 2
-
-
-=== trans/map_basic_logic ===
-
-$75078723880086* BASIC LOGIC
 
 
 === components/Output8z ===
@@ -565,11 +550,6 @@ In the early days of computing, the main contender to two's complement was one's
 Another interesting representation, perhaps worth looking up is base -2, where the sign of the value of each digit alternates between positive and negative.
 
 
-=== misc/ui_panel/memory ===
-
-$65362728703588* MEMORY
-
-
 === trans/ide_add_assembly_header ===
 
 $94462268558066* [center]Add assembly code[/center]
@@ -584,11 +564,6 @@ $81929942356043* Level output
 === misc/solution_option ===
 
 $21618236951146* View solution
-
-
-=== trans/map_programming ===
-
-$44937904689376* PROGRAMMING
 
 
 === levels/divide ===
@@ -660,11 +635,6 @@ $35460636622618* Component factory
 === trans/options_status ===
 
 $35063135798145* Status
-
-
-=== trans/map_functions ===
-
-$83960548773205* FUNCTIONS
 
 
 === levels/Tower of Radioactive Alloy ===
@@ -827,11 +797,6 @@ Input[/color][/right]
 === trans/level_complete_stat_time ===
 
 $39203727515285* Time
-
-
-=== trans/map_memory ===
-
-$58330421958143* MEMORY
 
 
 === components/Rol8 ===
@@ -1719,11 +1684,6 @@ The landscape is 16 columns wide. Read the input 16 times to get the height of t
 Then output the total volume that the landscape can carry as the answer.
 
 
-=== trans/map_arithmetic ===
-
-$51337598329530* ARITHMETIC
-
-
 === levels/delay_level_check ===
 
 $23906582153175* Check wire
@@ -2392,11 +2352,6 @@ $54874717650167* Program alignment warning
 === misc/level_gate_unlocks_unknown ===
 
 $76731326010721* Unlocks something unknown
-
-
-=== trans/map_cpu_architecture ===
-
-$95559333192525* CPU ARCHITECTURE
 
 
 === trans/levels_negative_header ===

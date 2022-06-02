@@ -776,7 +776,7 @@ $68631919890554* Умножает два входа
 
 === trans/map_assembly_challenges ===
 
-$31733554125775* ASSEMBLY CHALLENGES
+$31733554125775* ЗАДАЧИ НА АССЕМБЛЕРЕ
 
 
 === levels/1_decoder ===
@@ -796,7 +796,7 @@ We might want to team you two up, since you compliment each other's shortcomings
 
 === trans/architecture_2 ===
 
-$38100016313511* CPU ARCHITECTURE 2
+$38100016313511* АРХИТЕКТУРА ЦПУ 2
 
 
 === trans/level_byte_constant_description ===
@@ -817,7 +817,7 @@ $58449766432492* Only outputs if the switch pin is [ON]
 
 === trans/map_basic_logic ===
 
-$75078723880086* BASIC LOGIC
+$75078723880086* БАЗОВАЯ ЛОГИКА
 
 
 === components/And3 ===
@@ -1130,7 +1130,7 @@ $54328660964287* Оконный режим
 
 === misc/ui_panel/memory ===
 
-$65362728703588* MEMORY
+$65362728703588* ПАМЯТЬ
 
 
 === misc/level_gate_component_icon ===
@@ -1183,12 +1183,12 @@ $21618236951146* View solution
 
 === misc/confirm_factory_reset ===
 
-$65699778604521* Удалить Всё?
+$65699778604521* Удалить Всё
 
 
 === trans/map_programming ===
 
-$44937904689376* PROGRAMMING
+$44937904689376* ПРОГРАММИРОВАНИЕ
 
 
 === components/Nand64 ===
@@ -1343,7 +1343,7 @@ $28345532918560* Universal gates
 
 === trans/map_functions ===
 
-$83960548773205* FUNCTIONS
+$83960548773205* ФУНКЦИИ
 
 
 === components/Input 1 Byte ===
@@ -1534,7 +1534,7 @@ $36195388998735* Общее
 
 === trans/map_memory ===
 
-$58330421958143* MEMORY
+$58330421958143* ПАМЯТЬ
 
 
 === trans/manual_text_matrix ===
@@ -3032,7 +3032,7 @@ $12903183841172*
 
 === trans/map_arithmetic ===
 
-$51337598329530* ARITHMETIC
+$51337598329530* АРИФМЕТИКА
 
 
 === trans/rotate ===
@@ -4117,7 +4117,7 @@ $76911045833478* Синхронизация Счёта
 
 === trans/map_cpu_architecture ===
 
-$95559333192525* CPU ARCHITECTURE
+$95559333192525* АРХИТЕКТУРА ЦПУ
 
 
 === components/ON ===
