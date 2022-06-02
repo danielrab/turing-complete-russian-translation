@@ -1,13 +1,3 @@
-=== trans/level_registers_description ===
-
-$73800316874022* [center]Create the wire that matches the code specifications[/center]
-
-
-=== trans/level_circumference_description ===
-
-$20154743351442* [center]Add conditions to the calculation codes[/center]
-
-
 === levels/turing_complete ===
 
 $15326252036920* Before, only code could influence memory, now memory must influence code. With the addition of conditional logic, our computer can run any algorithm, and calculate anything calculable.

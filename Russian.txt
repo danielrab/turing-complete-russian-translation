@@ -18,7 +18,7 @@ $46083799633716* {input_1} меньше чем {input_2}?
 
 === trans/level_registers_description ===
 
-$73800316874022* [center]Create the wire that matches the code specifications[/center]
+$73800316874022* [center]Создайте схему соответствующую спецификациям кодов[/center]
 
 
 === components/Output1Car ===
@@ -28,7 +28,7 @@ $12896765714603* Перенос
 
 === trans/level_circumference_description ===
 
-$20154743351442* [center]Add conditions to the calculation codes[/center]
+$20154743351442* [center]Добавьте условия к кодам вычислений[/center]
 
 
 === components/FullAdder ===
