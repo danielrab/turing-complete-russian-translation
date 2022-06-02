@@ -1,50 +1,11 @@
-=== components/Output 1 ===
-
-$12242923444593* Выход
-
-
-=== levels/RAM ===
-
-$17967666262990* На этом уровне, во-первых скопируй значения из входа 32 раза и сохрани их.  После этого, выведи эти значения в таком же порядке в каком и сохранил. Вывод до сохранения всех входных значений приведёт к провалу уровня.
-$13520918982355* Добавь блок ОЗУ, таким образом компьютер может оперировать дополнительными 256 байтами памяти. Тебе нужно найти как выбирать какие из 256 байтов будут использоваться. Выбери регистр и соедини его таким образом, чтобы его значение всегда было адресом ОЗУ.В будущем когда ты захочешь вывести или сохранить что-либо в ОЗУ,тебе нужно будет сначала скопировать адресс в этот регистр. 
-
-
-=== levels/byte_less_i ===
-
-$16755383054285* [center]Выясни, меньше ли первый вход чем второй.[/center]
-$19006843777401* Create a wire that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]SIGNED[/color].
-$46083799633716* {input_1} меньше чем {input_2}?
-
-
 === trans/level_registers_description ===
 
 $73800316874022* [center]Create the wire that matches the code specifications[/center]
 
 
-=== components/Output1Car ===
-
-$12896765714603* Перенос
-
-
 === trans/level_circumference_description ===
 
 $20154743351442* [center]Add conditions to the calculation codes[/center]
-
-
-=== components/FullAdder ===
-
-$57559382166174* Суммирует 3 бита. Выводит сумму и перенос. Adds 3 bits and outputs the sum and the carry
-$77669928463861* Полный сумматор
-
-
-=== misc/options ===
-
-$49251062339706* Настройки
-
-
-=== misc/ide_delete_program ===
-
-$87279416580516* Да
 
 
 === levels/turing_complete ===
@@ -54,46 +15,12 @@ $16583885726240* Yes you did it! I thought you were just this odd looking hairle
 $10510746154639* At tick 1 the program should load address 1.
 $10317244906317* No program found
 $14587485007736* Until this point all possible programs have been confined to running in order byte by byte.
-$19649119273248*
-The final thing we need to add is a mechanism for changing the program counter through [INSTRUCTIONS] when certain conditions are met.
-
-When the two largest bits are [ON][ON], we are in condition mode. In condition mode, the value in REG 3 is compared against the conditions defined by the lowest 3 bits in the instruction. If the condition is true, we overwrite the counter to the value in REG 0.
-Conditionally changing the counter means we can skip [INSTRUCTIONS] based on conditions or have [INSTRUCTIONS] run in a loop.
-
-Conditions:
-[OFF] [OFF] [OFF] Never
-[OFF] [OFF] [ON] If [color=#e49f44]REG 3[/color] = 0
-[OFF] [ON] [OFF] If [color=#e49f44]REG 3[/color] < 0
-[OFF] [ON] [ON] If [color=#e49f44]REG 3[/color] ≤ 0 
-[ON] [OFF] [OFF] Always
-[ON] [OFF] [ON] If [color=#e49f44]REG 3[/color] ≠ 0 
-[ON] [ON] [OFF] If [color=#e49f44]REG 3[/color] ≥ 0
-[ON] [ON] [ON] If [color=#e49f44]REG 3[/color] > 0
-
-These conditions correspond to the condition component that was saved in the component factory.
-
-
-=== components/Input 1 ===
-
-$12746117288689* Вход
 
 
 === components/Neg16 ===
 
 $17253409670931* Negate
 $57512333327652* Bitwise negates an input
-
-
-=== levels/Second Tick ===
-
-$14355963067874* Выведите [ON] только на втором такте.
-$17526582195506* Как вы помните, все эти испытания должны завершиться созданием работающего компьютера.
-$15726318553190* Это единственная причина, по которой мы Вас до сих пор не сожрали.
-$19277843280528*
- [color=#b72d41][b]Подсказка:[/b][/color]
- Двойное нажатие на компонент позволяет 
- перемещать его вместе с соединениями.
-$15296208528991* Существа, которые смогут завершить создание компьютера, по закону считаются разумными.
 
 
 === trans/manual_text_console ===
@@ -116,23 +43,8 @@ In color mode the lowest byte is the character, the next 3 bytes are the font co
 
 $14665712485657* This custom component can not be used as it has no area.
 $17077079648771* Components can be added, renamed or deleted using the level save system.
-$19551383617326*
-Welcome to the component factory, the wires you create in here will be usable as components in architecture levels.
-The wirery you create defines the behavior of the component and the layout defines its shape.
 $12516102012088* This component has no area and will not be usable in levels. Place components on the map to give it area.
 $14712417427860* Since this level is a tool and not a challenge, you can go to the level map and continue on when you want.
-$15549447390000* input/output components are in the same square. The custom component will be unusable since 2 pins can't overlap.
-
-
-=== misc/ui_panel/outputs ===
-
-$29350436761480* ВЫХОДЫ
-
-
-=== components/Register32 ===
-
-$65405398199118* 32 битная память
-$22031255978461* 32 битный регистр
 
 
 === trans/level_multiply_description ===
@@ -140,23 +52,14 @@ $22031255978461* 32 битный регистр
 $28761562806647* [center]Pairwise AND together each bit[/center]
 
 
-=== misc/instr_delete ===
-
-$91861509153454* Удалить
-
-
 === trans/manual_the_robot ===
 
 $92896462984546* The robot
 
 
-=== trans/level_bit_inverter_RichTextLabel2 ===
+=== components/64Ram ===
 
-$67127889187842*
-[right][color=#e49f44]Значение
-Инвертировать[/color]
-Желаемый выход
-Текущий выход[/right]
+$78790416494254* RAM
 
 
 === trans/level_conditions_description ===
@@ -164,26 +67,9 @@ $67127889187842*
 $62540112577327* [center]When the value meets the condition output [img]dialogue/on.png[/img], output [img]dialogue/off.png[/img] otherwise.[/center]
 
 
-=== components/64Ram ===
-
-$63410290483563* Маленькая по стоимости но медленная память
-$78790416494254* RAM
-
-
 === trans/manual_text_top_the_robot ===
 
 $50801318216470* The screen shows the robot and his surroundings.
-
-
-=== components/Nand16 ===
-
-$63870790225686* Побитово NAND два значения
-$56507506086622* 8 битовый NAND
-
-
-=== misc/ui_comment ===
-
-$69987793052607* Комментарий (Клик на проводе)
 
 
 === trans/ide_memory_address ===
@@ -193,16 +79,12 @@ $94594171568769* [center]Linked components[/center]
 
 === levels/delay_level ===
 
-$19986989895202*
-All components have a delay. And in a wire, the total delay is determined by the slowest path. This means you normally want to put things in parallel.
-In this level you must prove that you understand this concept.
 $11246430085016* Note, you can see the delay path by clicking the hour glass in the upper right corner.
-$12817338693402* The delay of any component is ultimately derived from the delay of the nand gate, which has a delay of 2. Build a wire with a delay of 6 and a nand cost of 5.
 
 
 === misc/specification_dialogue ===
 
-$93899425142858* Copy from {from} to {to}
+$54909668901048* Immediate
 $92046368194170* Condition
 $39935096343723* Never
 $52961346176405* {condition} copy [color=#dd6576]REG 0[/color] to counter
@@ -212,19 +94,7 @@ $98983752580592* Copy
 $25145891843959* Always
 $53665446068319* UNUSED
 $26521666422399* Calculate
-$54909668901048* Immediate
-
-
-=== components/Decoder2 ===
-
-$25937877347447* Переключается между четыремя значениями
-$21727998752868* 2 битовый декодер
-
-
-=== components/Mul16 ===
-
-$49880767097125* Умножает два входа 
-$62247409328063* Умножить
+$93899425142858* Copy from {from} to {to}
 
 
 === trans/level_negative_numbers_test_5 ===
@@ -234,7 +104,6 @@ $68419648206312* [center]Representation[/center]
 
 === components/Output1z ===
 
-$31478630391268* Выводит значение только если вход [ON]
 $84656390009725* Switched Output
 
 
@@ -263,11 +132,6 @@ Breakpoints can also be added to any of the linked components, pausing the progr
 Finally, values can be specified in binary with the prefix 0b (so 5 could be 0b0101) and hex with the prefix 0x (so 15 would be 0x0f)
 
 
-=== trans/options_pipette_wire ===
-
-$96339976117958* Пипетка для провода
-
-
 === misc/add_assembly_64bit ===
 
 $33233688912123* [center]Add assembly code[/center]
@@ -288,30 +152,18 @@ $11168613697835* Toggles between two values
 $22167405631310* 8 Bit Mux
 
 
-=== components/SegmentDisplay ===
-
-$56761198694928* Good for displaying numbers
-$90582128204153* 7 Segment Display
-
-
-=== components/Switch32 ===
-
-$70717074742809* 32 Bit Switch
-$93061034213009* Toggles a value
-
-
-=== components/Or16 ===
-
-$76807373575014* Побитово OR два значения
-$62695381407925* 16 битный OR
-
-
 === trans/level_byte_adder_question3 ===
 
 $88075700159266*
 [right]Carry IN
 Byte 1
 Byte 2[/right]
+
+
+=== components/Switch32 ===
+
+$70717074742809* 32 Bit Switch
+$93061034213009* Toggles a value
 
 
 === trans/level_complete_wire_comments ===
@@ -321,17 +173,15 @@ $92673421413755*
 [color=#cccccc][i]Add comments to your wires.[/i][/color]
 
 
+=== components/SegmentDisplay ===
+
+$56761198694928* Good for displaying numbers
+$90582128204153* 7 Segment Display
+
+
 === trans/schematic_new_folder_name ===
 
 $86236104278688* New folder
-
-
-=== levels/Nor GATE ===
-
-$11362258372706*
-Большинство существ на этой вашей Земле агрессивны и не могут вести себя разумно.
-
-Чтобы добиться успеха, вы должны научиться мыслить логически, без эмоций.
 
 
 === trans/level_complete_stats ===
@@ -344,12 +194,6 @@ $65428404547905* Stats
 $25068965294593* [center]Get to the door of the maze[/center]
 
 
-=== components/Or64 ===
-
-$50631450923181* Побитово OR два значения
-$62930122175674* 64 Битный OR
-
-
 === trans/manual_text_bytes ===
 
 $73333514253412*
@@ -357,11 +201,6 @@ This game asks you to build an 8 bit computer.  Practically this would normally 
 To alleviate tedious busywork, you are given the notion of a byte, which is just a virtual bundle of 8 bits.
 
 The state of either a byte input / output or wire line is represented by a number, instead of the red or green color.
-
-
-=== trans/manual_robot_controls ===
-
-$94513149242653* Управление роботом
 
 
 === misc/watchable_state ===
@@ -374,22 +213,6 @@ $58678516111149* Link components
 $10186190492148* ALT click to move wire head
 
 
-=== levels/wide_instrucitons ===
-
-$13709034294291* Сохраняй на чётьных тактах, выводи оба байта на нечётных.
-$17693995237077* Выведи оба байта
-$19068760748550* Выводи 0 на чётных тактах
-$65009239162932* Правильные выходы были {a} и {b}
-$19203973423116* Создай устройство которое сохраняет выход программы на чётных тактах и выводит оба байта на нечётных.
-$17409169138995* Сохрани байт
-
-
-=== components/Xnor64 ===
-
-$64937916903935* Побитово XNOR два значения
-$47129074382309* 64 Битный XNOR
-
-
 === levels/bit_switch ===
 
 $56295261249455*
@@ -399,43 +222,6 @@ If components output different values on the same wire, you get an error. Howeve
 
 This means that more than 1 of these grey output pins can connect to the same wire and not cause an error, as long as only one of them is enabled at a time.
 $42793594302151* Using 2 NOT gates and 2 Switches, build an XOR gate.
-
-
-=== components/Nor32 ===
-
-$82743668258816* Побитово NOR два значения
-$82121937858245* 32 Битный NOR
-
-
-=== components/Not64 ===
-
-$74829633052959* Побитово инвертирует 64 бита
-$81823773658328* 64 Битный NOT
-
-
-=== components/Stack ===
-
-$71022099146246* Память в которую можно помещать и извлекать
-$47202418972371* Стэк
-
-
-=== ui/schematic_ui/confirm_delete ===
-
-$46014905606975* Да
-
-
-=== trans/levels_saving_bytes_text ===
-
-$36838510526259*
-[right]Действие
-Желаемый выход
-Текущий выход
-[/right]
-
-
-=== misc/sandbox_toggle ===
-
-$30516879701896* Песочница
 
 
 === trans/manual_side_the_robot ===
@@ -479,31 +265,6 @@ Shifting by 3: [color=#e49f44]90 shl 3[/color]
 [OFF] [ON] [OFF] [ON] [ON] [OFF] [ON] [OFF] would become:
 [ON] [ON] [OFF] [ON] [OFF] [OFF] [OFF] [OFF]
 $18137790657923* In addition to giving you a shift left component, we also had the intern create a shift right component. All he had to do was to create the mirror version of this schematic.
-$18518173140953* I strongly recommended that you add [color=#e49f44]shift left[/color] and [color=#e49f44]shift right[/color] to your hardware for future levels.
-
-
-=== misc/restore_overture ===
-
-$52008982212566* Сброс
-
-
-=== trans/credit_header ===
-
-$21717110565858* Титры
-
-
-=== main_menu/sandbox_button ===
-
-$16857608955464* Песочница
-
-
-=== trans/_second_tick_RichTextLabel2 ===
-
-$11680718497014*
-[right][color=#e49f44]Вход 1
-Вход 2[/color]
-Желаемый выход
-Текущий выход[/right]
 
 
 === trans/level_complete_level_map ===
@@ -513,17 +274,10 @@ $20801641140962*
 [color=#cccccc][i]Click "[color=#e49f44]Onwards[/color]" and you will see[/i][/color]
 
 
-=== levels/xnor ===
-
-$11090938799865* Создайте "инвертированый" XOR gate, назовём его XNOR.
-
-
 === levels/bit_inverter ===
 
-$15769391111364* When 
 $15272914096446* This level is exactly the same as the XOR one you solved before. Remember no matter what we tell you the goal of the level is, the real truth is in the truth table.
 $14944872827527* Despite the funny background you figured out this was just the XOR gate in disguise! Well done.
-$16125025706490* Hmm, perhaps you have studied the behavior of the delay buffer a little bit too well...
 $13224963076378* We are experimenting with how backgrounds influence cognitive functions in earthlings.
 
 
@@ -533,27 +287,9 @@ $12901484249817* Can you fit 4 bytes of memory in this limited space?
 $14218335256117*
 In our advanced civilization, forcing prisoners to do extremely menial tasks is slavery and is technically illegal.
 	  That is why we instead had our intern create the 256 byte version of your component.
-$15908016538045* ЗНАЧЕНИЕ
 $16196915566111* 0
 $14259545926196* A
-$12306130287676*
-In this level you have to build a wire that 
-can [SAVE] or [LOAD] from 4 different bytes of memory.
-
-You are given 1 bit that determines if you are to [LOAD]. Another bit determines if you are to [SAVE] and it comes with a corresponding value.
-Additionally, you have 2 address bits. 
-
-With 2 bits, there are 4 combinations, one for each byte of memory in this level.
-[i][tip]Join wires in the middle and use right angles or this will be a mess.[/tip][/i]
-[i][tip]Spacebar rotates components.[/tip][/i]
-$18084166025569* Ничего
-$13082830776248* НЕ ЗАГРУЖАТЬ
 $12933801309767* A
-
-
-=== trans/options_confirm_reset ===
-
-$55371048386984* Right
 
 
 === components/Shr64 ===
@@ -562,10 +298,9 @@ $93124177265670* Shifts the bits of an input right
 $73798355428095* Shift right
 
 
-=== components/Constant64 ===
+=== trans/options_confirm_reset ===
 
-$92424468899005* Константное значение
-$25858905835416* 64 битная Константа
+$55371048386984* Right
 
 
 === component_panels/LatencyRam ===
@@ -576,33 +311,9 @@ This kind of RAM would add 1024 delay to the circuit, but instead of extending t
 Practically this means that [color=#e49f44]reading takes {ticks} ticks[/color] (since your circuit has {delay} delay).
 
 
-=== misc/ui_panel/left_inputs ===
-
-$16586225094516* ВХОДЫ
-
-
 === trans/manual_console ===
 
 $73523750891893* Console
-
-
-=== components/OutputCounter ===
-
-$52247325526438* Счётчик
-
-
-=== trans/always_on_RichTextLabel2 ===
-
-$86547293707045*
-[right][color=#ffa502]Вход[/color]
-Желаемый выход
-Текущий выход[/right]
-
-
-=== components/Xnor16 ===
-
-$73699169812942* Побитово XNOR два значения
-$40088995721509* 16 Битный XNOR
 
 
 === components/Screen ===
@@ -617,43 +328,11 @@ $20291717268875* Shifts the bits of an input right
 $31674686871821* Shift right
 
 
-=== components/Off ===
-
-$61860786587357* ВЫКЛ
-$72749460799924* Всегда [OFF]
-
-
-=== misc/ide_control_link ===
-
-$80788685813993* Управление Роботом
-
-
 === levels/Calibrating Laser Cannons ===
 
-$11331851878040* Also you now have access to assembly programming. It allows you to add names for instructions, so you can for example type 
-$11023157447564*
-×π×r
-
-r is the input.
-And you can approximate π as 3.
-
-Send the answer to output when it has been calculated.
 $15260627694444* In order to calibrate said laser, we want you to calculate the circumference of the asteroids using an advanced equation.
 $12669851602178* [center]Calculate the circumference of the asteroids[/center]
-$21601709632806* What is 2π × {radius}?
 $16954408093587* On our ship we naturally shoot incoming asteroids with lasers.
-
-
-=== levels/circular_dependency ===
-
-$16336401898647* ТЕСТ 1 из 2
-$13880985462901* Создайте цепь, в которой Вход компонента зависит от его собственного Вывода
-$18010308863615*
-Создайте «круговую зависимость». Это схема, в которой вход компонента зависит от его собственного выхода. В ситуации круговой зависимости невозможно определить выход компонента, потому что сначала нужно определить вход, который зависит от выхода и т. д. (потому и называется «круговой»).
-
-Эта ситуация обычно не разрешается в остальных уровнях, но в этом уровне цель состоит в том чтобы его создать, чтобы вы поняли что это такое прежде чем двигаться далее.
-$13520037133129* Не уверен, что это приносит пользу ученикам, но учителя в полном восторге!
-$11316928751185* Наша система образования, по давней традиции, подразумевает обман учеников, мы часто просим их делать то чего делать вообще нельзя и наблюдаем за эффектом. 
 
 
 === misc/options_Score Sync ===
@@ -666,26 +345,9 @@ $45371978167502* Score sync
 $26276191141664* Use keyboard to pan
 
 
-=== components/Xnor32 ===
-
-$17419057954798* Побитово XNOR два значения
-$52489451755306* 32 Битный XNOR
-
-
 === trans/manual_send_otuput_robot ===
 
 $65542429897149* [center]Send output to control the robot[/center]
-
-
-=== components/Or3 ===
-
-$17576327690867* 3 пиновый OR
-$99630419947500* 3 Пиновый OR
-
-
-=== ui/top_bar/scores ===
-
-$56840961921536* NAND SCORE: \nDELAY SCORE:
 
 
 === trans/level_binary_search_description ===
@@ -693,39 +355,14 @@ $56840961921536* NAND SCORE: \nDELAY SCORE:
 $11976224688780* [center]Recover the passcode[/center]
 
 
-=== components/Output1Sum ===
-
-$90026011029075* Сумма
-
-
-=== components/Input64 ===
-
-$31709565019284* 64 битный вход
-
-
-=== components/Input 4 ===
-
-$11447837612693* Вход
-
-
-=== trans/level_component_factory_Label2 ===
-
-$37347658035959* Component preview
-
-
 === trans/level_binary_programming_description ===
 
 $66247694103179* [center]Add 5 to the input[/center]
 
 
-=== trans/or_gate_3_RichTextLabel2 ===
+=== trans/level_component_factory_Label2 ===
 
-$56903547636751*
-[right][color=#e49f44]Вход 1
-Вход 2
-Вход 3[/color]
-Желаемый выход
-Текущий выход[/right]
+$37347658035959* Component preview
 
 
 === levels/Add 5 ===
@@ -740,11 +377,6 @@ $80639633676917* Input:
 $12078933051174* But since you don't know how to program it yet, you are not quite ready for that.
 $11074247151096* Notice that the immutable red register components have been replaced with a custom component with identical functionality.
 $18134632592542* You have built your computer, but to win the competition you still have to finish the maze.
-
-
-=== trans/not_gate_click_next2 ===
-
-$20820887361993* Нажми "Следующий Такт" чтобы увидеть
 
 
 === components/Output16z ===
@@ -768,20 +400,9 @@ They cannot perform any calculation that requires looping or recursing an arbitr
 Turing complete machines on the other hand are as powerful as it is possible to be. A Turing complete machine may have a slow CPU, but it is powerful in the sense that there is no (computable) algorithm it can't perform.
 
 
-=== components/ByteMul ===
-
-$56549841656852* Умножить
-$68631919890554* Умножает два входа
-
-
 === trans/map_assembly_challenges ===
 
 $31733554125775* ASSEMBLY CHALLENGES
-
-
-=== levels/1_decoder ===
-
-$16057674753878* Создайте компонент, который сможет переключать "поток" между двумя контактами.
 
 
 === levels/byte_mux ===
@@ -794,25 +415,14 @@ Even though he did not pass our tests we decided to keep the dog. Unlike most ea
 We might want to team you two up, since you compliment each other's shortcomings well.
 
 
-=== trans/architecture_2 ===
-
-$38100016313511* CPU ARCHITECTURE 2
-
-
 === trans/level_byte_constant_description ===
 
 $84789919073603* [center]Always output the number 164[/center]
 
 
-=== misc/component_factory_toggle ===
+=== trans/architecture_2 ===
 
-$55499239951858* Завод компонентов
-
-
-=== components/Output8z ===
-
-$16915419621070* Switched Output
-$58449766432492* Only outputs if the switch pin is [ON]
+$38100016313511* CPU ARCHITECTURE 2
 
 
 === trans/map_basic_logic ===
@@ -820,33 +430,10 @@ $58449766432492* Only outputs if the switch pin is [ON]
 $75078723880086* BASIC LOGIC
 
 
-=== components/And3 ===
+=== components/Output8z ===
 
-$19664974941910* 3 Пиновый AND
-$86839706221116* 3 пиновый AND
-
-
-=== misc/reset ===
-
-$39440928972984* Сброс (F4)
-
-
-=== components/Or32 ===
-
-$92752025948920* Побитово OR два значения
-$40180779432911* 32 Битный OR
-
-
-=== components/NEG ===
-
-$88379907297327* Инвертор
-$62021716182809* Побитово инвертирует вход
-
-
-=== components/Add32 ===
-
-$91616185859914* Суммирует два значения
-$64111401384153* Сумма
+$16915419621070* Switched Output
+$58449766432492* Only outputs if the switch pin is [ON]
 
 
 === trans/options_disagree ===
@@ -874,17 +461,6 @@ $14036822471924* {days} days ago
 $65105856275770* [center][color=#c5c5c5]Click to toggle the bits[/color][/center]
 
 
-=== trans/options_redo ===
-
-$50610605761210* Вернуть
-
-
-=== components/Counter32 ===
-
-$87245349851451* 32 Битный Счётчик
-$92765669828982* Увеличивается каждый тик, если не перезаписан
-
-
 === trans/options_robot_up ===
 
 $92522280178363* Up
@@ -893,61 +469,16 @@ $92522280178363* Up
 === components/NOT ===
 
 $34453052824732* NOT
-$90844421681709*
-Инвертирует вход
-[table=3]
-[cell]Вход[/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Выход[/cell][cell][ON][/cell][cell][OFF][/cell]
-[/table]
-
-
-=== levels/Crude Awakening ===
-
-$12508086025944*
-Мы устроим Вам проверку.
-
-Правила просты, постройте действующий компьютер или мы вас сожрём. Удачи!
-$16321577947087* Поздравляем, вы были похищены!
-$19257730429557*
-Сигнал течёт от входа к выходу.
-В верхнем левом углу, под "Вход" есть зелёная иконка,
-нажмите на неё чтобы отключить компонент "Вход".
-$17675121574388* Обратите внимание, что выход выключился.\nЭто потому, что сигнал прекатил течь от входа.
-
-
-=== misc/program_edit_button ===
-
-$38481453712356* Редактироать память
-
-
-=== misc/wire_draw ===
-
-$59836059268386* Новый провод (Горячая клавиша: Alt и потянуть)
 
 
 === levels/byte_or ===
 
 $10368115829346* But actually it is OK because you lived good lives in the wild and we don't let the meat go to waste.
-$15923734370936*
-OR каждый бит входных байтов и выведите результат.
-
-Например:
-[code]
-ВХОД 1 [ON][ON][OFF][OFF][OFF][OFF][OFF][OFF]
-ВХОД 2 [OFF][OFF][OFF][OFF][ON][ON][OFF][OFF]
-ВЫХОВ  [ON][ON][OFF][OFF][ON][ON][OFF][OFF][/code]
-$15226896485081* You may think it is unethical to eat all the earthlings that don’t win the competition?
 
 
 === trans/level_registers_code ===
 
 $40063003736243* [center]OR[/center]
-
-
-=== components/And16 ===
-
-$56198785587874* Побитово AND два значения
-$26727645933234* 16 битный AND
 
 
 === trans/instrucitons_header ===
@@ -960,37 +491,16 @@ $14831276667273* [center]Instructions[/center]
 $20464862486158* [center]Copy the value from the correct input, to the correct output[/center]
 
 
-=== misc/option_reset ===
-
-$15557473522933* Reset
-
-
-=== misc/instr_clone ===
-
-$69090690657232* Клонировать
-
-
-=== misc/inst_new_rule ===
-
-$41064305626707* Новое правило
-
-
-=== levels/always_on ===
-
-$17712385236630* Создайте цепь на выходе которой всегда [ON].
-
-
-=== components/And64 ===
-
-$80790829001391* 64 битный AND
-$89424947351456* Побитово AND два значения
-
-
 === trans/level_complete_hex ===
 
 $94261690850981*
 [b]Hexadecimal[/b]
 [color=#cccccc][i]Toggle between signed, unsigned and hex numbers[/i][/color]
+
+
+=== misc/option_reset ===
+
+$15557473522933* Reset
 
 
 === trans/level_complete_gate ===
@@ -1000,38 +510,11 @@ $99373213759665*
 [color=#cccccc][i]You can now view the gate score of  wires and components.[/i][/color]
 
 
-=== components/ByteEqual ===
-
-$35668435514829* Проверяет если два входа равны
-$39369982838671* Равно
-
-
 === levels/binary_racer ===
 
-$16076448195257* Это испытание, в последнее время, стало моим любимым. Конвертация десятичных чисел в двоичные на скорость.
 $29718660090112* Wrong answer
-$37319690622142* Хоршая работа, ты дошел до {current_level}-го уровня.
-$19111664765554*
-Переключайте биты (степени числа "два") внизу, чтобы составить десятичное число.
-
-Пройдите хотя бы 3 уровня!
-
-(Нажмите [color=#e63e5b][url=accessibility_mode]здесь[/url][/color] чтобы играть без таймера.
 $11176073682097* What is {number} in binary?
-$71866932309393* Ты дошел до {level} уровня!
 $37093663674348* Level {x}
-
-
-=== components/Mul64 ===
-
-$72281597169494* Умножить
-$11665562499390* Перемножает два входа
-
-
-=== levels/xor_gate ===
-
-$14093358515620* Эту штуку ещё называют XOR gate. Это довольно сложный уровень, не пугайтесь если не найдёте ответ сразу.
-$19182751521677* В прошлый раз мы строили цепь, которая выводила [ON] на втором такте. А сейчас Вам предстоит построить цепь, которая будет выдавать [ON] на втором и третьем такте.
 
 
 === components/Bidirectional64 ===
@@ -1047,15 +530,6 @@ $78783902500954*
 [color=#cccccc][i]Find it in the main menu.[/i][/color]
 
 
-=== levels/bit_adder ===
-
-$13109388951000* Для познания окружающего мира мы, как правило, используем числа. Неплохо бы научить ваш потенциальный компьютер считать.
-$16564356062672*
-Давайте попробуем воспринимать [OFF] и [ON] как [ZERO] и [ONE], соответственно. Вычислите сумму Вводов(INPUTS) в двоичном формате, результат(SUM) будет [ZERO] или [ONE].
-
-Как и в обычном сложении, если результат не помещается в один разряд, установите перенос разряда(CAR) в значение [ONE].
-
-
 === trans/options_robot_right ===
 
 $70185788176428* Right
@@ -1064,12 +538,6 @@ $70185788176428* Right
 === trans/options_robot_left ===
 
 $73654791275689* Left
-
-
-=== components/Maker32 ===
-
-$82420653444614* Превращает 32 бита в 4 байта
-$85308499118176* 32 битный производитель
 
 
 === trans/options_inline_latches ===
@@ -1082,30 +550,9 @@ $53886441687616* Allow circular recipes
 $57358078712675* Save
 
 
-=== levels/double_number ===
-
-$74261206899285* Your result {input} × 2 = {your_answer}\nCorrect result {input} × 2 = {correct_answer}
-$19766257822639*
-Ввод и Вывод на этом уровне используют БАЙТы вместо БИТов. Один из двух новых компонентов умеет "разбирать" БАЙТ на БИТы, а второй наоборот "собирает" БИТы в БАЙТ.
-
-Используя эти компоненты придумайте как удвоить число на Входе (число на входе не больше 127).
-
-
-=== components/Hdd ===
-
-$75645507178296* Жёсткий диск
-$78558655732992* Постоянная память
-
-
 === components/LessI32 ===
 
-$87609006355839* Меньше (Знаковое)
 $99994775592318* Checks if one input is less than the other
-
-
-=== ui/state_ui/title_screen/exit ===
-
-$12639868461113* Выйти
 
 
 === trans/map_available ===
@@ -1123,34 +570,14 @@ In the early days of computing, the main contender to two's complement was one's
 Another interesting representation, perhaps worth looking up is base -2, where the sign of the value of each digit alternates between positive and negative.
 
 
-=== trans/options_window_mode ===
-
-$54328660964287* Оконный режим
-
-
 === misc/ui_panel/memory ===
 
 $65362728703588* MEMORY
 
 
-=== misc/level_gate_component_icon ===
-
-$83440578602427* Разблокирует компонент
-
-
 === trans/ide_add_assembly_header ===
 
 $94462268558066* [center]Add assembly code[/center]
-
-
-=== levels/any_doubles ===
-
-$16587030847545* Поскольку мы очень продвинутая раса, мы давно изобрели машину для сортировки носков. К сожалению, в машине сломалась схема, которая определяет пары носков.
-$14373083988184*
-На этом уровне 4 входа.
-Установите выход в [ON] когда 2 или больше входов установлены в [ON].
-
-[tip]Не "перемудрите" на этом уровне.[/tip]
 
 
 === components/Output 1 + 1B ===
@@ -1159,31 +586,9 @@ $43917122084061* Accepts output for levels
 $81929942356043* Level output
 
 
-=== components/Neg64 ===
-
-$88458190974122* Инвертор
-$52206550732945* Побитово инвертирует вход
-
-
-=== components/DelayLine1 ===
-
-$30487770736917* Линия Задержки
-$38206009264853* Выводит то что получила на вход на предыдущем такте
-
-
-=== ui/options/Robot Controls ===
-
-$58799802152286* Управление Роботом
-
-
 === misc/solution_option ===
 
 $21618236951146* View solution
-
-
-=== misc/confirm_factory_reset ===
-
-$65699778604521* Удалить Всё?
 
 
 === trans/map_programming ===
@@ -1191,35 +596,8 @@ $65699778604521* Удалить Всё?
 $44937904689376* PROGRAMMING
 
 
-=== components/Nand64 ===
-
-$27197172037913* 64 Битный NAND
-$66590147372797* Побитово NAND два значения
-
-
-=== components/DelayLine32 ===
-
-$56616725618490* Выводит то что получила на вход на предыдущем такте
-$49292282287971* 32-х битовая Линия Задержки
-
-
-=== misc/run_fast ===
-
-$49363678936533* Перемотка Тактов (правый клик: изменить целевую скорость)
-
-
-=== components/DelayLine16 ===
-
-$61925612221077* 16-и битовая Линия Задержки
-$65706144678496* Выводит то что получила на вход на предыдущем такте
-
-
 === levels/divide ===
 
-$16412715945615* [center]Разделите одно число на другое[/center]
-$14525870461271*
-Целочисленно разделите два числа чтобы найти частное и остаток. Рассмотрим дробь 7/3. 3 умещается в 7 два(2) раза, при этом, 1 остается "в остатке". В этом случае 2 принятно называть [color=#e49f44]ЧАСТНОЕ[/color], а 1 [color=#e49f44]ОСТАТКОМ ОТ ДЕЛЕНИЯ[/color].\nВ этом задании вы получаете числитель (например 7) и знаменатель (пусть будет 3), и мы ожидаем увидеть ЧАСТНОЕ (2) и ОСТАТОК (1).
-В этом упражнении, вам сначала даётся делимое (7 в примере) а затем делитель (3) и от вас ожидается вывести частное (2) а затем остаток (1).
 $76454016047920* {numerator}/{denominator} = {quotient}, remainder {remainder}
 
 
@@ -1245,11 +623,6 @@ $24976506406652* ROM
 $81743370431597* Read only memory (outside the sandbox)
 
 
-=== components/Output 4 ===
-
-$90190739202646* Выход
-
-
 === levels/Delicious Order ===
 
 $10160261151833* First read the 15 deliciousness scores from the input one by one. Your task is to output them in sorted order, smallest to largest.
@@ -1262,9 +635,9 @@ $34603983706314* Checks if the two inputs are equal
 $82876546747608* Equal
 
 
-=== trans/level_tick_tock_description ===
+=== trans/level_byte_adder_you_carry_text3 ===
 
-$34658332565777* [center]Add 1 to the counter, or overwrite it[/center]
+$65048723622767* Number
 
 
 === components/IndexByte ===
@@ -1273,9 +646,9 @@ $27264669944539* Byte Indexer
 $54699455184164* Extracts a byte from a wire
 
 
-=== trans/level_byte_adder_you_carry_text3 ===
+=== trans/level_tick_tock_description ===
 
-$65048723622767* Number
+$34658332565777* [center]Add 1 to the counter, or overwrite it[/center]
 
 
 === components/Bidirectional16 ===
@@ -1289,15 +662,14 @@ $99604485981015* Can circumvent certain circular dependency errors
 $35460636622618* Component factory
 
 
-=== components/Register ===
-
-$19705753304166* 8 битная память
-$68946767861738* 8 Битный Регистр
-
-
 === trans/options_status ===
 
 $35063135798145* Status
+
+
+=== trans/map_functions ===
+
+$83960548773205* FUNCTIONS
 
 
 === levels/Tower of Radioactive Alloy ===
@@ -1341,28 +713,11 @@ move(disk_nr, source, dest, spare)[/color][/code]
 $28345532918560* Universal gates
 
 
-=== trans/map_functions ===
-
-$83960548773205* FUNCTIONS
-
-
-=== components/Input 1 Byte ===
-
-$40943344093513* Вход
-
-
 === trans/wire_comment ===
 
 $41481492318983* Wire comment
 $87836369268219* Save
 $34083666001769* Wire comment
-
-
-=== levels/odd_number_of_signals ===
-
-$16173829560311* Используя не более трёх компонентов, установите Вывод в значение [ON], когда количество Вводов [ON] нечётное.
-$85589489148198* Использовано \n{nr} из 3 компонетов.
-$18288998816979* Для этого уровня есть [color=#e63e5b][url=odd_number]подсказка.[/url][/color] Используйте, если вдруг "застряли".
 
 
 === trans/manual_text_binary ===
@@ -1381,11 +736,6 @@ To represent 6 we can simply add 4 and 2:
 Addition, multiplication and everything else works the same as base 10, except you carry when you reach 2 instead of 10.
 
 
-=== misc/wire_color ===
-
-$78287906849040* Цвет Провода
-
-
 === trans/level_alu1_description ===
 
 $90245779080897*
@@ -1397,12 +747,6 @@ the two bytes together[/center]
 
 $26811947547688* Programmable memory component
 $55594749714809* Program
-
-
-=== levels/3_decoder ===
-
-$19231618567710* With 3 bits of input there are 8 combinations. Make a wire that selects 1 output for each of the 8 combinations. No more or less than 1 bit should be [ON] at a time.
-$14293122338496* We had our intern add a 
 
 
 === levels/constants ===
@@ -1417,17 +761,6 @@ When in immediate mode the whole byte is interpreted as a number that we [SAVE] 
 === trans/ide_binary_header ===
 
 $22615032668969* Binary Editor
-
-
-=== trans/options_select_all ===
-
-$21380256293472* Выделить всё
-
-
-=== components/BNOT ===
-
-$53686485035156* 8 Битный NOT
-$26822227902426* Побитово инвертирует 8 битов
 
 
 === trans/level_registers_text ===
@@ -1457,20 +790,6 @@ $49583010717958* Rotates the bits of an input right
 $40288888375581* Components
 
 
-=== levels/Arithmetic Engine ===
-
-$16434409050195*
-Add addition and subtraction to your wire.
-
-Instructions:
-[code][color=#87a8c8]0 OR
-1 NAND
-2 NOR
-3 AND
-4 ADD
-5 SUB[/color][/code]
-
-
 === levels/capitalize ===
 
 $14894954428144*
@@ -1484,57 +803,6 @@ $11201813578269* Output:
 === levels/byte_equal ===
 
 $17156565273196* Output [ON] when both inputs are the same.
-
-
-=== trans/levels_counting_signals_RichTextLabel2 ===
-
-$34604121212779*
-[right]Вход 1
-Вход 2
-Вход 3
-Вход 4[color=#e49f44]
-Желаемый выход
-Текущий выход[/color][/right]
-
-
-=== trans/level_program_text ===
-
-$38014836341470*
-[right][color=#e49f44]Code
-Input[/color][/right]
-
-
-=== trans/level_complete_stat_time ===
-
-$39203727515285* Time
-
-
-=== components/Rol8 ===
-
-$79612280948390* Rotate left
-$55557725551789* Rotates the bits of an input left
-
-
-=== components/OR ===
-
-$13013154620359*
-[ON] когда хоть один из входов [ON]
-[table=5]
-[cell]Вход 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Вход 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Выход[/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell][cell][ON][/cell]
-[/table]
-$97247779246257* OR
-
-
-=== ui/options/General ===
-
-$36195388998735* Общее
-
-
-=== trans/map_memory ===
-
-$58330421958143* MEMORY
 
 
 === trans/manual_text_matrix ===
@@ -1554,6 +822,34 @@ Rotating the component, you get 8x6 pixels, which has a nice 4:3 aspect ratio an
 Instead, by having 2 enable pins, one wire can enable a whole row and another a whole column. This way, a single component can be selected by its unique row and column combination. Further, fitting the rest of the data on the same wires, means that the horizontal and vertical gaps only need to be 1 square wide. This component visually takes up half a square extra on all sides, such that these components can be tiled up pixel perfectly, with 1 square hidden between them for running wires.
 
 
+=== trans/level_program_text ===
+
+$38014836341470*
+[right][color=#e49f44]Code
+Input[/color][/right]
+
+
+=== trans/level_complete_stat_time ===
+
+$39203727515285* Time
+
+
+=== trans/map_memory ===
+
+$58330421958143* MEMORY
+
+
+=== components/Rol8 ===
+
+$79612280948390* Rotate left
+$55557725551789* Rotates the bits of an input left
+
+
+=== components/OR ===
+
+$97247779246257* OR
+
+
 === trans/options_robot_shoot ===
 
 $52956877721342* Shoot
@@ -1562,18 +858,6 @@ $52956877721342* Shoot
 === trans/levels_double_the_number ===
 
 $41609125516676* [center]Double the number[/center]
-
-
-=== levels/not_gate ===
-
-$19085882338208* [b]Инструкция:[/b]\nПравая кнопка сбрасывает выбор.
-$10042327259531* Теперь, когда NAND-gate разблокирован, пришло время построить электрическую цепь.
-$14042842216181* На предыдущем уровне Вы заполняли таблицу в соответствии с цепью. Теперь же, наоборот, Вы будете строить цепь глядя на таблицу.
-$10604720087324* [b]Инструкция:[/b]\nПостройте цепь в соответствии с таблицей\nНажмите [i][/i] (Следующий такт) в верхнем левом углу для проверки каждой комбинации вводов.\nУровень будет пройден, когда обе комбинации пройдут тест.
-$19798729463813* Используя NAND, постройте NOT-gate
-$18442122157391* [b]Инструкция:[/b]\nЧтобы сбросить выбор компонента кликните левой кнопкой на пустом месте.
-$12880883686501* [b]Инструкция:[/b]\nВыберете компонент NAND в правом верхнем углу и разместите его на схеме.
-$18780831606716* [b]Инструкция:[/b]\nПеремещайте курсор с зажатой левой кнопкой для добавления проводов.
 
 
 === trans/level_delay_level_description ===
@@ -1619,13 +903,6 @@ These are the bit patterns for each [color=#c54d5e]source[/color] and [color=#e4
 [ON] [ON] [ON]  UNUSED
 
 To get a more intuitive understanding of the requirements, click the [INSTRUCTION] icon in the upper left corner.
-$14823499195861* Open 
-$15888345020710*
-In this level you need to create a wire which can copy from a [color=#c54d5e]source[/color] to a [color=#e49f44]destination[/color]. 
-
-The instruction byte in this level determines the [color=#c54d5e]source[/color] and the [color=#e49f44]destination[/color]. 
-
-Bits 1, 2 and 3 give the [color=#e49f44]destination[/color]. Bits 4, 5 and 6 give the [color=#c54d5e]source[/color].
 $14108238519744* Time to create your master project, implementing the [color=#e49f44]OVERTURE[/color] computer architecture. This will be an actual Turing complete machine, a true computer in every way!
 $14411286553593* Finally, the input and output components now have an additional pin. Set that pin [ON] when you want to read from input, or copy to output.
 $14041158687959*
@@ -1634,25 +911,10 @@ $14041158687959*
 Additionally, this map has a dedicated input component, which can be the [color=#c54d5e]source[/color] and an output component, which can be the [color=#e49f44]destination[/color].
 
 
-=== components/Output 2 ===
-
-$73255344581755* Выход
-
-
 === components/Nor16 ===
 
 $57921392198825* Bitwise NOR two values
 $69522380057631* 16 Bit NOR
-
-
-=== components/Input32 ===
-
-$10677927084411* Вход
-
-
-=== components/Input 1B CODE ===
-
-$16878300327380* Инструкция
 
 
 === misc/level_gate_manual_icon ===
@@ -1660,22 +922,10 @@ $16878300327380* Инструкция
 $22002156022920* Unlocks manual entry
 
 
-=== components/LatencyRam ===
-
-$74156976676497* Мульти-тактовое ОЗУ
-$31261866779127* Низкая задержка, но требует несколько тактов чтобы завершить чтение или запись
-
-
 === components/DotMatrixDisplay ===
 
 $18651725958642* 6x8 Dot Matrix Display
 $71512568789377* 6x8 pixel display
-
-
-=== components/BOR ===
-
-$19406015796751* Побитово OR два значения
-$54190050450484* 8 Битный OR
 
 
 === components/Ror32 ===
@@ -1686,8 +936,6 @@ $50013003040535* Rotates the bits of an input right
 
 === levels/Masking Time ===
 
-$19351773688761* Тактов осталось: {ticks_left}  Вход: {input}
-$16810715868480* [center]Calculate modulo 4 of the input.[/center]
 $17375862136921*
 The length of our week is 4 days. Our weekdays are named Zero's day, One's day, Two's day and Three's day. I hear some earthlings number their Two's day incorrectly? 
 	
@@ -1702,21 +950,16 @@ Use [color=#e63e5b][url=masking_time]this hint[/url][/color] if you get stuck.
 $81055582534899* Anyway new year is coming up and we want you to calculate the weekday of everyone's birthday. We will give you the date and all you have to do is return the weekday within {ticks_per_test} ticks.
 
 
-=== components/Console ===
-
-$66743357915699* Консоль
-$16105755937680* экран 80x24 текстовых символов
-
-
-=== trans/turing_complete ===
-
-$35911376069529* Полный по Тьюрингу
-
-
 === components/ByteLessI ===
 
 $52765625016236* Checks if one input is less than the other
 $25403981009644* Less (signed)
+
+
+=== components/LessI16 ===
+
+$75600169624828* Less (signed)
+$73697238171042* Checks if one input is less than the other
 
 
 === misc/FileInput ===
@@ -1729,12 +972,6 @@ $34159012148766* File Loader
 
 $56917313833836* Toggles a bit
 $41574334638147* Switch
-
-
-=== components/LessI16 ===
-
-$75600169624828* Less (signed)
-$73697238171042* Checks if one input is less than the other
 
 
 === trans/level_constants_description ===
@@ -1756,17 +993,8 @@ $63525237058165* Copy from {source} to {destination}
 $32873193471770* UNUSED
 $88446594314360* Immediate: {number}
 $94278717238239* Always
-$72740868980397* {condition} copy {register} to counter
 $79398554520691* {opcode} {reg_1} and {reg_2}
-
-
-=== trans/or_gate_RichTextLabel2 ===
-
-$56663370211115*
-[right][color=#e49f44]Вход 1
-Вход 2[/color]
-Желаемый выход
-Текущий выход[/right]
+$72740868980397* {condition} copy {register} to counter
 
 
 === levels/binary_count_down ===
@@ -1774,35 +1002,20 @@ $56663370211115*
 $56999237564848* {x} seconds left
 
 
-=== components/Output32 ===
-
-$37476623180671* Выход
-
-
-=== misc/profile ===
-
-$32835651830157* Профиль
-
-
 === trans/level_complete_level_complete ===
 
 $49647690443210* [center]Level Complete[/center]
 
 
-=== components/BeepBox ===
+=== trans/options_setting_export_assembled ===
 
-$15009144144117* Генератор Волн
+$98549046707456* Export assembled binary
 
 
 === components/Bidirectional1 ===
 
 $95836352586032* Can circumvent certain circular dependency errors
 $34912798641933* 1 bit bidirectional pin
-
-
-=== trans/options_setting_click_to_pan ===
-
-$24654961601456* Click to pan
 
 
 === components/Halt ===
@@ -1814,15 +1027,14 @@ $54106972240596* Halt
 $62990744955549* Stops execution with a custom message
 
 
-=== components/Mul32 ===
-
-$98530670555665* Умножить
-$51210946736766* Умножает два входа
-
-
 === misc/program_edit ===
 
 $57861256694537* Bytes {bytes_from} - {bytes_to}
+
+
+=== trans/options_setting_click_to_pan ===
+
+$24654961601456* Click to pan
 
 
 === components/Bidirectional32 ===
@@ -1831,19 +1043,15 @@ $54631386552063* 32 bit bidirectional pin
 $35105566244017* Can circumvent certain circular dependency errors
 
 
-=== trans/options_setting_export_assembled ===
-
-$98549046707456* Export assembled binary
-
-
 === trans/level_wide_instructions_description ===
 
 $60538893544456* [center]Build a wide instruction program component[/center]
 
 
-=== misc/delete ===
+=== misc/specifications ===
 
-$53448014080434* Удалить (Правый Клик)
+$56390619785555* View instructions definitions
+$68054407020318* Instructions
 
 
 === trans/manual_component_factory_text ===
@@ -1860,20 +1068,14 @@ Probes placed in custom components will show on their layout and can display val
 For the component factory, the file manager also manages the custom components. The file names decide the component name and the folder structure decides the components placement in the menu.
 
 
-=== misc/specifications ===
-
-$56390619785555* View instructions definitions
-$68054407020318* Instructions
-
-
 === trans/level_complete_stat_delay ===
 
 $43118901497406* Delay
 
 
-=== misc/controls2 ===
+=== trans/level_byte_adder_you_carry_text2 ===
 
-$38773676077206* Edit Instructions
+$87943759248740* Carry
 
 
 === levels/negative_numbers/test ===
@@ -1886,19 +1088,19 @@ $64427417171037* Test
 $19098578855427* Binary
 
 
-=== trans/level_byte_adder_you_carry_text2 ===
+=== trans/options_comment_wire ===
 
-$87943759248740* Carry
+$96449970906640* Comment wire
+
+
+=== misc/controls2 ===
+
+$38773676077206* Edit Instructions
 
 
 === trans/manual_terminology ===
 
 $13311390759928* Terminology
-
-
-=== trans/options_comment_wire ===
-
-$96449970906640* Comment wire
 
 
 === components/NetworkClient ===
@@ -1907,49 +1109,9 @@ $44510554000571* Network
 $90462653419289* Handles network connections
 
 
-=== misc/factory_back ===
-
-$98930461722118* Return to level
-
-
 === trans/options_animation_speed ===
 
 $13442839894535* Wire animation speed
-
-
-=== components/Xnor8 ===
-
-$31985293401482* 8 Битный XNOR
-$45789912406647* Побитово XNOR два значения
-
-
-=== trans/level_bit_switch_RichTextLabel2 ===
-
-$57920867194992*
-[right][color=#e49f44]Вход 1
-Вход 2[/color]
-Желаемый выход
-Текущий выход[/right]
-
-
-=== levels/or_gate ===
-
-$12749704931323* Надеемся, вы счастливы, что принимаете участие в наших замечательных испытаниях?
-$11472059692644* Взамен Вы получили возможность общаться с очень продвинутыми представителями других цивилизаций, не так ли?
-
-
-=== levels/full_adder ===
-
-$17063157033479*
-На предыдущем уровне мы суммировали значения двух Вводов, в этот раз мы будем суммировать три. В общем, сложите входные данные в двоичном формате, чтобы результат был либо [ZERO] либо [ONE].
-
-Как и при обычном сложении "столбиком", когда результат не может быть описан одной цифрой, установите перенос (CAR) в значение [ONE].
-
-
-=== components/3_decoder ===
-
-$59129788113517* Переключается между восьмью значениями
-$94375716460090* 3 Битный декодер
 
 
 === trans/levels_negative_descriptions ===
@@ -1960,27 +1122,10 @@ $87964635915702*
 Works with adder:
 
 
-=== components/Counter16 ===
-
-$37313834107391* Увеличивается каждый тик, если не перезаписан
-$49104925799943* 16 Битный Счётчик
-
-
-=== components/Equal32 ===
-
-$32710942647020* Равно
-$32433537137277* Проверяет равны ли два входа
-
-
 === components/Byte Expander ===
 
 $60488114435022* Splits a byte into 8 bits
 $21904470559153* Byte Splitter
-
-
-=== ui/toggles/level_log ===
-
-$38557550573896* Лог Уровня
 
 
 === misc/instruciton_rule_label ===
@@ -1992,11 +1137,6 @@ $70464083627337* Label
 
 $90978982016052* Splits 32 bits into 4 byts
 $24096666569346* 32 bit Splitter
-
-
-=== misc/change_schematic ===
-
-$79554853897000* Сменить схему
 
 
 === trans/level_alu1_code ===
@@ -2021,11 +1161,6 @@ $37014604954362* Shift left
 $20538476756633* [center]Output the correct input byte[/center]
 
 
-=== components/Program64 ===
-
-$76480303942112* Программируеммый компонент памяти
-
-
 === trans/options_cluster_color ===
 
 $77850745497963* Apply color to wire clustr
@@ -2036,50 +1171,15 @@ $77850745497963* Apply color to wire clustr
 $44017405175202* [center]Replace the input code with the program component.[/center]
 
 
-=== misc/menu ===
-
-$56916384895438* Главное меню
-
-
-=== trans/level_odd_ticks_RichTextLabel3 ===
-
-$89508766742523*
-[right]Вход
-Желаемый выход
-Текущий выход[/right]
-
-
 === levels/xor ===
 
-$11589029892097* XOR биты входа {a} и {b}
 $12758156517177* Using the instructions of your computer, read the input twice and XOR the two values together
 $16047615798435* [center]Read the input twice and XOR the bits of the two inputs[/center]
-
-
-=== trans/level_byte_or_text ===
-
-$99465606386164*
-[right]
-[color=#e49f44]Вход[/color]
-Желаемый выход
-Текущий выход
-[/right]
 
 
 === trans/manual_simulator ===
 
 $19932404521621* Simulator
-
-
-=== components/Neg32 ===
-
-$26991597084705* Инвертор
-$35735598635057* Побитово инвертирует вход
-
-
-=== components/InputConditions ===
-
-$75386511637758* Вход
 
 
 === trans/level_dependency_description ===
@@ -2089,33 +1189,8 @@ $81238724438578* Make a wire where the input of a component depends on its own o
 
 === levels/the_bus ===
 
-$72472660427162* [center]Скопируй значение из входа {input_nr} в выход {output_nr}[/center]
 $96958133516462* FROM
 $91318587712792* TO
-$85140574084420* [center]Скопируй значение из правильного входа в правильный выходt[/center]
-
-
-=== components/Ram ===
-
-$95418291334002* 256 Байтная ОЗУ
-$27094240214067* Компонент Памяти
-
-
-=== components/Constant16 ===
-
-$85825068431072* 16 Битная Константа
-$61330657823382* Константное значение
-
-
-=== levels/and_gate_3 ===
-
-$14788981567936* Создайте компонент AND с тремя входами.
-
-
-=== components/MemoryProbeBit ===
-
-$13846578075327* Выведи значение на твоём пользовательском компоненте или в редакторе программы.
-$25103579211328* Проба памяти (бит) 
 
 
 === trans/manual_keynote_the_robot ===
@@ -2130,12 +1205,6 @@ $44961981616677*
 Current answer 11 + 88  = 99[/center]
 
 
-=== components/DualPortRam ===
-
-$13408945557666* ОЗУ с дополнительным загрузочным пином.
-$30400404542678* Дву-загрузочная ОЗУ.
-
-
 === trans/options_pan_up ===
 
 $80031998727851* Pan up
@@ -2143,24 +1212,10 @@ $80031998727851* Pan up
 
 === levels/maze ===
 
-$13225915898937*
-Если ты решишь перейти к остальным уровням, я расскажу тебе об ОЗУ, стеке и вызовах функций, и ты сможешь решать более интересные задачи, подобные этой. 
-
-Но первым делом тебе нужно построить компьютер получше. color=#e49f44]OVERTURE[/color] была хорошей как первая машина, но она неуклюжа и программы становятся очень запутанными. Чтобы решить следующие задачи, не вырывая при этом все волосы, тебе понадобится что-то более выразительное — архитектура [color=#e49f44]LEG[/color].
-$17275059688693* Поздравляю, ты выиграл соревнование! Удивительное достижение!
-$13741358519166* Легендарный лабиринт. Если решишь это, ты выиграл соревнование! 
 $36193081514106* NOTHING
 $10837851446666* WALL
 $10598752971970* COIN
 $40917300157127* SEEING:
-$11103446544344* С другой стороны, ты также можешь остаться, гордиться и наслаждаться наградой за то, что тебя не съели. 
-$19331074553774*
-Напиши алгоритм с помощью которого робот сможет попасть из начала в конец. 
-
-Этот уровень сложный, поэтому ты возможно захочешь записать псевдокод для твоего алгоритма прежде чем воплотить его в жизнь. 
-Используй [color=#e63e5b][url=maze]эту подсказку[/url][/color] если застрянешь.
-
-[tip]Запомни, ты не можешь использовать немедленные значения больше 63, распространенной ошибкой является попытка перейти к метке больше 63-го байта.[/tip]
 $54151353200088* DOOR
 
 
@@ -2171,12 +1226,6 @@ $29779449172278*
 Input[/color][/right]
 
 
-=== components/Switch64 ===
-
-$80980797636768* Переключает значение
-$93223372486795* 64 битный выключатель
-
-
 === trans/level_byte_adder_question2 ===
 
 $85899338356278*
@@ -2185,19 +1234,9 @@ $85899338356278*
 Your answer[/right]
 
 
-=== misc/delay_overlay ===
+=== trans/level_complete_stat_tick ===
 
-$85430022417382* Показать задержку
-
-
-=== levels/push_pop2 ===
-
-$10062117579269* Добавь стэк к твоему компьютеру.
-$14685569269160*
-На этом уровне ты должен добавить стек на свой компьютер и написать программу, которая решает уровень.
-Когда ввод равен 0, ты должен [color=#e49f44]извлечь[/color] значение из стека и вывести его. Когда вход не равен 0, ты должен [color=#e49f44]поместить[/color] его в стек.
-$18561605111721* ПОМЕСТИ {input} в стэк
-$59658696292688* ИЗВЛЕКИ {value} из стэка
+$47758922161853* Tick
 
 
 === trans/level_complete_signed_numbers ===
@@ -2208,14 +1247,10 @@ $41649402437253*
  and unsigned numbers[/i][/color]
 
 
-=== trans/level_complete_stat_tick ===
+=== components/Rol16 ===
 
-$47758922161853* Tick
-
-
-=== trans/levels_not_RichTextLabel3 ===
-
-$48425594158515* Постройте NOT элемент
+$48583573494467* Rotate left
+$73379230742631* Rotates the bits of an input left
 
 
 === trans/level_codes_description ===
@@ -2223,42 +1258,18 @@ $48425594158515* Постройте NOT элемент
 $24678249110160* [center]Add calculation codes to your wire[/center]
 
 
-=== components/Rol16 ===
-
-$48583573494467* Rotate left
-$73379230742631* Rotates the bits of an input left
-
-
 === trans/options_synced ===
 
 $99411066573242* Synced
 
 
-=== trans/text_truth_table_left ===
+=== trans/level_signed_negator_labels3 ===
 
-$58617980046951*
-[right]Вход 1
-Вход 2
-Выход[/right]
-
-
-=== trans/optoins_factory_reset ===
-
-$17721051281188* Сброс до заводских настроек
-
-
-=== components/Equal16 ===
-
-$97954874255512* Проверяет равны ли два входа
-$33633607925660* Равно
+$66996894079719* Desired   Current
 
 
 === levels/buffer ===
 
-$10260210687588* [center]Тест 2: Левый вход [img]dialogue/on.png[/img], правый выход должен быть [img]dialogue/on.png[/img].[/center]
-$13309706297402* [center]Тест 3: Правый вход [img]dialogue/on.png[/img], левый выход должен быть [img]dialogue/off.png[/img].[/center]
-$17005228759908* [center]Убедитесь что [img]dialogue/on.png[/img] может течь только слева направо.[/center]
-$18349621873762* [center]Тест 1: Оба входа [img]dialogue/off.png[/img], ни одна из сторон не должна быть [img]dialogue/on.png[/img].[/center]
 $15504762262759*
 This level starts with 2 special components. They simultaneously act as input and output.
 
@@ -2271,22 +1282,12 @@ Make sure the signal flows only from left to right. There are 3 tests.
 [b]Test 3[/b]: The right side output will turn [ON] and the left side should be [OFF].
 
 
-=== trans/level_signed_negator_labels3 ===
-
-$66996894079719* Desired   Current
-
-
 === trans/manual_text_hard_disk ===
 
 $82372297690518*
 Hard disks are made of a spinning disk and a mechanical arm that has to physically move to load or save data. Of course physical movement is extremely slow in the timescales of electronics. Operating systems will normally order loads and saves such that the arm has to travel as little as possible.
 
 The hard disk component has a "seek" pin, which lets you change the address you are looking at by the given amount. The addresses "wrap around", such that seeking 1 less than 0 moves you to the highest address, and seeking 1 higher than that gets you back to 0.
-
-
-=== ui/state_ui/state_ui_output_bit ===
-
-$40754755480566* Выход
 
 
 === trans/manual_delay ===
@@ -2307,23 +1308,6 @@ Reading input will give you the current number of cards. Sending 1, 2 or 3 to ou
 $11794110848012* This time he has taken over the control room and holds the captain hostage.
 
 
-=== components/InputOutput ===
-
-$26488480303865* Вход/Выход
-
-
-=== components/Program8_1 ===
-
-$11057354704814* Программируемый компонент памяти
-$12805545963716* Программа
-
-
-=== components/Mux16 ===
-
-$75979055121665* 16 битный Mux
-$13997767115693* Переключается между двумя значениями 
-
-
 === trans/level_complete_stat_sum ===
 
 $99546064626994* Score
@@ -2332,12 +1316,6 @@ $99546064626994* Score
 === levels/crude_awakening/next_level ===
 
 $24027424800887* Next level
-
-
-=== components/Nor8 ===
-
-$34517798310461* Побитово Nor два значения
-$39421972053612* 8 битовый NOR
 
 
 === trans/level_alu2_description ===
@@ -2352,7 +1330,6 @@ $95192766583497* Gate
 
 === levels/signed_negator ===
 
-$10866019808027* For this level you probably want to turn on signed numbers, so the highest bit shows as -128. Click 
 $10400106910274*
 Taking the input as signed (where the 8th bit is -128), make a component that takes a number and negates it.
 For example 4 negated would become -4. -9 negated would become 9.
@@ -2380,107 +1357,18 @@ Besides inputs, paths can also start from components with no reliance on early p
 Further, custom components don't have a delay score for the costliest path of the whole component, but rather the delay cost is calculated per pin. This is so as to not penalize using custom components by making faster pins cost the same as the slower ones.
 
 
-=== trans/level_xnor_RichTextLabel2 ===
-
-$59451104901430*
-[right][color=#e49f44]Вход 1
-Вход 2[/color]
-Желаемый выход
-Текущий выход[/right]
-
-
-=== components/Input16 ===
-
-$34560561101846* 16 бит вход
-
-
 === nim/backend_lib/level_list ===
 
-$58391129129347* Регистры
-$45936227746026* Счётчик
-$12946639957230* NOT Элемент
-$16881141174140* Двоичные Гонки
-$37136208388559* SR Триггер
-$32191988336459* Сохраняем Изящно
-$59136962133320* Логический Блок
-$30920780473397* Круговая Зависимость
-$58769021955965* 3-х Битовый Декодер
-$78673715398197* Непосредственные Значения
-$83321010943153* Считаем Сигналы
-$49679174636208* Байтовый XOR
-$40356575891647* Байтовый OR
-$44393538021725* Калибруем Лазерные Пушки
-$61228036919534* Башня Сплава
-$87426564872318* Деление
-$24593959732668* Отриатель
-$19487493622742* Полусумматор
-$26705128002562* Условия
-$94163943335575* Песочница
-$27566801288091* Завод Компонентов
-$14193654974055* Меньше со Знаком
-$59485174474959* Сладкий Порядок
-$14522992467987* OR Элемент
-$64662599400870* Битовый Инвертор
-$11457737665157* Спагетти из Проводов
-$30630492494839* Байтовый NOT
-$74096060570427* Широкие Инструкции
-$85514901357243* Суммируем байты
-$98013649264532* Стэк
-$35790581910835* Второй тик
-$94979277765051* Гонка Роботов
-$13303326918621* NAND Элемент
-$16463062897451* Грубое Пробуждение
-$28827008935802* Лаборатория
-$61466151084505* Космическое Вторжение
-$20858506932774* AND Элемент
-$77495536880911* NOR Элемент
-$92696642439976* Конкурс ИИ
-$62326481348276* Лабиринт
-$74512388889988* Арифметический Блок
-$50884376329157* Маленькая коробка
-$70651296323768* XOR Элемент
-$31140969090253* Имена Планет
-$74688348772072* Шина
-$42873691377272* Добавь 5
-$36114120875026* Взломщик хранилища
-$15420972347773* ОЗУ
-$17198602105978* Беззнаковое меньше
-$43018398941741* Всегда Вкл
-$45773199639367* Нечётные Такты
-$68155633878444* Задержка
-$33343343932901* Полный по-Тьюрингу
-$69830943995038* Одностороннее Движение
-$81417895515868* Битовый Переключатель
-$95989050249094* Больший AND Элемент
-$62167495140389* Сдвиг
-$63331549672739* Коды Операций
-$13219675195117* Нечётное число сигналов
-$87626070552799* Полный сумматор
-$28985439820134* Произведение Полубайтов
-$25805639594354* Программа
-$57870391153000* Немедленные значения
-$94896856420525* XNOR Элемент
-$56272944092958* Линии Большей Задержки
-$96825664933181* Невиданный фрукт
-$86717899742637* Сохраняем Байты
-$53092952738479* Селектор Входа
 $70993791338383* XOR
-$33132016601448* ПОМЕСТИТЬ и ИЗВЛЕЧЬ
-$17750429607702* 1 битовый Декодер
-$77453667419150* Декодер Инструкций
-$59939822079116* Негативные Значения
-$49328023903824* Равентсво
-$79570913613529* Удвой число
-$91267697977186* Шестнадцатеричные Гонки
-$74292408260828* Расчеты
-$45480765206717* Условные Выражения
-$71126291573555* Двойныу проблемы
-$96898830278153* Байтовая Константа
-$75225719777307* Водный мир
-$64615090872051* Функции
-$84208736840052* Маскарад
-$36221227239949* Танц-Машина
-$91954159574064* Больший OR Элемент
+
+
+=== trans/level_ram_component_value_description ===
+
+$53113984441582*
+[right]Test
+Address
+Action
+Expected output[/right]
 
 
 === trans/level_byte_less_description ===
@@ -2488,19 +1376,16 @@ $91954159574064* Больший OR Элемент
 $37336202055283* [center]Determine if the first input is less than the second.[/center]
 
 
-=== components/Register16 ===
+=== levels/test_lab ===
 
-$16015376037787* 16 Битный Регистр
-$71792123436163* 16 битная память
+$32399229965611* Also, since you have now completed [color=#e49f44]LEG[/color], I have unlocked all the 16, 32 and 64 bit components that you have in the sandbox.
+$15446846177093* Welcome to the lab. Like the component factory, this is not a normal level but a tool.
 
 
 === levels/Opcodes ===
 
-$19693461238792* Установи шаг счетчика на 4
-$20916717363300* Linked component {nr} should point to the output
 $38976231780455* Linked component {nr} should point to a register or custom component with a register inside
-$18189600217529* [center]Implement the OPCODE instructions[/center]
-$13450117997204* Добавь счётчик к схеме
+$20916717363300* Linked component {nr} should point to the output
 $77044880242883* Linked component {nr} should point to the counter
 $13870568875751* Create a new schematic and add a program with 4 byte output
 $10303603301757*
@@ -2513,51 +1398,11 @@ Implement the following opcodes:
 5 XOR[/color][/code]
 
 The opcode NOT ignores the second argument.
-$17495651785164* Добавь 6 регистров в схему
-
-
-=== levels/test_lab ===
-
-$11038144815919* This level uses programs to test your wires. When the programs are run, this level checks if the 
-$32399229965611* Also, since you have now completed [color=#e49f44]LEG[/color], I have unlocked all the 16, 32 and 64 bit components that you have in the sandbox.
-$15446846177093* Welcome to the lab. Like the component factory, this is not a normal level but a tool.
-$16072814175447* Programming on buggy hardware is very frustrating. It is painful to suddenly be forced to reason about wires, when you are in the middle of solving a programming problem. It is tempting to apply a quick wire fix, so you can get back to solving the original problem. But now this quick fix broke something else in a program that used to work and so on. Therefore, when developing hardware try to aim for 100% reliability before you start programming!
-
-
-=== trans/level_ram_component_value_description ===
-
-$53113984441582*
-[right]Test
-Address
-Action
-Expected output[/right]
-
-
-=== ui/options/Controls ===
-
-$53266310714298* Управление
-
-
-=== components/Mem Unit ===
-
-$57670626909848* 1 бит памяти
-$78616473760551* 1 битная память
-
-
-=== ui/state_ui/title_screen/play ===
-
-$66967233942803* Кампания
-
-
-=== misc/run ===
-
-$67345621265845* Запуск тактов (Горячая клавиша: F6)
 
 
 === levels/byte_not ===
 
 $14196498898485* Tool making and usage is key in the early evolutionary stages of developing intelligence.
-$12982025748137* "NOT" каждый бит значения на входе.
 $10294533225655* Our previous model of brain size being the main predictor of intelligence was naive.
 $14958585065722* Therefore the number of arms on a creature is clearly the main predictor of intelligence. Did you know there are sea creatures from your planet with four times as many arms as you and they are doing better in tests?
 
@@ -2592,9 +1437,9 @@ $17464069717985* 64bit Maker
 $79677187590355* Turns 64 bits into 8 bytes
 
 
-=== trans/manual_ASCII_encoding ===
+=== trans/options_pan_left ===
 
-$30404865580119* ASCII encoding
+$78515694621006* Pan left
 
 
 === trans/options_pan_right ===
@@ -2602,9 +1447,9 @@ $30404865580119* ASCII encoding
 $33884219481037* Pan right
 
 
-=== trans/options_pan_left ===
+=== trans/manual_ASCII_encoding ===
 
-$78515694621006* Pan left
+$30404865580119* ASCII encoding
 
 
 === trans/optinos_save_location ===
@@ -2612,34 +1457,14 @@ $78515694621006* Pan left
 $61172959716558* Save location
 
 
-=== trans/not_gate_RichTextLabel2 ===
-
-$10340875578771*
-[right][color=#e49f44]Вход[/color]
-Желаемый выход
-Текущий выход[/right]
-
-
-=== misc/lab_toggle ===
-
-$16432178820878* Лаборатория
-
-
-=== levels/Calculations ===
-
-$14458828731919* Time to merge in the 
-$13013863429580* For this level an extra pin has been added to the registers. This pin always emits the value of the register, regardless if load is selected or not.
-
-
 === trans/instructions_header ===
 
 $15089281203426* [center]Instructions[/center]
 
 
-=== components/Program4 ===
+=== levels/Calculations ===
 
-$27522667367787* Программа
-$45650720555565* Программируеммый компонент памяти
+$13013863429580* For this level an extra pin has been added to the registers. This pin always emits the value of the register, regardless if load is selected or not.
 
 
 === trans/options_controls ===
@@ -2649,7 +1474,6 @@ $18297012748869* Controls
 
 === levels/Counter ===
 
-$17701404772563* Добавь 1
 $17940006660359* Count
 $17263901743088*
 Build a counter that will increase by 1 each tick.
@@ -2659,17 +1483,10 @@ Additionally, there should be an option for overwriting the counter with a given
 You are given 2 inputs, a bit and a byte.
 
 The bit input should toggle between counting and overwriting with the value of the byte.
-$68874699768861* Перезапиши на {value}
 $10555159894041*
 Counting is so fundamental even insects do it. From counting, species can evolve to compare and do arithmetic. And before you know it, you have apes building computers.
 
 Make a device that counts increments once per tick.
-
-
-=== components/Constant32 ===
-
-$39402227599142* Константное значение
-$30896164786171* 32 Битная Константа
 
 
 === trans/manual_text_ram ===
@@ -2694,41 +1511,19 @@ The simplest way to integrate the Latency RAM is simply to stall the whole archi
 Sometimes it is beneficial to separate parts of the logic into a separate processing unit, that operates more or less independently. This could be for handling a display device or a network connection. In these cases, the independent unit will often need to continously load and save to memory, while the outside logic only needs to occasionally load. Use Dual Laod RAM to avoid having to schedule who gets access to the RAM at what time.
 
 
-=== components/Xor16 ===
-
-$55408021160573* Побитово XOR два значения
-$47846591761838* 16 битный XOR
-
-
-=== trans/level_tick_tock_keys ===
-
-$11700778730606*
-[right][color=#e49f44]Действие
-Желаемый выход
-Текущий выход[/color][/right]
-
-
-=== components/And32 ===
-
-$98890160152994* Побитово AND два значения
-$30264879217145* 32 битный AND
-
-
 === components/AND ===
 
-$22719674432950*
-[ON] Когда два входа [ON]
-[table=5]
-[cell]Вход 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Вход 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Выход[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell]
-[/table]
 $58912167455465* AND
 
 
 === trans/manual_text_ascii_encoding ===
 
 $57727768059917* This simulator uses (extended) ASCII in a few places. Below are the characters with their corresponding number. The console supports different versions of extended ASCII.
+
+
+=== trans/map_locked ===
+
+$95146987030704* Locked
 
 
 === trans/manual_text_short_circuit ===
@@ -2745,27 +1540,13 @@ However, by disconnecting output pins from a wire, it is possible for multiple p
 In this simulator, pins that can be disconnected are grey.
 
 
-=== trans/map_locked ===
-
-$95146987030704* Locked
-
-
 === trans/manual_assembly ===
 
 $14434902453525* Assembly
 
 
-=== trans/nand_values ===
-
-$38006065064488*
-[right][color=#e49f44]Вход 1
-Вход 2[/color]
-[b]Выход[/b][/right]
-
-
 === levels/decoder ===
 
-$16133643476631* The wire you built in the 
 $18435544383511* CALCULATE pattern\n[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
 $18945946395447*
 To distinguish between the [INSTRUCTIONS] of 4 different kinds, the two highest bits will be used to determine which MODE we are in as follows:
@@ -2778,7 +1559,6 @@ Here [ANY] means any value.
 
 Determine the MODE we are in from the input, then send [ON] to the correct output.
 $15105859227432* COPY pattern\n[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
-$12671132029272* Your wire has been saved to the component factory.
 $12068329066372* [b]ALERT: THIS IS AN OUTDATED VERSION OF THIS MAP, PLEASE CLICK THE SAVE ICON IN THE TOP LEFT AND CREATE AND LOAD A NEW SCHEMATIC[/b]
 $11382827588408* CONDITION pattern\n[ON] [ON] [OFF] [OFF] [OFF] [ANY] [ANY] [ANY]
 $12976424717611* IMMEDIATE pattern\n[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
@@ -2790,16 +1570,6 @@ $12532951884542* IMMEDIATE
 $61886892927185* [center]Pairwise AND together each bit[/center]
 
 
-=== trans/manual_truth_tables ===
-
-$75695254533352* Таблицы истинности
-
-
-=== trans/options_effects_volume ===
-
-$24145565754506* Громкость эффектов
-
-
 === trans/level_signed_negator_description ===
 
 $87777776285772* [center]Invert the sign of the number[/center]
@@ -2808,25 +1578,16 @@ $87777776285772* [center]Invert the sign of the number[/center]
 === main_scripts/overture_level ===
 
 $11338791453100* Dynamic
-$27259865408750* На следующем такте значение счетчика будет {next}, Это должно быть {expected}
-$95030012922256* Вход должен быть включен только при чтении с входа
-$12873109232054* Ожидаемый вывод: {expected}, получено: {got}
 
 #  "cond" is for condition, this label has to be short as it has to fit on a component
 $94982725578534* COND
-$47188699762650* Выход не включён
-$28026304798371* Выход должен быть включен только при выводе значения
-$85260864781281* Вход не включен
-$96569633331621* Загрузи {value} в РЕГ 0
 $16914143080303* Copy
 $59042824277105* Immediate
 $82949244692745* Calculate
-$83829200305236* Ожидаемый выход: {expected}, получено: {got}
 
 
 === levels/Further Delayed Lines ===
 
-$17366913897135* Создайте цепь которая выводит свой собственный вход с задержкой в 2 такта.
 $60989431641221*
 This level introduces the Delay Line component. It takes its input and outputs it 1 tick later.
 
@@ -2835,9 +1596,6 @@ This level introduces the Delay Line component. It takes its input and outputs i
 
 === levels/negative_numbers ===
 
-$12574817679356* Получается, нам нужен способ хранения отрицательного значения в БАЙТе. Система, которую мы использовали до сих пор, может представлять все числа от 0 до 255 с помощью байта. This scheme is called 
-$17231048881956* Для оценки различий в вещах и величинах, Вам потребуется ВЫЧИТАНИЕ. А, для процесса вычитания Вам, строго говоря, необходимы отрицательные числа. 
-$70755151984986* {a} должен быть {b}
 $11067230116844* {number} is not representable
 $62744038163781* OK
 $19118970740682*
@@ -2857,31 +1615,10 @@ $15403032472607* Robot racing is the favorite sport on the spaceship. Differentl
 $19966247197959* This time you are controlling Fastbot, he doesn't see what is in front of him, but he can turn to a new direction and move in the same tick. Also he wears fancy red running shoes.
 
 
-=== levels/NAND Gate ===
-
-$17420270098223* На этом уровне вам предстоит разобраться как работает компонент NAND. [color=#dd6576]Обязательно[/color] разберитесь в этом прежде чем завершать уровень, иначе рискуете "застрять" на следующих уровнях!
-$11034378482152* Верно! Вы разблокировали NAND элемент. С помощью этого компонента можно создать всё что необходимо для вашего компьютера!
-$18270083417453* Проверка
-$19208664264770* [b]Инструкция:[/b]\nНажмите любую серую кнопку в последней строке таблицы внизу.
-$17923274216766* Что ж, придётся признать, что Ваш вид развит несколько лучше простейших микроорганизмов.
-$14777350869870* Мы удивлены насколько успешно вы справились с предыдущей проверкой!
-$17994568832660* [b]Инструкция:[/b]\nКомпонент NAND переключает потоки в электрической цепи.\nИспользуйте переключатели слева для экспериментов с Вводами(Inputs).\nПонаблюдайте как это влияет на потоки и Вывод(Output),\nа затем заполните последюю строку в таблице внизу.
-
-
 === components/DelayLine8 ===
 
 $24840584785792* Outputs this tick's input, next tick
 $63449911993783* 8 Bit Delay Line
-
-
-=== trans/options_copy ===
-
-$55679445263875* Скопировать
-
-
-=== trans/nand_Label2 ===
-
-$60885816586685* Выход
 
 
 === trans/tooltip_tooltip ===
@@ -2891,32 +1628,15 @@ $48829429502039*
 [color=#cccccc][i]Run your computer without updating the UI at each tick[/i][/color]
 
 
-=== components/Bit Compressor ===
+=== trans/options_pan_down ===
 
-$74338505460996* Превращает 8 битов в 1 байт
-$98747779812970* 8 битный Производитель
-
-
-=== components/Input 2 ===
-
-$86870364449392* Вход
+$93140495547084* Pan down
 
 
 === components/Bidirectional8 ===
 
 $20234315861487* 8 bit bidirectional pin
 $49499540884410* Can circumvent certain circular dependency errors
-
-
-=== trans/options_pan_down ===
-
-$93140495547084* Pan down
-
-
-=== components/Mux64 ===
-
-$14050204031082* Переключается между двумя значениями 
-$66892629981737* 64 Битный Mux
 
 
 === trans/options_reset_warning ===
@@ -2933,13 +1653,6 @@ $45865138134248* Hard disk
 
 === components/NOR ===
 
-$27510848535619*
-[ON] Когда никакой из входов [ON]
-[table=5]
-[cell]Вход 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Вход 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Выход[/cell][cell][ON][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell]
-[/table]
 $83375115196253* NOR
 
 
@@ -2988,22 +1701,15 @@ You must beat level 3 to pass.
 (click [color=#e63e5b][url=accessibility_mode]here[/url][/color] to turn on timerless accessibility mode)
 
 
-=== trans/level_full_adder_RichTextLabel2 ===
-
-$25766177620842*
-[right][color=#e49f44]Вход 1
-Вход 2
-Вход 3[/color]
-Желаемая Сумма
-Желаемый Перенос
-Текущяя Сумма
-Текущий Перенос[/right]
-
-
 === components/Ror8 ===
 
 $10802217509530* Rotates the bits of an input right
 $70999134800536* Rotate right
+
+
+=== components/NAND ===
+
+$71130919681688* NAND
 
 
 === levels/Water World ===
@@ -3018,26 +1724,9 @@ The landscape is 16 columns wide. Read the input 16 times to get the height of t
 Then output the total volume that the landscape can carry as the answer.
 
 
-=== components/NAND ===
-
-$71130919681688* NAND
-$12903183841172*
-[ON] пока оба входа не [ON]
-[table=5]
-[cell]Вход 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Вход  2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Выход[/cell][cell][ON][/cell][cell][ON][/cell][cell][ON][/cell][cell][OFF][/cell]
-[/table]
-
-
 === trans/map_arithmetic ===
 
 $51337598329530* ARITHMETIC
-
-
-=== trans/rotate ===
-
-$88236351843942* Повернуть
 
 
 === levels/delay_level_check ===
@@ -3053,10 +1742,6 @@ We all like the way Robot moves on the dance floor. That's why we want him to le
 The only problem is to make him come up with original dance sequences. How do you make creativity out of deterministic logic you ask?
 
 The answer pseudo random number generators.
-$15955150920362*
-In this level you only get one input, we call this the initial seed. The seed is put through the following steps to produce a pseudo random number.
-
-In the algorithm below, 
 
 
 === trans/options_color_wire ===
@@ -3067,11 +1752,6 @@ $64341547590822* Apply color to wire
 === misc/program_edit_signals ===
 
 $98772447663910* Link components
-
-
-=== misc/credits ===
-
-$15234594767991* Титры
 
 
 === main_scripts/levels ===
@@ -3088,36 +1768,6 @@ $90134890578411* Misc
 
 #  Level type for the level complete menu
 $69219742310717* Architecture
-
-
-=== trans/level_decodre_RichTextLabel2 ===
-
-$40723962298647*
-[right][color=#e49f44]Вход 1
-Вход 2
-Вход 3[/color]
-Желаемый бит
-Текущий бит[/right]
-
-
-=== trans/manual_bytes ===
-
-$46223559629673* Байты
-
-
-=== trans/manual_matrix_display ===
-
-$86092436010494* Матричный дисплей
-
-
-=== trans/options_music_volume ===
-
-$93981778736076* Громкость музыки
-
-
-=== component_panels/Counter ===
-
-$57936010210151* Увеличивать на: {amount}
 
 
 === trans/level_complete_ide ===
@@ -3137,48 +1787,14 @@ $93157894815498* [center]OR[/center]
 $95509904060545* Submit
 
 
-=== trans/and_gate_3_RichTextLabel2 ===
-
-$52008707927408*
-[right][color=#e49f44]Вход 1
-Вход 2
-Вход 3[/color]
-Желаемый выход
-Текущий выход[/right]
-
-
-=== components/ByteConstant ===
-
-$29445030761909* Константное значение
-$25159790815891* 8 Битная Константа
-
-
 === components/Maker16 ===
 
-$55864807379312* Превращает 16 битов в 2 байта
 $39941195789458* 16 bit Maker
-
-
-=== components/Output64 ===
-
-$43552728118031* 64 битный выход
 
 
 === trans/level_decoder_description ===
 
 $10169248860836* [center]Decode the instruction[/center]
-
-
-=== components/Switch16 ===
-
-$15221175893882* 16 Битный Переключатель
-$59845475842015* Переключает значение 
-
-
-=== components/LessU32 ===
-
-$72614358420262* Меньше (Беззнаковый)
-$55380524073095* Проверяет меньше ли первый вход чем второй 
 
 
 === trans/options_level ===
@@ -3190,13 +1806,6 @@ $64744152268407* Level
 
 $17054292175058* Welcome to the sandbox, here you are free to play around. I have given you 64 bit wires and a few IO components.
 $10731996208080* There are also 64 bit versions of the program, the counter, the register and the ram. Notice though, the 64 bit ram takes 1 tick to load.
-$72764802067974*
-Добро пожаловать в песочницу. 
-
-Components are available in the menus on the right side. Once placed, click on the pins of the components and drag to connect them with wire. On the left you will find the UI for the simulation control. Note that you can right click on the "Run faster" button to set target speed.
-
-You can find more information about the simulation in the manual (button is in the top left). Notable features to check out are the "component factory" where you can create your own components and the program component, which lets you define your own assembly.
-$19454393978813* The Keyboard lets you directly control your computer, using well... your keyboard
 $14434122873489* The Waveform Generator lets you make sounds. I will probably regret giving you this one.
 $18405942066048* The Clock gives you the current UNIX time in microseconds.
 $10451578314373* The Console Screen lets you draw characters to a screen (see manual for ascii characters)
@@ -3206,29 +1815,6 @@ $10451578314373* The Console Screen lets you draw characters to a screen (see ma
 
 $61656790122480* Switched Output
 $42506906257154* Only outputs if the switch pin is [ON]
-
-
-=== trans/level_complete_stat_type ===
-
-$69511102367948* Тип
-
-
-=== ui/toggles/race_condition ===
-
-$75558678297830* Круговая зависимость
-
-
-=== trans/options_paste ===
-
-$52159578521318* Вставить
-
-
-=== trans/level_double_buffer_RichTextLabel3 ===
-
-$27208335953837*
-[right]Вход
-Желаемый выход
-Текущий выход[/right]
 
 
 === trans/manual_text_terminology ===
@@ -3264,37 +1850,10 @@ The tables of input and output which are used everywhere throughout the game are
 
 === levels/Conditionals ===
 
-$10794262854382*
-Add if statements to your wire. For the if statements, the 2 arguments are compared and if the condition is true, the counter is set to a jump address.
-	
-The previous instructions had the 4 bytes represent:
-[code][color=#87a8c8]OPCODE, ARGUMENT_1, ARGUMENT_2, RESULT[/color][/code]
-
-For if statements the bytes represent:
-[code][color=#87a8c8]OPCODE, ARGUMENT_1, ARGUMENT_2, JUMP_ADDRESS[/color][/code]
-
-In addition to the previous opcodes, add:
-[code][color=#87a8c8]32 IF_EQUAL
-33 IF_NOT_EQUAL
-34 IF_LESS
-35 IF_LESS_OR_EQUAL
-36 IF_GREATER
-37 IF_GREATER_OR_EQUAL[/color][/code]
-
-Use unsigned less / greater for the comparisons.
-
-Each opcode does what their name implies. For example the following jumps to byte 16 if REG0 is less than REG1: 
-[code][color=#87a8c8]IF_LESS REG0 REG1 16[/color][/code]
 $18542005958715* Set the counter increment to 4
 $17133561664335* Congratulations, you finished the [color=#e49f44]LEG[/color] computer!
-$14973719570693* Add a counter to the wire
 $12920514303805* Add 6 registers to the map
 $14309211963063* Create a new schematic and add a program with 4 byte output
-$16826220977157*
-[color=#b72d41][b]TIP:[/b][/color] 
- COPY is just ADD with the second
- argument being 0
-$14690660047411* [center]Implement the condition opcodes[/center]
 $30132649789584* Linked component {number} should point to the output
 $18994998239232* I will show you some upgrades you can make, on the path to implementing function calls. But from here on the details are up to you, I wont tell you what opcodes to use and so on.
 $12034111753799* Linked component {number} should point to the counter
@@ -3303,17 +1862,11 @@ $36561706158040* Linked component {nr} should point to a register or custom comp
 
 === levels/byte_less ===
 
-$11252365204151* Create a wire that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]UNSIGNED[/color].
-$62766453128684* {a} меньше чем {b}?
 $11632471752785* [center]Determine if the first input is less than the second.[/center]
 
 
 === levels/Logic Engine ===
 
-$15865646260225*
-[color=#b72d41][b]WISDOM:[/b][/color] 
- Pain is temporary, glory is 
- forever.
 $17594613477534*
 Create a device that can OR, NAND, NOR or AND two inputs. The third input will be the [INSTRUCTION]. An [INSTRUCTION] is just what we call the number that determines what to compute.
 
@@ -3326,20 +1879,9 @@ Instructions:
 Also you can't move the red components in this level, for reasons that will be revealed later.
 
 
-=== misc/multi_select ===
-
-$85147529532131* Множественный выбор (SHIFT и перетащите)
-
-
 === trans/level_byte_less_i_description ===
 
 $21195810950441* [center]Determine if the first input is less than the second.[/center]
-
-
-=== components/Splitter16 ===
-
-$92674917729864* 16 битный Разделитель
-$28271182652741* Разделяет 16 бита на 2 байта
 
 
 === trans/manual_text_universal_gates ===
@@ -3348,12 +1890,6 @@ $37735744928195*
 It turns out that you can build all the logic for a computer out of either NAND or NOR gates. The Apollo guidance computers, were built entirely of NOR gates. Designed in the sixties, they had only 4KB of RAM and 32KB of disk space, but guided astronauts to the moon nonetheless.
 
 Modern computers are not built entirely of just one of the universal gates, but when applicable NAND gates are preferred over NOR, because they have less delay and occupy less area.
-
-
-=== components/Splitter64 ===
-
-$80420054807186* Разделяет 64 бита на 8 байтов
-$14205692632393* 64 битный Разделитель
 
 
 === misc/component_button ===
@@ -3376,14 +1912,14 @@ $68379799788575* [center]Pairwise OR together each bit[/center]
 === main_scripts/dialouge ===
 
 
-#  hint for odd number
-$68750974209145* You can figure out if 2 inputs have an odd number of [ON] with just 1 component...
+#  Hitn for byte switch
+$86319296925137* What would this look like if you were only switching 1 bit? What would the truth table for such a component look like?
 
 #  hint for the bus
 $50799425816171* Use switches to put the inputs on the same wire.
 
-#  Hitn for byte switch
-$86319296925137* What would this look like if you were only switching 1 bit? What would the truth table for such a component look like?
+#  hint for odd number
+$68750974209145* You can figure out if 2 inputs have an odd number of [ON] with just 1 component...
 
 #  Hint for the maze
 $36837749971886*
@@ -3395,9 +1931,6 @@ The pseudo code for such an algorithm looks like this:
  Turn right as long as there is a wall ahead
  Press use after each turn (in case the exit is ahead)
  Repeat
-
-#  Hint for byte adder
-$37093555217568* Тебе нужно всего лишь 8 полных сумматоров.
 
 #  hint for counting signals
 $21044442262778* The circuitry for the 1's bit is the same as what you did in the level "Odd Number of Signals". The circuitry for the 2's bit is what you did in "Double Trouble", except when all 4 are on.
@@ -3432,22 +1965,6 @@ First determine which bits are different between the 2 bytes. This can be done u
 Finally, the last bit is considered seperately for signed numbers, here it has the opposite effect (if only one number has it [ON], that number is guaranteed to be lower)
 
 
-=== components/Output 1B ===
-
-$77044600156969* 8 битный выход
-
-
-=== components/Xor64 ===
-
-$95012060885697* 64 битный XOR
-$13031452187028* Побитово XOR два значения
-
-
-=== components/Output 3 ===
-
-$96269858195218* Выход
-
-
 === misc/skipped_custom ===
 
 $38174137226538* Select component
@@ -3456,38 +1973,12 @@ $38174137226538* Select component
 $99860977387728* Go to location
 
 
-=== components/ByteXor ===
-
-$98219910712564* 8 битный XOR
-$83236921580268* Побитово XOR два значения
-
-
-=== levels/counting_signals ===
-
-$10724914203078*
-Вывод на этом уровне это двоичный счетчик, у которого каждый из трёх контактов соответствует числам "1, 2 и 4" соответственно.
-Используйте его для подсчета входов в состоянии [ON].\nЗатруднения?
-
-[color=#e63e5b][url=counting_signals]подсказка здесь[/url][/color] если застрянете.
-
-[i][tip]Решение этого уровня не очень красивое и может потребовать больше компонентов.[/tip][/i]
-$10881918807029*
- [color=#b72d41][b]Совет:[/b][/color]
- Использование карандаша и бумаги
- не является чем-то постыдным.
-
-
 === levels/Spacial Invasion ===
 
 $19967210826470* Be aware that the laser can only shoot when there are no other laser beams already in flight.
 $16294185981398* The cargo hull has become infested with space rats.
 $11505369795084* Check [color=#e49f44][url=the_robot]robot page[/url][/color] for instructions on how to program him. There is a link to that page in the program editor as well.
 $10515630949378* We have hooked your machine up to our advanced robot and we want you to program it to shoot the space rats with lasers.
-
-
-=== misc/button_next ===
-
-$50213503063080* Следующий Такт (F5)
 
 
 === components/Nand8 ===
@@ -3502,18 +1993,8 @@ $14174811828377* Adds two inputs
 $73418471595285* Add
 
 
-=== ui/toggles/level_map ===
-
-$71951682957395* Карта уровней
-
-
 === levels/saving_bytes ===
 
-$10633476398156*
-Create a wire that can [SAVE] or [LOAD] a byte.
-
-When the first input bit is [ON], [LOAD] the memory and send it to output.
-When the second input bit is [ON], [SAVE] the input byte.
 $13502950630653*
 [color=#ff9800]None
 0
@@ -3525,20 +2006,14 @@ $15582618410991* LOAD and SAVE
 $18873598212433* LOAD
 
 
-=== levels/byte_constant ===
-
-$12641789008694* Создайте схему которая всегда выводит 164.
-
-
 === main_scripts/leg_level ===
 
-$70383685548547* REG 
-$53021804895845* ANDi
-$69956969985790* ORi
 $85913831661289* IF_LESS
+$69956969985790* ORi
+$53021804895845* ANDi
 $11144256835662* XORi
-$20104629254326* ARGUMENT 2
 $61412773713567* SUB
+$20104629254326* ARGUMENT 2
 $65642901654732* {component} should be disabled
 $52344899983501* IF_LESS_OR_EQUAL
 $89945092889418* SUBi
@@ -3553,10 +2028,9 @@ $68187490877029* IF_EQUAL
 $14186606871089* Next tick counter value will be {wrong_value}, but it should be {value}
 $27868897434461* Could not find the counter component
 $37810243909140* COUNTER
-$38681417496680* ARGUMENT 1
-$43723329256095* REG {nr}
 $44009845985661* ADD
-$50722296752142* ВХОД
+$43723329256095* REG {nr}
+$38681417496680* ARGUMENT 1
 $68666991962246* OR
 $24003300271049* {component} should have value {value}, not {wrong_value}
 $79492115258673* IF_GREATER
@@ -3564,7 +2038,6 @@ $60997201855346* RESULT ADDRESS
 $50231510806554* Could not find the program component
 $64519909700148* AND
 $49810487048038* COUNTER
-$18236360532765* ВЫХОД
 $84307766381146* OPCODE
 
 
@@ -3582,35 +2055,13 @@ The [color=#e49f44]ret[/color] instruction has to do the following:
  [i]- [color=#e49f44]Pop[/color] return address from the stack and jump to it[/i]
 
 You can pass information to and from a function by saving the data to registers as normal. Also be aware of which registers a function will overwrite before calling it.
-$19416009887091* Sometimes it is useful to reuse a section of code. We call these sections 
 $19369640789869* Budget cuts have led to cutting salaries, but now the lab assistants are on strike. You will have to self-assess in this test. This will tell us something about your honesty and maturity.
-$15463931654475* [center]Add 
-
-
-=== levels/odd_ticks ===
-
-$18510295620397* Выведите [OFF] для четных тактов и [ON] для нечетных тактов.
-$16987046679863* На предыдущем уровне вы узнали, что мы не допускаем круговых зависимостей. Теперь вы должны выучить одно исключение.
-$16037516781370*
-Квадратные контакты в игре никогда не влияют на вывод в тот же такт. Поэтому они никогда не вызывают круговых зависимостей.
-	
-	[img]dialogue/delay_buffer.png[/img]
-$17588119878416*
-Линия задержки может зависеть от собственного входа. Это потому, что её вход не влияет на остальную схему до следующего такта. 
-	
-[img]dialogue/delay_buffer.png[/img]
 
 
 === misc/ProbeWireBit ===
 
 $49521764791439* Wire Probe (bit)
 $15206117280094* Display a value on your custom component or in the program editor
-
-
-=== components/Adder Simple ===
-
-$33973952772642* Сумма
-$98429814030509* Суммирует два значения
 
 
 === trans/manual_computer_concepts ===
@@ -3622,15 +2073,6 @@ $60892983318818* Computer concepts
 
 $89595863403484* Shift right
 $69394421220436* Shifts the bits of an input right
-
-
-=== trans/level_sr_latch_RichTextLabel3 ===
-
-$55348415524361*
-[right]Вход 1
-Вход 2
-Желаемый выход
-Текущий выход[/right]
 
 
 === trans/level_complete_delay ===
@@ -3656,26 +2098,18 @@ $58990937331663* Waiting
 $19806403089477* [center]Invert each bit[/center]
 
 
-=== trans/level_saving_gracefully_RichTextLabel3 ===
-
-$74117520663650*
-[right][color=#e49f44]Сохранить
-Значение[/color]
-Желаемый выход
-Текущий выход[/right]
-
-
-=== misc/select_color ===
-
-$97461374731210* Цвет Провода
-
-
 === trans/manual_text_instructions ===
 
 $24791538034329*
 What this game calls an "instructions" is also known as an operation or an opcode (short for operation code). Regardless of the operating system, programming language or any other layers above it, all software must inevitably be reduced to instructions for the CPU to process them.
 
 Internally in modern CPUs, instructions are translated into "microcodes", which are even smaller steps, out of reach for the programmer.
+
+
+=== components/Xor32 ===
+
+$66299093873977* 32 bit XOR
+$38169019785615* Bitwise XOR two values
 
 
 === trans/manual_text_circular_dependency ===
@@ -3698,28 +2132,6 @@ $91783087669146* Checks if one input is less than the other
 $33190791348214* Less (unsigned)
 
 
-=== components/Xor32 ===
-
-$66299093873977* 32 bit XOR
-$38169019785615* Bitwise XOR two values
-
-
-=== trans/optinos_undo ===
-
-$58334563411624* Отменить
-
-
-=== trans/level_alu2_text ===
-
-$58359423026017*
-[right]Код
-[color=#e49f44]Вход 1
-Вход 2[/color]
-Желаемый выход
-Текущий выход
-[/right]
-
-
 === trans/level_turing_complete_description ===
 
 $74859324795927* [center]Add conditions to the calculation codes[/center]
@@ -3737,29 +2149,17 @@ $33922330743421*
 [color=#cccccc][i]Keep your wires organized with colors.[/i][/color]
 
 
-=== trans/level_odd_number_RichTextLabel2 ===
-
-$28592851869484*
-[right][color=#e49f44]Вход 1
-Вход 2
-Вход 3
-Вход 4[/color]
-Желаемый выход
-Текущий выход[/right]
-
-
 === levels/push_pop ===
 
 $78804623186243* OUTPUT
 $49526452710191* DON'T POP
 $58050047963238* VALUE
 $19245209470436* Create a stack
-$12227209887733* Each tick the inputs will either signal PUSH or POP. If it is PUSH, store the value on top of the stack. When it is POP remove that value from the stack and output it.
 $15662660252584* Do nothing
 $62469306234943* DON'T PUSH
-$46948857059388* POP value {value} off stack
-$18761197388580* In order to cut spending, it has been decided to change the queuing system at public offices so that fewer people will go. Instead of first come, first served, we are implementing a last come first served policy. Think of it like a [color=#e49f44]stack[/color] of numbered slips where the citizens either put a slip on top (called [color=#e49f44]PUSH[/color]), or the bureaucrats take one off the top of the stack (called [color=#e49f44]POP[/color]). We want you to implement this new system.
 $65188797398656* PUSH {value} on stack
+$18761197388580* In order to cut spending, it has been decided to change the queuing system at public offices so that fewer people will go. Instead of first come, first served, we are implementing a last come first served policy. Think of it like a [color=#e49f44]stack[/color] of numbered slips where the citizens either put a slip on top (called [color=#e49f44]PUSH[/color]), or the bureaucrats take one off the top of the stack (called [color=#e49f44]POP[/color]). We want you to implement this new system.
+$46948857059388* POP value {value} off stack
 
 
 === trans/level_complete_robot ===
@@ -3774,14 +2174,8 @@ $73150174144736*
 $14957949958941* What you did here was actually multiplying two 4 bit numbers. We had the intern scale it up to bytes instead.
 $19136817138607* [center]Multiply the 4 bit numbers[/center]
 $13549246864135* Bit 0
-$14533861483435* Multiplying two 4 bit numbers gives you a 8 bit number. Build a wire that does this.
 $10274387271390* Bit 0
 $83694551809785* Multiply {num1} and {num2}
-
-
-=== levels/byte_and ===
-
-$15885763626223* Create a wire that ANDs two bytes bitwise.
 
 
 === components/LessI64 ===
@@ -3798,7 +2192,6 @@ $73502755965496* Less (unsigned)
 
 === main_scripts/functions ===
 
-$11467644007149* Счётчик {nr}
 $73560327420927* This save is from an obsolete version of this level.\nCreate and load a new schematic in the schematic menu.
 $99285446909923* To solve this level you need to use the 'Level output' component
 $72465734060414* Short circuit on wire (output values: {values})
@@ -3807,10 +2200,7 @@ $10098517717617* Test: {nr} / {total}
 $29225283986051* To solve this level you need to use the 'Level input' component
 $87591753278764* Reg {nr}
 $95056157627313* To solve this level you need to use the 'Level input' component
-$29169064199243* Выход {nr}
 $12249248261034* To solve this level you need to use the 'Level output' component
-$13327741293223* Вход {nr}
-$32508339206292* NAND SCORE: {nand}
 
 
 === ui/global_translations ===
@@ -3818,26 +2208,12 @@ $32508339206292* NAND SCORE: {nand}
 
 #  Instead of writing 5839000, the number turns into 5.8M
 $22896492410578* M
-$91472284749011* ЗАДЕРЖКА
-$21803034737442* Такт
-$86260137015175* ТАКТ
-$44906330481241* Задержка
-$30602804398798* ЭЛЕМЕНТЫ
-$22213999385406* задержка
 
 #  Instead of writing 5839, the number turns into 5.8K
 $84696693690500* K
-$39343770421034* элементы
-$76763908762578* Такт
-$15265492169229* Элементы
 
 #  Instead of writing 5839000000, the number turns into 5.8B
 $71072134093858* B
-
-
-=== ui/toggles/level_log2 ===
-
-$91515053618360* Справочник
 
 
 === levels/or_gate_3 ===
@@ -3845,9 +2221,9 @@ $91515053618360* Справочник
 $15448906128695* Create an OR gate with 3 inputs.
 
 
-=== trans/binary_racer_count_down2 ===
+=== trans/map_complete ===
 
-$23959994711260* Ready to race?
+$81337533438394* Complete
 
 
 === components/Shl16 ===
@@ -3856,20 +2232,9 @@ $79406691850426* Shift left
 $34287811246049* Shifts the bits of an input left
 
 
-=== trans/levels_any_doubles_RichTextLabel2 ===
+=== trans/binary_racer_count_down2 ===
 
-$60287131882436*
-[right]Вход 1
-Вход 2
-Вход 3
-Вход 4[color=#e49f44]
-Желаемый выход
-Текущий выход[/color][/right]
-
-
-=== trans/map_complete ===
-
-$81337533438394* Complete
+$23959994711260* Ready to race?
 
 
 === trans/schematics_menu_visible_label ===
@@ -3880,15 +2245,6 @@ $34084132835354* Visible in menu
 === components/RegisterRedPlus ===
 
 $57531353625235* Register
-
-
-=== trans/level_saving_bytes_text ===
-
-$43691912945654*
-[right]Действие
-Желаемый выход
-Текущий выход
-[/right]
 
 
 === trans/level_description ===
@@ -3914,27 +2270,6 @@ Although the broken mechanism does make a weird beep when your guess is too high
 $11183892008673* You win this level when you output the correct passcode, no output will fail the level. Additionally, the input will be 1 after a guess that was too high and 0 otherwise.
 
 
-=== trans/level_alu1_text ===
-
-$53254733455389*
-[right]Код
-[color=#e49f44]Вход 1
-Вход 2[/color]
-Желаемый выход
-Текущий выход
-[/right]
-
-
-=== components/Output16 ===
-
-$37381472194529* Выход
-
-
-=== trans/level_nand_1 ===
-
-$71204033550134* Что делает NAND элемент?
-
-
 === trans/manual_text_program ===
 
 $25326551844839*
@@ -3955,16 +2290,6 @@ On the program component you will also find the "Watch state" button.
 This can be used to connect the assembly editor to registers, counters or probes. This way, the state of your architecture can be inspected as you write code, without closing the editor.
 
 
-=== components/Input 3 ===
-
-$70689623552857* Вход
-
-
-=== trans/options_cut ===
-
-$88238310953306* Вырезать
-
-
 === components/Output32z ===
 
 $73681609562628* Only outputs if the switch pin is [ON]
@@ -3974,15 +2299,6 @@ $92749186427039* Switched Output
 === trans/manual_text_top_truth ===
 
 $83283949590490* AND gate
-
-
-=== trans/and_gate_RichTextLabel2 ===
-
-$98472849629373*
-[right][color=#e49f44]Вход 1
-Вход 2[/color]
-Желаемый выход
-Текущий выход[/right]
 
 
 === trans/level_byte_equal_description ===
@@ -3998,13 +2314,11 @@ $72088325385177* Clock
 === components/Xnor ===
 
 $94079327237795* XNOR
-$90614106399129*
-[ON] когда входы одинаковые
-[table=5]
-[cell]Вход 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Вход 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Выход[/cell][cell][ON][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell]
-[/table]
+
+
+=== trans/tick ===
+
+$92150881431937* Tick
 
 
 === components/1_decoder ===
@@ -4013,20 +2327,8 @@ $26685462633615* Toggles between two outputs
 $98250587600120* 1 Bit decoder
 
 
-=== trans/tick ===
-
-$92150881431937* Tick
-
-
 === components/XOR ===
 
-$86856280609387*
-[ON] когда входы разнын
-[table=5]
-[cell]Вход 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Вход 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Выход[/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell][cell][OFF][/cell]
-[/table]
 $54832952840086* XOR
 
 
@@ -4070,11 +2372,6 @@ $92313038380926* Level
 $61854681801183* Ram
 
 
-=== trans/manual_header ===
-
-$10757271456963* Manual entries
-
-
 === components/Ror16 ===
 
 $13970397213910* Rotates the bits of an input right
@@ -4086,18 +2383,15 @@ $90115282457191* Rotate right
 $15090156481094* Name
 
 
-=== ui/top_bar/gate_score ===
+=== trans/manual_header ===
 
-$16224450605442* NAND SCORE:
+$10757271456963* Manual entries
 
 
-=== trans/xor_gate_RichTextLabel2 ===
+=== components/ON ===
 
-$21417732641222*
-[right][color=#e49f44]Вход 1
-Вход 2[/color]
-Желаемый выход
-Текущий выход[/right]
+$96212935718484* Always [ON]
+$95896157427528* ON
 
 
 === trans/options_setting_program_alignment ===
@@ -4110,25 +2404,9 @@ $54874717650167* Program alignment warning
 $76731326010721* Unlocks something unknown
 
 
-=== misc/score_sync ===
-
-$76911045833478* Синхронизация Счёта
-
-
 === trans/map_cpu_architecture ===
 
 $95559333192525* CPU ARCHITECTURE
-
-
-=== components/ON ===
-
-$96212935718484* Always [ON]
-$95896157427528* ON
-
-
-=== components/RegisterRed ===
-
-$10081371413873* Register
 
 
 === trans/levels_negative_header ===
@@ -4136,12 +2414,16 @@ $10081371413873* Register
 $82195103144851* [center]Requirements[/center]
 
 
+=== components/RegisterRed ===
+
+$10081371413873* Register
+
+
 === trans/delete_confirm ===
 
 $57294448765637*
 Are you sure you want 
 to delete this schematic?
-$74657548486940* Да
 
 
 === levels/byte_adder ===
@@ -4165,38 +2447,6 @@ $21257226547838* 32 Bit Mux
 
 $87104108203785* Shifts the bits of an input right
 $88430124157796* Shift right
-
-
-=== levels/saving_gracefully ===
-
-$12474728041023*
-Линия задержки позволяет нам использовать значение на 1 такт позже. 
-
-Нам нужно создать компонент, который позволит нам использовать значение, когда мы захотим, не важно на сколько тактов позже. 
-Такое значение называется [color=#e49f44]сохранённым[/color].
-$13045361823397* НЕ СОХРАНЯТЬ
-$13740696609075*
-На этом уровне 2 входа.
-Только в случве если первый вход [ON], обновите [color=#e49f44]сохранённое[/color] значение.
-Второй вход указывает какое значение нужно [color=#e49f44]сохранить[/color].
-Всегда выводите [color=#e49f44]сохранённое[/color] значение.
-Вот диаграмма компонента который мы хотим построить:
-
-[img]dialogue/saving_gracefully/bit_memory.png[/img]
-
-
-[color=#e63e5b][url=saving_gracefully]подсказка здесь[/url][/color] если застряните.
-
-
-=== trans/levels_bytw_or_text ===
-
-$21877344150481*
-[right]
-[color=#e49f44]Вход 1
-Вход 2[/color]
-Желаемый выход
-Текущий выход
-[/right]
 
 
 === components/DelayLine64 ===
@@ -4227,24 +2477,16 @@ $26621808961883*
 [color=#e49f44]6[/color] Shoot laser [color=#a9a9a9](tab)[/color]
 
 
-=== trans/nor_gate_RichTextLabel2 ===
-
-$52955821161579*
-[right][color=#e49f44]Вход 1
-Вход 2[/color]
-Желаемый выход
-Текущий выход[/right]
-
-
 === components/Nand32 ===
 
 $24565725389553* Bitwise NAND two values
 $71611588991682* 32 Bit NAND
 
 
-=== trans/options_robot_controls ===
+=== components/Rol32 ===
 
-$44632988778557* Управление роботом
+$88734684504266* Rotates the bits of an input left
+$83642246004160* Rotate left
 
 
 === trans/manual_text_edit_instructions ===
@@ -4257,32 +2499,14 @@ If you just finished the OVERTURE computer and see something weird, odds are you
 Each row has a label and 8 bits you can set to either[img]dialogue/on.png[/img], [img]dialogue/off.png[/img] or [img]dialogue/any.png[/img] (wildcard). When using the instruction panel, if the bitpattern matches a row, the label will be shown.
 
 
-=== components/Rol32 ===
-
-$88734684504266* Rotates the bits of an input left
-$83642246004160* Rotate left
-
-
 === trans/odd_number_error ===
 
 $61530231182650* Too many components used
 
 
-=== components/ByteAnd ===
-
-$61791872137683* Побитово AND два значения
-$21541105796357* 8 Битный AND
-
-
 === trans/options_code_font_size ===
 
 $98135524286922* Code font size
-
-
-=== components/Counter ===
-
-$51446864816252* Увеличивается каждый тик, если не перезаписан
-$67910883947749* 8 Битный Счётчик
 
 
 === trans/ide_assembly_codes ===
@@ -4292,42 +2516,20 @@ $62016169253008*
 codes[/center]
 
 
-=== trans/options_general_title ===
-
-$21908594290225* Общее
-
-
 === levels/binary_start ===
 
 $19099025738142* Start
 
 
-=== components/Keyboard ===
+=== trans/manual_edit_instructions ===
 
-$40965596602414* Клавиатура
-$76766452660421* Записывает нажатия клавиш с физической клавиатуры
-
-
-=== trans/level_byte_xor_text ===
-
-$15756501406553*
-[right]
-[color=#e49f44]Вход 1
-Вход 2[/color]
-Желаемый выход
-Текущий выход
-[/right]
+$86365051641280* Edit instruactions
 
 
 === components/Input1_1B ===
 
 $10517158300617* Level input
 $57868504368581* Loads the input from levels
-
-
-=== trans/manual_edit_instructions ===
-
-$86365051641280* Edit instruactions
 
 
 === trans/manual_text_network ===
@@ -4376,44 +2578,12 @@ The most noteworthy thing on your planet is the fruit. It is very tasty.
 
 That's why we are having a fruit tasting event in the canteen.
 $14259900563789* Scan the conveyor belt for the fruit incoming at regular intervals. As soon as you have see the same kind of fruit twice, turn and press the control panel.
-$17070232883226* But we want to make sure we don’t get the same fruit twice as that would obviously be embarrassing.
-
-
-=== ui/toggles/negative_numbers ===
-
-$50924073287410* Переключить формат чисел
-
-
-=== misc/factory_back_inner ===
-
-$12211557416281* Назад
 
 
 === levels/conditions ===
 
-$12951779797594*
-This level has a value input and 3 condition bit inputs.
-
-The 3 bits select the condition as shown below. Check the value against the selected condition and output [ON] if it is satisfied and [OFF] otherwise.
-
-Bit code:        Turn [ON] when:[code]
-[OFF] [OFF] [OFF]    Never
-[OFF] [OFF] [ON]    If value = 0
-[OFF] [ON] [OFF]    If value < 0
-[OFF] [ON] [ON]    If value ≤ 0
-[ON] [OFF] [OFF]    Always
-[ON] [OFF] [ON]    If value ≠ 0
-[ON] [ON] [OFF]    If value ≥ 0
-[ON] [ON] [ON]    If value > 0[/code]
-$16407231803964* Если ЗНАЧЕНИЕ < 0 выведи [img]dialogue/on.png[/img]
 $16742265812068* Regardless of VALUE output [img]dialogue/on.png[/img]
-$17616699231679* Если ЗНАЧЕНИЕ > 0 выведи [img]dialogue/on.png[/img]
-$16632557438774* Если ЗНАЧЕНИЕ ≠ 0 выведи [img]dialogue/on.png[/img]
-$18234235689107* Если ЗНАЧЕНИЕ ≥ 0 выведи [img]dialogue/on.png[/img]
 $12429396872036* Regardless of VALUE output [img]dialogue/off.png[/img]
-$13680487623452* Если ЗНАЧЕНИЕ ≤ 0 выведи [img]dialogue/on.png[/img]
-$19014698800906* Если ЗНАЧЕНИЕ = 0 выведи [img]dialogue/on.png[/img]
-$12706881725738* Твоя схема была сохранена в завод компонентов.
 
 
 === components/ByteShl ===
@@ -4427,39 +2597,19 @@ $66482114876737* Shifts the bits of an input left
 $90323246286028* Instructions
 
 
-=== components/Add16 ===
-
-$28092601427278* Суммирует два входа
-$30820974870562* Сумма
-
-
-=== levels/and_gate ===
-
-$15232844525838*
-Постройте цепь, которая будет соответствовать таблице.
-
-[tip]Двойное нажатие на компонент позволяет перемещать его вместе с соединениями.[/tip]
-$15231724707514* Не хочется делать преждевременных выводов, однако, нам кажется, что, например, слон справится с этой задачей быстрее. Без обид, просто его мозг значительно больше.
-
-
-=== components/Not32 ===
-
-$33620523355085* 32 Битный NOT
-$24607331341411* Побитово инвртирует 32 бита
-
-
 === trans/schematics_description ===
 
 $39347262933523* Description
 
 
-=== trans/nand_Label ===
+=== trans/level_component_factory_error ===
 
-$11482037025960*
-Вход 1
+$49014901714855* Map squares can only contain one input or output node.
 
 
-Вход 2
+=== trans/level_ram_component_RichTextLabel2 ===
+
+$92123299522120* [center]Expected states[/center]
 
 
 === components/MemoryProbe ===
@@ -4468,30 +2618,20 @@ $46948613505134* Display a value on your custom component or in the program edit
 $44867305035474* Memory Probe
 
 
+=== trans/options_robot_use ===
+
+$49182380646128* Use
+
+
 === trans/options_working ===
 
 $18749833316380* Working
-
-
-=== trans/level_component_factory_error ===
-
-$49014901714855* Map squares can only contain one input or output node.
 
 
 === misc/StateProbe ===
 
 $54427436420428* Wire Probe
 $15969687819995* Display a value on your custom component or in the program editor
-
-
-=== trans/options_robot_use ===
-
-$49182380646128* Use
-
-
-=== trans/map_working_computer ===
-
-$38843517090942* РАБОТАЮЩИЙ КОМПЬЮТЕР
 
 
 === trans/manual_text_rgb ===
@@ -4501,9 +2641,9 @@ This simulator uses 3 byte RGB colors for some components. Color are 1 byte each
 [color=#e3243f]RRRRRRRR[/color][color=#55ff55]GGGGGGGG[/color][color=#3333ff]BBBBBBBB[/color]
 
 
-=== trans/level_ram_component_RichTextLabel2 ===
+=== trans/complete_unlocks ===
 
-$92123299522120* [center]Expected states[/center]
+$45250062735373* Unlocks
 
 
 === levels/sr_latch ===
@@ -4512,43 +2652,7 @@ $11150103897185*
 In this level, components may depend on themselves or form loops of up to two components. Despite depending on their own output, some of these wires have stable outputs, at least for some inputs.
 
 The circuit you are asked to construct here has a circular dependency. The circuit also has 2 "stable states" for most inputs. A stable state here means that every component's output agrees with its input. As an example, an OR gate with one input disconnected and the other connected to its own output is stable. If the output is [OFF], both inputs are [OFF], which agrees with the OR gate. If the output is [ON], then so is one of the inputs. However, a NOT gate connected to its own input is not stable. If the output is [ON], then the input is [ON] as well. This will cause the NOT gate to try and make the output [OFF], which will also make the input [OFF]. The circuit will switch between these two states forever, so it is not stable.
-$15754153332116*
-This level introduces the concept of latches. This mechanic is not used anywhere else in the game. However, this level is here for the sake of completeness.  
-	
-If you do not have experience with electronics, it is recommended that you skip this level. You can always come back later.
 $18165461234561* Delay lines are easy to understand and can be used to build any computer architecture. However, modern hardware no longer use these as a basis for memory.
-$15213907597666* Using 2 NOR gates, build the wire that matches the table. You will need a latch.
-$19448398663695*
-When we want to determine what components in a circular dependency are outputting, we don't have a first component we can start with. Instead we use the values of the wires from last tick. This is because in real hardware electrons don't travel instantly. Depending on the wire, the wires either flicker between [ON] and [OFF], or settle in a stable state.
-	
-When you have a wire where the wires can settle in either of 2 different stable states, you have a basis for memory. The next state will depend on the values the wires had last tick. Such wires are called "latches".
-
-
-=== trans/complete_unlocks ===
-
-$45250062735373* Unlocks
-
-
-=== components/FastRam ===
-
-$79436020115192* Быстрая но дорогая ОЗУ
-$12924829814634* Быстрая ОЗУ
-
-
-=== levels/byte_xor ===
-
-$19636386696963* Создай схему которая XOR два байта побитово.
-
-
-=== trans/level_RichTextLabel2 ===
-
-$12683441099336*
-[right]Вход 1
-Вход 2
-Вход 3
-Вход 4[color=#e49f44]
-Желаемый выход
-Текущий выход[/color][/right]
 
 
 === trans/manual_program ===
@@ -4572,37 +2676,11 @@ When the 7th bit of the opcode is [ON], use argument 2 as an immediate value, in
 $10788301006338* Linked component {nr} should point to a register or custom component with a register inside
 $19338533633006* Set the counter increment to 4
 $15197362332657* Create a new schematic and add a program with 4 byte output
-$18004215603701* Add a counter to the wire
 $10141611261952* [center]Implement immediate values[/center]
-
-
-=== components/switch ===
-
-$87345192339084* Переключает значение
-$29301846684808* 8 Битный Переключатель
-
-
-=== components/Register64 ===
-
-$86007777261800* 64 Битный Регистр
-$99461037008796* 64 битная память
 
 
 === levels/Wire Spaghetti ===
 
-$29329105515650* Добавь еще 1 регистр в схему 
-$17106892574116* Добавь счётчик к схеме 
-$50177586789991* Добавь еще {nr} регистров в схему
-$15754373587500* Установи шаг счетчика на 4
-$56024330661504* Watched state {watched_state} should point to a register or custom component with a register inside
-$19099471819164*
-The following are the set up steps that needs to be done in order to complete this level:
-		
-[b]1.[/b] Click the schematic icon ([b][i][/i][/b]) and create a new empty architecture.
-[b]2.[/b] Place a program block with 4 outputs.
-[b]3.[/b] Place a counter, set its increment to 4 and connect it to the program block.
-[b]4.[/b] Add 6 registers (or custom components with registers)
-[b]5.[/b] Click 
 $18860645759682*
 The [color=#e49f44]LEG[/color] architecture is a computer that takes 4 bytes per tick from the program. 
 
@@ -4613,7 +2691,6 @@ Since many operations take 2 arguments (like ADD, OR etc), the second and third 
 And since most operations return 1 result, the fourth byte is for the result.
 	
 	[img]dialogue/leg_diagram_1.png[/img]
-$11377431500625* Add 6 registers to the map (or 6 custom components with only 1 register inside each)
 $14051336765362* Finally it is time for you to start building the [color=#e49f44]LEG[/color] architecture!
 $13268807052125* (You might be adding 7+7, but here 7 means load from input and the input has value 8)
 $30006055126224* Linked component {output} should point to the output
@@ -4634,8 +2711,6 @@ The value of an argument or destination refers to one of these places:
 [/code]
 
 In the next level you will implement more [color=#e49f44]OPCODES[/color], which will require a different ALU than that of [color=#e49f44]OVERTURE[/color].
-$10922418807673* Аргумент 7 означает считывание входа, но вход не включен.
-$62258842382434* Watched state {value} should point to the counter
 $18769284297247* Create a new schematic and add a program with 4 byte output
 
 
@@ -4652,21 +2727,5 @@ $13328644005279* Resubmit
 === trans/negative_numbers ===
 
 $57872971841486* Negative numbers
-
-
-=== trans/level_bit_adder_RichTextLabel2 ===
-
-$79624864981341*
-[right][color=#e49f44]Вход 1
-Вход 2[/color]
-Желаемая Сумма
-Желаемый Перенос
-Текущяя Сумма
-Текущий Перенос[/right]
-
-
-=== components/Output8zLevel ===
-
-$49513138880387* Выход
 
 
