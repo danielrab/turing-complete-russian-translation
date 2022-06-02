@@ -44,7 +44,7 @@ $49251062339706* Настройки
 
 === misc/ide_delete_program ===
 
-$87279416580516* Yes
+$87279416580516* Да
 
 
 === levels/turing_complete ===
@@ -153,10 +153,10 @@ $92896462984546* The robot
 === trans/level_bit_inverter_RichTextLabel2 ===
 
 $67127889187842*
-[right][color=#e49f44]Value
-Invert[/color]
-Desired output
-Current output[/right]
+[right][color=#e49f44]Значение
+Инвертировать[/color]
+Желаемый выход
+Текущий выход[/right]
 
 
 === trans/level_conditions_description ===
@@ -421,15 +421,15 @@ $47202418972371* Стэк
 
 === ui/schematic_ui/confirm_delete ===
 
-$46014905606975* Yes
+$46014905606975* Да
 
 
 === trans/levels_saving_bytes_text ===
 
 $36838510526259*
-[right]Action
-Desired state
-Desired output
+[right]Действие
+Желаемый выход
+Текущий выход
 [/right]
 
 
@@ -500,10 +500,10 @@ $16857608955464* Песочница
 === trans/_second_tick_RichTextLabel2 ===
 
 $11680718497014*
-[right][color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output[/right]
+[right][color=#e49f44]Вход 1
+Вход 2[/color]
+Желаемый выход
+Текущий выход[/right]
 
 
 === trans/level_complete_level_map ===
@@ -594,9 +594,9 @@ $52247325526438* Счётчик
 === trans/always_on_RichTextLabel2 ===
 
 $86547293707045*
-[right][color=#ffa502]Input[/color]
-Desired output
-Current output[/right]
+[right][color=#ffa502]Вход[/color]
+Желаемый выход
+Текущий выход[/right]
 
 
 === components/Xnor16 ===
@@ -721,11 +721,11 @@ $66247694103179* [center]Add 5 to the input[/center]
 === trans/or_gate_3_RichTextLabel2 ===
 
 $56903547636751*
-[right][color=#e49f44]Input 1
-Input 2
-Input 3[/color]
-Desired output
-Current output[/right]
+[right][color=#e49f44]Вход 1
+Вход 2
+Вход 3[/color]
+Желаемый выход
+Текущий выход[/right]
 
 
 === levels/Add 5 ===
@@ -1486,12 +1486,12 @@ $17156565273196* Output [ON] when both inputs are the same.
 === trans/levels_counting_signals_RichTextLabel2 ===
 
 $34604121212779*
-[right]Input 1
-Input 2
-Input 3
-Input 4[color=#e49f44]
-Desired output
-Current output[/color][/right]
+[right]Вход 1
+Вход 2
+Вход 3
+Вход 4[color=#e49f44]
+Желаемый выход
+Текущий выход[/color][/right]
 
 
 === trans/level_program_text ===
@@ -1760,10 +1760,10 @@ $79398554520691* {opcode} {reg_1} and {reg_2}
 === trans/or_gate_RichTextLabel2 ===
 
 $56663370211115*
-[right][color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output[/right]
+[right][color=#e49f44]Вход 1
+Вход 2[/color]
+Желаемый выход
+Текущий выход[/right]
 
 
 === levels/binary_count_down ===
@@ -1923,10 +1923,10 @@ $45789912406647* Побитово XNOR два значения
 === trans/level_bit_switch_RichTextLabel2 ===
 
 $57920867194992*
-[right][color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output[/right]
+[right][color=#e49f44]Вход 1
+Вход 2[/color]
+Желаемый выход
+Текущий выход[/right]
 
 
 === levels/or_gate ===
@@ -2041,9 +2041,9 @@ $56916384895438* Главное меню
 === trans/level_odd_ticks_RichTextLabel3 ===
 
 $89508766742523*
-[right]Input
-Desired output
-Current output[/right]
+[right]Вход
+Желаемый выход
+Текущий выход[/right]
 
 
 === levels/xor ===
@@ -2057,9 +2057,9 @@ $16047615798435* [center]Read the input twice and XOR the bits of the two inputs
 
 $99465606386164*
 [right]
-[color=#e49f44]Input[/color]
-Desired output
-Current output
+[color=#e49f44]Вход[/color]
+Желаемый выход
+Текущий выход
 [/right]
 
 
@@ -2212,7 +2212,7 @@ $47758922161853* Tick
 
 === trans/levels_not_RichTextLabel3 ===
 
-$48425594158515* Build: NOT gate
+$48425594158515* Постройте NOT элемент
 
 
 === trans/level_codes_description ===
@@ -2380,10 +2380,10 @@ Further, custom components don't have a delay score for the costliest path of th
 === trans/level_xnor_RichTextLabel2 ===
 
 $59451104901430*
-[right][color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output[/right]
+[right][color=#e49f44]Вход 1
+Вход 2[/color]
+Желаемый выход
+Текущий выход[/right]
 
 
 === components/Input16 ===
@@ -2395,7 +2395,7 @@ $34560561101846* 16 бит вход
 
 $58391129129347* Регистры
 $45936227746026* Счётчик
-$12946639957230* Элемент NOT
+$12946639957230* NOT Элемент
 $16881141174140* Двоичные Гонки
 $37136208388559* SR Триггер
 $32191988336459* Сохраняем Изящно
@@ -2612,9 +2612,9 @@ $61172959716558* Save location
 === trans/not_gate_RichTextLabel2 ===
 
 $10340875578771*
-[right][color=#e49f44]Input[/color]
-Desired output
-Current output[/right]
+[right][color=#e49f44]Вход[/color]
+Желаемый выход
+Текущий выход[/right]
 
 
 === misc/lab_toggle ===
@@ -2700,9 +2700,9 @@ $47846591761838* 16 битный XOR
 === trans/level_tick_tock_keys ===
 
 $11700778730606*
-[right][color=#e49f44]Action
-Desired output
-Current output[/color][/right]
+[right][color=#e49f44]Действие
+Желаемый выход
+Текущий выход[/color][/right]
 
 
 === components/And32 ===
@@ -3137,11 +3137,11 @@ $95509904060545* Submit
 === trans/and_gate_3_RichTextLabel2 ===
 
 $52008707927408*
-[right][color=#e49f44]Input 1
-Input 2
-Input 3[/color]
-Desired output
-Current output[/right]
+[right][color=#e49f44]Вход 1
+Вход 2
+Вход 3[/color]
+Желаемый выход
+Текущий выход[/right]
 
 
 === components/ByteConstant ===
@@ -3223,9 +3223,9 @@ $52159578521318* Paste
 === trans/level_double_buffer_RichTextLabel3 ===
 
 $27208335953837*
-[right]Input
-Desired output
-Current output[/right]
+[right]Вход
+Желаемый выход
+Текущий выход[/right]
 
 
 === trans/manual_text_terminology ===
@@ -3501,7 +3501,7 @@ $73418471595285* Add
 
 === ui/toggles/level_map ===
 
-$71951682957395* Level map
+$71951682957395* Карта уровней
 
 
 === levels/saving_bytes ===
@@ -3624,10 +3624,10 @@ $69394421220436* Shifts the bits of an input right
 === trans/level_sr_latch_RichTextLabel3 ===
 
 $55348415524361*
-[right]Input 1
-Input 2
-Desired output
-Current output[/right]
+[right]Вход 1
+Вход 2
+Желаемый выход
+Текущий выход[/right]
 
 
 === trans/level_complete_delay ===
@@ -3656,10 +3656,10 @@ $19806403089477* [center]Invert each bit[/center]
 === trans/level_saving_gracefully_RichTextLabel3 ===
 
 $74117520663650*
-[right][color=#e49f44]Save
-Value[/color]
-Desired output
-Current output[/right]
+[right][color=#e49f44]Сохранить
+Значение[/color]
+Желаемый выход
+Текущий выход[/right]
 
 
 === misc/select_color ===
@@ -3709,11 +3709,11 @@ $58334563411624* Undo
 === trans/level_alu2_text ===
 
 $58359423026017*
-[right]Code
-[color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output
+[right]Код
+[color=#e49f44]Вход 1
+Вход 2[/color]
+Желаемый выход
+Текущий выход
 [/right]
 
 
@@ -3737,12 +3737,12 @@ $33922330743421*
 === trans/level_odd_number_RichTextLabel2 ===
 
 $28592851869484*
-[right][color=#e49f44]Input 1
-Input 2
-Input 3
-Input 4[/color]
-Desired output
-Current output[/right]
+[right][color=#e49f44]Вход 1
+Вход 2
+Вход 3
+Вход 4[/color]
+Желаемый выход
+Текущий выход[/right]
 
 
 === levels/push_pop ===
@@ -3834,7 +3834,7 @@ $71072134093858* B
 
 === ui/toggles/level_log2 ===
 
-$91515053618360* Manual
+$91515053618360* Справочник
 
 
 === levels/or_gate_3 ===
@@ -3856,12 +3856,12 @@ $34287811246049* Shifts the bits of an input left
 === trans/levels_any_doubles_RichTextLabel2 ===
 
 $60287131882436*
-[right]Input 1
-Input 2
-Input 3
-Input 4[color=#e49f44]
-Desired output
-Current output[/color][/right]
+[right]Вход 1
+Вход 2
+Вход 3
+Вход 4[color=#e49f44]
+Желаемый выход
+Текущий выход[/color][/right]
 
 
 === trans/map_complete ===
@@ -3882,9 +3882,9 @@ $57531353625235* Register
 === trans/level_saving_bytes_text ===
 
 $43691912945654*
-[right]Action
-Desired state
-Desired output
+[right]Действие
+Желаемый выход
+Текущий выход
 [/right]
 
 
@@ -3914,11 +3914,11 @@ $11183892008673* You win this level when you output the correct passcode, no out
 === trans/level_alu1_text ===
 
 $53254733455389*
-[right]Code
-[color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output
+[right]Код
+[color=#e49f44]Вход 1
+Вход 2[/color]
+Желаемый выход
+Текущий выход
 [/right]
 
 
@@ -3929,7 +3929,7 @@ $37381472194529* Output
 
 === trans/level_nand_1 ===
 
-$71204033550134* What does the NAND gate do?
+$71204033550134* Что делает NAND элемент?
 
 
 === trans/manual_text_program ===
@@ -3976,10 +3976,10 @@ $83283949590490* AND gate
 === trans/and_gate_RichTextLabel2 ===
 
 $98472849629373*
-[right][color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output[/right]
+[right][color=#e49f44]Вход 1
+Вход 2[/color]
+Желаемый выход
+Текущий выход[/right]
 
 
 === trans/level_byte_equal_description ===
@@ -4091,10 +4091,10 @@ $16224450605442* NAND SCORE:
 === trans/xor_gate_RichTextLabel2 ===
 
 $21417732641222*
-[right][color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output[/right]
+[right][color=#e49f44]Вход 1
+Вход 2[/color]
+Желаемый выход
+Текущий выход[/right]
 
 
 === trans/options_setting_program_alignment ===
@@ -4138,7 +4138,7 @@ $82195103144851* [center]Requirements[/center]
 $57294448765637*
 Are you sure you want 
 to delete this schematic?
-$74657548486940* Yes
+$74657548486940* Да
 
 
 === levels/byte_adder ===
@@ -4189,10 +4189,10 @@ $13740696609075*
 
 $21877344150481*
 [right]
-[color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output
+[color=#e49f44]Вход 1
+Вход 2[/color]
+Желаемый выход
+Текущий выход
 [/right]
 
 
@@ -4227,10 +4227,10 @@ $26621808961883*
 === trans/nor_gate_RichTextLabel2 ===
 
 $52955821161579*
-[right][color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output[/right]
+[right][color=#e49f44]Вход 1
+Вход 2[/color]
+Желаемый выход
+Текущий выход[/right]
 
 
 === components/Nand32 ===
@@ -4309,10 +4309,10 @@ $76766452660421* Записывает нажатия клавиш с физич�
 
 $15756501406553*
 [right]
-[color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output
+[color=#e49f44]Вход 1
+Вход 2[/color]
+Желаемый выход
+Текущий выход
 [/right]
 
 
@@ -4378,7 +4378,7 @@ $17070232883226* But we want to make sure we don’t get the same fruit twice as
 
 === ui/toggles/negative_numbers ===
 
-$50924073287410* Toggle number format
+$50924073287410* Переключить формат чисел
 
 
 === misc/factory_back_inner ===
@@ -4540,12 +4540,12 @@ $19636386696963* Создай схему которая XOR два байта п
 === trans/level_RichTextLabel2 ===
 
 $12683441099336*
-[right]Input 1
-Input 2
-Input 3
-Input 4[color=#e49f44]
-Desired output
-Current output[/color][/right]
+[right]Вход 1
+Вход 2
+Вход 3
+Вход 4[color=#e49f44]
+Желаемый выход
+Текущий выход[/color][/right]
 
 
 === trans/manual_program ===
