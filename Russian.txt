@@ -99,17 +99,17 @@ $15296208528991* Существа, которые смогут завершит�
 === trans/manual_text_console ===
 
 $39093856809104*
-The console component is a 80x24 [color=#dd6576][url=RGB color]ASCII[/url][/color] display. It must be linked to a memory source through the component link button:
+Компонент Консоль это экран 80х24 [color=#dd6576][url=RGB color]ASCII[/url][/color] символов. Он должен быть подключен к памяти через соединение компонента:
  [img=200]dialogue/manual/Console/link_state.png[/img]
 
-Updating the linked memory will then update the visuals on the console. In standard non color mode, each byte in the memory component determines what the corresponding character on the screen will be. However, the first character position can be offset by using the input pin on the console. This is for example useful when implementing scrolling.
+Обновление подключённой памяти обновляет текст на консоли. В стандартном бесцветном редиме, каждый байт в компоненте памяти определяет каким будет соответствующую символ на экране. Место первого символа в памяти может быть изменено с помощью входа консоли. Это полезно например для созжания прокрутки.
 
-The console also has a color mode that can be toggled on in the panel:
+У консоли также есть цветной режим, который можно включить на панели:
 [img=125]dialogue/manual/Console/color_mode.png[/img]
 
-In this mode each character has an additional 3 byte background and 3 byte foreground [color=#dd6576][url=RGB color]RGB color[/url][/color] for a total of 7 bytes of data per character. However, each character is 8 byte aligned, which is more convenient when you set your RAM or ROM to 64 bit width addressing. Also, you may keep the character indexes the same when changing your schematic from non color to color mode, by change the bitwidth of the RAM or ROM from 8 to 64 at the same time. 
+В этом режиме у каждого символа есть 3 байта фона и 3 байта переднего плана [color=#dd6576][url=RGB color]RGB цвета[/url][/color], итого 7 байтов данных на какждый символ. Однако, каждый символ выравнен по 8-и байтам, что удобнее когда вы выставляете ваше ОЗУ или ПЗУ на 64-битную адресацию. Вы также можете не менять индексы ваших символов когда меняете консоль с бесцветного режима на цветной, если вы при этом меняете ОЗУ или ПЗУ с 8 на 64 бита. 
 
-In color mode the lowest byte is the character, the next 3 bytes are the font color and the following 3 bytes are the background color.
+В цветном режиме, младший байт это символ, следующие 3 байта — цвет шрифта, а следующие 3 байта — цвет фона.
 
 
 === levels/component_factory ===
@@ -323,7 +323,7 @@ $92673421413755*
 
 === trans/schematic_new_folder_name ===
 
-$86236104278688* New folder
+$86236104278688* Новая папка
 
 
 === levels/Nor GATE ===
@@ -658,7 +658,7 @@ $11316928751185* Наша система образования, по давне
 
 === misc/options_Score Sync ===
 
-$45371978167502* Score sync
+$45371978167502* Синхронизация счёта
 
 
 === trans/map_keys_to_pan ===
@@ -887,7 +887,7 @@ $92765669828982* Увеличивается каждый тик, если не �
 
 === trans/options_robot_up ===
 
-$92522280178363* Up
+$92522280178363* Вверх
 
 
 === components/NOT ===
@@ -1058,12 +1058,12 @@ $16564356062672*
 
 === trans/options_robot_right ===
 
-$70185788176428* Right
+$70185788176428* Вправо
 
 
 === trans/options_robot_left ===
 
-$73654791275689* Left
+$73654791275689* Влево
 
 
 === components/Maker32 ===
@@ -1241,8 +1241,8 @@ $44690074039467* Toggle define rules
 
 === components/Rom ===
 
-$24976506406652* ROM
-$81743370431597* Read only memory (outside the sandbox)
+$24976506406652* ПЗУ
+$81743370431597* Постоянное запоминающее устройство (вне песочницы)
 
 
 === components/Output 4 ===
@@ -1297,7 +1297,7 @@ $68946767861738* 8 Битный Регистр
 
 === trans/options_status ===
 
-$35063135798145* Status
+$35063135798145* Состояние
 
 
 === levels/Tower of Radioactive Alloy ===
@@ -1556,7 +1556,7 @@ Instead, by having 2 enable pins, one wire can enable a whole row and another a 
 
 === trans/options_robot_shoot ===
 
-$52956877721342* Shoot
+$52956877721342* Стрелять
 
 
 === trans/levels_double_the_number ===
@@ -1710,7 +1710,7 @@ $16105755937680* экран 80x24 текстовых символов
 
 === trans/turing_complete ===
 
-$35911376069529* Полный по Тьюрингу
+$35911376069529* Полнота по Тьюрингу
 
 
 === components/ByteLessI ===
@@ -2231,7 +2231,7 @@ $73379230742631* Rotates the bits of an input left
 
 === trans/options_synced ===
 
-$99411066573242* Synced
+$99411066573242* Синхронизировано
 
 
 === trans/text_truth_table_left ===
@@ -2448,7 +2448,7 @@ $17198602105978* Беззнаковое меньше
 $43018398941741* Всегда Вкл
 $45773199639367* Нечётные Такты
 $68155633878444* Задержка
-$33343343932901* Полный по-Тьюрингу
+$33343343932901* Полнота по Тьюрингу
 $69830943995038* Одностороннее Движение
 $81417895515868* Битовый Переключатель
 $95989050249094* Больший AND Элемент
@@ -2609,7 +2609,7 @@ $78515694621006* Pan left
 
 === trans/optinos_save_location ===
 
-$61172959716558* Save location
+$61172959716558* Путь до папки сохранения
 
 
 === trans/not_gate_RichTextLabel2 ===
@@ -2644,7 +2644,7 @@ $45650720555565* Программируеммый компонент памят�
 
 === trans/options_controls ===
 
-$18297012748869* Controls
+$18297012748869* Управление
 
 
 === levels/Counter ===
@@ -2747,12 +2747,12 @@ In this simulator, pins that can be disconnected are grey.
 
 === trans/map_locked ===
 
-$95146987030704* Locked
+$95146987030704* Заблокировано
 
 
 === trans/manual_assembly ===
 
-$14434902453525* Assembly
+$14434902453525* Ассемблер
 
 
 === trans/nand_values ===
@@ -2928,7 +2928,7 @@ This will delete all level solutions, custom components and architectures. This 
 
 === trans/manual_hard_disk ===
 
-$45865138134248* Hard disk
+$45865138134248* Жёсткий диск
 
 
 === components/NOR ===
@@ -3183,7 +3183,7 @@ $55380524073095* Проверяет меньше ли первый вход че
 
 === trans/options_level ===
 
-$64744152268407* Level
+$64744152268407* Уровень
 
 
 === levels/sandbox ===
@@ -3648,7 +3648,7 @@ $90244529484227* Checks if one input is less than the other
 
 === trans/optinos_waiting ===
 
-$58990937331663* Waiting
+$58990937331663* Ожидание
 
 
 === trans/level_byte_no_description ===
@@ -4032,7 +4032,7 @@ $54832952840086* XOR
 
 === trans/options_robot_down ===
 
-$71118559743827* Down
+$71118559743827* Вниз
 
 
 === components/Not16 ===
@@ -4486,7 +4486,7 @@ $15969687819995* Display a value on your custom component or in the program edit
 
 === trans/options_robot_use ===
 
-$49182380646128* Use
+$49182380646128* Использовать
 
 
 === trans/map_working_computer ===
@@ -4641,7 +4641,7 @@ $18769284297247* Create a new schematic and add a program with 4 byte output
 
 === trans/schematic_new_file_name ===
 
-$24424463568668* New schematic
+$24424463568668* Новая схема
 
 
 === trans/options_resubmit ===
