@@ -1244,7 +1244,7 @@ $81743370431597* Read only memory (outside the sandbox)
 
 === components/Output 4 ===
 
-$90190739202646* Output
+$90190739202646* Выход
 
 
 === levels/Delicious Order ===
@@ -1345,7 +1345,7 @@ $83960548773205* FUNCTIONS
 
 === components/Input 1 Byte ===
 
-$40943344093513* Input
+$40943344093513* Вход
 
 
 === trans/wire_comment ===
@@ -1633,7 +1633,7 @@ Additionally, this map has a dedicated input component, which can be the [color=
 
 === components/Output 2 ===
 
-$73255344581755* Output
+$73255344581755* Выход
 
 
 === components/Nor16 ===
@@ -1644,7 +1644,7 @@ $69522380057631* 16 Bit NOR
 
 === components/Input32 ===
 
-$10677927084411* Input
+$10677927084411* Вход
 
 
 === components/Input 1B CODE ===
@@ -1773,7 +1773,7 @@ $56999237564848* {x} seconds left
 
 === components/Output32 ===
 
-$37476623180671* Output
+$37476623180671* Выход
 
 
 === misc/profile ===
@@ -2241,7 +2241,7 @@ Output[/right]
 
 === trans/optoins_factory_reset ===
 
-$17721051281188* Factory reset
+$17721051281188* Сброс до заводских настроек
 
 
 === components/Equal16 ===
@@ -2306,7 +2306,7 @@ $11794110848012* This time he has taken over the control room and holds the capt
 
 === components/InputOutput ===
 
-$26488480303865* In/Out
+$26488480303865* Вход/Выход
 
 
 === components/Program8_1 ===
@@ -2878,7 +2878,7 @@ $55679445263875* Copy
 
 === trans/nand_Label2 ===
 
-$60885816586685* Output
+$60885816586685* Выход
 
 
 === trans/tooltip_tooltip ===
@@ -3924,7 +3924,7 @@ $53254733455389*
 
 === components/Output16 ===
 
-$37381472194529* Output
+$37381472194529* Выход
 
 
 === trans/level_nand_1 ===
@@ -3954,7 +3954,7 @@ This can be used to connect the assembly editor to registers, counters or probes
 
 === components/Input 3 ===
 
-$70689623552857* Input
+$70689623552857* Вход
 
 
 === trans/options_cut ===
