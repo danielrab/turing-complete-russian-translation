@@ -1085,25 +1085,18 @@ $99373213759665*
 [color=#cccccc][i]You can now view the gate score of  wires and components.[/i][/color]
 
 
-=== levels/binary_racer ===
-
-$29718660090112* Wrong answer
-$11176073682097* What is {number} in binary?
-$37093663674348* Level {x}
-
-
-=== components/Bidirectional64 ===
-
-$82412839066570* 64 bit bidirectional pin
-$24932613021646* Can circumvent certain circular dependency errors
-
-
 === trans/manual_text_universal_gates ===
 
 $37735744928195*
 It turns out that you can build all the logic for a computer out of either NAND or NOR gates. The Apollo guidance computers, were built entirely of NOR gates. Designed in the sixties, they had only 4KB of RAM and 32KB of disk space, but guided astronauts to the moon nonetheless.
 
 Modern computers are not built entirely of just one of the universal gates, but when applicable NAND gates are preferred over NOR, because they have less delay and occupy less area.
+
+
+=== components/Bidirectional64 ===
+
+$82412839066570* 64 bit bidirectional pin
+$24932613021646* Can circumvent certain circular dependency errors
 
 
 === trans/level_complete_profile ===
