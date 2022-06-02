@@ -1,1 +1,1 @@
-to contribute, ask for access and sync the files often to avoid overlapping work
+We are now using the website as the main place to upload files. I'll be periodically merging files from there to here.
