@@ -3207,7 +3207,7 @@ $42506906257154* Only outputs if the switch pin is [ON]
 
 === trans/level_complete_stat_type ===
 
-$69511102367948* Type
+$69511102367948* Тип
 
 
 === ui/toggles/race_condition ===
