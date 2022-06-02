@@ -167,7 +167,7 @@ $62540112577327* [center]When the value meets the condition output [img]dialogue
 === components/64Ram ===
 
 $63410290483563* Маленькая по стоимости но медленная память
-$78790416494254* RAM
+$78790416494254* ОЗУ
 
 
 === trans/manual_text_top_the_robot ===
@@ -4067,7 +4067,7 @@ $92313038380926* Level
 
 === trans/manual_ram ===
 
-$61854681801183* Ram
+$61854681801183* ОЗУ
 
 
 === trans/manual_header ===
