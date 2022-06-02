@@ -131,11 +131,6 @@ Reading input will give you the current number of cards. Sending 1, 2 or 3 to ou
 $11794110848012* This time he has taken over the control room and holds the captain hostage.
 
 
-=== trans/level_conditions_description ===
-
-$62540112577327* [center]When the value meets the condition output [img]dialogue/on.png[/img], output [img]dialogue/off.png[/img] otherwise.[/center]
-
-
 === trans/manual_text_top_the_robot ===
 
 $50801318216470* The screen shows the robot and his surroundings.

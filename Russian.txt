@@ -161,7 +161,7 @@ $67127889187842*
 
 === trans/level_conditions_description ===
 
-$62540112577327* [center]When the value meets the condition output [img]dialogue/on.png[/img], output [img]dialogue/off.png[/img] otherwise.[/center]
+$62540112577327* [center]Если значение соответствует условию, выведите [ON], иначе [OFF].[/center]
 
 
 === components/64Ram ===
