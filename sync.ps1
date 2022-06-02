@@ -6,4 +6,4 @@ git add .
 git commit -m "Automatic Sync"
 git push
 taskkill /im "Turing Complete.exe"
-Start-Process "C:\Users\s17b1\Desktop\Turing Complete.url"
+Start-Process "steam://rungameid/1444480"
