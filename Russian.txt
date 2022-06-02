@@ -1380,7 +1380,7 @@ Addition, multiplication and everything else works the same as base 10, except y
 
 === misc/wire_color ===
 
-$78287906849040* Wire color
+$78287906849040* Цвет Провода
 
 
 === trans/level_alu1_description ===
