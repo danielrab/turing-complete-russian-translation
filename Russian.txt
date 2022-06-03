@@ -479,7 +479,7 @@ Shifting by 3: [color=#e49f44]90 shl 3[/color]
 [OFF] [ON] [OFF] [ON] [ON] [OFF] [ON] [OFF] would become:
 [ON] [ON] [OFF] [ON] [OFF] [OFF] [OFF] [OFF]
 $18137790657923* In addition to giving you a shift left component, we also had the intern create a shift right component. All he had to do was to create the mirror version of this schematic.
-$18518173140953* I strongly recommended that you add [color=#e49f44]shift left[/color] and [color=#e49f44]shift right[/color] to your hardware for future levels.
+$18518173140953* Я настоятельно рекомендую добавить [color=#e49f44]сдвиг влево[/color] и [color=#e49f44]сдвиг вправо[/color] к вашему компьютеру для будущих уровней.
 
 
 === misc/restore_overture ===
@@ -523,7 +523,7 @@ $11090938799865* Создайте "инвертированый" XOR gate, на�
 $15769391111364* Когда бит "Инвертировать" [ON], выведите обратное от "Значение". Иначе, просто выведите "Значение" как есть.
 $15272914096446* This level is exactly the same as the XOR one you solved before. Remember no matter what we tell you the goal of the level is, the real truth is in the truth table.
 $14944872827527* Despite the funny background you figured out this was just the XOR gate in disguise! Well done.
-$16125025706490* Hmm, perhaps you have studied the behavior of the delay buffer a little bit too well...
+$16125025706490* Хмм, возможно вы даже слишком хорошо изучили поведение линии задержки.
 $13224963076378* We are experimenting with how backgrounds influence cognitive functions in earthlings.
 
 
@@ -537,15 +537,15 @@ $15908016538045* ЗНАЧЕНИЕ
 $16196915566111* 0
 $14259545926196* A
 $12306130287676*
-In this level you have to build a wire that 
-can [SAVE] or [LOAD] from 4 different bytes of memory.
+На этом уровне вы должны построить схему которая
+может [SAVE] или [LOAD] из 4-х разных байтов памяти.
 
-You are given 1 bit that determines if you are to [LOAD]. Another bit determines if you are to [SAVE] and it comes with a corresponding value.
-Additionally, you have 2 address bits. 
+Вам даётся 1 который определяет нужно ли вам [LOAD]. Другой бит определяет нужно ли вам загружать [SAVE] и к нему прилагается значение.
+Кроме того у вас есть 2-х битовый адрес. 
 
-With 2 bits, there are 4 combinations, one for each byte of memory in this level.
-[i][tip]Join wires in the middle and use right angles or this will be a mess.[/tip][/i]
-[i][tip]Spacebar rotates components.[/tip][/i]
+С 2-мя битами существует 4 комбинации, одна на каждый байт на этом уровне.
+[i][tip]Объединяй провода посередине и используй прямые углы, иначе получится балаган.[/tip][/i]
+[i][tip]Пробел разворачивает элементы.[/tip][/i]
 $18084166025569* Ничего
 $13082830776248* НЕ ЗАГРУЖАТЬ
 $12933801309767* A
