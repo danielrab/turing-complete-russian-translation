@@ -124,6 +124,11 @@ $94594171568769* [center]Linked components[/center]
 $99546064626994* Score
 
 
+=== levels/delay_level ===
+
+$17854168097855* Check
+
+
 === misc/specification_dialogue ===
 
 $54909668901048* Immediate
@@ -436,7 +441,7 @@ A common approach for pipelined architectures is to use Latency RAM as for main 
 The simplest way to integrate the Latency RAM is simply to stall the whole architecture while waiting for a save or load. An easy optimization on this comes from realizing that you don't have to wait for saves, except if you want to load.
 
 [b]Dual Load RAM[/b]
-Sometimes it is beneficial to separate parts of the logic into a separate processing unit, that operates more or less independently. This could be for handling a display device or a network connection. In these cases, the independent unit will often need to continously load and save to memory, while the outside logic only needs to occasionally load. Use Dual Laod RAM to avoid having to schedule who gets access to the RAM at what time.
+Sometimes it is beneficial to separate parts of the logic into a separate processing unit, that operates more or less independently. This could be for handling a display device or a network connection. In these cases, the independent unit will often need to continuously load and save to memory, while the outside logic only needs to occasionally load. Use Dual Laod RAM to avoid having to schedule who gets access to the RAM at what time.
 
 
 === trans/manual_side_the_robot ===
@@ -760,7 +765,9 @@ Then output the total volume that the landscape can carry as the answer.
 
 === levels/delay_level_check ===
 
-$23906582153175* Check wire
+$59355217078543* Correct!
+$68999077595244* Check
+$90847326020954* Nope!
 
 
 === levels/Dancing Machine ===
@@ -932,20 +939,10 @@ $42506906257154* Only outputs if the switch pin is [ON]
 $34453052824732* NOT
 
 
-=== trans/manual_text_terminology ===
+=== components/DivMod32 ===
 
-$99266452352883*
-[b]Instruction[/b]
-A byte or a few bytes that together make the computer perform a specific action.
-
-[b]Opcode[/b]
-The part of the instruction that determines which operation (like ADD or AND) is to be done.
-
-[b]Memory address[/b]
-A number used as a name for memory locations (often for registers). These are used to specify where an instruction is supposed to load data from or save data to.
-
-[b]Jump[/b]
-Changing the value of the program counter, changing which instruction is loaded next.
+$61314390474120* Divide and mod 2 numbers
+$84309999871615* Divide
 
 
 === trans/level_registers_code ===
@@ -968,9 +965,20 @@ The tables of input and output which are used everywhere throughout the game are
 "Input" and "Output" will often be represented with variable names, like in algebra. And instead of using colors, you will often see the values represented as 0 / 1 or False / True.
 
 
-=== trans/instrucitons_header ===
+=== trans/manual_text_terminology ===
 
-$14831276667273* [center]Instructions[/center]
+$99266452352883*
+[b]Instruction[/b]
+A byte or a few bytes that together make the computer perform a specific action.
+
+[b]Opcode[/b]
+The part of the instruction that determines which operation (like ADD or AND) is to be done.
+
+[b]Memory address[/b]
+A number used as a name for memory locations (often for registers). These are used to specify where an instruction is supposed to load data from or save data to.
+
+[b]Jump[/b]
+Changing the value of the program counter, changing which instruction is loaded next.
 
 
 === levels/Conditionals ===
@@ -1021,6 +1029,11 @@ $20464862486158* [center]Copy the value from the correct input, to the correct o
 $21195810950441* [center]Determine if the first input is less than the second.[/center]
 
 
+=== trans/instrucitons_header ===
+
+$14831276667273* [center]Instructions[/center]
+
+
 === levels/byte_or ===
 
 $10368115829346* But actually it is OK because you lived good lives in the wild and we don't let the meat go to waste.
@@ -1063,62 +1076,6 @@ $71931050184389* [img=165]dialogue/sr_latch_tooltip.png[/img]
 === trans/levels_byte_or_description ===
 
 $68379799788575* [center]Pairwise OR together each bit[/center]
-
-
-=== main_scripts/dialouge ===
-
-
-#  Hitn for byte switch
-$86319296925137* What would this look like if you were only switching 1 bit? What would the truth table for such a component look like?
-
-#  hint for the bus
-$50799425816171* Use switches to put the inputs on the same wire.
-
-#  hint for odd number
-$68750974209145* You can figure out if 2 inputs have an odd number of [ON] with just 1 component...
-
-#  Hint for the maze
-$36837749971886*
-Always following the left (or right) hand side of the maze will make sure you eventually reach the exit.
-	
-The pseudo code for such an algorithm looks like this:
- Step forward
- Turn left
- Turn right as long as there is a wall ahead
- Press use after each turn (in case the exit is ahead)
- Repeat
-
-#  hint for counting signals
-$21044442262778* The circuitry for the 1's bit is the same as what you did in the level "Odd Number of Signals". The circuitry for the 2's bit is what you did in "Double Trouble", except when all 4 are on.
-
-#  hint for saving gracefully
-$25321701584378*
-In this level you need to use 1 Delay Line. Make a truth table for what should go into the Delay Line. Consider the input to the Delay Line as the output for your table. 
-
-The inputs are the 2 level inputs AND the output of the Delay Line, as the output plays a role in its input. In total you have 3 "inputs" to for this table which gives you 8 combinations. Once you have the level requirements as a table, it should be a lot easier to solve.
-
-#  Hint for conditions
-$87674181578455*
-There are 3 condition bits. The first bit being [ON] means the result being 0 meets the condition. The second bit being [ON] means the result being less than 0 meets the condition. If either of those two are [ON], the condition is met. 
-Finally, if the last bit is [ON], negate the status of the condition being met or not.
-
-#  hint for xor gate
-$88963098241493* This level can be done with 3 components, a NAND, an AND and an OR gate.
-
-#  Hint for masking time
-$46866534894828*
-In binary, taking modulo 4 of a number is the same as only using the two lower bits. This is because the higher bits represet 4, 8, 16 etc, and they all divide 4 with no remainder.
-This is true in general for modulo a power of 2, the lowest bit of a number represents that number modulo 2 (even or odd), the lowest 3 bits modulo 8 and so on.
-
-Likewise, in decimal 4321 modulo 100 is also simple (answer is 21, the higher digits are disregarded), this is because 100 is a power of 10.
-
-Now you just have to figure out how to get the last 2 digits of a number.
-
-#  hint for less
-$56438995128380*
-First determine which bits are different between the 2 bytes. This can be done using a byte XOR (remember XOR turns [ON] when the inputs are not the same). We know the number that has the highest different bit [ON] is the larger number. But we must only consider the highest different bit, so for each bit, use a chain of OR gates to check if any higher are [ON].
-		
-Finally, the last bit is considered seperately for signed numbers, here it has the opposite effect (if only one number has it [ON], that number is guaranteed to be lower)
 
 
 === misc/skipped_custom ===
@@ -1172,6 +1129,17 @@ Another interesting representation, perhaps worth looking up is base -2, where t
 
 $14174811828377* Adds two inputs
 $73418471595285* Add
+
+
+=== trans/options_console ===
+
+$96601731563408* Open console
+
+
+=== components/DivMod64 ===
+
+$80284847781948* Divide
+$71663353206665* Divide and mod 2 numbers
 
 
 === levels/saving_bytes ===
@@ -1779,7 +1747,7 @@ $39011561067359*
 [b]Manual Entry[/b]
 [color=#cccccc][i]RTFM[/i][/color]
 
-Entry: [color=#68d277]Architechtual complexity[/color]
+Entry: [color=#68d277]Architectural complexity[/color]
 
 
 === trans/level_spacial_invasion_description ===
@@ -1974,7 +1942,7 @@ $41574334638147* Switch
 
 === trans/level_constants_description ===
 
-$34641396464207* [center]Add constant loading to your wire[/center]
+$34641396464207* [center]Add constant loading to your architecture[/center]
 
 
 === components/DelayLine64 ===
@@ -2009,6 +1977,62 @@ $40263928358112* Circular dependency
 === trans/manual_Cyclic recipes ===
 
 $45682345144408* Circular recipes
+
+
+=== main_scripts/dialogue ===
+
+
+#  Hint for byte switch
+$86319296925137* What would this look like if you were only switching 1 bit? What would the truth table for such a component look like?
+
+#  hint for the bus
+$50799425816171* Use switches to put the inputs on the same wire.
+
+#  hint for odd number
+$68750974209145* You can figure out if 2 inputs have an odd number of [ON] with just 1 component...
+
+#  Hint for the maze
+$36837749971886*
+Always following the left (or right) hand side of the maze will make sure you eventually reach the exit.
+	
+The pseudo code for such an algorithm looks like this:
+ Step forward
+ Turn left
+ Turn right as long as there is a wall ahead
+ Press use after each turn (in case the exit is ahead)
+ Repeat
+
+#  hint for counting signals
+$21044442262778* The circuitry for the 1's bit is the same as what you did in the level "Odd Number of Signals". The circuitry for the 2's bit is what you did in "Double Trouble", except when all 4 are on.
+
+#  hint for saving gracefully
+$25321701584378*
+In this level you need to use 1 Delay Line. Make a truth table for what should go into the Delay Line. Consider the input to the Delay Line as the output for your table. 
+
+The inputs are the 2 level inputs AND the output of the Delay Line, as the output plays a role in its input. In total you have 3 "inputs" to for this table which gives you 8 combinations. Once you have the level requirements as a table, it should be a lot easier to solve.
+
+#  Hint for conditions
+$87674181578455*
+There are 3 condition bits. The first bit being [ON] means the result being 0 meets the condition. The second bit being [ON] means the result being less than 0 meets the condition. If either of those two are [ON], the condition is met. 
+Finally, if the last bit is [ON], negate the status of the condition being met or not.
+
+#  hint for xor gate
+$88963098241493* This level can be done with 3 components, a NAND, an AND and an OR gate.
+
+#  Hint for masking time
+$46866534894828*
+In binary, taking modulo 4 of a number is the same as only using the two lower bits. This is because the higher bits represent 4, 8, 16 etc, and they all divide 4 with no remainder.
+This is true in general for modulo a power of 2, the lowest bit of a number represents that number modulo 2 (even or odd), the lowest 3 bits modulo 8 and so on.
+
+Likewise, in decimal 4321 modulo 100 is also simple (answer is 21, the higher digits are disregarded), this is because 100 is a power of 10.
+
+Now you just have to figure out how to get the last 2 digits of a number.
+
+#  hint for less
+$56438995128380*
+First determine which bits are different between the 2 bytes. This can be done using a byte XOR (remember XOR turns [ON] when the inputs are not the same). We know the number that has the highest different bit [ON] is the larger number. But we must only consider the highest different bit, so for each bit, use a chain of OR gates to check if any higher are [ON].
+		
+Finally, the last bit is considered separately for signed numbers, here it has the opposite effect (if only one number has it [ON], that number is guaranteed to be lower)
 
 
 === trans/instructions_the_robot ===
@@ -2155,7 +2179,7 @@ $38773676077206* Edit Instructions
 
 === trans/manual_edit_instructions ===
 
-$86365051641280* Edit instruactions
+$86365051641280* Edit instructions
 
 
 === components/Input1_1B ===
@@ -2201,9 +2225,9 @@ You can detect when events happen on the network, by checking the "Next event ty
 
 [color=#39aa49]Connect complete[/color] only happens after a [color=#e49f44]Connect[/color], wait for this before you start sending data.
 
-You may send or recieve between 1 and 8 bytes of data at a time, use the [color=#dd6576]Data length[/color] to decide.
+You may send or receive between 1 and 8 bytes of data at a time, use the [color=#dd6576]Data length[/color] to decide.
 
-A connection may be either "possibly open" or "closed". There is no way to know if a connection is actually open other than sending data. The underlying network protocols were designed like this for reliabillity and speed, it is not a limitation of the simulator.
+A connection may be either "possibly open" or "closed". There is no way to know if a connection is actually open other than sending data. The underlying network protocols were designed like this for reliability and speed, it is not a limitation of the simulator.
 
 If you get a [color=#dd6576]Connection ID[/color] of -1, this means there was an error connecting.
 
@@ -2295,7 +2319,7 @@ $15969687819995* Display a value on your custom component or in the program edit
 
 === components/Splitter32 ===
 
-$90978982016052* Splits 32 bits into 4 byts
+$90978982016052* Splits 32 bits into 4 bytes
 $24096666569346* 32 bit Splitter
 
 
@@ -2324,6 +2348,12 @@ $37014604954362* Shift left
 === trans/complete_unlocks ===
 
 $45250062735373* Unlocks
+
+
+=== components/DivMod8 ===
+
+$37666366877853* Divide and mod 2 numbers
+$44959426271423* Divide
 
 
 === trans/level_byte_mux_description ===
@@ -2434,5 +2464,11 @@ $91318587712792* TO
 === trans/negative_numbers ===
 
 $57872971841486* Negative numbers
+
+
+=== components/DivMod16 ===
+
+$42657221816637* Divide and mod 2 numbers
+$22319923069746* Divide
 
 
