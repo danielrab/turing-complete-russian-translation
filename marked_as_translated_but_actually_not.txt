@@ -1,38 +1,96 @@
-$11038144815919* This level uses programs to test your wires. When the programs are run, this level checks if the
-$16072814175447* Programming on buggy hardware is very frustrating. It is painful to suddenly be forced to reason about wires, when you are in the middle of solving a programming problem. It is tempting to apply a quick wire fix, so you can get back to solving the original problem. But now this quick fix broke something else in a program that used to work and so on. Therefore, when developing hardware try to aim for 100% reliability before you start programming!
-$14458828731919* Time to merge in the
-$16133643476631* The wire you built in the
-$12671132029272* Your wire has been saved to the component factory.
+$16072814175447* Programming on buggy hardware is very frustrating. It is painful to suddenly be forced to reason about circuits, when you are in the middle of solving a programming problem. It is tempting to apply a quick fix, so you can get back to solving the original problem. But now this quick fix broke something else in a program that used to work and so on. Therefore, when developing hardware try to aim for 100% reliability before you start programming!
+$14458828731919*
+Time to merge in the "Arithmetic Engine" circuit you made previously with the register circuit. The calculation circuit was saved in the component factory and can now be added as a component. If you forgot which pin does what, check the circuit in the component factory.
+
+Use the decoder you built to figure out if we should copy between registers or do calculations. Here are the 4 different modes again:
+[OFF][OFF] Immediate
+[OFF][ON] Calculate
+[ON][OFF] Copy
+[ON][ON] Condition
+
+For this level you only have to worry about the copy and calculate mode, check the [INSTRUCTIONS] by clicking on [img=20]dialogue/instruction_icon.png[/img] in the top panel for the details. When in calculate mode, take [color=#e49f44]REG 1[/color] and [color=#e49f44]REG 2[/color] as inputs, and save the result in [color=#e49f44]REG 3[/color].
+
+[tip]Don't forget the 3 bit decoder component has a disable bit.[/tip]
+$16133643476631* The circuit you built in the "Registers" level can copy values between registers, while the "Arithmetic Engine" can do different operations on 2 inputs. But you need to be able to do both in the same circuit. To do this, build a "decoder", which will decide which mode our computer is in, based on the 2 bits we haven't used yet.
+$12671132029272* Your circuit has been saved to the component factory.
+$15955150920362*
 In this level you only get one input, we call this the initial seed. The seed is put through the following steps to produce a pseudo random number.
-In the algorithm below,
+
+In the algorithm below, "shl 1" means shift left once, "shl 2" means shift left twice and "shr 1" means shift right once.
+
+[b]8 bit xorshift RNG:[/b][code][color=#87a8c8]
+temp1     = seed  xor (seed  shr 1)
+temp2     = temp1 xor (temp1 shl 1)
+next_seed = temp2 xor (temp2 shr 2)
+[/color][/code]
+Next output next_seed mod 4, to move the robot. Finally use next_seed (before mod 4) as the seed to get the next number in the dance sequence and repeat.
+
+(Notice the initial seed will never be 0)
+$72764802067974*
+Welcome to the sandbox. 
+
 Components are available in the menus on the right side. Once placed, click on the pins of the components and drag to connect them with wire. On the left you will find the UI for the simulation control. Note that you can right click on the "Run faster" button to set target speed.
+
 You can find more information about the simulation in the manual (button is in the top left). Notable features to check out are the "component factory" where you can create your own components and the program component, which lets you define your own assembly.
-$19454393978813* The Keyboard lets you directly control your computer, using well... your keyboard
-Add if statements to your wire. For the if statements, the 2 arguments are compared and if the condition is true, the counter is set to a jump address.
+$19454393978813* The keyboard lets you directly control your computer, using your ... keyboard
+$10794262854382*
+Add if statements to your circuit. For the if statements, the 2 arguments are compared and if the condition is true, the counter is set to a jump address.
+	
 The previous instructions had the 4 bytes represent:
+[code][color=#87a8c8]OPCODE, ARGUMENT_1, ARGUMENT_2, RESULT[/color][/code]
+
 For if statements the bytes represent:
+[code][color=#87a8c8]OPCODE, ARGUMENT_1, ARGUMENT_2, JUMP_ADDRESS[/color][/code]
+
 In addition to the previous opcodes, add:
+[code][color=#87a8c8]32 IF_EQUAL
+33 IF_NOT_EQUAL
+34 IF_LESS
+35 IF_LESS_OR_EQUAL
+36 IF_GREATER
+37 IF_GREATER_OR_EQUAL[/color][/code]
+
 Use unsigned less / greater for the comparisons.
-Each opcode does what their name implies. For example the following jumps to byte 16 if REG0 is less than REG1:
-$14973719570693* Add a counter to the wire
- COPY is just ADD with the second
- argument being 0
-$14690660047411* [center]Implement the condition opcodes[/center]
-$11252365204151* Create a wire that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]UNSIGNED[/color].
-Create a wire that can [SAVE] or [LOAD] a byte.
+
+Each opcode does what their name implies. For example the following jumps to byte 16 if REG0 is less than REG1: 
+[code][color=#87a8c8]IF_LESS REG0 REG1 16[/color][/code]
+$14973719570693* Add a counter to the circuit
+$16826220977157*
+ [color=#b72d41][b]TIP:[/b][/color] 
+COPY is just ADD with the second argument being 0
+$14690660047411* Implement the condition opcodes
+$11252365204151* Create a circuit that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]UNSIGNED[/color].
+$10633476398156*
+Create a circuit that can [SAVE] or [LOAD] a byte.
+
 When the first input bit is [ON], [LOAD] the memory and send it to output.
 When the second input bit is [ON], [SAVE] the input byte.
-$19416009887091* Sometimes it is useful to reuse a section of code. We call these sections
-$15463931654475* [center]Add
-        [img]dialogue/delay_buffer.png[/img]
-$12227209887733* Each tick the inputs will either signal PUSH or POP. If it is PUSH, store the value on top of the stack. When it is POP remove that value from the stack and output it.
-$14533861483435* Multiplying two 4 bit numbers gives you a 8 bit number. Build a wire that does this.
-$15885763626223* Create a wire that ANDs two bytes bitwise.
-$32508339206292* NAND SCORE: {nand}
-[img]dialogue/saving_gracefully/bit_memory.png[/img]
+
+The output has an enable pin, enable it only on [LOAD].
+
+$19416009887091*
+Sometimes it is useful to reuse a section of code. We call these sections "functions". To implement this reuse, one can [color=#e63e5b][url=terminology]jump[/url][/color] to the beginning of the function and jump back again at the end of the function. We call jumping to the function "calling" the function, and jumping back from the function "returning" from the function. 
+	
+But for this section of code to actually be reusable, the return jump will have to be able to return to different locations, depending on where we called the function from.
+
+We could save the counter value to a register before jumping to the function and use this value when returning. However, if done this way, a function would not be able to call another function, since this would overwrite the original return address.
+
+Say function A calls function B, who calls function C. When we want to return from C, we only need the return address for B and in B we only need the address for A. In general, regardless of which function we look at and how they are nested, the last return address we added is always the first one we will need again. This is exactly the behavior of the stack.
+$15463931654475* [center]Add "call" and "ret" instructions[/center]
+$12227209887733*
+Each tick the inputs will either signal PUSH or POP. If it is PUSH, store the value on top of the stack. When it is POP remove that value from the stack and output it.
+	
+The output has an enable pin, enable it only on POP.
+
+$14533861483435* Multiplying two 4 bit numbers gives you a 8 bit number. Build a circuit that does this.
+$15885763626223* Create a circuit that ANDs two bytes bitwise.
+$32508339206292* GATE SCORE: {gate}
 $17070232883226* But we want to make sure we don’t get the same fruit twice as that would obviously be embarrassing.
+$12951779797594*
 This level has a value input and 3 condition bit inputs.
+
 The 3 bits select the condition as shown below. Check the value against the selected condition and output [ON] if it is satisfied and [OFF] otherwise.
+
 Bit code:        Turn [ON] when:[code]
 [OFF] [OFF] [OFF]    Never
 [OFF] [OFF] [ON]    If value = 0
@@ -42,18 +100,22 @@ Bit code:        Turn [ON] when:[code]
 [ON] [OFF] [ON]    If value ≠ 0
 [ON] [ON] [OFF]    If value ≥ 0
 [ON] [ON] [ON]    If value > 0[/code]
-This level introduces the concept of latches. This mechanic is not used anywhere else in the game. However, this level is here for the sake of completeness.
-If you do not have experience with electronics, it is recommended that you skip this level. You can always come back later.
-$15213907597666* Using 2 NOR gates, build the wire that matches the table. You will need a latch.
-When we want to determine what components in a circular dependency are outputting, we don't have a first component we can start with. Instead we use the values of the wires from last tick. This is because in real hardware electrons don't travel instantly. Depending on the wire, the wires either flicker between [ON] and [OFF], or settle in a stable state.
-When you have a wire where the wires can settle in either of 2 different stable states, you have a basis for memory. The next state will depend on the values the wires had last tick. Such wires are called "latches".
-$18004215603701* Add a counter to the wire
-$56024330661504* Watched state {watched_state} should point to a register or custom component with a register inside
+
+$15754153332116* This level introduces the concept of latches. This mechanic is not necessary to complete the game.
+$15213907597666* Using 2 NOR gates, build the circuit that matches the table. You will need a latch.
+$19448398663695*
+When we want to determine what components in a circular dependency are outputting, we don't have a first component we can start with. Instead we use the values of the wires from last tick. This is because in real hardware electrons don't travel instantly. Depending on the circuit, the wires either flicker between [ON] and [OFF], or settle in a stable state.
+	
+When you have a circuit where the wires can settle in either of 2 different stable states, you have a basis for memory. The next state will depend on the values the wires had last tick. Such wires are called "latches".
+$18004215603701* Add a counter to the circuit
+$56024330661504* Linked component {nr} should point to a register or custom component with a register inside
+$19099471819164*
 The following are the set up steps that needs to be done in order to complete this level:
+		
 [b]1.[/b] Click the schematic icon ([b][i][/i][/b]) and create a new empty architecture.
 [b]2.[/b] Place a program block with 4 outputs.
 [b]3.[/b] Place a counter, set its increment to 4 and connect it to the program block.
 [b]4.[/b] Add 6 registers (or custom components with registers)
-[b]5.[/b] Click
-$11377431500625* Add 6 registers to the map (or 6 custom components with only 1 register inside each)
-$62258842382434* Watched state {value} should point to the counter
+[b]5.[/b] Click "Edit link components" on the program component and connect registers to 0 to 5. Connect the counter to 6 and the output to 7.
+$11377431500625* Add 6 registers to the map
+$62258842382434* Linked component {counter} should point to the counter
