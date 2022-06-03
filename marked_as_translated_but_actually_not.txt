@@ -1,6 +1,3 @@
-$16810715868480* [center]Calculate modulo 4 of the input.[/center]
-$10866019808027* For this level you probably want to turn on signed numbers, so the highest bit shows as -128. Click
-$18189600217529* [center]Implement the OPCODE instructions[/center]
 $11038144815919* This level uses programs to test your wires. When the programs are run, this level checks if the
 $16072814175447* Programming on buggy hardware is very frustrating. It is painful to suddenly be forced to reason about wires, when you are in the middle of solving a programming problem. It is tempting to apply a quick wire fix, so you can get back to solving the original problem. But now this quick fix broke something else in a program that used to work and so on. Therefore, when developing hardware try to aim for 100% reliability before you start programming!
 $14458828731919* Time to merge in the
