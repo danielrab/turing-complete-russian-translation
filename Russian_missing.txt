@@ -1091,11 +1091,6 @@ $99860977387728* Go to location
 $57358078712675* Save
 
 
-=== components/LessI32 ===
-
-$99994775592318* Checks if one input is less than the other
-
-
 === levels/Spacial Invasion ===
 
 $19967210826470* Be aware that the laser can only shoot when there are no other laser beams already in flight.
