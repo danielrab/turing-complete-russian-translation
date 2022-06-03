@@ -1709,7 +1709,7 @@ $50013003040535* Rotates the bits of an input right
 === levels/Masking Time ===
 
 $19351773688761* Тактов осталось: {ticks_left}  Вход: {input}
-$16810715868480* [center]Calculate modulo 4 of the input.[/center]
+$16810715868480* [center]Посчитайте Вход по модулю 4.[/center]
 $17375862136921*
 The length of our week is 4 days. Our weekdays are named Zero's day, One's day, Two's day and Three's day. I hear some earthlings number their Two's day incorrectly? 
 	
