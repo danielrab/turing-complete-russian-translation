@@ -2440,20 +2440,10 @@ $18769284297247* Create a new schematic and add a program with 4 byte output
 $81238724438578* Make a wire where the input of a component depends on its own output
 
 
-=== trans/options_resubmit ===
-
-$13328644005279* Resubmit
-
-
 === levels/the_bus ===
 
 $96958133516462* FROM
 $91318587712792* TO
-
-
-=== trans/negative_numbers ===
-
-$57872971841486* Negative numbers
 
 
 === components/DivMod16 ===

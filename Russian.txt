@@ -4700,12 +4700,12 @@ $24424463568668* Новая схема
 
 === trans/options_resubmit ===
 
-$13328644005279* Resubmit
+$13328644005279* Отправить повторно
 
 
 === trans/negative_numbers ===
 
-$57872971841486* Negative numbers
+$57872971841486* Отрицательные числа
 
 
 === trans/level_bit_adder_RichTextLabel2 ===
