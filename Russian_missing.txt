@@ -746,11 +746,6 @@ $70999134800536* Rotate right
 $71130919681688* NAND
 
 
-=== trans/level_binary_search_description ===
-
-$11976224688780* [center]Recover the passcode[/center]
-
-
 === levels/Water World ===
 
 $13739681561355* Total volume: 
