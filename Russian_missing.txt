@@ -10,9 +10,12 @@ $44961981616677*
 Current answer 11 + 88  = 99[/center]
 
 
-=== trans/options_pan_up ===
+=== trans/level_byte_adder_question2 ===
 
-$80031998727851* Pan up
+$85899338356278*
+[right]Correct answer
+
+Your answer[/right]
 
 
 === levels/maze ===
@@ -29,14 +32,6 @@ $54151353200088* DOOR
 $29779449172278*
 [right][color=#e49f44]Code
 Input[/color][/right]
-
-
-=== trans/level_byte_adder_question2 ===
-
-$85899338356278*
-[right]Correct answer
-
-Your answer[/right]
 
 
 === trans/level_complete_stat_tick ===
@@ -61,15 +56,6 @@ $73379230742631* Rotates the bits of an input left
 === trans/level_codes_description ===
 
 $24678249110160* [center]Add calculation codes to your wire[/center]
-
-
-=== levels/turing_complete ===
-
-$15326252036920* Before, only code could influence memory, now memory must influence code. With the addition of conditional logic, our computer can run any algorithm, and calculate anything calculable.
-$16583885726240* Yes you did it! I thought you were just this odd looking hairless ape creature, but you actually built a real computer! Amazing.
-$10510746154639* At tick 1 the program should load address 1.
-$10317244906317* No program found
-$14587485007736* Until this point all possible programs have been confined to running in order byte by byte.
 
 
 === components/Neg16 ===
@@ -105,14 +91,6 @@ Hard disks are made of a spinning disk and a mechanical arm that has to physical
 The hard disk component has a "seek" pin, which lets you change the address you are looking at by the given amount. The addresses "wrap around", such that seeking 1 less than 0 moves you to the highest address, and seeking 1 higher than that gets you back to 0.
 
 
-=== levels/component_factory ===
-
-$14665712485657* This custom component can not be used as it has no area.
-$17077079648771* Components can be added, renamed or deleted using the level save system.
-$12516102012088* This component has no area and will not be usable in levels. Place components on the map to give it area.
-$14712417427860* Since this level is a tool and not a challenge, you can go to the level map and continue on when you want.
-
-
 === trans/manual_delay ===
 
 $78806697204524* Delay
@@ -144,11 +122,6 @@ $94594171568769* [center]Linked components[/center]
 === trans/level_complete_stat_sum ===
 
 $99546064626994* Score
-
-
-=== levels/delay_level ===
-
-$11246430085016* Note, you can see the delay path by clicking the hour glass in the upper right corner.
 
 
 === misc/specification_dialogue ===
@@ -391,9 +364,9 @@ $17464069717985* 64bit Maker
 $79677187590355* Turns 64 bits into 8 bytes
 
 
-=== trans/options_pan_left ===
+=== trans/manual_ASCII_encoding ===
 
-$78515694621006* Pan left
+$30404865580119* ASCII encoding
 
 
 === main_scripts/input ===
@@ -401,14 +374,9 @@ $78515694621006* Pan left
 $10186190492148* ALT click to move wire head
 
 
-=== trans/options_pan_right ===
+=== misc/watchable_state ===
 
-$33884219481037* Pan right
-
-
-=== trans/manual_ASCII_encoding ===
-
-$30404865580119* ASCII encoding
+$58678516111149* Link components
 
 
 === levels/bit_switch ===
@@ -420,11 +388,6 @@ If components output different values on the same wire, you get an error. Howeve
 
 This means that more than 1 of these grey output pins can connect to the same wire and not cause an error, as long as only one of them is enabled at a time.
 $42793594302151* Using 2 NOT gates and 2 Switches, build an XOR gate.
-
-
-=== misc/watchable_state ===
-
-$58678516111149* Link components
 
 
 === trans/instructions_header ===
@@ -675,11 +638,6 @@ $48829429502039*
 [color=#cccccc][i]Run your computer without updating the UI at each tick[/i][/color]
 
 
-=== trans/options_pan_down ===
-
-$93140495547084* Pan down
-
-
 === components/Screen ===
 
 $12771040946773* Displays the visuals that accompany certain levels
@@ -823,11 +781,6 @@ $66247694103179* [center]Add 5 to the input[/center]
 === trans/level_component_factory_Label2 ===
 
 $37347658035959* Component preview
-
-
-=== trans/options_color_wire ===
-
-$64341547590822* Apply color to wire
 
 
 === levels/Add 5 ===
@@ -1058,19 +1011,14 @@ Instructions:
 Also you can't move the red components in this level, for reasons that will be revealed later.
 
 
-=== misc/option_reset ===
+=== trans/level_the_bus_description ===
 
-$15557473522933* Reset
+$20464862486158* [center]Copy the value from the correct input, to the correct output[/center]
 
 
 === trans/level_byte_less_i_description ===
 
 $21195810950441* [center]Determine if the first input is less than the second.[/center]
-
-
-=== trans/level_the_bus_description ===
-
-$20464862486158* [center]Copy the value from the correct input, to the correct output[/center]
 
 
 === levels/byte_or ===
@@ -1173,11 +1121,6 @@ First determine which bits are different between the 2 bytes. This can be done u
 Finally, the last bit is considered seperately for signed numbers, here it has the opposite effect (if only one number has it [ON], that number is guaranteed to be lower)
 
 
-=== trans/options_inline_latches ===
-
-$53886441687616* Allow circular recipes
-
-
 === misc/skipped_custom ===
 
 $38174137226538* Select component
@@ -1278,7 +1221,6 @@ $14186606871089* Next tick counter value will be {wrong_value}, but it should be
 $27868897434461* Could not find the counter component
 $37810243909140* COUNTER
 $44009845985661* ADD
-$43723329256095* REG {nr}
 $38681417496680* ARGUMENT 1
 $68666991962246* OR
 $24003300271049* {component} should have value {value}, not {wrong_value}
@@ -2138,25 +2080,15 @@ $54106972240596* Halt
 $62990744955549* Stops execution with a custom message
 
 
-=== trans/options_code_font_size ===
+=== misc/program_edit ===
 
-$98135524286922* Code font size
+$57861256694537* Bytes {bytes_from} - {bytes_to}
 
 
 === components/Bidirectional32 ===
 
 $54631386552063* 32 bit bidirectional pin
 $35105566244017* Can circumvent certain circular dependency errors
-
-
-=== misc/program_edit ===
-
-$57861256694537* Bytes {bytes_from} - {bytes_to}
-
-
-=== trans/options_setting_click_to_pan ===
-
-$24654961601456* Click to pan
 
 
 === trans/level_wide_instructions_description ===
@@ -2216,9 +2148,9 @@ $64427417171037* Test
 $19098578855427* Binary
 
 
-=== trans/options_comment_wire ===
+=== misc/controls2 ===
 
-$96449970906640* Comment wire
+$38773676077206* Edit Instructions
 
 
 === trans/manual_edit_instructions ===
@@ -2232,9 +2164,9 @@ $10517158300617* Level input
 $57868504368581* Loads the input from levels
 
 
-=== misc/controls2 ===
+=== trans/manual_terminology ===
 
-$38773676077206* Edit Instructions
+$13311390759928* Terminology
 
 
 === trans/manual_text_network ===
@@ -2280,16 +2212,6 @@ If you get a [color=#dd6576]Connection ID[/color] of -1, this means there was an
 
 $44510554000571* Network
 $90462653419289* Handles network connections
-
-
-=== trans/manual_terminology ===
-
-$13311390759928* Terminology
-
-
-=== trans/options_animation_speed ===
-
-$13442839894535* Wire animation speed
 
 
 === levels/unseen_fruit ===
@@ -2416,11 +2338,6 @@ In this level, components may depend on themselves or form loops of up to two co
 
 The circuit you are asked to construct here has a circular dependency. The circuit also has 2 "stable states" for most inputs. A stable state here means that every component's output agrees with its input. As an example, an OR gate with one input disconnected and the other connected to its own output is stable. If the output is [OFF], both inputs are [OFF], which agrees with the OR gate. If the output is [ON], then so is one of the inputs. However, a NOT gate connected to its own input is not stable. If the output is [ON], then the input is [ON] as well. This will cause the NOT gate to try and make the output [OFF], which will also make the input [OFF]. The circuit will switch between these two states forever, so it is not stable.
 $18165461234561* Delay lines are easy to understand and can be used to build any computer architecture. However, modern hardware no longer use these as a basis for memory.
-
-
-=== trans/options_cluster_color ===
-
-$77850745497963* Apply color to wire clustr
 
 
 === trans/level_program_description ===

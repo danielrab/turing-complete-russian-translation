@@ -49,11 +49,11 @@ $87279416580516* Да
 
 === levels/turing_complete ===
 
-$15326252036920* Before, only code could influence memory, now memory must influence code. With the addition of conditional logic, our computer can run any algorithm, and calculate anything calculable.
-$16583885726240* Yes you did it! I thought you were just this odd looking hairless ape creature, but you actually built a real computer! Amazing.
-$10510746154639* At tick 1 the program should load address 1.
-$10317244906317* No program found
-$14587485007736* Until this point all possible programs have been confined to running in order byte by byte.
+$15326252036920* До сих пор только код влиял на память, теперь память должна влиять на код. С добавлением условной логики, наш компьютер теперь может выполнить люой алгоритм и вычислить всё что вычислимо.
+$16583885726240* Да, ты это сделал! Я думал ты был всего лишь странно выглядящей лысой обезьяной, но ты построил настоящий компьютер! Замечательно!
+$10510746154639* На 1-ом такте программа должна загрузить адрес 1.
+$10317244906317* Программа не найдена.
+$14587485007736* До этого момента все программы ограничивались выполнением байт за байтом.
 $19649119273248*
 The final thing we need to add is a mechanism for changing the program counter through [INSTRUCTIONS] when certain conditions are met.
 
@@ -114,13 +114,13 @@ $39093856809104*
 
 === levels/component_factory ===
 
-$14665712485657* This custom component can not be used as it has no area.
-$17077079648771* Components can be added, renamed or deleted using the level save system.
+$14665712485657* Этот кастомный компонент не может быть использован так как у него нет площади.
+$17077079648771* Компоненты могут быть добавлены, убраны или переименовагы с помощью системы сохранений этого уровня.
 $19551383617326*
 Welcome to the component factory, the wires you create in here will be usable as components in architecture levels.
 The wirery you create defines the behavior of the component and the layout defines its shape.
-$12516102012088* This component has no area and will not be usable in levels. Place components on the map to give it area.
-$14712417427860* Since this level is a tool and not a challenge, you can go to the level map and continue on when you want.
+$12516102012088* У этого компонента нет пдощади и его нельзя будет использовать на уровнях. Добавьте компоненты на карту чтобы дать ему площадь.
+$14712417427860* Поскольку этот уровень это инструмент а не испытание, вы можете вернуться на карту уровней когда захотите.
 $15549447390000* input/output components are in the same square. The custom component will be unusable since 2 pins can't overlap.
 
 
@@ -196,7 +196,7 @@ $94594171568769* [center]Linked components[/center]
 $19986989895202*
 All components have a delay. And in a wire, the total delay is determined by the slowest path. This means you normally want to put things in parallel.
 In this level you must prove that you understand this concept.
-$11246430085016* Note, you can see the delay path by clicking the hour glass in the upper right corner.
+$11246430085016* Примечание: вы можете увидеть путь задержки нажав на песочные часы в правом верхнем углу.
 $12817338693402* The delay of any component is ultimately derived from the delay of the nand gate, which has a delay of 2. Build a wire with a delay of 6 and a nand cost of 5.
 
 
@@ -962,7 +962,7 @@ $20464862486158* [center]Copy the value from the correct input, to the correct o
 
 === misc/option_reset ===
 
-$15557473522933* Reset
+$15557473522933* Сброс
 
 
 === misc/instr_clone ===
@@ -1074,7 +1074,7 @@ $85308499118176* 32 битный производитель
 
 === trans/options_inline_latches ===
 
-$53886441687616* Allow circular recipes
+$53886441687616* Разрешить цикличные рецепты
 
 
 === misc/add_code_name ===
@@ -1802,7 +1802,7 @@ $34912798641933* 1 bit bidirectional pin
 
 === trans/options_setting_click_to_pan ===
 
-$24654961601456* Click to pan
+$24654961601456* Использовать клик для движения
 
 
 === components/Halt ===
@@ -1898,7 +1898,7 @@ $13311390759928* Terminology
 
 === trans/options_comment_wire ===
 
-$96449970906640* Comment wire
+$96449970906640* Добавить комментарий к проводу
 
 
 === components/NetworkClient ===
@@ -1914,7 +1914,7 @@ $98930461722118* Возврат к уровню
 
 === trans/options_animation_speed ===
 
-$13442839894535* Wire animation speed
+$13442839894535* Скорость анимации проводов
 
 
 === components/Xnor8 ===
@@ -2028,7 +2028,7 @@ $76480303942112* Программируеммый компонент памят�
 
 === trans/options_cluster_color ===
 
-$77850745497963* Apply color to wire clustr
+$77850745497963* Применить цвет к группе проводов
 
 
 === trans/level_program_description ===
@@ -2138,7 +2138,7 @@ $30400404542678* Дву-загрузочная ОЗУ.
 
 === trans/options_pan_up ===
 
-$80031998727851* Pan up
+$80031998727851* Двигаться вверх
 
 
 === levels/maze ===
@@ -2496,7 +2496,7 @@ $71792123436163* 16 битная память
 
 === levels/Opcodes ===
 
-$19693461238792* Установи шаг счетчика на 4
+$19693461238792* Установи шаг счётчика на 4
 $20916717363300* Linked component {nr} should point to the output
 $38976231780455* Linked component {nr} should point to a register or custom component with a register inside
 $18189600217529* [center]Implement the OPCODE instructions[/center]
@@ -2599,12 +2599,12 @@ $30404865580119* ASCII encoding
 
 === trans/options_pan_right ===
 
-$33884219481037* Pan right
+$33884219481037* Двигаться вправо
 
 
 === trans/options_pan_left ===
 
-$78515694621006* Pan left
+$78515694621006* Двигаться влево
 
 
 === trans/optinos_save_location ===
@@ -2808,7 +2808,7 @@ $87777776285772* [center]Invert the sign of the number[/center]
 === main_scripts/overture_level ===
 
 $11338791453100* Dynamic
-$27259865408750* На следующем такте значение счетчика будет {next}, Это должно быть {expected}
+$27259865408750* На следующем такте значение счётчика будет {next}, Это должно быть {expected}
 $95030012922256* Вход должен быть включен только при чтении с входа
 $12873109232054* Ожидаемый вывод: {expected}, получено: {got}
 
@@ -2910,7 +2910,7 @@ $49499540884410* Can circumvent certain circular dependency errors
 
 === trans/options_pan_down ===
 
-$93140495547084* Pan down
+$93140495547084* Двигаться вниз
 
 
 === components/Mux64 ===
@@ -3061,7 +3061,7 @@ In the algorithm below,
 
 === trans/options_color_wire ===
 
-$64341547590822* Apply color to wire
+$64341547590822* Применить цвет к проводу
 
 
 === misc/program_edit_signals ===
@@ -3554,7 +3554,7 @@ $14186606871089* Next tick counter value will be {wrong_value}, but it should be
 $27868897434461* Could not find the counter component
 $37810243909140* COUNTER
 $38681417496680* ARGUMENT 1
-$43723329256095* REG {nr}
+$43723329256095* РЕГ {nr}
 $44009845985661* ADD
 $50722296752142* ВХОД
 $68666991962246* OR
@@ -4276,7 +4276,7 @@ $21541105796357* 8 Битный AND
 
 === trans/options_code_font_size ===
 
-$98135524286922* Code font size
+$98135524286922* Размер шрифта для кода
 
 
 === components/Counter ===
@@ -4593,7 +4593,7 @@ $99461037008796* 64 битная память
 $29329105515650* Добавь еще 1 регистр в схему 
 $17106892574116* Добавь счётчик к схеме 
 $50177586789991* Добавь еще {nr} регистров в схему
-$15754373587500* Установи шаг счетчика на 4
+$15754373587500* Установи шаг счётчика на 4
 $56024330661504* Watched state {watched_state} should point to a register or custom component with a register inside
 $19099471819164*
 The following are the set up steps that needs to be done in order to complete this level:
