@@ -218,7 +218,7 @@ $54909668901048* Immediate
 
 === components/Decoder2 ===
 
-$25937877347447* Переключается между четыремя значениями
+$25937877347447* Переключается между четырьмя значениями
 $21727998752868* 2 битовый декодер
 
 
@@ -1643,8 +1643,9 @@ These are the bit patterns for each [color=#c54d5e]source[/color] and [color=#e4
 To get a more intuitive understanding of the requirements, click the [INSTRUCTION] icon in the upper left corner.
 $14823499195861* Откройте "Инструкции" в верхней панели.
 $15888345020710*
-In this level you need to create a wire which can copy from a [color=#c54d5e]source[/color] to a [color=#e49f44]destination[/color]. 
+На этом уровне вам нужно создать схему которая может копировать из [color=#c54d5e]источника[/color] в [color=#e49f44]место назначения[/color].
 
+Байт инструкции на этом уровне определяет 
 The instruction byte in this level determines the [color=#c54d5e]source[/color] and the [color=#e49f44]destination[/color]. 
 
 Bits 1, 2 and 3 give the [color=#e49f44]destination[/color]. Bits 4, 5 and 6 give the [color=#c54d5e]source[/color].
