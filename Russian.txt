@@ -1423,8 +1423,8 @@ $55594749714809* Program
 
 === levels/3_decoder ===
 
-$19231618567710* With 3 bits of input there are 8 combinations. Make a wire that selects 1 output for each of the 8 combinations. No more or less than 1 bit should be [ON] at a time.
-$14293122338496* We had our intern add a 
+$19231618567710* С 3-мя входными битами возможны 8 комбинаций. Создайте схему которая выбирает 1 выходной бит для каждой из 8-и комбинаций. Строго 1 бит должен быть [ON] для каждой из комбинаций.
+$14293122338496* Наш стажёр добавил к этому компоненту бит "отключить". Мы устали смотреьб, как он бегает туда сюда, и искали другие бессмысленные и утомительные задания для него.
 
 
 === levels/constants ===
@@ -1482,9 +1482,9 @@ $40288888375581* Components
 === levels/Arithmetic Engine ===
 
 $16434409050195*
-Add addition and subtraction to your wire.
+Добавьте сложение и вычитание к вашей схеме.
 
-Instructions:
+Инструкции:
 [code][color=#87a8c8]0 OR
 1 NAND
 2 NOR

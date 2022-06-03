@@ -1,5 +1,3 @@
-Add addition and subtraction to your wire.
-$14823499195861* Open
 In this level you need to create a wire which can copy from a [color=#c54d5e]source[/color] to a [color=#e49f44]destination[/color].
 The instruction byte in this level determines the [color=#c54d5e]source[/color] and the [color=#e49f44]destination[/color].
 Bits 1, 2 and 3 give the [color=#e49f44]destination[/color]. Bits 4, 5 and 6 give the [color=#c54d5e]source[/color].
