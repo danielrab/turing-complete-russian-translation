@@ -630,7 +630,7 @@ $80788685813993* Управление Роботом
 
 === levels/Calibrating Laser Cannons ===
 
-$11331851878040* Also you now have access to assembly programming. It allows you to add names for instructions, so you can for example type 
+$11331851878040* Также у вас теперь есть доступ к программированию на ассемблере. Он позволяет вам давать имена инструкциям, так например вы можете написать "add" вместо того чтобы вбивать 68.
 $11023157447564*
 2×π×r
 
@@ -640,7 +640,7 @@ r это вход.
 Пошлите ответ на выход когда он был посчитан.
 $15260627694444* In order to calibrate said laser, we want you to calculate the circumference of the asteroids using an advanced equation.
 $12669851602178* [center]Calculate the circumference of the asteroids[/center]
-$21601709632806* What is 2π × {radius}?
+$21601709632806* Сколько будет 2π × {radius}?
 $16954408093587* On our ship we naturally shoot incoming asteroids with lasers.
 
 
@@ -685,7 +685,7 @@ $99630419947500* 3 Пиновый OR
 
 === ui/top_bar/scores ===
 
-$56840961921536* NAND SCORE: \nDELAY SCORE:
+$56840961921536* СЧЁТ ЭЛЕМЕНТОВ: \nСЧЁТ ЗАДЕРЖКИ:
 
 
 === trans/level_binary_search_description ===
@@ -936,7 +936,7 @@ OR каждый бит входных байтов и выведите резу�
 ВХОД 1 [ON][ON][OFF][OFF][OFF][OFF][OFF][OFF]
 ВХОД 2 [OFF][OFF][OFF][OFF][ON][ON][OFF][OFF]
 ВЫХОВ  [ON][ON][OFF][OFF][ON][ON][OFF][OFF][/code]
-$15226896485081* You may think it is unethical to eat all the earthlings that don’t win the competition?
+$15226896485081* Возможно вы считаете что это не этично съедать всех землян которые не выигрывают в соревновании?
 
 
 === trans/level_registers_code ===
