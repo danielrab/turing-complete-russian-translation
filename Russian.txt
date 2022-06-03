@@ -2386,7 +2386,7 @@ $95192766583497* Gate
 
 === levels/signed_negator ===
 
-$10866019808027* For this level you probably want to turn on signed numbers, so the highest bit shows as -128. Click 
+$10866019808027* Для этого уровня вы, вероятно, захотите включить числа со знаком, чтобы старший бит отображался как -128. Нажмите "+255" на верхней панели.
 $10400106910274*
 Taking the input as signed (where the 8th bit is -128), make a component that takes a number and negates it.
 For example 4 negated would become -4. -9 negated would become 9.
@@ -2533,7 +2533,7 @@ $71792123436163* 16 битная память
 $19693461238792* Установи шаг счётчика на 4
 $20916717363300* Linked component {nr} should point to the output
 $38976231780455* Linked component {nr} should point to a register or custom component with a register inside
-$18189600217529* [center]Implement the OPCODE instructions[/center]
+$18189600217529* [center]Реализуйте коды операций[/center]
 $13450117997204* Добавь счётчик к схеме
 $77044880242883* Linked component {nr} should point to the counter
 $13870568875751* Create a new schematic and add a program with 4 byte output
@@ -2552,7 +2552,30 @@ $17495651785164* Добавь 6 регистров в схему
 
 === levels/test_lab ===
 
-$11038144815919* This level uses programs to test your wires. When the programs are run, this level checks if the 
+$11038144815919*
+Этот уровень использует программы чтобы тестировать ваши схемы. Когда программы выполняются, этот уровень проверяет что подключенные компоненты ведут себя так как вы ожидаете.
+
+В лаборатории есть 2 дополнительных ключевых слова.
+
+Ключевое слово [color=#c54d5e]expect[/color] используется чтобы указать какое значение адрес в памяти должен иметь на следующий такт.
+
+Первое число после [color=#c54d5e]expect[/color] это индекс подключенного компонента, второе число это ожидаемое значение. Индексы подключенных компонентов это просто порядок в котором компоненты подключены к компоненту программы.
+
+[img]dialogue/watched\_state.png[/img]
+
+Например:
+[code][color=#c54d5e]expect[/color] [color=#eb9433]2[/color] [color=#eb9433]4[/color]
+[color=#4a9658]copy[/color] [color=#eb9433]4[/color] [color=#4a9658]\_[/color] [color=#4a9658]r2[/color][/code]
+
+В этом примере, первая строка, что мы ожидаем, что 2-ой подключенный компонент будет иметь значение 4 на следующем такте.
+
+Все подключенные компоненты проверяются на соответствие ожиданиям каждый такт. Ожидается что все подключенные компоненты будут иметь значение 0 на момент начала программы, ожидания для компонентов памяти меняются только если вы с обновляете ожидания. Единственное исключение это счётчики, от которых ожидается что они будут увеличивать своё значение каждый такт.
+
+Второе ключевое слово в лаборатории это [color=#c54d5e]set\_input[/color]. С его помощью вы можете контролировать вход компьютера:
+[color=#c54d5e]set\_input[/color] [color=#eb9433]123[/color]
+
+Вы также можете в любое время (ре)импортировать примеры тестоа нажав на кнопку ниже:
+[url=import\_overture][color=#e49f44]OVERTURE[/color][/url]
 $32399229965611* Also, since you have now completed [color=#e49f44]LEG[/color], I have unlocked all the 16, 32 and 64 bit components that you have in the sandbox.
 $15446846177093* Welcome to the lab. Like the component factory, this is not a normal level but a tool.
 $16072814175447* Programming on buggy hardware is very frustrating. It is painful to suddenly be forced to reason about wires, when you are in the middle of solving a programming problem. It is tempting to apply a quick wire fix, so you can get back to solving the original problem. But now this quick fix broke something else in a program that used to work and so on. Therefore, when developing hardware try to aim for 100% reliability before you start programming!
