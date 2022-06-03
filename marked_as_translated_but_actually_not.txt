@@ -1,6 +1,3 @@
-In this level you need to create a wire which can copy from a [color=#c54d5e]source[/color] to a [color=#e49f44]destination[/color].
-The instruction byte in this level determines the [color=#c54d5e]source[/color] and the [color=#e49f44]destination[/color].
-Bits 1, 2 and 3 give the [color=#e49f44]destination[/color]. Bits 4, 5 and 6 give the [color=#c54d5e]source[/color].
 $16810715868480* [center]Calculate modulo 4 of the input.[/center]
 $10866019808027* For this level you probably want to turn on signed numbers, so the highest bit shows as -128. Click
 $18189600217529* [center]Implement the OPCODE instructions[/center]
