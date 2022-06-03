@@ -520,7 +520,7 @@ $11090938799865* Создайте "инвертированый" XOR gate, на�
 
 === levels/bit_inverter ===
 
-$15769391111364* When 
+$15769391111364* Когда бит "Инвертировать" [ON], выведите обратное от "Значение". Иначе, просто выведите "Значение" как есть.
 $15272914096446* This level is exactly the same as the XOR one you solved before. Remember no matter what we tell you the goal of the level is, the real truth is in the truth table.
 $14944872827527* Despite the funny background you figured out this was just the XOR gate in disguise! Well done.
 $16125025706490* Hmm, perhaps you have studied the behavior of the delay buffer a little bit too well...
@@ -3311,9 +3311,8 @@ $11632471752785* [center]Determine if the first input is less than the second.[/
 === levels/Logic Engine ===
 
 $15865646260225*
-[color=#b72d41][b]WISDOM:[/b][/color] 
- Pain is temporary, glory is 
- forever.
+[color=#b72d41][b]МУДРОСТЬ:[/b][/color] 
+ Боль временна, слава навсегда!
 $17594613477534*
 Create a device that can OR, NAND, NOR or AND two inputs. The third input will be the [INSTRUCTION]. An [INSTRUCTION] is just what we call the number that determines what to compute.
 
