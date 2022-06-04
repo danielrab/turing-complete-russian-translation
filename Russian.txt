@@ -3367,7 +3367,7 @@ $14309211963063* Create a new schematic and add a program with 4 byte output
 $16826220977157*
  [color=#b72d41][b]ПОДСКАЗКА:[/b][/color] 
 КОПИРОВАТЬ это просто ДОБАВИТЬ со вторым аргументом 0
-$14690660047411* [center]Implement the condition opcodes[/center]
+$14690660047411* [center]Реализуйте коды операций для условий[/center]
 $30132649789584* Linked component {number} should point to the output
 $18994998239232* I will show you some upgrades you can make, on the path to implementing function calls. But from here on the details are up to you, I wont tell you what opcodes to use and so on.
 $12034111753799* Linked component {number} should point to the counter
@@ -3376,7 +3376,7 @@ $36561706158040* Linked component {nr} should point to a register or custom comp
 
 === levels/byte_less ===
 
-$11252365204151* Create a wire that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]UNSIGNED[/color].
+$11252365204151* Создать схему, которая выводит [ON] Когда первый вход меньше, чем второй. Интерпретируйте байты как [color=#dd6576]БЕЗЗНАКОВЫЕ[/color].
 $62766453128684* {a} меньше чем {b}?
 $11632471752785* [center]Determine if the first input is less than the second.[/center]
 
@@ -3529,10 +3529,12 @@ $71663353206665* Divide and mod 2 numbers
 === levels/saving_bytes ===
 
 $10633476398156*
-Create a wire that can [SAVE] or [LOAD] a byte.
+Создать схему, которая может [SAVE] или [LOAD] байт.
 
-When the first input bit is [ON], [LOAD] the memory and send it to output.
-When the second input bit is [ON], [SAVE] the input byte.
+Когда первый входной бит [ON], [LOAD] память и пошлите её на выход.
+Когда второй входной бит [ON], [SAVE] входной байт.
+
+У выхода есть активирующий контакт, активируйте его только если [LOAD].
 $13502950630653*
 [color=#ff9800]None
 0
