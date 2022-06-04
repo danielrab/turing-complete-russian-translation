@@ -893,10 +893,20 @@ $42506906257154* Only outputs if the switch pin is [ON]
 $34453052824732* NOT
 
 
-=== components/DivMod32 ===
+=== trans/manual_text_terminology ===
 
-$61314390474120* Divide and mod 2 numbers
-$84309999871615* Divide
+$99266452352883*
+[b]Instruction[/b]
+A byte or a few bytes that together make the computer perform a specific action.
+
+[b]Opcode[/b]
+The part of the instruction that determines which operation (like ADD or AND) is to be done.
+
+[b]Memory address[/b]
+A number used as a name for memory locations (often for registers). These are used to specify where an instruction is supposed to load data from or save data to.
+
+[b]Jump[/b]
+Changing the value of the program counter, changing which instruction is loaded next.
 
 
 === trans/level_registers_code ===
@@ -919,20 +929,9 @@ The tables of input and output which are used everywhere throughout the game are
 "Input" and "Output" will often be represented with variable names, like in algebra. And instead of using colors, you will often see the values represented as 0 / 1 or False / True.
 
 
-=== trans/manual_text_terminology ===
+=== trans/instrucitons_header ===
 
-$99266452352883*
-[b]Instruction[/b]
-A byte or a few bytes that together make the computer perform a specific action.
-
-[b]Opcode[/b]
-The part of the instruction that determines which operation (like ADD or AND) is to be done.
-
-[b]Memory address[/b]
-A number used as a name for memory locations (often for registers). These are used to specify where an instruction is supposed to load data from or save data to.
-
-[b]Jump[/b]
-Changing the value of the program counter, changing which instruction is loaded next.
+$14831276667273* [center]Instructions[/center]
 
 
 === levels/Conditionals ===
@@ -981,11 +980,6 @@ $20464862486158* [center]Copy the value from the correct input, to the correct o
 === trans/level_byte_less_i_description ===
 
 $21195810950441* [center]Determine if the first input is less than the second.[/center]
-
-
-=== trans/instrucitons_header ===
-
-$14831276667273* [center]Instructions[/center]
 
 
 === levels/byte_or ===
@@ -1083,12 +1077,6 @@ $73418471595285* Add
 === trans/options_console ===
 
 $96601731563408* Open console
-
-
-=== components/DivMod64 ===
-
-$80284847781948* Divide
-$71663353206665* Divide and mod 2 numbers
 
 
 === levels/saving_bytes ===
@@ -2276,12 +2264,6 @@ $37014604954362* Shift left
 $45250062735373* Unlocks
 
 
-=== components/DivMod8 ===
-
-$37666366877853* Divide and mod 2 numbers
-$44959426271423* Divide
-
-
 === trans/level_byte_mux_description ===
 
 $20538476756633* [center]Output the correct input byte[/center]
@@ -2380,11 +2362,5 @@ $81238724438578* Make a wire where the input of a component depends on its own o
 
 $96958133516462* FROM
 $91318587712792* TO
-
-
-=== components/DivMod16 ===
-
-$42657221816637* Divide and mod 2 numbers
-$22319923069746* Divide
 
 
