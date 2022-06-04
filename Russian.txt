@@ -787,7 +787,9 @@ $16057674753878* Создайте компонент, который сможе�
 
 === levels/byte_mux ===
 
-$49305362057225* Your answer {your_answer}\nCorrect answer {correct_answer} (Input {input})
+$49305362057225*
+Ваш ответ {your_answer}
+Правильный ответ {correct_answer} (Вход {input})
 $18296416014178* When the bit selector input is [OFF], output Byte A, otherwise output Byte B.
 $17093993196554*
 Even though he did not pass our tests we decided to keep the dog. Unlike most earthlings he is fluffy and follows simple instructions well. 
@@ -2160,8 +2162,8 @@ $90224489436893* [center]Используйте клавиши со стрелк
 === trans/level_byte_mux_text ===
 
 $44961981616677*
-[center]Your answer 11 + 88 =  0
-Current answer 11 + 88  = 99[/center]
+[center]Ваш ответ 11 + 88 =  0
+Правильный ответ 11 + 88  = 99[/center]
 
 
 === components/DualPortRam ===
@@ -2214,9 +2216,9 @@ $93223372486795* 64 битный выключатель
 === trans/level_byte_adder_question2 ===
 
 $85899338356278*
-[right]Correct answer
+[right]Правильный ответ
 
-Your answer[/right]
+Ваш ответ[/right]
 
 
 === misc/delay_overlay ===
