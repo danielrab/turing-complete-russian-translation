@@ -3270,7 +3270,7 @@ $72764802067974*
 Компоненты доступны в меню на правой стороне. После размещения нажмите на контакты компонентов и перетащите, чтобы подключить их с помощью провода. Слева вы найдете интерфейс для управления симуляцией. Обратите внимание что вы можете нажать правой кнопкой мыши на кнопку "Перемотка Тактов" Чтобы установить целевую скорость.
 
 Вы можете найти больше информации о симуляции в справочнике (кнопка в виде книги, в верхней панели). Примечательные функции, на которые стоит обратить внимание: "завод компонентов" где вы можете создать свои собственные компоненты и компонент программы, который позволяет вам определить собственный ассемблер.
-$19454393978813* The Keyboard lets you directly control your computer, using well... your keyboard
+$19454393978813* Клавиатура позволяет напрямую управлять компьютером, используя вашу ... клавиатуру
 $14434122873489* The Waveform Generator lets you make sounds. I will probably regret giving you this one.
 $18405942066048* The Clock gives you the current UNIX time in microseconds.
 $10451578314373* The Console Screen lets you draw characters to a screen (see manual for ascii characters)
@@ -3339,26 +3339,26 @@ The tables of input and output which are used everywhere throughout the game are
 === levels/Conditionals ===
 
 $10794262854382*
-Add if statements to your wire. For the if statements, the 2 arguments are compared and if the condition is true, the counter is set to a jump address.
+Добавить, условные выражения в вашу схему. Для условных выражений, 2 аргумента сравниваются и если условие верно, счетчик установлен на адрес прыжка.
 	
-The previous instructions had the 4 bytes represent:
-[code][color=#87a8c8]OPCODE, ARGUMENT_1, ARGUMENT_2, RESULT[/color][/code]
+В предыдущих инструкциях, 4 байта представляли:
+[code][color=#87a8c8]КОД\_ОПЕРАЦИИ, АРГУМЕНТ\_1, АРГУМЕНТ\_2, РЕЗУЛЬТАТ[/color][/code]
 
-For if statements the bytes represent:
-[code][color=#87a8c8]OPCODE, ARGUMENT_1, ARGUMENT_2, JUMP_ADDRESS[/color][/code]
+Для условных выражений байты представляют:
+[code][color=#87a8c8]КОД\_ОПЕРАЦИИ, АРГУМЕНТ\_1, АРГУМЕНТ\_2, JUMP\_ADDRESS[/color][/code]
 
-In addition to the previous opcodes, add:
-[code][color=#87a8c8]32 IF_EQUAL
-33 IF_NOT_EQUAL
-34 IF_LESS
-35 IF_LESS_OR_EQUAL
-36 IF_GREATER
-37 IF_GREATER_OR_EQUAL[/color][/code]
+В дополнение к предыдущим кодам операций, добавьте:
+[code][color=#87a8c8]32 ЕСЛИ\_РАВНО
+33 ЕСЛИ\_НЕ\_РАВНО
+34 ЕСЛИ\_МЕНЕЕ
+35 ЕСЛИ\_МЕНЕЕ\_ИЛИ\_РАВНО
+36 ЕСЛИ\_БОЛЕЕ
+37 ЕСЛИ\_БОЛЕЕ\_ИЛИ\_РАВНО[/color][/code]
 
-Use unsigned less / greater for the comparisons.
+Используйте беззнаковое меньше / больше для сравнений.
 
-Each opcode does what their name implies. For example the following jumps to byte 16 if REG0 is less than REG1: 
-[code][color=#87a8c8]IF_LESS REG0 REG1 16[/color][/code]
+Коды операций делают то что их названия подразумевают. Например эта инструкция прыгает на байт 16 если РЕГ0 меньше чем РЕГ1: 
+[code][color=#87a8c8]ЕСЛИ\_МЕНЕЕ РЕГ0 РЕГ1 16[/color][/code]
 $18542005958715* Set the counter increment to 4
 $17133561664335* Congratulations, you finished the [color=#e49f44]LEG[/color] computer!
 $14973719570693* Add a counter to the wire
