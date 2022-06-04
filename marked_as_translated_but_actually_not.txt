@@ -1,13 +1,3 @@
-$15463931654475* [center]Add "call" and "ret" instructions[/center]
-$12227209887733*
-Each tick the inputs will either signal PUSH or POP. If it is PUSH, store the value on top of the stack. When it is POP remove that value from the stack and output it.
-	
-The output has an enable pin, enable it only on POP.
-
-$14533861483435* Multiplying two 4 bit numbers gives you a 8 bit number. Build a circuit that does this.
-$15885763626223* Create a circuit that ANDs two bytes bitwise.
-$32508339206292* GATE SCORE: {gate}
-$17070232883226* But we want to make sure we don’t get the same fruit twice as that would obviously be embarrassing.
 $12951779797594*
 This level has a value input and 3 condition bit inputs.
 

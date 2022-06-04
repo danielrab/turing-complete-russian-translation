@@ -1344,15 +1344,7 @@ $34658332565777* [center]Add 1 to the counter, or overwrite it[/center]
 
 === levels/push_pop ===
 
-$78804623186243* OUTPUT
-$49526452710191* DON'T POP
-$58050047963238* VALUE
-$19245209470436* Create a stack
-$15662660252584* Do nothing
-$62469306234943* DON'T PUSH
-$65188797398656* PUSH {value} on stack
 $18761197388580* In order to cut spending, it has been decided to change the queuing system at public offices so that fewer people will go. Instead of first come, first served, we are implementing a last come first served policy. Think of it like a [color=#e49f44]stack[/color] of numbered slips where the citizens either put a slip on top (called [color=#e49f44]PUSH[/color]), or the bureaucrats take one off the top of the stack (called [color=#e49f44]POP[/color]). We want you to implement this new system.
-$46948857059388* POP value {value} off stack
 
 
 === levels/Tower of Radioactive Alloy ===
@@ -1402,9 +1394,6 @@ $73150174144736*
 
 $14957949958941* What you did here was actually multiplying two 4 bit numbers. We had the intern scale it up to bytes instead.
 $19136817138607* [center]Multiply the 4 bit numbers[/center]
-$13549246864135* Bit 0
-$10274387271390* Bit 0
-$83694551809785* Multiply {num1} and {num2}
 
 
 === trans/manual_universal_gates ===
@@ -1431,19 +1420,6 @@ $68645721548287* Checks if one input is less than the other
 $73502755965496* Less (unsigned)
 
 
-=== main_scripts/functions ===
-
-$73560327420927* This save is from an obsolete version of this level.\nCreate and load a new schematic in the schematic menu.
-$99285446909923* To solve this level you need to use the 'Level output' component
-$72465734060414* Short circuit on wire (output values: {values})
-$10533010562232* DELAY SCORE: {delay}
-$10098517717617* Test: {nr} / {total}
-$29225283986051* To solve this level you need to use the 'Level input' component
-$87591753278764* Reg {nr}
-$95056157627313* To solve this level you need to use the 'Level input' component
-$12249248261034* To solve this level you need to use the 'Level output' component
-
-
 === ui/global_translations ===
 
 
@@ -1455,6 +1431,18 @@ $84696693690500* K
 
 #  Instead of writing 5839000000, the number turns into 5.8B
 $71072134093858* B
+
+
+=== main_scripts/functions ===
+
+$73560327420927* This save is from an obsolete version of this level.\nCreate and load a new schematic in the schematic menu.
+$99285446909923* To solve this level you need to use the 'Level output' component
+$72465734060414* Short circuit on wire (output values: {values})
+$10098517717617* Test: {nr} / {total}
+$29225283986051* To solve this level you need to use the 'Level input' component
+$87591753278764* Reg {nr}
+$95056157627313* To solve this level you need to use the 'Level input' component
+$12249248261034* To solve this level you need to use the 'Level output' component
 
 
 === trans/manual_text_binary ===
