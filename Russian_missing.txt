@@ -2353,14 +2353,3 @@ In the next level you will implement more [color=#e49f44]OPCODES[/color], which 
 $18769284297247* Create a new schematic and add a program with 4 byte output
 
 
-=== trans/level_dependency_description ===
-
-$81238724438578* Make a wire where the input of a component depends on its own output
-
-
-=== levels/the_bus ===
-
-$96958133516462* FROM
-$91318587712792* TO
-
-
