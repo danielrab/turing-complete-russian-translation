@@ -1127,11 +1127,6 @@ $13502950630653*
 [color=#ff9800]None
 0
 0[/color]
-$19109563882664* DON'T LOAD
-$16372198430230* SAVE
-$15498440508450* Do nothing
-$15582618410991* LOAD and SAVE
-$18873598212433* LOAD
 
 
 === trans/ide_add_assembly_header ===
