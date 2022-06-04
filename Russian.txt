@@ -3612,7 +3612,7 @@ $19416009887091*
 
 Допусти функция A вызывает функцию B, которая вызывает функцию C. Когда мы хотим вернуться из C, нам нужен только адрес для B, а в B нам нужен только адрес для A. В целом, независимо от того, на какую функцию мы посмотрим и как они вложены, последний обратный адрес, который мы добавили всегда понадобится нам первым. Это в точности поведение стека.
 $19369640789869* Budget cuts have led to cutting salaries, but now the lab assistants are on strike. You will have to self-assess in this test. This will tell us something about your honesty and maturity.
-$15463931654475* [center]Add 
+$15463931654475* [center]Добавьте инструкции "вызов" и "возврат"[/center]
 
 
 === levels/odd_ticks ===
@@ -3772,7 +3772,10 @@ $78804623186243* ВЫХОД
 $49526452710191* НЕ ИЗВЛЕКАТЬ
 $58050047963238* ЗНАЧЕНИЕ
 $19245209470436* Создайте стек
-$12227209887733* Each tick the inputs will either signal PUSH or POP. If it is PUSH, store the value on top of the stack. When it is POP remove that value from the stack and output it.
+$12227209887733*
+Каждый такт, входы будут указывать либо ПОМЕСТИТЬ либо ИЗВЛЕЧЬ. Если указано ПОМЕСТИТЬ, сохраните значение наверху стека. Если указано ИЗВЛЕЧЬ уберите значение из стека и выведите его.
+	
+У выхода есть активирующий контакт, включайте его только если указано ИЗВЛЕЧЬ.
 $15662660252584* Ничего не делать
 $62469306234943* НЕ ПОМЕЩАТЬ
 $46948857059388* ИЗВЛЕКИТЕ значение {value} из стека
@@ -3792,14 +3795,14 @@ $73150174144736*
 $14957949958941* What you did here was actually multiplying two 4 bit numbers. We had the intern scale it up to bytes instead.
 $19136817138607* [center]Multiply the 4 bit numbers[/center]
 $13549246864135* Бит 0
-$14533861483435* Multiplying two 4 bit numbers gives you a 8 bit number. Build a wire that does this.
+$14533861483435* Умножение двух 4-х битных чисел дает 8-и битное число. Создайте схему, которая это делает.
 $10274387271390* Бит 0
 $83694551809785* Перемножьте {num1} и {num2}
 
 
 === levels/byte_and ===
 
-$15885763626223* Create a wire that ANDs two bytes bitwise.
+$15885763626223* Создайте схему которая AND два байта побитово.
 
 
 === components/LessI64 ===
@@ -3828,7 +3831,7 @@ $95056157627313* To solve this level you need to use the 'Level input' component
 $29169064199243* Выход {nr}
 $12249248261034* To solve this level you need to use the 'Level output' component
 $13327741293223* Вход {nr}
-$32508339206292* NAND SCORE: {nand}
+$32508339206292* СЧЁТ ЭЛЕМЕНТОВ: {gate}
 
 
 === ui/global_translations ===
@@ -4458,7 +4461,7 @@ The most noteworthy thing on your planet is the fruit. It is very tasty.
 
 That's why we are having a fruit tasting event in the canteen.
 $14259900563789* Scan the conveyor belt for the fruit incoming at regular intervals. As soon as you have see the same kind of fruit twice, turn and press the control panel.
-$17070232883226* But we want to make sure we don’t get the same fruit twice as that would obviously be embarrassing.
+$17070232883226* Но мы хотим убедиться, что не получаем одинаковых фруктов дважды, так как это было бы постыдно.
 
 
 === ui/toggles/negative_numbers ===
