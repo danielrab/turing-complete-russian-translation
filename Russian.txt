@@ -4720,7 +4720,7 @@ The value of an argument or destination refers to one of these places:
 In the next level you will implement more [color=#e49f44]OPCODES[/color], which will require a different ALU than that of [color=#e49f44]OVERTURE[/color].
 $10922418807673* Аргумент 7 означает считывание входа, но вход не включен.
 $62258842382434* Присоединённый компонент {counter} должен указывать на счётчик.
-$18769284297247* Create a new schematic and add a program with 4 byte output
+$18769284297247* Создайте новую схему и добавьте программу с 4-х байтовым выходом
 
 
 === trans/schematic_new_file_name ===

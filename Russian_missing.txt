@@ -2350,6 +2350,5 @@ The value of an argument or destination refers to one of these places:
 [/code]
 
 In the next level you will implement more [color=#e49f44]OPCODES[/color], which will require a different ALU than that of [color=#e49f44]OVERTURE[/color].
-$18769284297247* Create a new schematic and add a program with 4 byte output
 
 
