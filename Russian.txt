@@ -452,8 +452,8 @@ $56547245144983*
 
 === components/Rol64 ===
 
-$49017662473189* Rotates the bits of an input left
-$13677051385046* Rotate left
+$49017662473189* Прокручивает биты входа налево
+$13677051385046* Прокрутка влево
 
 
 === trans/level_decoder_1_RichTextLabel2 ===
@@ -559,8 +559,8 @@ $55371048386984* Right
 
 === components/Shr64 ===
 
-$93124177265670* Shifts the bits of an input right
-$73798355428095* Shift right
+$93124177265670* Сдвигает биты входа направо
+$73798355428095* Сдвиг вправо
 
 
 === components/Constant64 ===
@@ -608,14 +608,14 @@ $40088995721509* 16 Битный XNOR
 
 === components/Screen ===
 
-$12771040946773* Displays the visuals that accompany certain levels
-$50037736094411* Screen
+$12771040946773* Отображает изображения, которые сопровождают определенные уровни
+$50037736094411* Экран
 
 
 === components/Shr16 ===
 
-$20291717268875* Shifts the bits of an input right
-$31674686871821* Shift right
+$20291717268875* Сдвигает биты входа направо
+$31674686871821* Сдвиг вправо
 
 
 === components/Off ===
@@ -1472,8 +1472,8 @@ $19686277478479* The program is still outputting the first instruction. Did you 
 
 === components/Ror64 ===
 
-$43920264894591* Rotate right
-$49583010717958* Rotates the bits of an input right
+$43920264894591* Прокрутка вправо
+$49583010717958* Прокручивает биты входа направо
 
 
 === trans/manual_components ===
@@ -1535,8 +1535,8 @@ $39203727515285* Time
 
 === components/Rol8 ===
 
-$79612280948390* Rotate left
-$55557725551789* Rotates the bits of an input left
+$79612280948390* Прокрутка влево
+$55557725551789* Прокручивает биты входа налево
 
 
 === components/OR ===
@@ -1704,8 +1704,8 @@ $54190050450484* 8 Битный OR
 
 === components/Ror32 ===
 
-$84788620524361* Rotate right
-$50013003040535* Rotates the bits of an input right
+$84788620524361* Прокрутка вправо
+$50013003040535* Прокручивает биты входа направо
 
 
 === levels/Masking Time ===
@@ -2036,8 +2036,8 @@ $44959426271423* Деление
 
 === components/Shl64 ===
 
-$56766765894165* Shifts the bits of an input left
-$37014604954362* Shift left
+$56766765894165* Сдвигает биты входа налево
+$37014604954362* Сдвиг влево
 
 
 === trans/level_byte_mux_description ===
@@ -2047,8 +2047,8 @@ $20538476756633* [center]Output the correct input byte[/center]
 
 === components/Shl32 ===
 
-$38930281262898* Shift left
-$88685329847417* Shifts the bits of an input left
+$38930281262898* Сдвигает биты входа налево
+$88685329847417* Сдвиг влево
 
 
 === components/Program64 ===
@@ -2260,8 +2260,8 @@ $24678249110160* [center]Add calculation codes to your wire[/center]
 
 === components/Rol16 ===
 
-$48583573494467* Rotate left
-$73379230742631* Rotates the bits of an input left
+$48583573494467* Прокрутка влево
+$73379230742631* Прокручивает биты входа налево
 
 
 === trans/options_synced ===
@@ -3066,8 +3066,8 @@ $25766177620842*
 
 === components/Ror8 ===
 
-$10802217509530* Rotates the bits of an input right
-$70999134800536* Rotate right
+$10802217509530* Прокручивает биты входа направо
+$70999134800536* Прокрутка вправо
 
 
 === levels/Water World ===
@@ -3874,8 +3874,8 @@ $23959994711260* Ready to race?
 
 === components/Shl16 ===
 
-$79406691850426* Shift left
-$34287811246049* Shifts the bits of an input left
+$79406691850426* Сдвиг влево
+$34287811246049* Сдвигает биты входа налево
 
 
 === trans/levels_any_doubles_RichTextLabel2 ===
@@ -4104,8 +4104,8 @@ $10757271456963* Manual entries
 
 === components/Ror16 ===
 
-$13970397213910* Rotates the bits of an input right
-$90115282457191* Rotate right
+$13970397213910* Прокручивает биты входа направо
+$90115282457191* Прокрутка вправо
 
 
 === misc/opcode_name ===
@@ -4190,8 +4190,8 @@ $21257226547838* 32 Bit Mux
 
 === components/Shr32 ===
 
-$87104108203785* Shifts the bits of an input right
-$88430124157796* Shift right
+$87104108203785* Сдвигает биты входа направо
+$88430124157796* Сдвиг вправо
 
 
 === levels/saving_gracefully ===
@@ -4345,8 +4345,8 @@ Each row has a label and 8 bits you can set to either[img]dialogue/on.png[/img],
 
 === components/Rol32 ===
 
-$88734684504266* Rotates the bits of an input left
-$83642246004160* Rotate left
+$88734684504266* Прокручивает биты входа налево
+$83642246004160* Прокрутка влево
 
 
 === trans/odd_number_error ===
