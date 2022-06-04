@@ -1,25 +1,3 @@
-$19454393978813* The keyboard lets you directly control your computer, using your ... keyboard
-$10794262854382*
-Add if statements to your circuit. For the if statements, the 2 arguments are compared and if the condition is true, the counter is set to a jump address.
-	
-The previous instructions had the 4 bytes represent:
-[code][color=#87a8c8]OPCODE, ARGUMENT_1, ARGUMENT_2, RESULT[/color][/code]
-
-For if statements the bytes represent:
-[code][color=#87a8c8]OPCODE, ARGUMENT_1, ARGUMENT_2, JUMP_ADDRESS[/color][/code]
-
-In addition to the previous opcodes, add:
-[code][color=#87a8c8]32 IF_EQUAL
-33 IF_NOT_EQUAL
-34 IF_LESS
-35 IF_LESS_OR_EQUAL
-36 IF_GREATER
-37 IF_GREATER_OR_EQUAL[/color][/code]
-
-Use unsigned less / greater for the comparisons.
-
-Each opcode does what their name implies. For example the following jumps to byte 16 if REG0 is less than REG1: 
-[code][color=#87a8c8]IF_LESS REG0 REG1 16[/color][/code]
 $14973719570693* Add a counter to the circuit
 $16826220977157*
  [color=#b72d41][b]TIP:[/b][/color] 
