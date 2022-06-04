@@ -2209,12 +2209,6 @@ That's why we are having a fruit tasting event in the canteen.
 $14259900563789* Scan the conveyor belt for the fruit incoming at regular intervals. As soon as you have see the same kind of fruit twice, turn and press the control panel.
 
 
-=== levels/conditions ===
-
-$16742265812068* Regardless of VALUE output [img]dialogue/on.png[/img]
-$12429396872036* Regardless of VALUE output [img]dialogue/off.png[/img]
-
-
 === trans/levels_negative_descriptions ===
 
 $87964635915702*

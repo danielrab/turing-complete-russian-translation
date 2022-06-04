@@ -4491,14 +4491,14 @@ Bit code:        Turn [ON] when:[code]
 [ON] [ON] [OFF]    If value ≥ 0
 [ON] [ON] [ON]    If value > 0[/code]
 $16407231803964* Если ЗНАЧЕНИЕ < 0 выведи [img]dialogue/on.png[/img]
-$16742265812068* Regardless of VALUE output [img]dialogue/on.png[/img]
+$16742265812068* Независимо от VALUE выведите [img]dialogue/on.png[/img]
 $17616699231679* Если ЗНАЧЕНИЕ > 0 выведи [img]dialogue/on.png[/img]
 $16632557438774* Если ЗНАЧЕНИЕ ≠ 0 выведи [img]dialogue/on.png[/img]
 $18234235689107* Если ЗНАЧЕНИЕ ≥ 0 выведи [img]dialogue/on.png[/img]
-$12429396872036* Regardless of VALUE output [img]dialogue/off.png[/img]
+$12429396872036* Независимо от VALUE выведите [img]dialogue/off.png[/img]
 $13680487623452* Если ЗНАЧЕНИЕ ≤ 0 выведи [img]dialogue/on.png[/img]
 $19014698800906* Если ЗНАЧЕНИЕ = 0 выведи [img]dialogue/on.png[/img]
-$12706881725738* Твоя схема была сохранена в завод компонентов.
+$12706881725738* Ваша схема была сохранена в завод компонентов.
 
 
 === components/ByteShl ===
