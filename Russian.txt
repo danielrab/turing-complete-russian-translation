@@ -3603,7 +3603,14 @@ The [color=#e49f44]ret[/color] instruction has to do the following:
  [i]- [color=#e49f44]Pop[/color] return address from the stack and jump to it[/i]
 
 You can pass information to and from a function by saving the data to registers as normal. Also be aware of which registers a function will overwrite before calling it.
-$19416009887091* Sometimes it is useful to reuse a section of code. We call these sections 
+$19416009887091*
+Иногда полезно повторно использовать раздел кода. Мы называем эти разделы "функциями". Для реализации этого повторного использования можно [color=#e63e5b][url=terminology]прыгнуть[/url][/color] к началу функции и прыгнуть обратно в конце функции. Мы называем прыжок в начало функции "вызовом" функции, а прыжок обратно "возвратом" из функции.
+	
+Но для чтобы этот раздел кода действительно можно было использовать повторно, обратный прыжок должен иметь возможность возвращаться в разные места в зависимости от того, откуда мы назвали функцию.
+
+Мы могли бы сохранить значение счётчика в регистре прежде чем прыгнуть в функцию и использовать это значение при возврате. Однако, если сделать это таким образом, функция не сможет вызывать другую функцию, поскольку это перезапишет обратный адрес.
+
+Допусти функция A вызывает функцию B, которая вызывает функцию C. Когда мы хотим вернуться из C, нам нужен только адрес для B, а в B нам нужен только адрес для A. В целом, независимо от того, на какую функцию мы посмотрим и как они вложены, последний обратный адрес, который мы добавили всегда понадобится нам первым. Это в точности поведение стека.
 $19369640789869* Budget cuts have led to cutting salaries, but now the lab assistants are on strike. You will have to self-assess in this test. This will tell us something about your honesty and maturity.
 $15463931654475* [center]Add 
 
