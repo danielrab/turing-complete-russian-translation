@@ -1,7 +1,3 @@
-$14973719570693* Add a counter to the circuit
-$16826220977157*
- [color=#b72d41][b]TIP:[/b][/color] 
-COPY is just ADD with the second argument being 0
 $14690660047411* Implement the condition opcodes
 $11252365204151* Create a circuit that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]UNSIGNED[/color].
 $10633476398156*
