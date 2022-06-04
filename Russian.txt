@@ -3258,9 +3258,9 @@ $10731996208080* There are also 64 bit versions of the program, the counter, the
 $72764802067974*
 Добро пожаловать в песочницу. 
 
-Components are available in the menus on the right side. Once placed, click on the pins of the components and drag to connect them with wire. On the left you will find the UI for the simulation control. Note that you can right click on the "Run faster" button to set target speed.
+Компоненты доступны в меню на правой стороне. После размещения нажмите на контакты компонентов и перетащите, чтобы подключить их с помощью провода. Слева вы найдете интерфейс для управления симуляцией. Обратите внимание что вы можете нажать правой кнопкой мыши на кнопку "Перемотка Тактов" Чтобы установить целевую скорость.
 
-You can find more information about the simulation in the manual (button is in the top left). Notable features to check out are the "component factory" where you can create your own components and the program component, which lets you define your own assembly.
+Вы можете найти больше информации о симуляции в справочнике (кнопка в виде книги, в верхней панели). Примечательные функции, на которые стоит обратить внимание: "завод компонентов" где вы можете создать свои собственные компоненты и компонент программы, который позволяет вам определить собственный ассемблер.
 $19454393978813* The Keyboard lets you directly control your computer, using well... your keyboard
 $14434122873489* The Waveform Generator lets you make sounds. I will probably regret giving you this one.
 $18405942066048* The Clock gives you the current UNIX time in microseconds.
@@ -4503,7 +4503,7 @@ $30820974870562* Сумма
 $15232844525838*
 Постройте цепь, которая будет соответствовать таблице.
 
-[tip]Двойное нажатие на компонент позволяет перемещать его вместе с соединениями.[/tip]
+[tip]Двойное нажатие на компонент позволяет перемещать его вместе с контактами.[/tip]
 $15231724707514* Не хочется делать преждевременных выводов, однако, нам кажется, что, например, слон справится с этой задачей быстрее. Без обид, просто его мозг значительно больше.
 
 
