@@ -132,8 +132,6 @@ $17854168097855* Check
 === misc/specification_dialogue ===
 
 $54909668901048* Immediate
-$92046368194170* Condition
-$39935096343723* Never
 $52961346176405* {condition} copy [color=#dd6576]REG 0[/color] to counter
 $18833529038946* When [color=#2b8738]result[/color] {condition}
 $10141348037745* Immediate: {nr}
