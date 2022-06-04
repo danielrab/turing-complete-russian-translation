@@ -1,14 +1,3 @@
-=== trans/level_codes_description ===
-
-$24678249110160* [center]Add calculation codes to your wire[/center]
-
-
-=== components/Neg16 ===
-
-$17253409670931* Negate
-$57512333327652* Bitwise negates an input
-
-
 === trans/level_signed_negator_labels3 ===
 
 $66996894079719* Desired   Current
