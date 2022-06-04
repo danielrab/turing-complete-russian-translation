@@ -273,13 +273,9 @@ $56761198694928* Good for displaying numbers
 $90582128204153* 7 Segment Display
 
 
-=== trans/level_ram_component_value_description ===
+=== trans/level_byte_less_description ===
 
-$53113984441582*
-[right]Test
-Address
-Action
-Expected output[/right]
+$37336202055283* [center]Determine if the first input is less than the second.[/center]
 
 
 === levels/test_lab ===
@@ -304,11 +300,6 @@ Implement the following opcodes:
 5 XOR[/color][/code]
 
 The opcode NOT ignores the second argument.
-
-
-=== trans/level_byte_less_description ===
-
-$37336202055283* [center]Determine if the first input is less than the second.[/center]
 
 
 === trans/level_complete_stats ===

@@ -2584,10 +2584,10 @@ $16072814175447* Программирование на глючном желез
 === trans/level_ram_component_value_description ===
 
 $53113984441582*
-[right]Test
-Address
-Action
-Expected output[/right]
+[right]Тест
+Адрес
+Действие
+Ожидаемый выход[/right]
 
 
 === ui/options/Controls ===

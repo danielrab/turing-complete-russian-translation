@@ -1,4 +1,3 @@
-$16072814175447* Programming on buggy hardware is very frustrating. It is painful to suddenly be forced to reason about circuits, when you are in the middle of solving a programming problem. It is tempting to apply a quick fix, so you can get back to solving the original problem. But now this quick fix broke something else in a program that used to work and so on. Therefore, when developing hardware try to aim for 100% reliability before you start programming!
 $14458828731919*
 Time to merge in the "Arithmetic Engine" circuit you made previously with the register circuit. The calculation circuit was saved in the component factory and can now be added as a component. If you forgot which pin does what, check the circuit in the component factory.
 
