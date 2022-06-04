@@ -1,15 +1,3 @@
-$14458828731919*
-Time to merge in the "Arithmetic Engine" circuit you made previously with the register circuit. The calculation circuit was saved in the component factory and can now be added as a component. If you forgot which pin does what, check the circuit in the component factory.
-
-Use the decoder you built to figure out if we should copy between registers or do calculations. Here are the 4 different modes again:
-[OFF][OFF] Immediate
-[OFF][ON] Calculate
-[ON][OFF] Copy
-[ON][ON] Condition
-
-For this level you only have to worry about the copy and calculate mode, check the [INSTRUCTIONS] by clicking on [img=20]dialogue/instruction_icon.png[/img] in the top panel for the details. When in calculate mode, take [color=#e49f44]REG 1[/color] and [color=#e49f44]REG 2[/color] as inputs, and save the result in [color=#e49f44]REG 3[/color].
-
-[tip]Don't forget the 3 bit decoder component has a disable bit.[/tip]
 $16133643476631* The circuit you built in the "Registers" level can copy values between registers, while the "Arithmetic Engine" can do different operations on 2 inputs. But you need to be able to do both in the same circuit. To do this, build a "decoder", which will decide which mode our computer is in, based on the 2 bits we haven't used yet.
 $12671132029272* Your circuit has been saved to the component factory.
 $15955150920362*
