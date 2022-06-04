@@ -1,8 +1,3 @@
-=== trans/manual_keynote_the_robot ===
-
-$90224489436893* [center]Use arrow keys to play around[/center]
-
-
 === trans/level_byte_mux_text ===
 
 $44961981616677*
