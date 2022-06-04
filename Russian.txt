@@ -2203,8 +2203,8 @@ $54151353200088* ДВЕРЬ
 === trans/level_constants_text ===
 
 $29779449172278*
-[right][color=#e49f44]Code
-Input[/color][/right]
+[right][color=#e49f44]Код
+Вход[/color][/right]
 
 
 === components/Switch64 ===
@@ -2239,14 +2239,13 @@ $59658696292688* ИЗВЛЕКИ {value} из стека
 === trans/level_complete_signed_numbers ===
 
 $41649402437253*
-[b]Negative numbers[/b]
-[color=#cccccc][i]Toggle between signed 
- and unsigned numbers[/i][/color]
+[b]Отрицательные числа[/b]
+[color=#cccccc][i]Переключить между числами со знаком и без знака[/i][/color]
 
 
 === trans/level_complete_stat_tick ===
 
-$47758922161853* Tick
+$47758922161853* Такт
 
 
 === trans/levels_not_RichTextLabel3 ===
