@@ -1,8 +1,3 @@
-=== trans/level_signed_negator_labels3 ===
-
-$66996894079719* Desired   Current
-
-
 === levels/buffer ===
 
 $15504762262759*

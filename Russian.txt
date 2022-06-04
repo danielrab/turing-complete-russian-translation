@@ -2308,7 +2308,7 @@ Make sure the signal flows only from left to right. There are 3 tests.
 
 === trans/level_signed_negator_labels3 ===
 
-$66996894079719* Desired   Current
+$66996894079719* Желаемый   Нынешний
 
 
 === trans/manual_text_hard_disk ===
