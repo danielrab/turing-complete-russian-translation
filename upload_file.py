@@ -9,5 +9,5 @@ cursor = database.execute("SELECT value FROM progress WHERE key='account_token'"
 token ,= cursor.fetchone()
 cursor.close()
 database.close()
-r = requests.post('https://turingcomplete.game/translate', data={"language_id": 8}, files={"translation": open('Russian.txt', 'rb')}, cookies={"token":token})
-print(r)
+requests.post('https://turingcomplete.game/translate', data={"language_id": 8}, files={"translation": open('Russian.txt', 'rb')}, cookies={"token":token})
+requests.post('https://turingcomplete.game/translate', data={"language_id": 8}, files={"translation": open('Russian_missing.txt', 'rb')}, cookies={"token":token})

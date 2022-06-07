@@ -3334,7 +3334,7 @@ $12683441099336*
 
 === trans/manual_program ===
 
-$91120798735036* Program
+$91120798735036* Программа
 
 
 === components/Register64 ===

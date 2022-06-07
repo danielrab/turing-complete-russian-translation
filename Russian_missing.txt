@@ -4029,11 +4029,6 @@ $45472518257028*
 Output 2[/right]
 
 
-=== trans/manual_program ===
-
-$91120798735036* Program
-
-
 === levels/Immediate Values ===
 
 $64348543296709* Linked component {value} should point to the output
