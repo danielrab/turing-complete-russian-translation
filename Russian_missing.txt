@@ -38,9 +38,7 @@ $54126599191071* 1 Bit Input
 
 === rpg/maps/prison/snuffles ===
 
-$38415939620256* Woof woof
 $58496270566737* Snuffles
-$97846640630713* Blood
 $18282167453919* Poor old Snuffles
 
 
@@ -52,13 +50,6 @@ $10492822526537* [center]Check if Input 1 < Input 2[/center]
 === trans/panel_switch_input ===
 
 $27545152958344* [right]Input[/right]
-
-
-=== trans/panel_maker16_input ===
-
-$17253365231801*
-[right]Byte 1
-Byte 2[/right]
 
 
 === trans/panel_network_output_description ===
@@ -77,18 +68,17 @@ $44520675249142*
 $59394224080614* [center]Tricksy's chest[/center]
 
 
-=== trans/panel_program4_output ===
+=== trans/panel_network_outputs ===
 
-$30314861365347*
-Output 1
-Output 2
-Output 3
-Output 4
+$68275268516971*
+Connection ID
+Data / Port / Error code
+Data length
 
 
-=== trans/rpg_complete_text5 ===
+=== trans/manual_text_top_the_robot ===
 
-$15921686607849* [center]The slime farm[/center]
+$50801318216470* The screen shows the robot and his surroundings.
 
 
 === trans/ide_memory_address ===
@@ -99,14 +89,6 @@ $94594171568769* [center]Linked components[/center]
 === trans/panel_clock_input ===
 
 $26264925364981* [right]Enable [/right]
-
-
-=== trans/panel_network_outputs ===
-
-$68275268516971*
-Connection ID
-Data / Port / Error code
-Data length
 
 
 === rpg/hat_man ===
@@ -123,7 +105,6 @@ $30546444635339* Lady hat
 $60834004183919* Bowler Hat
 $98505468673014* Wide Brim Bucket Hat
 $50407582286574* Police Cap
-$40995289760848* Best Hat
 
 
 === misc/specification_dialogue ===
@@ -137,11 +118,6 @@ $25145891843959* Always
 $53665446068319* UNUSED
 $26521666422399* Calculate
 $93899425142858* Copy from {from} to {to}
-
-
-=== levels/delay_level ===
-
-$17854168097855* Check
 
 
 === trans/panel_dual_load_input ===
@@ -171,11 +147,6 @@ $96875261858960*
 [right]Load
 Save
 Save value[/right]
-
-
-=== trans/manual_text_top_the_robot ===
-
-$50801318216470* The screen shows the robot and his surroundings.
 
 
 === components/Output1z ===
@@ -219,23 +190,6 @@ Finally, values can be specified in binary with the prefix 0b (so 5 could be 0b0
 === trans/rpg_complete_flower ===
 
 $15192250170799* [center]Dumio and Gruliette[/center]
-
-
-=== trans/panel_maker32_input ===
-
-$93209061270494*
-[right]Byte 1
-Byte 2
-Byte 3
-Byte 4[/right]
-
-
-=== trans/panel_decoder3_input ===
-
-$82288570082172*
-[right]Input 1
-Input 2
-Input 3[/right]
 
 
 === misc/add_assembly_64bit ===
@@ -354,15 +308,6 @@ $33739450565687* RIP kittie
 $66402048769418* Blood
 
 
-=== trans/panel_decoder2_output ===
-
-$98341196231276*
-Output 1
-Output 2
-Output 3
-Output 4
-
-
 === rpg/maps/overworld/griffith ===
 
 $55209338960432*
@@ -427,31 +372,11 @@ This means that more than 1 of these grey output pins can connect to the same wi
 $42793594302151* Using 2 NOT gates and 2 Switches, build an XOR gate.
 
 
-=== trans/panel_maker8_input ===
-
-$26123816206996*
-[right]Bit 1
-Bit 2
-Bit 3
-Bit 4
-Bit 5
-Bit 6
-Bit 7
-Bit 8[/right]
-
-
 === rpg/maps/prison/dr_rakoo ===
 
 $62085363571678* Dr. Rakoo
 $41342441528477* Blood
 $31033960272185* I am the esteemed Dr. Rakoo
-
-
-=== trans/panel_less_input ===
-
-$68966388936516*
-[right]Input 1
-Input 2[/right]
 
 
 === trans/manual_side_the_robot ===
@@ -471,14 +396,6 @@ $44212297072750*
 [right]Load
 Save
 Save value[/right]
-
-
-=== trans/level_decoder_1_RichTextLabel2 ===
-
-$50454539040073*
-[right][color=#e49f44]Input[/color]
-Output 1
-Output 2[/right]
 
 
 === levels/byte_shift ===
@@ -504,11 +421,6 @@ $18137790657923* In addition to giving you a shift left component, we also had t
 $88881816595724* [center]Disable / Enable[/center]
 
 
-=== rpg/maps/overworld/bridge ===
-
-$70708048943630* Bridge
-
-
 === trans/panel_input_down ===
 
 $70002762618597* Down
@@ -532,14 +444,6 @@ $49278744667468* Sprite Display
 $15272914096446* This level is exactly the same as the XOR one you solved before. Remember no matter what we tell you the goal of the level is, the real truth is in the truth table.
 $14944872827527* Despite the funny background you figured out this was just the XOR gate in disguise! Well done.
 $13224963076378* We are experimenting with how backgrounds influence cognitive functions in earthlings.
-
-
-=== trans/panel_or ===
-
-$15879871058922*
-[right]Input 1
-Input 2
-Output[/right]
 
 
 === levels/ram_block ===
@@ -580,33 +484,9 @@ I don't know why I'm
 not sitting on my chair
 
 
-=== rpg/maps/overworld/barrel ===
-
-$32647427955087* Barrel
-$15228996460366* This is a barrel
-
-
 === trans/panel_keyboard_description ===
 
 $11215841169495* [center]Although the keypad shows the value of the currently pressed key, it only actually outputs on a regular tick![/center]
-
-
-=== trans/manual_console ===
-
-$73523750891893* Console
-
-
-=== trans/panel_shl8_input ===
-
-$61388183229084*
-[right]Value
-Shift by[/right]
-
-
-=== rpg/maps/overworld/tree ===
-
-$72922820287017* It is a tree
-$33509997611554* Tree
 
 
 === levels/Calibrating Laser Cannons ===
@@ -639,11 +519,6 @@ $25534025775791* [center]RIP derpoo[/center]
 === trans/rpg_decoartion ===
 
 $31542517516487* [center]The [i][img]res://rpg/heart.png[/img][img]res://rpg/heart.png[/img][img]res://rpg/heart.png[/img][/i] in the top bar are decoration only![/center]
-
-
-=== components/Input64 ===
-
-$98777983100258* 64 Bit Input
 
 
 === trans/level_binary_programming_description ===

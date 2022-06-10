@@ -97,9 +97,9 @@ $19649119273248*
 
 === rpg/maps/prison/snuffles ===
 
-$38415939620256* Woof woof
+$38415939620256* Гав гав
 $58496270566737* Snuffles
-$97846640630713* Blood
+$97846640630713* Кровь
 $18282167453919* Poor old Snuffles
 
 
@@ -167,8 +167,8 @@ $22031255978461* 32 битный регистр
 === trans/panel_maker16_input ===
 
 $17253365231801*
-[right]Byte 1
-Byte 2[/right]
+[right]Байт 1
+Байт 2[/right]
 
 
 === misc/ui_panel/outputs ===
@@ -184,10 +184,10 @@ $92896462984546* Робот
 === trans/panel_program4_output ===
 
 $30314861365347*
-Output 1
-Output 2
-Output 3
-Output 4
+Выход 1
+Выход 2
+Выход 3
+Выход 4
 
 
 === trans/panel_network_output_description ===
@@ -233,7 +233,7 @@ $19986989895202*
 На этом уровне вы должны показать что понимаете это понятие.
 $11246430085016* Примечание: вы можете увидеть путь задержки нажав на песочные часы в правом верхнем углу.
 $12817338693402* Задержка любого компонента выводится из задержки базовых элементов, задержка которых 2. Создайте цепь с задержкой 6 и стоимостью 5 базовых компонентов.
-$17854168097855* Check
+$17854168097855* Проверить
 
 
 === rpg/hat_man ===
@@ -247,7 +247,7 @@ $47713748239182* Come again Robot
 $68242068712116* Baseball Cap
 $93275531091074* Cowbot Hat
 $30546444635339* Lady hat
-$40995289760848* Best Hat
+$40995289760848* Лучшая шляпа
 $50407582286574* Police Cap
 $60834004183919* Bowler Hat
 $98505468673014* Wide Brim Bucket Hat
@@ -296,10 +296,10 @@ $15192250170799* [center]Dumio and Gruliette[/center]
 === trans/panel_maker32_input ===
 
 $93209061270494*
-[right]Byte 1
-Byte 2
-Byte 3
-Byte 4[/right]
+[right]Байт 1
+Байт 2
+Байт 3
+Байт 4[/right]
 
 
 === misc/add_assembly_64bit ===
@@ -505,9 +505,9 @@ $13677051385046* Прокрутка влево
 === trans/level_decoder_1_RichTextLabel2 ===
 
 $50454539040073*
-[right][color=#e49f44]Input[/color]
-Output 1
-Output 2[/right]
+[right][color=#e49f44]Вход[/color]
+Выход 1
+Выход 2[/right]
 
 
 === levels/byte_shift ===
@@ -541,7 +541,7 @@ $52008982212566* Сброс
 
 === rpg/maps/overworld/bridge ===
 
-$70708048943630* Bridge
+$70708048943630* Мост
 
 
 === trans/panel_input_down ===
@@ -595,7 +595,7 @@ $16586225094516* ВХОДЫ
 
 === trans/manual_console ===
 
-$73523750891893* Console
+$73523750891893* Консоль
 
 
 === components/OutputCounter ===
@@ -606,8 +606,8 @@ $52247325526438* Счётчик
 === trans/panel_shl8_input ===
 
 $61388183229084*
-[right]Value
-Shift by[/right]
+[right]Значение
+Сдвинуть на[/right]
 
 
 === components/Off ===
@@ -3500,7 +3500,7 @@ $78790416494254* ОЗУ
 
 === trans/rpg_complete_text5 ===
 
-$15921686607849* [center]The slime farm[/center]
+$15921686607849* [center]Ферма слизней[/center]
 
 
 === trans/panel_network_outputs ===
@@ -3595,9 +3595,9 @@ $69594087046834* Выход
 === trans/panel_decoder3_input ===
 
 $82288570082172*
-[right]Input 1
-Input 2
-Input 3[/right]
+[right]Вход 1
+Вход 2
+Вход 3[/right]
 
 
 === misc/files_preview ===
@@ -3668,23 +3668,23 @@ $82121937858245* 32 Битный NOR
 === trans/panel_decoder2_output ===
 
 $98341196231276*
-Output 1
-Output 2
-Output 3
-Output 4
+Выход 1
+Выход 2
+Выход 3
+Выход 4
 
 
 === trans/panel_maker8_input ===
 
 $26123816206996*
-[right]Bit 1
-Bit 2
-Bit 3
-Bit 4
-Bit 5
-Bit 6
-Bit 7
-Bit 8[/right]
+[right]Бит 1
+Бит 2
+Бит 3
+Бит 4
+Бит 5
+Бит 6
+Бит 7
+Бит 8[/right]
 
 
 === components/Not64 ===
@@ -3696,8 +3696,8 @@ $81823773658328* 64 Битный NOT
 === trans/panel_less_input ===
 
 $68966388936516*
-[right]Input 1
-Input 2[/right]
+[right]Вход 1
+Вход 2[/right]
 
 
 === misc/sandbox_toggle ===
@@ -3763,9 +3763,9 @@ $13224963076378* We are experimenting with how backgrounds influence cognitive f
 === trans/panel_or ===
 
 $15879871058922*
-[right]Input 1
-Input 2
-Output[/right]
+[right]Вход 1
+Вход 2
+Выход[/right]
 
 
 === trans/options_confirm_reset ===
@@ -3807,8 +3807,8 @@ $11215841169495* [center]Although the keypad shows the value of the currently pr
 
 === rpg/maps/overworld/barrel ===
 
-$32647427955087* Barrel
-$15228996460366* This is a barrel
+$32647427955087* Бочка
+$15228996460366* Это бочка
 
 
 === rpg/maps/overworld/sasni ===
@@ -3846,8 +3846,8 @@ $31674686871821* Сдвиг вправо
 
 === rpg/maps/overworld/tree ===
 
-$72922820287017* It is a tree
-$33509997611554* Tree
+$72922820287017* Это дерево
+$33509997611554* Дерево
 
 
 === levels/Calibrating Laser Cannons ===
@@ -3895,7 +3895,7 @@ $31542517516487* [center]The [i][img]res://rpg/heart.png[/img][img]res://rpg/hea
 
 === components/Input64 ===
 
-$98777983100258* 64 Bit Input
+$98777983100258* 64-х Битовый Вход
 
 
 === components/Input 4 ===
