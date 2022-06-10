@@ -1,0 +1,17 @@
+
+
+$15865646260225*
+[color=#b72d41][b]МУДРОСТЬ:[/b][/color] 
+ Боль временна, слава навсегда!
+$17594613477534*
+Create a device that can OR, NAND, NOR or AND two inputs. The third input will be the [INSTRUCTION]. An [INSTRUCTION] is just what we call the number that determines what to compute.
+
+Instructions:
+[code][color=#87a8c8]0 OR
+1 NAND
+2 NOR
+3 AND[/color][/code]
+
+Also you can't move the red components in this level, for reasons that will be revealed later.
+
+

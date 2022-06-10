@@ -1,0 +1,23 @@
+
+
+$14975070588197*
+We all like the way Robot moves on the dance floor. That's why we want him to lead our dance team. 
+	
+The only problem is to make him come up with original dance sequences. How do you make creativity out of deterministic logic you ask?
+
+The answer pseudo random number generators.
+$15955150920362*
+На этом уровне вы получите только один вход, мы называем это начальным семенем. Семя проходит через следующие шаги для получения псевдо-случайного числа.
+
+В алгоритме ниже, "shl 1" означает сдвиг влево один раз, "shl 2" означает сдвиг влево дважды, а "shr 1" означает сдвиг вправо один раз.
+
+[b]8-и битовый xorshift RNG:[/b][code][color=#87a8c8]
+temp1     = seed  xor (seed  shr 1)
+temp2     = temp1 xor (temp1 shl 1)
+next_seed = temp2 xor (temp2 shr 2)
+[/color][/code]
+Затем, выведите next_seed по модулю 4, чтобы двигать робота. И наконец, используйте next_seed (до модуля) как семя, чтобы получить следующее число в танцевальной последовательности и повторите.
+
+(Обратите внимание, что начальное семя никогда не будет 0)
+
+

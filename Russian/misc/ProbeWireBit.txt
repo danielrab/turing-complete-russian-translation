@@ -1,0 +1,6 @@
+
+
+$49521764791439* Wire Probe (bit)
+$15206117280094* Display a value on your custom component or in the program editor
+
+

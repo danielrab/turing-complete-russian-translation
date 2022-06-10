@@ -1,0 +1,9 @@
+
+
+$15769391111364* Когда бит "Инвертировать" [ON], выведите обратное от "Значение". Иначе, просто выведите "Значение" как есть.
+$15272914096446* This level is exactly the same as the XOR one you solved before. Remember no matter what we tell you the goal of the level is, the real truth is in the truth table.
+$14944872827527* Despite the funny background you figured out this was just the XOR gate in disguise! Well done.
+$16125025706490* Хмм, возможно вы даже слишком хорошо изучили поведение линии задержки.
+$13224963076378* We are experimenting with how backgrounds influence cognitive functions in earthlings.
+
+

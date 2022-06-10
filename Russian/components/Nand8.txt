@@ -1,0 +1,6 @@
+
+
+$50859914201083* Bitwise NAND two values
+$93314093190526* 8 Bit NAND
+
+

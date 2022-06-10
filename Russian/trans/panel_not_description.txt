@@ -1,0 +1,5 @@
+
+
+$36935580253321* [center]Negates the input bitwise[/center]
+
+

@@ -6,7 +6,7 @@ import shutil
 def deconstruct(file_name):
   with open(f'{file_name}.txt', 'rb') as file:
     data = file.read()
-  shutil.rmtree(file_name)
+  shutil.rmtree(file_name, ignore_errors=True)
   for section, text in re.findall(b'===(.+)===((?:.|\n)+?)(?====)', data):
     path = Path(f'{file_name}/{section.strip().decode()}.txt')
     os.makedirs(path.parent, exist_ok=True)

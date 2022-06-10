@@ -1,0 +1,12 @@
+
+
+$22719674432950*
+[ON] Когда два входа [ON]
+[table=5]
+[cell]Вход 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
+[cell]Вход 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Выход[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell]
+[/table]
+$58912167455465* AND
+
+

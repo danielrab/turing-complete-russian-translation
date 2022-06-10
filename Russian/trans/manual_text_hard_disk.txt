@@ -1,0 +1,8 @@
+
+
+$82372297690518*
+Hard disks are made of a spinning disk and a mechanical arm that has to physically move to load or save data. Of course physical movement is extremely slow in the timescales of electronics. Operating systems will normally order loads and saves such that the arm has to travel as little as possible.
+
+The hard disk component has a "seek" pin, which lets you change the address you are looking at by the given amount. The addresses "wrap around", such that seeking 1 less than 0 moves you to the highest address, and seeking 1 higher than that gets you back to 0.
+
+

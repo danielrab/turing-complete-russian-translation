@@ -1,0 +1,6 @@
+
+
+$24840584785792* Outputs this tick's input, next tick
+$63449911993783* 8 Bit Delay Line
+
+

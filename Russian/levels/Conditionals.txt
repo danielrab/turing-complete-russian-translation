@@ -1,0 +1,38 @@
+
+
+$10794262854382*
+Добавить, условные выражения в вашу схему. Для условных выражений, 2 аргумента сравниваются и если условие верно, счетчик установлен на адрес прыжка.
+	
+В предыдущих инструкциях, 4 байта представляли:
+[code][color=#87a8c8]КОД_ОПЕРАЦИИ, АРГУМЕНТ_1, АРГУМЕНТ_2, РЕЗУЛЬТАТ[/color][/code]
+
+Для условных выражений байты представляют:
+[code][color=#87a8c8]КОД_ОПЕРАЦИИ, АРГУМЕНТ_1, АРГУМЕНТ_2, JUMP_ADDRESS[/color][/code]
+
+В дополнение к предыдущим кодам операций, добавьте:
+[code][color=#87a8c8]32 ЕСЛИ_РАВНО
+33 ЕСЛИ_НЕ_РАВНО
+34 ЕСЛИ_МЕНЕЕ
+35 ЕСЛИ_МЕНЕЕ_ИЛИ_РАВНО
+36 ЕСЛИ_БОЛЕЕ
+37 ЕСЛИ_БОЛЕЕ_ИЛИ_РАВНО[/color][/code]
+
+Используйте беззнаковое меньше / больше для сравнений.
+
+Коды операций делают то что их названия подразумевают. Например эта инструкция прыгает на байт 16 если РЕГ0 меньше чем РЕГ1: 
+[code][color=#87a8c8]ЕСЛИ_МЕНЕЕ РЕГ0 РЕГ1 16[/color][/code]
+$18542005958715* Set the counter increment to 4
+$17133561664335* Congratulations, you finished the [color=#e49f44]LEG[/color] computer!
+$14973719570693* Добавить счетчик к схеме
+$12920514303805* Add 6 registers to the map
+$14309211963063* Create a new schematic and add a program with 4 byte output
+$16826220977157*
+ [color=#b72d41][b]ПОДСКАЗКА:[/b][/color] 
+КОПИРОВАТЬ это просто ДОБАВИТЬ со вторым аргументом 0
+$14690660047411* [center]Реализуйте коды операций для условий[/center]
+$30132649789584* Linked component {number} should point to the output
+$18994998239232* I will show you some upgrades you can make, on the path to implementing function calls. But from here on the details are up to you, I wont tell you what opcodes to use and so on.
+$12034111753799* Linked component {number} should point to the counter
+$36561706158040* Linked component {nr} should point to a register or custom component with a register inside
+
+

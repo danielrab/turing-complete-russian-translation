@@ -1,0 +1,24 @@
+
+
+$11338791453100* Dynamic
+$27259865408750* На следующем такте значение счётчика будет {next}, Это должно быть {expected}
+$95030012922256* Вход должен быть включен только при чтении с входа
+$12873109232054* Ожидаемый вывод: {expected}, получено: {got}
+
+#  "cond" is for condition, this label has to be short as it has to fit on a component
+$94982725578534* COND
+$93579176707338* Copy INPUT ({input_val}) to REG {reg}
+$15507583089532* REG {nr} should have value {value}
+$78673238418574* Your circuit is missing a counter component
+$65651227755356* Next tick the counter value will be {actual}, it should be {expected}
+$47188699762650* Выход не включён
+$44533909869936* REG 1 and REG 2 are inputs to the ALU, REG 3 is for the result.\nIt looks like you are using REG 0, 1 and 2.
+$28026304798371* Выход должен быть включен только при выводе значения
+$85260864781281* Вход не включен
+$96569633331621* Загрузи {value} в РЕГ 0
+$16914143080303* Copy
+$59042824277105* Immediate
+$82949244692745* Calculate
+$83829200305236* Ожидаемый выход: {expected}, получено: {got}
+
+

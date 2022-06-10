@@ -1,0 +1,14 @@
+
+
+$42847481618884*
+Open the component factory by clicking on this button [img]dialogue/manual/component_factory_icon.png[/img] in the upper left bar.
+
+The component factory allows you to create your own components. The logic you place determine the behavior of the custom component and the layout determines the shape. 
+
+The input and output components you place become pins on the component. Like with other components, a component output leading back to its input causes a circular dependency. Outputs having a path back to inputs causes a circular dependency for custom components, even if the insides of the component would suggest there shouldn't be one. Not having to worry about the inside of components reduces the complexity of larger builds, however this strict abstraction can be inconvenient under certain circumstances. In that case, use the unbuffered pins. They allow bidirectional flow and use the insides of the component to check for circular dependencies.
+
+Probes placed in custom components will show on their layout and can display values inside. Probes can be connected to other custom components, so that deeply nested values can be displayed. Values probed in this way can also be connected to the program component.
+
+For the component factory, the file manager also manages the custom components. The file names decide the component name and the folder structure decides the components placement in the menu.
+
+

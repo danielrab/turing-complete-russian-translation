@@ -1,0 +1,16 @@
+
+
+$11331851878040* Также у вас теперь есть доступ к программированию на ассемблере. Он позволяет вам давать имена инструкциям, так например вы можете написать "add" вместо того чтобы вбивать 68.
+$11023157447564*
+2×π×r
+
+r это вход.
+Вы можете считать что π это примерно 3.
+
+Пошлите ответ на выход когда он был посчитан.
+$15260627694444* In order to calibrate said laser, we want you to calculate the circumference of the asteroids using an advanced equation.
+$12669851602178* [center]Calculate the circumference of the asteroids[/center]
+$21601709632806* Сколько будет 2π × {radius}?
+$16954408093587* On our ship we naturally shoot incoming asteroids with lasers.
+
+

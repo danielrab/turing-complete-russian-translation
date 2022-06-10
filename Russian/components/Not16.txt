@@ -1,0 +1,6 @@
+
+
+$17394768116288* 16 Bit NOT
+$91053300263019* Bitwise negates 16 bits
+
+

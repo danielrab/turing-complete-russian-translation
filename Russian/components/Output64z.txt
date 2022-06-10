@@ -1,0 +1,6 @@
+
+
+$35798118634001* 64 Bit Switched Output
+$42506906257154* Only outputs if the switch pin is [ON]
+
+

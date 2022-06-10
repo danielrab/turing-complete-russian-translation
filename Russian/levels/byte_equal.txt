@@ -1,0 +1,5 @@
+
+
+$17156565273196* Output [ON] when both inputs are the same.
+
+

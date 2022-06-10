@@ -1,0 +1,11 @@
+
+
+$34453052824732* NOT
+$90844421681709*
+Инвертирует вход
+[table=3]
+[cell]Вход[/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Выход[/cell][cell][ON][/cell][cell][OFF][/cell]
+[/table]
+
+

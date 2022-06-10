@@ -1,0 +1,14 @@
+
+
+$11540713506719*
+You are now free to change the program of your computer.
+Click the edit icon on the program component to start programming.
+$19281970848639* [center]Add 5 to the input.[/center]
+$17770257567603* So in the meantime we will have you help out on the ship a little.
+$19446152707984* Click on the edit memory icon on the program component to start programming your computer. Your computer should read an input, add 5 to it and output it again (no need to worry about overflow).
+$80639633676917* Input:
+$12078933051174* But since you don't know how to program it yet, you are not quite ready for that.
+$11074247151096* Notice that the immutable red register components have been replaced with a custom component with identical functionality.
+$18134632592542* You have built your computer, but to win the competition you still have to finish the maze.
+
+

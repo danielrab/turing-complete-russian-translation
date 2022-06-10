@@ -1,0 +1,16 @@
+
+
+$17054292175058* Welcome to the sandbox, here you are free to play around. I have given you 64 bit wires and a few IO components.
+$10731996208080* There are also 64 bit versions of the program, the counter, the register and the ram. Notice though, the 64 bit ram takes 1 tick to load.
+$72764802067974*
+Добро пожаловать в песочницу. 
+
+Компоненты доступны в меню на правой стороне. После размещения нажмите на контакты компонентов и перетащите, чтобы подключить их с помощью провода. Слева вы найдете интерфейс для управления симуляцией. Обратите внимание что вы можете нажать правой кнопкой мыши на кнопку "Перемотка Тактов" Чтобы установить целевую скорость.
+
+Вы можете найти больше информации о симуляции в справочнике (кнопка в виде книги, в верхней панели). Примечательные функции, на которые стоит обратить внимание: "завод компонентов" где вы можете создать свои собственные компоненты и компонент программы, который позволяет вам определить собственный ассемблер.
+$19454393978813* Клавиатура позволяет напрямую управлять компьютером, используя вашу ... клавиатуру
+$14434122873489* The Waveform Generator lets you make sounds. I will probably regret giving you this one.
+$18405942066048* The Clock gives you the current UNIX time in microseconds.
+$10451578314373* The Console Screen lets you draw characters to a screen (see manual for ascii characters)
+
+

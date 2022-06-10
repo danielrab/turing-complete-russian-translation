@@ -1,0 +1,8 @@
+
+
+$24791538034329*
+What this game calls an "instructions" is also known as an operation or an opcode (short for operation code). Regardless of the operating system, programming language or any other layers above it, all software must inevitably be reduced to instructions for the CPU to process them.
+
+Internally in modern CPUs, instructions are translated into "microcodes", which are even smaller steps, out of reach for the programmer.
+
+

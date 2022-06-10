@@ -1,0 +1,6 @@
+
+
+$62528867413395* 64 Bit Counter
+$62736827510023* Increments each tick, unless overwritten
+
+

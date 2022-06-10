@@ -1,0 +1,8 @@
+
+
+$19967210826470* Be aware that the laser can only shoot when there are no other laser beams already in flight.
+$16294185981398* The cargo hull has become infested with space rats.
+$11505369795084* Check [color=#e49f44][url=the_robot]robot page[/url][/color] for instructions on how to program him. There is a link to that page in the program editor as well.
+$10515630949378* We have hooked your machine up to our advanced robot and we want you to program it to shoot the space rats with lasers.
+
+

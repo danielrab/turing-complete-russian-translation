@@ -1,0 +1,6 @@
+
+
+$54782010205016* 16 Bit Switched Output
+$54278394672948* Only outputs if the switch pin is [ON]
+
+

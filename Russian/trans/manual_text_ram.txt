@@ -1,0 +1,22 @@
+
+
+$10969790213397*
+This simulator has several types of RAM different trade-offs, similar to real life RAM options.
+
+[b]RAM[/b]
+The RAM component can store a lot of data, but adds a very high delay to the circuit.
+
+[b]Fast RAM[/b]
+The fast RAM has a low delay, but a very high gate cost per byte.
+
+[b]Latency RAM[/b]
+The normal RAM has very high delay, however instead of waiting for this delay each tick, we can treat the RAM as if load and save takes multiple ticks. The number of ticks save and load will take depends on the length of each tick. Say for example that our circuit has a delay of 100 units, a load would take 10 ticks, since we have to wait about 1000 units of delay. 
+
+A common approach for pipelined architectures is to use Latency RAM as for main memory, but use a small amount of Fast RAM for caching. Since memory access is often adjacent or close (for example when looping over an array), fetching adjacent values when loading from Latency RAM and caching them in Fast RAM can significantly speed up certain kinds of programs.
+
+The simplest way to integrate the Latency RAM is simply to stall the whole architecture while waiting for a save or load. An easy optimization on this comes from realizing that you don't have to wait for saves, except if you want to load.
+
+[b]Dual Load RAM[/b]
+Sometimes it is beneficial to separate parts of the logic into a separate processing unit, that operates more or less independently. This could be for handling a display device or a network connection. In these cases, the independent unit will often need to continuously load and save to memory, while the outside logic only needs to occasionally load. Use Dual Laod RAM to avoid having to schedule who gets access to the RAM at what time.
+
+

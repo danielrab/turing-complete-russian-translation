@@ -1,0 +1,7 @@
+
+
+$28038932532386*
+[center]On the hard disk, the "head position" determines at what address reads and writes take place. Use the signed 8 bit seek pin to change the "head position".
+Use a seek value of 0 if you don't want to change the position.[/center]
+
+

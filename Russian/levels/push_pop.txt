@@ -1,0 +1,17 @@
+
+
+$78804623186243* ВЫХОД
+$49526452710191* НЕ ИЗВЛЕКАТЬ
+$58050047963238* ЗНАЧЕНИЕ
+$19245209470436* Создайте стек
+$12227209887733*
+Каждый такт, входы будут указывать либо ПОМЕСТИТЬ либо ИЗВЛЕЧЬ. Если указано ПОМЕСТИТЬ, сохраните значение наверху стека. Если указано ИЗВЛЕЧЬ уберите значение из стека и выведите его.
+	
+У выхода есть активирующий контакт, включайте его только если указано ИЗВЛЕЧЬ.
+$15662660252584* Ничего не делать
+$62469306234943* НЕ ПОМЕЩАТЬ
+$46948857059388* ИЗВЛЕКИТЕ значение {value} из стека
+$18761197388580* In order to cut spending, it has been decided to change the queuing system at public offices so that fewer people will go. Instead of first come, first served, we are implementing a last come first served policy. Think of it like a [color=#e49f44]stack[/color] of numbered slips where the citizens either put a slip on top (called [color=#e49f44]PUSH[/color]), or the bureaucrats take one off the top of the stack (called [color=#e49f44]POP[/color]). We want you to implement this new system.
+$65188797398656* ПОМЕСТИТЕ {value} в стек
+
+

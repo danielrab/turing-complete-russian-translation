@@ -1,0 +1,6 @@
+
+
+$66299093873977* 32 bit XOR
+$38169019785615* Bitwise XOR two values
+
+

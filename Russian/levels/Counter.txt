@@ -1,0 +1,19 @@
+
+
+$17701404772563* Добавь 1
+$17940006660359* Count
+$17263901743088*
+Build a counter that will increase by 1 each tick.
+
+Additionally, there should be an option for overwriting the counter with a given value.
+
+You are given 2 inputs, a bit and a byte.
+
+The bit input should toggle between counting and overwriting with the value of the byte.
+$68874699768861* Перезапиши на {value}
+$10555159894041*
+Counting is so fundamental even insects do it. From counting, species can evolve to compare and do arithmetic. And before you know it, you have apes building computers.
+
+Make a device that counts increments once per tick.
+
+

@@ -1,0 +1,14 @@
+
+
+$11150103897185* In this level, components may depend on themselves or form loops of up to two components. Despite depending on their own output, some of these wires have stable outputs, at least for some inputs.
+$15754153332116* Этот уровень вводит концепцию триггеров. Эта механика не обязательна для завершения игры.
+
+# The circuit you are asked to construct here has a circular dependency. The circuit also has 2 "stable states" for most inputs. A stable state here means that every component's output agrees with its input. As an example, an OR gate with one input disconnected and the other connected to its own output is stable. If the output is [OFF], both inputs are [OFF], which agrees with the OR gate. If the output is [ON], then so is one of the inputs. However, a NOT gate connected to its own input is not stable. If the output is [ON], then the input is [ON] as well. This will cause the NOT gate to try and make the output [OFF], which will also make the input [OFF]. The circuit will switch between these two states forever, so it is not stable.
+$18165461234561* Delay lines are easy to understand and can be used to build any computer architecture. However, modern hardware no longer use these as a basis for memory.
+$15213907597666* Используя 2 NOR элемента, Создайте цепь, которая соответствует таблице. Вам понадобится триггер.
+$19448398663695*
+Когда мы хотим определить, что компоненты в круговой зависимости выводят, у нас нет первого компонента, с которого мы можем начать. Вместо этого мы используем значения проводов из последнего такта. Это потому, что в реальном железе электроны не двигаются мгновенно. В зависимости от схемы провода либо мерцают между [ON] и [OFF], либо оседают в стабильном состоянии.
+
+Если у вас есть схема, где провода могут оседать в любом из 2 разных стабильных состояний, у вас есть основа для памяти. Следующее состояние будет зависеть от значений, которые провода имели в последнем такте. Такие схемы называются "триггерами".
+
+

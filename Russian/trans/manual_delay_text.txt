@@ -1,0 +1,12 @@
+
+
+$52013630755752*
+In real hardware all components have delay. This is important since the delay in a circuit determines the maximum speed at which you can run it.
+
+Following wires from input to output and adding the delay of components in the path will give you the delay that path. The delay of a circuit is the delay of the slowest path.
+
+Besides inputs, paths can also start from components with no reliance on early phase inputs (like Counter and On) and they can end at late phase inputs (see page).
+
+Further, custom components don't have a delay score for the costliest path of the whole component, but rather the delay cost is calculated per pin. This is so as to not penalize using custom components by making faster pins cost the same as the slower ones.
+
+

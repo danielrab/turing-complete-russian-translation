@@ -1,0 +1,12 @@
+
+
+$13013154620359*
+[ON] когда хоть один из входов [ON]
+[table=5]
+[cell]Вход 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
+[cell]Вход 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Выход[/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell][cell][ON][/cell]
+[/table]
+$97247779246257* OR
+
+

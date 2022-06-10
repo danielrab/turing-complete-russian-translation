@@ -1,0 +1,17 @@
+
+
+$64510812504271*
+Some of the components used are not supposed to be available in this level!
+The solution is not scored.
+
+#  Level type for the level complete menu
+$58769207148712* Component
+
+#  Level type for the level complete menu
+$90134890578411* Misc
+$68327708695625* [b]Manual Entry[/b]\n\n Entry: [color=#68d277]{page}[/color]
+
+#  Level type for the level complete menu
+$69219742310717* Architecture
+
+

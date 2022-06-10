@@ -1,0 +1,12 @@
+
+
+$27510848535619*
+[ON] Когда никакой из входов [ON]
+[table=5]
+[cell]Вход 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
+[cell]Вход 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Выход[/cell][cell][ON][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell]
+[/table]
+$83375115196253* NOR
+
+

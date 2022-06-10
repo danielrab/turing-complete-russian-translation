@@ -1,0 +1,13 @@
+
+
+$67636019772385*
+[right]Byte 1
+Byte 2
+Byte 3
+Byte 4
+Byte 5
+Byte 6
+Byte 7
+Byte 8[/right]
+
+

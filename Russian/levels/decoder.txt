@@ -1,0 +1,22 @@
+
+
+$16133643476631* Схема, которую вы построили на уровне "Регистры, может копировать значения между регистрами, в то время как "Арифметический Блок" может выполнять различные операции над 2-мя входами. Но вам нужно делать и то и другое в одной и той же схеме. Для этого, постройте "декодер", который будет определять в каком режиме наш компьютер находится, основываясь на 2-х битах которые вы до сих пор не использовали.
+$18435544383511* CALCULATE pattern\n[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
+$18945946395447*
+To distinguish between the [INSTRUCTIONS] of 4 different kinds, the two highest bits will be used to determine which MODE we are in as follows:
+[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Immediate
+[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Calculate
+[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Copy
+[ON] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Condition
+
+Here [ANY] means any value.
+
+Determine the MODE we are in from the input, then send [ON] to the correct output.
+$15105859227432* COPY pattern\n[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
+$12671132029272* Ваша схема была сохранена на завод компонентов.
+$12068329066372* [b]ALERT: THIS IS AN OUTDATED VERSION OF THIS MAP, PLEASE CLICK THE SAVE ICON IN THE TOP LEFT AND CREATE AND LOAD A NEW SCHEMATIC[/b]
+$11382827588408* CONDITION pattern\n[ON] [ON] [OFF] [OFF] [OFF] [ANY] [ANY] [ANY]
+$12976424717611* IMMEDIATE pattern\n[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
+$12532951884542* IMMEDIATE
+
+

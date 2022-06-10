@@ -1,0 +1,5 @@
+
+
+$62540112577327* [center]Если значение соответствует условию, выведите [img]dialogue/on.png[/img], иначе [img]dialogue/off.png[/img].[/center]
+
+

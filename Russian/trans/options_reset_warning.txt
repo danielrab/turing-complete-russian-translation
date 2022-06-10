@@ -1,0 +1,7 @@
+
+
+$19141523477461*
+This will delete all level solutions, custom components and architectures. This can not be undone, are you sure you want to do it?
+(This will close the game, it will be reset once you start it again.)
+
+

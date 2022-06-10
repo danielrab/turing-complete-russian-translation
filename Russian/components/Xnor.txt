@@ -1,0 +1,12 @@
+
+
+$94079327237795* XNOR
+$90614106399129*
+[ON] когда входы одинаковые
+[table=5]
+[cell]Вход 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
+[cell]Вход 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Выход[/cell][cell][ON][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell]
+[/table]
+
+

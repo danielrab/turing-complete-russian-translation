@@ -1,0 +1,22 @@
+
+
+$19693461238792* Установи шаг счётчика на 4
+$20916717363300* Linked component {nr} should point to the output
+$38976231780455* Linked component {nr} should point to a register or custom component with a register inside
+$18189600217529* [center]Реализуйте коды операций[/center]
+$13450117997204* Добавь счётчик к схеме
+$77044880242883* Linked component {nr} should point to the counter
+$13870568875751* Create a new schematic and add a program with 4 byte output
+$10303603301757*
+Implement the following opcodes:
+[code][color=#87a8c8]0 ADD
+1 SUB
+2 AND
+3 OR
+4 NOT
+5 XOR[/color][/code]
+
+The opcode NOT ignores the second argument.
+$17495651785164* Добавь 6 регистров в схему
+
+

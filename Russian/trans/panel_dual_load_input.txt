@@ -1,0 +1,11 @@
+
+
+$93092890899642*
+[right]Load
+Save
+Address
+Save value
+Load 2
+Address 2[/right]
+
+

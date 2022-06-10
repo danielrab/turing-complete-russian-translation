@@ -1,0 +1,39 @@
+
+
+$70445160410129*
+[b]Overview[/b]
+The "Network" component gives you low level access to networking. In general you manipulate your network by sending the component [color=#e49f44]Commands[/color] and when update [color=#39aa49]Events[/color] return from the network they get queued up and you process them one at a time. To keep track of different simultaneous connections [color=#dd6576]Connection ID[/color]s are used.
+
+These are the command types you can send to the component and their arguments:
+[code]0[/code] No command
+[code]1[/code] [color=#e49f44]Listen[/color] ([color=#dd6576]Port[/color])
+[code]2[/code] [color=#e49f44]Connect[/color] ([color=#dd6576]IP[/color], [color=#dd6576]Port[/color])
+[code]3[/code] [color=#e49f44]Send data[/color] ([color=#dd6576]Connection ID[/color], [color=#dd6576]Data[/color], [color=#dd6576]Data length[/color])
+[code]4[/code] [color=#e49f44]Close[/color] ([color=#dd6576]Connection ID[/color])
+[code]5[/code] [color=#e49f44]Read next event[/color]
+[i]See component panel for which pin correspond to which argument.[/i]
+
+Command types [color=#e49f44]Listen[/color] and [color=#e49f44]Connect[/color] outputs the [color=#dd6576]Connection ID[/color] of the new connection.
+
+For 2 programs to [color=#e49f44]Send data[/color] to each other, one program must first [color=#e49f44]Listen[/color] (called a server) on a [color=#dd6576]Port[/color] and the other must then [color=#e49f44]Connect[/color] (called a client), using the [color=#dd6576]IP[/color] of the listening program and the [color=#dd6576]Port[/color] it selected. Once the connection is established, the server and client function exactly the same.
+
+Notice an [color=#dd6576]IP[/color] is a 32 bit number, normally written as 4 bytes with dots in between (example: 127.0.0.1). In this simulator you reverse the order of the bytes, so 127.0.0.1 becomes 0x0100007F. 0x0100007F is always your computers loopback address and you can use this to connect programs running on the same computer.
+
+You can detect when events happen on the network, by checking the "Next event type" pin. These are the event types:
+[code]0[/code] No event
+[code]1[/code] [color=#39aa49]Incoming connection[/color] ([color=#dd6576]Connection ID[/color], [color=#dd6576]Port[/color])
+[code]2[/code] [color=#39aa49]Connect complete[/color]
+[code]3[/code] [color=#39aa49]Receive data[/color] ([color=#dd6576]Connection ID, Data[/color], [color=#dd6576]Data length[/color])
+[code]4[/code] [color=#39aa49]Connection closed[/color] ([color=#dd6576]Connection ID[/color] / [color=#dd6576]Error code[/color])
+
+[color=#39aa49]Incoming connection[/color] only happens after a [color=#e49f44]Listen[/color]. Use the [color=#dd6576]Port[/color] to distinguish between listeners (it is not possible to listen to the same port twice at the same time).
+
+[color=#39aa49]Connect complete[/color] only happens after a [color=#e49f44]Connect[/color], wait for this before you start sending data.
+
+You may send or receive between 1 and 8 bytes of data at a time, use the [color=#dd6576]Data length[/color] to decide.
+
+A connection may be either "possibly open" or "closed". There is no way to know if a connection is actually open other than sending data. The underlying network protocols were designed like this for reliability and speed, it is not a limitation of the simulator.
+
+If you get a [color=#dd6576]Connection ID[/color] of -1, this means there was an error connecting.
+
+

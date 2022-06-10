@@ -1,0 +1,11 @@
+
+
+$56295261249455*
+If components output different values on the same wire, you get an error. However, some components have grey output pins, these are not outputting at all when the component is not enabled. This is the case for the Bit Switch component.
+
+[img]dialogue/bit_switch.png[/img]
+
+This means that more than 1 of these grey output pins can connect to the same wire and not cause an error, as long as only one of them is enabled at a time.
+$42793594302151* Using 2 NOT gates and 2 Switches, build an XOR gate.
+
+

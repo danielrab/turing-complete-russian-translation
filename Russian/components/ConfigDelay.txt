@@ -1,0 +1,6 @@
+
+
+$31412778600732* Configurable delay
+$84124565448643* Adds a configurable amount of delay. Useful for delay debugging or controlling the latency of the latency RAM.
+
+

@@ -1,0 +1,12 @@
+
+
+$49305362057225*
+Ваш ответ {your_answer}
+Правильный ответ {correct_answer} (Вход {input})
+$18296416014178* When the bit selector input is [OFF], output Byte A, otherwise output Byte B.
+$17093993196554*
+Even though he did not pass our tests we decided to keep the dog. Unlike most earthlings he is fluffy and follows simple instructions well. 
+
+We might want to team you two up, since you compliment each other's shortcomings well.
+
+

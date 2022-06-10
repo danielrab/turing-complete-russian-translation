@@ -1,0 +1,14 @@
+
+
+$10368115829346* But actually it is OK because you lived good lives in the wild and we don't let the meat go to waste.
+$15923734370936*
+OR каждый бит входных байтов и выведите результат.
+
+Например:
+[code]
+ВХОД 1 [ON][ON][OFF][OFF][OFF][OFF][OFF][OFF]
+ВХОД 2 [OFF][OFF][OFF][OFF][ON][ON][OFF][OFF]
+ВЫХОД  [ON][ON][OFF][OFF][ON][ON][OFF][OFF][/code]
+$15226896485081* Возможно вы считаете что это не этично съедать всех землян которые не выигрывают в соревновании?
+
+

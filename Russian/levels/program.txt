@@ -1,0 +1,9 @@
+
+
+$16693098943939*
+The [INSTRUCTION] input component has been removed. It has been replaced by a program component. Every tick, use the counter to load the next [INSTRUCTION] from the program's memory.
+	
+You must use the counter component you unlocked earlier for this level.
+$19686277478479* The program is still outputting the first instruction. Did you hook up a counter?
+
+

@@ -1,0 +1,12 @@
+
+
+$26621808961883*
+[color=#e49f44]0[/color] Move right
+[color=#e49f44]1[/color] Move down
+[color=#e49f44]2[/color] Move left
+[color=#e49f44]3[/color] Move up
+[color=#e49f44]4[/color] Enjoy the moment
+[color=#e49f44]5[/color] Use action [color=#a9a9a9](enter)[/color]
+[color=#e49f44]6[/color] Shoot laser [color=#a9a9a9](tab)[/color]
+
+

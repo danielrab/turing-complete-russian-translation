@@ -1,0 +1,45 @@
+
+
+$33474352861351* Level {x}
+$92057009138253* What is {number} in binary?
+$16009852370452*
+When dealing with a lot of bits, binary can become hard to read. Hexadecimal (base 16) represents each combination of 4 bits as its own character:
+[code]
+0 [OFF][OFF][OFF][OFF]
+1 [OFF][OFF][OFF][ON]
+2 [OFF][OFF][ON][OFF]
+3 [OFF][OFF][ON][ON]
+4 [OFF][ON][OFF][OFF]
+5 [OFF][ON][OFF][ON]
+6 [OFF][ON][ON][OFF]
+7 [OFF][ON][ON][ON]
+8 [ON][OFF][OFF][OFF]
+9 [ON][OFF][OFF][ON]
+A [ON][OFF][ON][OFF]
+B [ON][OFF][ON][ON]
+C [ON][ON][OFF][OFF]
+D [ON][ON][OFF][ON]
+E [ON][ON][ON][OFF]
+F [ON][ON][ON][ON]
+[/code]
+
+As an example where hexadecimal is much clearer, lets compare the representation of the largest 16 bit number:
+[code]
+Binary:      1111111111111111
+Decimal:     65535
+Hexadecimal: FFFF
+[/code]
+
+It is not easy to tell if the binary is missing a digit or if the decimal number is off by 1, the hexadecimal on the other hand is immediately clear (once you get used to the representation at least).
+$40775762006843* Wrong answer
+$84691609525475* This level is my second favorite pastime. Converting hexadecimal to binary under time pressure.
+$45532697833519* You made it to level {level}!
+$87016829502381* Good job, you reached level {current_level}.
+$43463538043782*
+Toggle the bits in the level panel so they add up to the hexadecimal number in the question.
+
+You must beat level 3 to pass.
+
+(click [color=#e63e5b][url=accessibility_mode]here[/url][/color] to turn on timerless accessibility mode)
+
+

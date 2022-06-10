@@ -1,0 +1,9 @@
+
+
+$30351143139905* Halt
+
+#  This is the default message of the Halt component
+$54106972240596* Halt
+$62990744955549* Stops execution with a custom message
+
+

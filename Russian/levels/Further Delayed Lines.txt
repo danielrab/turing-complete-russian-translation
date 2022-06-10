@@ -1,0 +1,9 @@
+
+
+$17366913897135* Создайте цепь которая выводит свой собственный вход с задержкой в 2 такта.
+$60989431641221*
+This level introduces the Delay Line component. It takes its input and outputs it 1 tick later.
+
+[img]dialogue/delay_buffer.png[/img]
+
+

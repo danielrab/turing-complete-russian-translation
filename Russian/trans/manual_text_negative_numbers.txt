@@ -1,0 +1,10 @@
+
+
+$85226853816564*
+The way to represent negative numbers you discovered is called "two's complement". It is the standard way to represent negative numbers in modern computers. The main advantage of two's complement is that the negative representation works seamlessly with the same adder that we used for the non signed representation.
+
+In the early days of computing, the main contender to two's complement was one's complement. Its main advantage is that changing the sign of a number is simple, you just NOT each bit in the number. However, it has 2 representations for 0, a positive and a negative, which makes comparisons more difficult.
+
+Another interesting representation, perhaps worth looking up is base -2, where the sign of the value of each digit alternates between positive and negative.
+
+

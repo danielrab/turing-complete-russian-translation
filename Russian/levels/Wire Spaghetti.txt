@@ -1,0 +1,51 @@
+
+
+$29329105515650* Добавь еще 1 регистр в схему 
+$17106892574116* Добавь счётчик к схеме 
+$50177586789991* Добавь еще {nr} регистров в схему
+$15754373587500* Установи шаг счётчика на 4
+$56024330661504* Присоединённый компонент {nr} должен указывать на регистр или кастомный компонент с регистром в нём
+$19099471819164*
+Ниже приведены предварительные шаги, которые необходимо совершить, чтобы завершить этот уровень:
+		
+[b]1.[/b] Нажмите на значок схемы ([b][i][/i][/b]) и создать новую пустую архитектуру.
+[b]2.[/b] Поместите на схему программный блок с 4 выходами.
+[b]3.[/b] Поместите на схему счетчик, установите его инкремент на 4 и подключите его к блоку программы.
+[b]4.[/b] Добавить 6 регистров (или кастомных компонентов с регистрами)
+[b]5.[/b] Нажмите "Редактировать отслеживаемое состояние" на программном компоненте и подключите регистры с 0-го по 5-е соединение. Подключите счётчик к 6-му, а выход к 7-му.
+$18860645759682*
+The [color=#e49f44]LEG[/color] architecture is a computer that takes 4 bytes per tick from the program. 
+
+The first byte describes the operation (called the [color=#e49f44]OPCODE[/color]).
+
+Since many operations take 2 arguments (like ADD, OR etc), the second and third byte are for arguments.
+
+And since most operations return 1 result, the fourth byte is for the result.
+	
+	[img]dialogue/leg_diagram_1.png[/img]
+$11377431500625* Добавьте 6 регистров на схему
+$14051336765362* Finally it is time for you to start building the [color=#e49f44]LEG[/color] architecture!
+$13268807052125* (You might be adding 7+7, but here 7 means load from input and the input has value 8)
+$30006055126224* Linked component {output} should point to the output
+$19066122929275* [center]Set up registers and implement the ADD opcode[/center]
+$10912834168905*
+Finally, in this level the [color=#e49f44]OPCODE[/color] is always 0. This means we ADD argument 1 and argument 2 and save the result to the destination.
+
+The value of an argument or destination refers to one of these places:
+[code]
+[color=#e49f44]0[/color]: Register 0
+[color=#e49f44]1[/color]: Register 1
+[color=#e49f44]2[/color]: Register 2
+[color=#e49f44]3[/color]: Register 3
+[color=#e49f44]4[/color]: Register 4
+[color=#e49f44]5[/color]: Register 5
+[color=#e49f44]6[/color]: Counter
+[color=#e49f44]7[/color]: Input/Output
+[/code]
+
+In the next level you will implement more [color=#e49f44]OPCODES[/color], which will require a different ALU than that of [color=#e49f44]OVERTURE[/color].
+$10922418807673* Аргумент 7 означает считывание входа, но вход не включен.
+$62258842382434* Присоединённый компонент {counter} должен указывать на счётчик.
+$18769284297247* Создайте новую схему и добавьте программу с 4-х байтовым выходом
+
+

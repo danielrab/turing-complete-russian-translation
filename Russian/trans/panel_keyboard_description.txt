@@ -1,0 +1,5 @@
+
+
+$11215841169495* [center]Although the keypad shows the value of the currently pressed key, it only actually outputs on a regular tick![/center]
+
+

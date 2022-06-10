@@ -1,0 +1,8 @@
+
+
+$87788654491792*
+This kind of RAM would add 1024 delay to the circuit, but instead of extending the duration of ticks, we simply don't wait for the output.
+
+Practically this means that [color=#e49f44]reading takes {ticks} ticks[/color] (since your circuit has {delay} delay).
+
+

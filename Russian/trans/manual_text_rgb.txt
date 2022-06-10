@@ -1,0 +1,7 @@
+
+
+$52915933943906*
+This simulator uses 3 byte RGB colors for some components. Color are 1 byte each, the byte value determining the intensity of each color: 
+[color=#e3243f]RRRRRRRR[/color][color=#55ff55]GGGGGGGG[/color][color=#3333ff]BBBBBBBB[/color]
+
+

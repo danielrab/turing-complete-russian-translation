@@ -1,0 +1,12 @@
+
+
+$86856280609387*
+[ON] когда входы различны
+[table=5]
+[cell]Вход 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
+[cell]Вход 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Выход[/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell][cell][OFF][/cell]
+[/table]
+$54832952840086* XOR
+
+

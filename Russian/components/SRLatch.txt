@@ -1,0 +1,6 @@
+
+
+$11641785582600* Set/Reset Latch
+$71931050184389* [img=165]dialogue/sr_latch_tooltip.png[/img]
+
+

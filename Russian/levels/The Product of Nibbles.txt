@@ -1,0 +1,10 @@
+
+
+$14957949958941* What you did here was actually multiplying two 4 bit numbers. We had the intern scale it up to bytes instead.
+$19136817138607* [center]Multiply the 4 bit numbers[/center]
+$13549246864135* Бит 0
+$14533861483435* Умножение двух 4-х битных чисел дает 8-и битное число. Создайте схему, которая это делает.
+$10274387271390* Бит 0
+$83694551809785* Перемножьте {num1} и {num2}
+
+
