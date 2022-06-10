@@ -11,8 +11,8 @@ $31398283096964* Выход
 === rpg/maps/overworld/kligara ===
 
 $78685013556649*
-My job is to stare at
-reactor fuel thingies
+Моя работа - смотреть на
+топливные штучки для реактора
 
 
 === rpg/maps/overworld/control_panel ===
@@ -3426,7 +3426,7 @@ $49513138880387* Выход
 
 === trans/panel_nor_description ===
 
-$15262147022850* [center]Bitwise XNORs two inputs[/center]
+$15262147022850* [center]Побитово XNOR два входа[/center]
 
 
 === levels/RAM ===

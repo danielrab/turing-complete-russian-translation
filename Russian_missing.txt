@@ -1,15 +1,3 @@
-=== trans/panel_nor_description ===
-
-$15262147022850* [center]Bitwise XNORs two inputs[/center]
-
-
-=== rpg/maps/overworld/kligara ===
-
-$78685013556649*
-My job is to stare at
-reactor fuel thingies
-
-
 === components/Output 1 ===
 
 $59663530139004* 1 Bit Output
