@@ -5,7 +5,7 @@ $59663530139004* 1 Bit Output
 
 === trans/panel_program_1_output ===
 
-$31398283096964* Output
+$31398283096964* Выход
 
 
 === rpg/maps/overworld/kligara ===
@@ -30,12 +30,12 @@ $73800316874022* [center]Создайте схему соответствующ�
 
 === rpg/maps/overworld/water ===
 
-$82402577990931* Water
+$82402577990931* Вода
 
 
 === trans/panel_stack_output ===
 
-$61988314265407* Output
+$61988314265407* Выход
 
 
 === components/Output1Car ===
@@ -753,7 +753,7 @@ $92765669828982* Увеличивается каждый тик, если не �
 
 === trans/panel_register8_outputs ===
 
-$72930832545270* Output
+$72930832545270* Выход
 
 
 === trans/options_disagree ===
@@ -1023,7 +1023,7 @@ $65362728703588* ПАМЯТЬ
 
 === trans/panel_output_output_2 ===
 
-$80266319030005* Output 3
+$80266319030005* Выход 3
 
 
 === trans/ide_add_assembly_header ===
@@ -1065,7 +1065,7 @@ $66022312281343* Door
 
 === trans/panel_rom_output ===
 
-$80688779703520* Output
+$80688779703520* Выход
 
 
 === misc/confirm_factory_reset ===
@@ -1275,8 +1275,8 @@ $14894954428144*
 The inputs in this level represent the characters in a list of planet names, encoded as ASCII (see the manual). Each name is separated by a space which has the numeric value 32. Replace the first letter in each word with its uppercase counterpart.
 (The possible input characters are a to z lowercase, space, apostrophe and dash)
 $13301617098810* We had the intern type out planet names in human script. Unfortunately he forgot to capitalize each name.
-$11647445869837* Input: 
-$11201813578269* Output: 
+$11647445869837* Вход: 
+$11201813578269* Выход: 
 
 
 === levels/byte_equal ===
@@ -1341,7 +1341,7 @@ Instead, by having 2 enable pins, one wire can enable a whole row and another a 
 
 === trans/panel_delayline1_output ===
 
-$99213923469748* Output
+$99213923469748* Выход
 
 
 === trans/levels_double_the_number ===
@@ -1510,7 +1510,7 @@ $90098719956554* Key value
 
 === trans/panel_equal_output ===
 
-$15175350110347* Output
+$15175350110347* Выход
 
 
 === trans/panel_on ===
@@ -1674,7 +1674,7 @@ $19932404521621* Simulator
 
 === trans/panel_not_output ===
 
-$74796974148718* Output
+$74796974148718* Выход
 
 
 === trans/panel_output ===
@@ -1808,7 +1808,7 @@ $78806697204524* Delay
 
 === trans/panel_constant_output ===
 
-$14868502983738* Output
+$14868502983738* Выход
 
 
 === rpg/maps/unseen_fruit/gulgramush ===
@@ -2381,6 +2381,7 @@ $58769207148712* Component
 
 #  Level type for the level complete menu
 $90134890578411* Misc
+$68327708695625* [b]Manual Entry[/b]\n\n Entry: [color=#68d277]{page}[/color]
 
 #  Level type for the level complete menu
 $69219742310717* Architecture
@@ -2408,7 +2409,7 @@ $57936010210151* Увеличивать на: {amount}
 
 === trans/panel_ram8_output ===
 
-$90649838965927* Output
+$90649838965927* Выход
 
 
 === trans/level_complete_ide ===
@@ -3443,7 +3444,7 @@ $46083799633716* {input_1} меньше чем {input_2}?
 
 === trans/panel_register16_outputs ===
 
-$91613202877683* Output
+$91613202877683* Выход
 
 
 === trans/level_circumference_description ===
@@ -3469,7 +3470,7 @@ $54126599191071* 1 Bit Input
 
 === trans/panel_switch_output ===
 
-$86922225714685* Output
+$86922225714685* Выход
 
 
 === misc/instr_delete ===
@@ -3588,7 +3589,7 @@ Finally, values can be specified in binary with the prefix 0b (so 5 could be 0b0
 
 === trans/panel_xnor_output ===
 
-$69594087046834* Output
+$69594087046834* Выход
 
 
 === trans/panel_decoder3_input ===
@@ -3725,7 +3726,7 @@ Save value[/right]
 
 === trans/panel_shl_output ===
 
-$75492358516234* Output
+$75492358516234* Выход
 
 
 === trans/credit_header ===
@@ -3940,7 +3941,7 @@ Turing complete machines on the other hand are as powerful as it is possible to 
 
 === trans/panel_fileloader_output ===
 
-$26334594715602* Output
+$26334594715602* Выход
 
 
 === components/ByteMul ===
@@ -4104,7 +4105,7 @@ $26727645933234* 16 битный AND
 
 === trans/level_capitalize_output ===
 
-$37037455015862* Output
+$37037455015862* Выход
 
 
 === trans/rpg_press_any_key ===
@@ -4244,7 +4245,7 @@ $21618236951146* View solution
 
 === trans/panel_register64_outputs ===
 
-$55631089130544* Output
+$55631089130544* Выход
 
 
 === trans/map_programming ===
@@ -4279,7 +4280,7 @@ $62337044104456* RGB color
 
 === trans/panel_maker8_output ===
 
-$67169082367526* Output
+$67169082367526* Выход
 
 
 === misc/instruction_expand ===
@@ -4746,7 +4747,7 @@ $96449970906640* Добавить комментарий к проводу
 
 === trans/panel_mux_output ===
 
-$15170071160680* Output
+$15170071160680* Выход
 
 
 === misc/factory_back ===
@@ -5333,7 +5334,7 @@ $15089281203426* [center]Instructions[/center]
 
 === trans/panel_bitmemory_outputs ===
 
-$17509974261453* Output
+$17509974261453* Выход
 
 
 === components/Xor16 ===
@@ -5390,7 +5391,7 @@ $57727768059917* This simulator uses (extended) ASCII in a few places. Below are
 
 === trans/panel_regred_output ===
 
-$59910806432617* Output
+$59910806432617* Выход
 
 
 === rpg/maps/overworld/glibob ===
@@ -5456,7 +5457,7 @@ In this simulator, pins that can be disconnected are grey.
 
 === trans/panel_rol_output ===
 
-$62960066333763* Output
+$62960066333763* Выход
 
 
 === trans/manual_assembly ===
@@ -5810,7 +5811,7 @@ $13031452187028* Побитово XOR два значения
 
 === trans/panel_output_output_1 ===
 
-$42314807669643* Output 2
+$42314807669643* Выход 2
 
 
 === misc/skipped_custom ===
@@ -5829,7 +5830,7 @@ $83236921580268* Побитово XOR два значения
 
 === trans/panel_counter16_output ===
 
-$13295622648285* Output
+$13295622648285* Выход
 
 
 === levels/Spacial Invasion ===
@@ -6224,15 +6225,13 @@ $91053300263019* Bitwise negates 16 bits
 
 === trans/level_complete_manual_page ===
 
-$39011561067359*
-[b]Manual Entry[/b]
-[color=#cccccc][i]RTFM[/i][/color]
-
-Entry: [color=#68d277]Architectural complexity[/color]
+$39011561067359* [b]Manual Entry[/b]
 
 
 === trans/panel_input_up ===
 
+
+# [color=#cccccc][i]RTFM[/i][/color]Entry: [color=#68d277]Architectural complexity[/color]
 $97169317610794* Up
 
 
@@ -6283,7 +6282,7 @@ $21417732641222*
 
 === trans/panel_shr_output ===
 
-$53187359961794* Output
+$53187359961794* Выход
 
 
 === trans/options_setting_program_alignment ===
@@ -6420,7 +6419,7 @@ $29750433345543* [center]How could you?[/center]
 
 === trans/panel_less_u_output ===
 
-$19353239892904* Output
+$19353239892904* Выход
 
 
 === trans/panel_sum_output_0 ===
@@ -6440,7 +6439,7 @@ $75322073059042* Abyss
 
 === trans/panel_counter8_output ===
 
-$35643379690712* Output
+$35643379690712* Выход
 
 
 === rpg/maps/overworld/flower ===
