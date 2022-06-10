@@ -1,0 +1,5 @@
+
+
+$57727768059917* This simulator uses (extended) ASCII in a few places. Below are the characters with their corresponding number. The console supports different versions of extended ASCII.
+
+

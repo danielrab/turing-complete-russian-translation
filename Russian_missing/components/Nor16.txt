@@ -1,0 +1,6 @@
+
+
+$57921392198825* Bitwise NOR two values
+$69522380057631* 16 Bit NOR
+
+

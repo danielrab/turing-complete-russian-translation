@@ -1,0 +1,5 @@
+
+
+$92999392068622* [center]Bitwise XORs two inputs[/center]
+
+

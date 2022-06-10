@@ -1,0 +1,7 @@
+
+
+$73470840319057*
+[b]Delay[/b]
+[color=#cccccc][i]You can now view the delay of wires and components.[/i][/color]
+
+

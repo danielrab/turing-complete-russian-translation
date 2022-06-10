@@ -1,0 +1,11 @@
+
+
+$56547245144983*
+[color=#e49f44][b][/b][/color] The robot sees one 
+  tile ahead. The name
+  and ID are shown up 
+  here. This ID number
+  is also the computer's 
+  input.
+
+

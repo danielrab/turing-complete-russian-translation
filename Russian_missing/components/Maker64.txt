@@ -1,0 +1,6 @@
+
+
+$17464069717985* 64bit Maker
+$79677187590355* Turns 64 bits into 8 bytes
+
+

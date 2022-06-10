@@ -1,0 +1,6 @@
+
+
+$29674337035619* Placing the clock will divide ticks into 2 phases. The clock is [OFF] in the early phase and [ON] in the late phase. All memory components load in the early phase and save in the late phase.
+$73207565196164* Clock
+
+

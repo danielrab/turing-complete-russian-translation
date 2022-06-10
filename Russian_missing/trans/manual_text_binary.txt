@@ -1,0 +1,16 @@
+
+
+$69488982380310*
+The numbers you are used to are base 10, here when we add a 0 to the right hand side of a number, it's value increases 10 fold.
+
+Binary is base 2, so doing the same will instead just double it. In other words, each digit represents a power of 2. For example with [color=#c54d5e]base 2[/color] and [color=#e49f44]base 10[/color] color coded:
+[color=#c54d5e]    1[/color] = [color=#e49f44]1[/color]
+[color=#c54d5e]  10[/color] = [color=#e49f44]2[/color]
+[color=#c54d5e]100[/color] = [color=#e49f44]4[/color]
+
+To represent 6 we can simply add 4 and 2:
+[color=#c54d5e]110[/color] = [color=#e49f44]6[/color]
+
+Addition, multiplication and everything else works the same as base 10, except you carry when you reach 2 instead of 10.
+
+

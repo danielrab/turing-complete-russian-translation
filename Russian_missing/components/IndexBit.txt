@@ -1,0 +1,6 @@
+
+
+$89611629299917* Bit Indexer
+$84431924133490* Extracts a single bit from a wire
+
+

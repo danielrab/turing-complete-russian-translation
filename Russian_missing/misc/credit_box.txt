@@ -1,0 +1,24 @@
+
+
+$15872341864658*
+Sincere thanks to:
+
+[b]Translators[/b]
+{translators}
+
+[b]Early beta testers[/b]
+{beta_testers}
+
+[b]Font work[/b]
+{font_work}
+
+[b]Soundtrack[/b]
+ Adolfo Aaron Figueroa Bianchi
+
+[b]Open source software[/b]
+{software}
+
+[b]Assets[/b]
+{assets}
+
+

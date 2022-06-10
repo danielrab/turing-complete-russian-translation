@@ -1,0 +1,13 @@
+
+
+
+#  Instead of writing 5839000, the number turns into 5.8M
+$22896492410578* M
+
+#  Instead of writing 5839, the number turns into 5.8K
+$84696693690500* K
+
+#  Instead of writing 5839000000, the number turns into 5.8B
+$71072134093858* B
+
+

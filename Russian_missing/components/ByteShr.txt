@@ -1,0 +1,6 @@
+
+
+$89595863403484* Shift right
+$69394421220436* Shifts the bits of an input right
+
+

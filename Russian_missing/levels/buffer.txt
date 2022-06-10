@@ -1,0 +1,14 @@
+
+
+$15504762262759*
+This level starts with 2 special components. They simultaneously act as input and output.
+
+Make sure the signal flows only from left to right. There are 3 tests.
+
+[b]Test 1[/b]: Both sides will be [OFF].
+
+[b]Test 2[/b]: The left side input will turn [ON] and the right side should be [ON].
+
+[b]Test 3[/b]: The right side output will turn [ON] and the left side should be [OFF].
+
+

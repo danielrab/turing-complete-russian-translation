@@ -1,0 +1,20 @@
+
+
+$25326551844839*
+The program component is a read only memory component, that can have its data programmed in assembly. To edit the assembly, click on the yellow edit icon in the corner of the component.
+
+[center][img]dialogue/manual/program_edit.png[/img][/center]
+
+In the middle of the screen you will see the code area, read more about the assembly [color=#4d82c5][url=Assembly]here[/url][/color].
+
+On the left hand side of the assembly editor interface, you can add assembly codes (mnemonics). Assembly codes act as a replacement for numbers, so instead of remembering what number represents the AND instruction in your architecture, you can add "AND" to your assembly codes, making code easier to read and write.
+
+[center][img]dialogue/manual/assembly_codes.png[/img][/center]
+
+On the program component you will also find the "Watch state" button. 
+
+[center][img]dialogue/manual/watch_state.png[/img][/center]
+
+This can be used to connect the assembly editor to registers, counters or probes. This way, the state of your architecture can be inspected as you write code, without closing the editor.
+
+

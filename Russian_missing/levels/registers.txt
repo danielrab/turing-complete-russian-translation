@@ -1,0 +1,34 @@
+
+
+$10661964231175* I have locked the red components of this level in place, since you always make a mess and don't leave enough space. The mess you make from now on is saved between levels, you no longer get to start fresh each level.
+$10211777161405*
+These are the bit patterns for each [color=#c54d5e]source[/color] and [color=#e49f44]destination[/color].
+
+[color=#c54d5e]Source[/color]:
+[OFF] [OFF] [OFF]  REG 0 
+[OFF] [OFF] [ON]  REG 1 
+[OFF] [ON] [OFF]  REG 2 
+[OFF] [ON] [ON]  REG 3 
+[ON] [OFF] [OFF]  REG 4 
+[ON] [OFF] [ON]  REG 5 
+[ON] [ON] [OFF]  INPUT 
+[ON] [ON] [ON]  UNUSED
+
+[color=#e49f44]Destination[/color]:
+[OFF] [OFF] [OFF]  REG 0 
+[OFF] [OFF] [ON]  REG 1 
+[OFF] [ON] [OFF]  REG 2 
+[OFF] [ON] [ON]  REG 3 
+[ON] [OFF] [OFF]  REG 4 
+[ON] [OFF] [ON]  REG 5 
+[ON] [ON] [OFF]  OUTPUT
+[ON] [ON] [ON]  UNUSED
+
+To get a more intuitive understanding of the requirements, click the [INSTRUCTION] icon in the upper left corner.
+$14108238519744* Time to create your master project, implementing the [color=#e49f44]OVERTURE[/color] computer architecture. This will be an actual Turing complete machine, a true computer in every way!
+$14041158687959*
+[color=#c54d5e]Source[/color] and [color=#e49f44]destination[/color] can be 1 of 6 registers, we will name them REG 0 to REG 5 respectively. 
+	
+Additionally, this map has a dedicated input component, which can be the [color=#c54d5e]source[/color] and an output component, which can be the [color=#e49f44]destination[/color].
+
+

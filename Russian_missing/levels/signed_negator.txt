@@ -1,0 +1,7 @@
+
+
+$10400106910274*
+Taking the input as signed (where the 8th bit is -128), make a component that takes a number and negates it.
+For example 4 negated would become -4. -9 negated would become 9.
+
+

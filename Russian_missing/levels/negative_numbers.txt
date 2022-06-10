@@ -1,0 +1,15 @@
+
+
+$11067230116844* {number} is not representable
+$62744038163781* OK
+$19118970740682*
+[color=#dd6576]Edit the numbers[/color] for each bit so that the following is true:
+
+[color=#e49f44]1[/color]: All numbers from -127 to 127 should also be representable
+[color=#e49f44]2[/color]: Bytes representing anything from 0 to 127 should be the same as unsigned
+[color=#e49f44]3[/color]: The new number system should work with the adder (for results between -127 and 127).
+$15431436023571* You have two ways to represent 0\nWhich leads to 0 + 1 = 0
+$28284583096369* 1 plus -1 does not equal 0\n  
+$57604042654667* {number} is not representable
+
+

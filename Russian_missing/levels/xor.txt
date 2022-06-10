@@ -1,0 +1,6 @@
+
+
+$12758156517177* Using the instructions of your computer, read the input twice and XOR the two values together
+$16047615798435* [center]Read the input twice and XOR the bits of the two inputs[/center]
+
+

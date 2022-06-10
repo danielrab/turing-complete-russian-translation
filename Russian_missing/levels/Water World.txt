@@ -1,0 +1,12 @@
+
+
+$13739681561355* Total volume: 
+$19185457941725* Good news, we want to turn earth into an exotic water park!
+$18940654086036* We need you to help us find a good location for the Pirate's Plunge waterslide. Specifically, we are looking for an area that can hold a high volume of water.
+$14706805272652* Hit ENTER to show water
+$12881972193444*
+The landscape is 16 columns wide. Read the input 16 times to get the height of the landscape at each column from left to right.
+	
+Then output the total volume that the landscape can carry as the answer.
+
+

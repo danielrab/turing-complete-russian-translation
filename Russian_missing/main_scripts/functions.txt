@@ -1,0 +1,12 @@
+
+
+$73560327420927* This save is from an obsolete version of this level.\nCreate and load a new schematic in the schematic menu.
+$99285446909923* To solve this level you need to use the 'Level output' component
+$72465734060414* Short circuit on wire (output values: {values})
+$10098517717617* Test: {nr} / {total}
+$29225283986051* To solve this level you need to use the 'Level input' component
+$87591753278764* Reg {nr}
+$95056157627313* To solve this level you need to use the 'Level input' component
+$12249248261034* To solve this level you need to use the 'Level output' component
+
+

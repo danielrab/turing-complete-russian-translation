@@ -1,0 +1,12 @@
+
+
+$18542005958715* Set the counter increment to 4
+$17133561664335* Congratulations, you finished the [color=#e49f44]LEG[/color] computer!
+$12920514303805* Add 6 registers to the map
+$14309211963063* Create a new schematic and add a program with 4 byte output
+$30132649789584* Linked component {number} should point to the output
+$18994998239232* I will show you some upgrades you can make, on the path to implementing function calls. But from here on the details are up to you, I wont tell you what opcodes to use and so on.
+$12034111753799* Linked component {number} should point to the counter
+$36561706158040* Linked component {nr} should point to a register or custom component with a register inside
+
+

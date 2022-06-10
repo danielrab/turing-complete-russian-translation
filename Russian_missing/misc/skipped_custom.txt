@@ -1,0 +1,8 @@
+
+
+$38174137226538* Select component
+
+#  This is the text on a button that appears when a custom component has changed size and no longer fits in a schematic. You can press this button to make the camera go to the location where the custom component was
+$99860977387728* Go to location
+
+

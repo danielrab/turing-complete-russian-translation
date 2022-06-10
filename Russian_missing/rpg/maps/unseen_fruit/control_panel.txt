@@ -1,0 +1,9 @@
+
+
+$88166963001775* melons
+$73302376080596* melon
+$66897764153265* I have to be programmed to press this
+$94493068600800* 2 {fruit_plural} were seen before the {fruit}
+$96743644544068* This was the first instance of the {fruit}!
+
+

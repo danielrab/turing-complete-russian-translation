@@ -1,0 +1,7 @@
+
+
+$48829429502039*
+[b]Run fast[/b]
+[color=#cccccc][i]Run your computer without updating the UI at each tick[/i][/color]
+
+

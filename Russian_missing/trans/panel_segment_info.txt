@@ -1,0 +1,5 @@
+
+
+$64695289448271* The 8 bits of the value each turn on 1 of the 8 areas of the display.
+
+

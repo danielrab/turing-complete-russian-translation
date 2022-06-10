@@ -1,0 +1,8 @@
+
+
+$48633048126675*
+[right]Input 1
+Input 2
+Output[/right]
+
+

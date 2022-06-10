@@ -1,0 +1,6 @@
+
+
+$54427436420428* Wire Probe
+$15969687819995* Display a value on your custom component or in the program editor
+
+

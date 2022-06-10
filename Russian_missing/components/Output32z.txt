@@ -1,0 +1,6 @@
+
+
+$20432213737411* 32 Bit Switched Output
+$73681609562628* Only outputs if the switch pin is [ON]
+
+

@@ -1,0 +1,25 @@
+
+
+$54465324391961*
+You can use a mix of assembly codes and numbers to set the bytes. Assembly codes are just synonyms for a bit pattern. For example, instead of typing 196 for "add", this code can be named "add" directly, simplifying reading and writing code. 
+
+Comments can be added using "#". 
+[img]dialogue/comment.png[/img]
+
+Additionally, the [color=#c54d5e]CONST[/color] keyword can be used to name a value within a specific program. 
+[img]dialogue/const.png[/img]
+
+[color=#c54d5e]LABEL[/color] assigns a name to the byte offset of the line it was inserted on. This is especially useful for naming jump destinations.
+[img]dialogue/label.png[/img]
+
+You can add, subtract, multiply, integer divide, modulo, OR, AND or XOR values together using +, -, *, /, %, |, & or ^ respectively.
+
+Breakpoints can be added by clicking to the left of a line number. The program will automatically pause at breakpoints when running.
+[img]dialogue/breakpoint.png[/img]
+
+Breakpoints can also be added to any of the linked components, pausing the program when that state is changed. Click on the state and you will see the red dot.
+[img]dialogue/breakpoint_state.png[/img]
+
+Finally, values can be specified in binary with the prefix 0b (so 5 could be 0b0101) and hex with the prefix 0x (so 15 would be 0x0f)
+
+

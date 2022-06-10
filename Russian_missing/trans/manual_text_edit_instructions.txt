@@ -1,0 +1,10 @@
+
+
+$75786562031150*
+After you complete the level "Turing Complete" the instruction panel allows you to manually edit instructions. This is useful if you wish to build your own computers.
+
+If you just finished the OVERTURE computer and see something weird, odds are you may have changed the definitions.
+
+Each row has a label and 8 bits you can set to either[img]dialogue/on.png[/img], [img]dialogue/off.png[/img] or [img]dialogue/any.png[/img] (wildcard). When using the instruction panel, if the bitpattern matches a row, the label will be shown.
+
+

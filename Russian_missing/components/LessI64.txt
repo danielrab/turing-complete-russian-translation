@@ -1,0 +1,6 @@
+
+
+$42718501644862* Less (signed)
+$19948786194409* Checks if one input is less than the other
+
+

@@ -1,0 +1,12 @@
+
+
+$36399689035136*
+[b][color=#e49f44]Request type[/color] (arguments)[/b]
+[code]0[/code] No request
+[code]1[/code] [color=#e49f44]Listen[/color] (Port)
+[code]2[/code] [color=#e49f44]Connect[/color] (IP, Port)
+[code]3[/code] [color=#e49f44]Send data[/color] (Connection ID, Data, Data length)
+[code]4[/code] [color=#e49f44]Close[/color] (Connection ID)
+[code]5[/code] [color=#e49f44]Read next event[/color]
+
+

@@ -1,0 +1,14 @@
+
+
+$31105471890701*
+In electronics, two components outputting different values on the same wire causes a short circuit.
+
+[center][img=100]res://dialogue/short_circuit.png[/img][/center]
+
+However, by disconnecting output pins from a wire, it is possible for multiple pins to share the same wire (called a bus). Importantly, at most 1 component output should remain connected each tick, otherwise you risk a short circuit.
+
+[center][img]res://dialogue/switch.png[/img][/center]
+
+In this simulator, pins that can be disconnected are grey.
+
+

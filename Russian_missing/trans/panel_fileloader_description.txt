@@ -1,0 +1,8 @@
+
+
+$72892007399429*
+The file rom outputs the content of a file 8 bytes at a time.
+
+The highest 64 bit address (0xFFFFFFFFFFFFFFFF) is special and outputs the length of the file in bytes.
+
+

@@ -1,0 +1,11 @@
+
+
+$44520675249142*
+[b][color=#39aa49]Event type[/color] (results)[/b]
+[code]0[/code] No new events
+[code]1[/code] [color=#39aa49]Incoming connection[/color] (Connection ID, Port)
+[code]2[/code] [color=#39aa49]Connect complete[/color] 
+[code]3[/code] [color=#39aa49]Receive data[/color] (Connection ID, Data, Data length)
+[code]4[/code] [color=#39aa49]Connection closed[/color] (Connection ID / Error code)
+
+

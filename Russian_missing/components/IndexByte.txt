@@ -1,0 +1,6 @@
+
+
+$27264669944539* Byte Indexer
+$54699455184164* Extracts a byte from a wire
+
+

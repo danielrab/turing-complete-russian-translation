@@ -1,0 +1,6 @@
+
+
+$58449766432492* Only outputs if the switch pin is [ON]
+$66776427840721* 8 Bit Switched Output
+
+

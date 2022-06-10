@@ -1,0 +1,10 @@
+
+
+$54897112350567*
+Certain computers, like simple calculators are limited in the algorithms they can perform.
+
+They cannot perform any calculation that requires looping or recursing an arbitrary amount of times. Technically machines without looping or recursion can only deal with combinational logic.
+
+Turing complete machines on the other hand are as powerful as it is possible to be. A Turing complete machine may have a slow CPU, but it is powerful in the sense that there is no (computable) algorithm it can't perform.
+
+

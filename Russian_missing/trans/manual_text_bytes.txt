@@ -1,0 +1,9 @@
+
+
+$73333514253412*
+This game asks you to build an 8 bit computer.  Practically this would normally require the player to put down 8 parallel wire lines in many places.
+To alleviate tedious busywork, you are given the notion of a byte, which is just a virtual bundle of 8 bits.
+
+The state of either a byte input / output or wire line is represented by a number, instead of the red or green color.
+
+

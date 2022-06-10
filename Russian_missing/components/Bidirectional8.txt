@@ -1,0 +1,6 @@
+
+
+$20234315861487* 8 bit Bidirectional Pin
+$49499540884410* Can circumvent certain circular dependency errors
+
+

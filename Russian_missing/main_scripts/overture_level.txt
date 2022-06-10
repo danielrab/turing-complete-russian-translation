@@ -1,0 +1,16 @@
+
+
+$11338791453100* Dynamic
+
+#  "cond" is for condition, this label has to be short as it has to fit on a component
+$94982725578534* COND
+$93579176707338* Copy INPUT ({input_val}) to REG {reg}
+$15507583089532* REG {nr} should have value {value}
+$78673238418574* Your circuit is missing a counter component
+$65651227755356* Next tick the counter value will be {actual}, it should be {expected}
+$44533909869936* REG 1 and REG 2 are inputs to the ALU, REG 3 is for the result.\nIt looks like you are using REG 0, 1 and 2.
+$16914143080303* Copy
+$59042824277105* Immediate
+$82949244692745* Calculate
+
+

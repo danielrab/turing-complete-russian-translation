@@ -1,0 +1,8 @@
+
+
+$68275268516971*
+Connection ID
+Data / Port / Error code
+Data length
+
+

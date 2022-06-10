@@ -1,0 +1,16 @@
+
+
+$17375862136921*
+The length of our week is 4 days. Our weekdays are named Zero's day, One's day, Two's day and Three's day. I hear some earthlings number their Two's day incorrectly? 
+	
+It doesn't really surprise me.
+$65431688078892*
+In this level you are given a number as input and you should return that number modulo 4 as a result.
+
+The challenge is that you only have {ticks_per_test} ticks to output the desired result.
+
+Note, you don't need to change your hardware, you just have to figure out the trick to do modulo 4 quickly.
+Use [color=#e63e5b][url=masking_time]this hint[/url][/color] if you get stuck.
+$81055582534899* Anyway new year is coming up and we want you to calculate the weekday of everyone's birthday. We will give you the date and all you have to do is return the weekday within {ticks_per_test} ticks.
+
+

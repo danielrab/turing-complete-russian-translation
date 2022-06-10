@@ -1,0 +1,19 @@
+
+
+$64348543296709* Linked component {value} should point to the output
+$14060810229477* Add 6 registers to the map
+$79667526283284* Linked component {value} should point to the counter
+$14960344494328*
+Sometimes it is useful to load a value directly from the program instead of from registers. This is called loading an immediate value. In the [color=#e49f44]LEG[/color] architecture we signal when we want to do this directly in the opcode. We can do that in the following way:
+	
+When the 8th bit of the opcode is [ON], use argument 1 as an immediate value, instead of as a register address.
+When the 7th bit of the opcode is [ON], use argument 2 as an immediate value, instead of as a register address.
+	
+		[img]dialogue/leg_diagram.png[/img]
+		
+$10788301006338* Linked component {nr} should point to a register or custom component with a register inside
+$19338533633006* Set the counter increment to 4
+$15197362332657* Create a new schematic and add a program with 4 byte output
+$10141611261952* [center]Implement immediate values[/center]
+
+

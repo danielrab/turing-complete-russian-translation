@@ -1,0 +1,9 @@
+
+
+$17054292175058* Welcome to the sandbox, here you are free to play around. I have given you 64 bit wires and a few IO components.
+$10731996208080* There are also 64 bit versions of the program, the counter, the register and the ram. Notice though, the 64 bit ram takes 1 tick to load.
+$14434122873489* The Waveform Generator lets you make sounds. I will probably regret giving you this one.
+$18405942066048* The Clock gives you the current UNIX time in microseconds.
+$10451578314373* The Console Screen lets you draw characters to a screen (see manual for ascii characters)
+
+

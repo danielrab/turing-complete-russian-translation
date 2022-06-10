@@ -1,0 +1,5 @@
+
+
+$13013863429580* For this level an extra pin has been added to the registers. This pin always emits the value of the register, regardless if load is selected or not.
+
+

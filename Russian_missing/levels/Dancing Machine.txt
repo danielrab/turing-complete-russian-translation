@@ -1,0 +1,10 @@
+
+
+$14975070588197*
+We all like the way Robot moves on the dance floor. That's why we want him to lead our dance team. 
+	
+The only problem is to make him come up with original dance sequences. How do you make creativity out of deterministic logic you ask?
+
+The answer pseudo random number generators.
+
+

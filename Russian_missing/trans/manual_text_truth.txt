@@ -1,0 +1,15 @@
+
+
+$16559670174521*
+The tables of input and output which are used everywhere throughout the game are commonly known as truth tables.
+
+
+
+
+
+
+
+
+"Input" and "Output" will often be represented with variable names, like in algebra. And instead of using colors, you will often see the values represented as 0 / 1 or False / True.
+
+

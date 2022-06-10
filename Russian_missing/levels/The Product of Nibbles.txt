@@ -1,0 +1,6 @@
+
+
+$14957949958941* What you did here was actually multiplying two 4 bit numbers. We had the intern scale it up to bytes instead.
+$19136817138607* [center]Multiply the 4 bit numbers[/center]
+
+

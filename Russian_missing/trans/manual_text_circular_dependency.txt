@@ -1,0 +1,14 @@
+
+
+$29050562435902*
+A circular dependency is when the input of a component changes based on its own output. 
+
+[center][img]res://dialogue/circular_dependency.png[/img][/center]
+
+This simulator does not allow circular dependencies and instead triggers an error. 
+
+The exception to this are the square pins that do not influence the output in the same tick. They can therefore not cause circular dependencies.
+
+[center][img]res://dialogue/delay_buffer.png[/img][/center]
+
+

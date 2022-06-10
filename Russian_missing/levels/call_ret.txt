@@ -1,0 +1,17 @@
+
+
+$15840165316981*
+In this level you are tasked with implementing function calls and returns with the [color=#e49f44]call[/color] and [color=#e49f44]ret[/color] instructions.
+
+Note that when returning from a function, you should jump to the address that came AFTER the [color=#e49f44]call[/color] instruction, otherwise you will end with an infinite loop.
+The [color=#e49f44]call[/color] instruction has to do the following:
+ [i]- Add the instruction width to the counter value and [color=#e49f44]push[/color] it on the stack[/i]
+ [i]- Jump to the function address[/i]
+
+The [color=#e49f44]ret[/color] instruction has to do the following:
+ [i]- [color=#e49f44]Pop[/color] return address from the stack and jump to it[/i]
+
+You can pass information to and from a function by saving the data to registers as normal. Also be aware of which registers a function will overwrite before calling it.
+$19369640789869* Budget cuts have led to cutting salaries, but now the lab assistants are on strike. You will have to self-assess in this test. This will tell us something about your honesty and maturity.
+
+

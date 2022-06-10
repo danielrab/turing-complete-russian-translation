@@ -1,0 +1,18 @@
+
+
+$16023356915123* The task in this level is to shift the first input to the left by the value given in the second input. The second input will never exceed 7.
+$37338672894296* Shift the bits of {value} left by {amount}
+$10598344098990* [center]Shift the first input left by the number of places given by the second[/center]
+$16216408139965*
+To [color=#e49f44]shift[/color] a value 1 left just means moving all the bits in a byte to the left by 1 position.
+For example: [color=#e49f44]90 shl 1[/color]
+
+[OFF] [ON] [OFF] [ON] [ON] [OFF] [ON] [OFF] would become:
+[ON] [OFF] [ON] [ON] [OFF] [ON] [OFF] [OFF]
+
+Shifting by 3: [color=#e49f44]90 shl 3[/color]
+[OFF] [ON] [OFF] [ON] [ON] [OFF] [ON] [OFF] would become:
+[ON] [ON] [OFF] [ON] [OFF] [OFF] [OFF] [OFF]
+$18137790657923* In addition to giving you a shift left component, we also had the intern create a shift right component. All he had to do was to create the mirror version of this schematic.
+
+
