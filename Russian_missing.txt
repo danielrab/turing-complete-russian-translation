@@ -28,6 +28,11 @@ off the ship if I touch this
 $20128423531070* Control panel
 
 
+=== components/Output 1 ===
+
+$59663530139004* 1 Bit Output
+
+
 === rpg/maps/overworld/water ===
 
 $82402577990931* Water
@@ -56,6 +61,11 @@ $50497979766012* Label text
 === rpg/maps/unseen_fruit/wall_broke ===
 
 $82933036983558* Damaged wall
+
+
+=== components/Input 1 ===
+
+$54126599191071* 1 Bit Input
 
 
 === rpg/maps/prison/snuffles ===
@@ -207,7 +217,7 @@ $50801318216470* The screen shows the robot and his surroundings.
 
 === components/Output1z ===
 
-$84656390009725* Switched Output
+$82456670459300* 1 Bit Switched Output
 
 
 === trans/panel_xor ===
@@ -678,6 +688,11 @@ $25534025775791* [center]RIP derpoo[/center]
 $31542517516487* [center]The [i][img]res://rpg/heart.png[/img][img]res://rpg/heart.png[/img][img]res://rpg/heart.png[/img][/i] in the top bar are decoration only![/center]
 
 
+=== components/Input64 ===
+
+$98777983100258* 64 Bit Input
+
+
 === trans/level_binary_programming_description ===
 
 $66247694103179* [center]Add 5 to the input[/center]
@@ -702,9 +717,39 @@ $11074247151096* Notice that the immutable red register components have been rep
 $18134632592542* You have built your computer, but to win the competition you still have to finish the maze.
 
 
+=== misc/options_keys ===
+
+$92993941290486* Shift
+$65955105101920* Numpad Enter
+$12519478101154* End
+$99716387921256* Context menu
+$92411601634183* Pause
+$93394348651979* Right Hyper
+$49442994583673* Left Super key (Windows key)
+$64963573823520* Print Screen
+$59365233304896* Clear
+$11442487736991* System Request
+$17795913351819* Delete
+$74172180238771* Scroll Lock
+$16897068982305* Right Super key (Windows key)
+$10929402286573* Page Down
+$39382222147951* Caps Lock
+$93358816396539* Down arrow
+$14976122209522* Insert
+$47096285951897* Page Up
+$40013272281231* Left Hyper
+$78473292327654* Up arrow
+$54347318627968* Left arrow
+$20334952085165* Right arrow
+$25372126469538* Num Lock
+$43488085975448* Home
+$73529460447236* Return
+$50389171923636* Backspace
+
+
 === components/Output16z ===
 
-$78873885833823* Switched Output
+$54782010205016* 16 Bit Switched Output
 $54278394672948* Only outputs if the switch pin is [ON]
 
 
@@ -782,8 +827,13 @@ $72687692653533*
 
 === components/Output8z ===
 
-$16915419621070* Switched Output
 $58449766432492* Only outputs if the switch pin is [ON]
+$66776427840721* 8 Bit Switched Output
+
+
+=== trans/panels_clock_output ===
+
+$79367841142406* Clock signal
 
 
 === components/Level Gate ===
@@ -895,7 +945,7 @@ $99373213759665*
 
 === components/Bidirectional64 ===
 
-$82412839066570* 64 bit bidirectional pin
+$82412839066570* 64 bit Bidirectional Pin
 $24932613021646* Can circumvent certain circular dependency errors
 
 
@@ -1080,6 +1130,11 @@ $21618236951146* View solution
 $55631089130544* Output
 
 
+=== misc/run_fast ===
+
+$54853798559740* Run faster (right click: change target speed)
+
+
 === trans/panel_off ===
 
 $61047424972631* Always
@@ -1181,7 +1236,7 @@ $99685372736199* Head position: {pos}
 
 === components/Bidirectional16 ===
 
-$31038378395810* 16 bit bidirectional pin
+$31038378395810* 16 bit bidirectional Pin
 $99604485981015* Can circumvent certain circular dependency errors
 
 
@@ -1242,6 +1297,11 @@ $90642877666116* [center]Select color[/center]
 === trans/level_division_headers3 ===
 
 $81978438070842* Quotient
+
+
+=== components/Input 1 Byte ===
+
+$90785720285146* 8 Bit Input
 
 
 === trans/manual_universal_gates ===
@@ -1507,6 +1567,11 @@ $57921392198825* Bitwise NOR two values
 $69522380057631* 16 Bit NOR
 
 
+=== components/Input32 ===
+
+$31482038708224* 32 Bit Input
+
+
 === misc/level_gate_manual_icon ===
 
 $22002156022920* Unlocks manual entry
@@ -1642,14 +1707,19 @@ $56999237564848* {x} seconds left
 $71918065858983* Save
 
 
-=== trans/panel_equal_output ===
+=== components/Timing ===
 
-$15175350110347* Output
+$96011300295966* Time
 
 
 === rpg/maps/overworld/dr draco ===
 
 $23996965687702* I am unhappy with my bed\nThe blanket doesn't cover my feet
+
+
+=== components/Output32 ===
+
+$82172858698449* 32 Bit Output
 
 
 === trans/panel_on ===
@@ -1660,6 +1730,11 @@ $77349453746493* Always
 === trans/level_complete_level_complete ===
 
 $49647690443210* [center]Level Complete[/center]
+
+
+=== trans/panel_equal_output ===
+
+$15175350110347* Output
 
 
 === trans/options_setting_export_assembled ===
@@ -1684,7 +1759,7 @@ $62990744955549* Stops execution with a custom message
 === components/Bidirectional1 ===
 
 $95836352586032* Can circumvent certain circular dependency errors
-$34912798641933* 1 bit bidirectional pin
+$34912798641933* 1 bit Bidirectional Pin
 
 
 === trans/panel_program_1edit_program ===
@@ -1699,7 +1774,7 @@ $47697250900761* UNIX timestamp
 
 === components/Bidirectional32 ===
 
-$54631386552063* 32 bit bidirectional pin
+$54631386552063* 32 bit Bidirectional Pin
 $35105566244017* Can circumvent certain circular dependency errors
 
 
@@ -2122,14 +2197,19 @@ Further, custom components don't have a delay score for the costliest path of th
 $78662357115684* [right]Offset[/right]
 
 
+=== components/Input16 ===
+
+$80992639558333* 16 Bit Input
+
+
+=== misc/run ===
+
+$58178852564701* Run (Hotkey: F6)
+
+
 === nim/backend_lib/level_list ===
 
 $70993791338383* XOR
-
-
-=== trans/level_byte_less_description ===
-
-$37336202055283* [center]Determine if the first input is less than the second.[/center]
 
 
 === rpg/maps/overworld/chair ===
@@ -2160,6 +2240,11 @@ Implement the following opcodes:
 5 XOR[/color][/code]
 
 The opcode NOT ignores the second argument.
+
+
+=== trans/level_byte_less_description ===
+
+$37336202055283* [center]Determine if the first input is less than the second.[/center]
 
 
 === trans/panel_console_settings ===
@@ -2559,7 +2644,7 @@ $59032985199739* Spider
 
 === components/Bidirectional8 ===
 
-$20234315861487* 8 bit bidirectional pin
+$20234315861487* 8 bit Bidirectional Pin
 $49499540884410* Can circumvent certain circular dependency errors
 
 
@@ -2817,6 +2902,11 @@ $54304087865803* Shields up, jump to hyperspace!
 $39941195789458* 16 bit Maker
 
 
+=== components/Output64 ===
+
+$77952953696011* 64 Bit Output
+
+
 === rpg/maps/overworld/hat_man ===
 
 $66365217340789* Hat man
@@ -2841,6 +2931,12 @@ $86305699756314* Blood
 $30670667527598* Rat
 
 
+=== components/Output64z ===
+
+$35798118634001* 64 Bit Switched Output
+$42506906257154* Only outputs if the switch pin is [ON]
+
+
 === levels/sandbox ===
 
 $17054292175058* Welcome to the sandbox, here you are free to play around. I have given you 64 bit wires and a few IO components.
@@ -2848,12 +2944,6 @@ $10731996208080* There are also 64 bit versions of the program, the counter, the
 $14434122873489* The Waveform Generator lets you make sounds. I will probably regret giving you this one.
 $18405942066048* The Clock gives you the current UNIX time in microseconds.
 $10451578314373* The Console Screen lets you draw characters to a screen (see manual for ascii characters)
-
-
-=== components/Output64z ===
-
-$61656790122480* Switched Output
-$42506906257154* Only outputs if the switch pin is [ON]
 
 
 === trans/panel_or_input ===
@@ -2987,6 +3077,11 @@ Divisor[/right]
 $68379799788575* [center]Pairwise OR together each bit[/center]
 
 
+=== components/Output 1B ===
+
+$15931283897895* 8 Bit Output
+
+
 === trans/panel_output_output_1 ===
 
 $42314807669643* Output 2
@@ -3009,6 +3104,11 @@ $13295622648285* Output
 
 $50859914201083* Bitwise NAND two values
 $93314093190526* 8 Bit NAND
+
+
+=== misc/button_next ===
+
+$80746616574054* Next (Hotkey: F5)
 
 
 === levels/Spacial Invasion ===
@@ -3223,14 +3323,19 @@ The exception to this are the square pins that do not influence the output in th
 [center][img]res://dialogue/delay_buffer.png[/img][/center]
 
 
-=== trans/level_turing_complete_description ===
+=== trans/options_explicit_clock ===
 
-$74859324795927* [center]Add conditions to the calculation codes[/center]
+$90384542658266* Explicit clock
 
 
 === trans/level_nand_check ===
 
 $32982011047799* Check
+
+
+=== trans/level_turing_complete_description ===
+
+$74859324795927* [center]Add conditions to the calculation codes[/center]
 
 
 === trans/level_complete_tooltip ===
@@ -3413,6 +3518,16 @@ Although the broken mechanism does make a weird beep when your guess is too high
 $11183892008673* You win this level when you output the correct passcode, no output will fail the level. Additionally, the input will be 1 after a guess that was too high and 0 otherwise.
 
 
+=== trans/panels_config_delay_delay ===
+
+$52499013005170* [right]Delay[/right]
+
+
+=== components/Output16 ===
+
+$48008022162230* 16 Bit Output
+
+
 === rpg/maps/prison/exit_door ===
 
 $92379689291727* Door
@@ -3457,8 +3572,8 @@ This can be used to connect the assembly editor to registers, counters or probes
 
 === components/Output32z ===
 
+$20432213737411* 32 Bit Switched Output
 $73681609562628* Only outputs if the switch pin is [ON]
-$92749186427039* Switched Output
 
 
 === trans/panel_network_next_event ===
@@ -3508,7 +3623,8 @@ $38686097566531* [center]Check if the bytes are equal[/center]
 
 === components/Clock ===
 
-$72088325385177* Clock
+$29674337035619* Placing the clock will divide ticks into 2 phases. The clock is [OFF] in the early phase and [ON] in the late phase. All memory components load in the early phase and save in the late phase.
+$73207565196164* Clock
 
 
 === components/Xnor ===
@@ -4004,6 +4120,8 @@ This simulator uses 3 byte RGB colors for some components. Color are 1 byte each
 
 === trans/complete_unlocks ===
 
+
+# When you have a circuit where the wires can settle in either of 2 different stable states, you have a basis for memory. The next state will depend on the values the wires had last tick. Such wires are called "latches".
 $45250062735373* Unlocks
 
 
@@ -4015,10 +4133,9 @@ $74345816549611* Table
 
 === levels/sr_latch ===
 
-$11150103897185*
-In this level, components may depend on themselves or form loops of up to two components. Despite depending on their own output, some of these wires have stable outputs, at least for some inputs.
+$11150103897185* In this level, components may depend on themselves or form loops of up to two components. Despite depending on their own output, some of these wires have stable outputs, at least for some inputs.
 
-The circuit you are asked to construct here has a circular dependency. The circuit also has 2 "stable states" for most inputs. A stable state here means that every component's output agrees with its input. As an example, an OR gate with one input disconnected and the other connected to its own output is stable. If the output is [OFF], both inputs are [OFF], which agrees with the OR gate. If the output is [ON], then so is one of the inputs. However, a NOT gate connected to its own input is not stable. If the output is [ON], then the input is [ON] as well. This will cause the NOT gate to try and make the output [OFF], which will also make the input [OFF]. The circuit will switch between these two states forever, so it is not stable.
+# The circuit you are asked to construct here has a circular dependency. The circuit also has 2 "stable states" for most inputs. A stable state here means that every component's output agrees with its input. As an example, an OR gate with one input disconnected and the other connected to its own output is stable. If the output is [OFF], both inputs are [OFF], which agrees with the OR gate. If the output is [ON], then so is one of the inputs. However, a NOT gate connected to its own input is not stable. If the output is [ON], then the input is [ON] as well. This will cause the NOT gate to try and make the output [OFF], which will also make the input [OFF]. The circuit will switch between these two states forever, so it is not stable.
 $18165461234561* Delay lines are easy to understand and can be used to build any computer architecture. However, modern hardware no longer use these as a basis for memory.
 
 
@@ -4082,10 +4199,9 @@ The value of an argument or destination refers to one of these places:
 In the next level you will implement more [color=#e49f44]OPCODES[/color], which will require a different ALU than that of [color=#e49f44]OVERTURE[/color].
 
 
-=== rpg/maps/overworld/derpoo ===
+=== components/ConfigDelay ===
 
-$86147085986248* HISS
-$46228887292914* GRRR
-$95162531064211* HISS
+$31412778600732* Configurable delay
+$84124565448643* Adds a configurable amount of delay. Useful for delay debugging or controlling the latency of the latency RAM.
 
 

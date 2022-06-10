@@ -1,6 +1,6 @@
 === components/Output 1 ===
 
-$12242923444593* Выход
+$59663530139004* 1 Bit Output
 
 
 === trans/panel_program_1_output ===
@@ -682,6 +682,36 @@ $11074247151096* Notice that the immutable red register components have been rep
 $18134632592542* You have built your computer, but to win the competition you still have to finish the maze.
 
 
+=== misc/options_keys ===
+
+$92993941290486* Shift
+$65955105101920* Numpad Enter
+$12519478101154* End
+$99716387921256* Context menu
+$92411601634183* Pause
+$93394348651979* Right Hyper
+$49442994583673* Left Super key (Windows key)
+$64963573823520* Print Screen
+$11442487736991* System Request
+$59365233304896* Clear
+$17795913351819* Delete
+$74172180238771* Scroll Lock
+$16897068982305* Right Super key (Windows key)
+$10929402286573* Page Down
+$39382222147951* Caps Lock
+$93358816396539* Down arrow
+$14976122209522* Insert
+$40013272281231* Left Hyper
+$47096285951897* Page Up
+$78473292327654* Up arrow
+$54347318627968* Left arrow
+$20334952085165* Right arrow
+$25372126469538* Num Lock
+$43488085975448* Home
+$73529460447236* Return
+$50389171923636* Backspace
+
+
 === trans/not_gate_click_next2 ===
 
 $20820887361993* Нажми "Следующий Такт" чтобы увидеть
@@ -874,7 +904,7 @@ $19182751521677* В прошлый раз мы строили цепь, кото
 
 === components/Bidirectional64 ===
 
-$82412839066570* 64 bit bidirectional pin
+$82412839066570* 64 bit Bidirectional Pin
 $24932613021646* Can circumvent certain circular dependency errors
 
 
@@ -1057,7 +1087,7 @@ $66590147372797* Побитово NAND два значения
 
 === misc/run_fast ===
 
-$49363678936533* Перемотка Тактов (правый клик: изменить целевую скорость)
+$54853798559740* Run faster (right click: change target speed)
 
 
 === trans/panel_off ===
@@ -1165,7 +1195,7 @@ $83960548773205* ФУНКЦИИ
 
 === components/Input 1 Byte ===
 
-$40943344093513* Вход
+$90785720285146* 8 Bit Input
 
 
 === trans/panel_probewirebit_value ===
@@ -1500,7 +1530,7 @@ $15009144144117* Генератор Волн
 
 === components/Bidirectional32 ===
 
-$54631386552063* 32 bit bidirectional pin
+$54631386552063* 32 bit Bidirectional Pin
 $35105566244017* Can circumvent certain circular dependency errors
 
 
@@ -2441,7 +2471,7 @@ $64744152268407* Уровень
 
 === components/Output64z ===
 
-$61656790122480* Switched Output
+$35798118634001* 64 Bit Switched Output
 $42506906257154* Only outputs if the switch pin is [ON]
 
 
@@ -2600,7 +2630,7 @@ $10881918807029*
 
 === misc/button_next ===
 
-$50213503063080* Следующий Такт (F5)
+$80746616574054* Next (Hotkey: F5)
 
 
 === ui/toggles/level_map ===
@@ -2748,6 +2778,11 @@ $58359423026017*
 [/right]
 
 
+=== trans/options_explicit_clock ===
+
+$90384542658266* Explicit clock
+
+
 === levels/push_pop ===
 
 $78804623186243* ВЫХОД
@@ -2844,9 +2879,9 @@ Lower half
 Upper half
 
 
-=== trans/map_complete ===
+=== trans/panels_config_delay_delay ===
 
-$81337533438394* Complete
+$52499013005170* [right]Delay[/right]
 
 
 === rpg/maps/unseen_fruit/Lolbert ===
@@ -2854,6 +2889,11 @@ $81337533438394* Complete
 $77789556089413*
 Earth fruit is so much better
 than the the stew they normally serve
+
+
+=== trans/map_complete ===
+
+$81337533438394* Complete
 
 
 === levels/Storage cracker ===
@@ -2881,7 +2921,7 @@ $53254733455389*
 
 === components/Output16 ===
 
-$37381472194529* Выход
+$48008022162230* 16 Bit Output
 
 
 === rpg/maps/overworld/book_shelf ===
@@ -2951,7 +2991,8 @@ $98472849629373*
 
 === components/Clock ===
 
-$72088325385177* Clock
+$29674337035619* Placing the clock will divide ticks into 2 phases. The clock is [OFF] in the early phase and [ON] in the late phase. All memory components load in the early phase and save in the late phase.
+$73207565196164* Clock
 
 
 === components/1_decoder ===
@@ -3032,6 +3073,11 @@ $95559333192525* АРХИТЕКТУРА ЦПУ
 === trans/levels_negative_header ===
 
 $82195103144851* [center]Requirements[/center]
+
+
+=== components/LevelOutput1 ===
+
+$12242923444593* Выход
 
 
 === levels/byte_adder ===
@@ -3345,14 +3391,20 @@ $99461037008796* 64 битная память
 
 === rpg/maps/overworld/derpoo ===
 
-$86147085986248* HISS
-$46228887292914* GRRR
-$95162531064211* HISS
+$86147085986248* ПШШШ
+$46228887292914* ГРРР
+$95162531064211* ПШШШ
 
 
 === trans/options_resubmit ===
 
 $13328644005279* Отправить повторно
+
+
+=== components/ConfigDelay ===
+
+$31412778600732* Configurable delay
+$84124565448643* Adds a configurable amount of delay. Useful for delay debugging or controlling the latency of the latency RAM.
 
 
 === trans/level_bit_adder_RichTextLabel2 ===
@@ -3412,7 +3464,7 @@ $57512333327652* Умножает вход на -1
 
 === components/Input 1 ===
 
-$12746117288689* Вход
+$54126599191071* 1 Bit Input
 
 
 === trans/panel_switch_output ===
@@ -3498,7 +3550,7 @@ $95766090310621* Right
 === components/Output1z ===
 
 $31478630391268* Выводит значение только если вход [ON]
-$84656390009725* Switched Output
+$82456670459300* 1 Bit Switched Output
 
 
 === trans/panel_xor ===
@@ -3842,7 +3894,7 @@ $31542517516487* [center]The [i][img]res://rpg/heart.png[/img][img]res://rpg/hea
 
 === components/Input64 ===
 
-$31709565019284* 64 битный вход
+$98777983100258* 64 Bit Input
 
 
 === components/Input 4 ===
@@ -3867,7 +3919,7 @@ $56903547636751*
 
 === components/Output16z ===
 
-$78873885833823* Switched Output
+$54782010205016* 16 Bit Switched Output
 $54278394672948* Only outputs if the switch pin is [ON]
 
 
@@ -3946,8 +3998,8 @@ $55499239951858* Завод компонентов
 
 === components/Output8z ===
 
-$16915419621070* Switched Output
 $58449766432492* Only outputs if the switch pin is [ON]
+$66776427840721* 8 Bit Switched Output
 
 
 === trans/map_basic_logic ===
@@ -4013,6 +4065,11 @@ $65105856275770* [center][color=#c5c5c5]Click to toggle the bits[/color][/center
 === trans/options_redo ===
 
 $50610605761210* Вернуть
+
+
+=== trans/panels_clock_output ===
+
+$79367841142406* Clock signal
 
 
 === trans/options_robot_up ===
@@ -4270,7 +4327,7 @@ $99685372736199* Head position: {pos}
 
 === components/Bidirectional16 ===
 
-$31038378395810* 16 bit bidirectional pin
+$31038378395810* 16 bit bidirectional Pin
 $99604485981015* Can circumvent certain circular dependency errors
 
 
@@ -4458,14 +4515,14 @@ $57921392198825* Bitwise NOR two values
 $69522380057631* 16 Bit NOR
 
 
-=== components/Input32 ===
-
-$10677927084411* Вход
-
-
 === components/Input 1B CODE ===
 
 $16878300327380* Инструкция
+
+
+=== components/Input32 ===
+
+$31482038708224* 32 Bit Input
 
 
 === components/LatencyRam ===
@@ -4548,6 +4605,11 @@ $56999237564848* {x} seconds left
 $71918065858983* Save
 
 
+=== components/Timing ===
+
+$96011300295966* Time
+
+
 === rpg/maps/overworld/dr draco ===
 
 $23996965687702* I am unhappy with my bed\nThe blanket doesn't cover my feet
@@ -4555,7 +4617,7 @@ $23996965687702* I am unhappy with my bed\nThe blanket doesn't cover my feet
 
 === components/Output32 ===
 
-$37476623180671* Выход
+$82172858698449* 32 Bit Output
 
 
 === trans/level_complete_level_complete ===
@@ -4566,7 +4628,7 @@ $49647690443210* [center]Level Complete[/center]
 === components/Bidirectional1 ===
 
 $95836352586032* Can circumvent certain circular dependency errors
-$34912798641933* 1 bit bidirectional pin
+$34912798641933* 1 bit Bidirectional Pin
 
 
 === trans/options_setting_click_to_pan ===
@@ -4627,6 +4689,11 @@ $60538893544456* [center]Build a wide instruction program component[/center]
 === misc/delete ===
 
 $53448014080434* Удалить (Правый Клик)
+
+
+=== components/LevelInput1 ===
+
+$12746117288689* Вход
 
 
 === misc/controls2 ===
@@ -5043,9 +5110,9 @@ Further, custom components don't have a delay score for the costliest path of th
 $78662357115684* [right]Offset[/right]
 
 
-=== components/Input16 ===
+=== ui/options/Controls ===
 
-$34560561101846* 16 бит вход
+$53266310714298* Управление
 
 
 === nim/backend_lib/level_list ===
@@ -5054,7 +5121,6 @@ $58391129129347* Регистры
 $45936227746026* Счётчик
 $12946639957230* NOT Элемент
 $16881141174140* Двоичные Гонки
-$37136208388559* SR Триггер
 $32191988336459* Сохраняем Изящно
 $59136962133320* Логический Блок
 $30920780473397* Круговая Зависимость
@@ -5137,9 +5203,9 @@ $36221227239949* Танц-Машина
 $91954159574064* Больший OR Элемент
 
 
-=== ui/options/Controls ===
+=== misc/run ===
 
-$53266310714298* Управление
+$58178852564701* Run (Hotkey: F6)
 
 
 === rpg/maps/overworld/chair ===
@@ -5187,9 +5253,9 @@ Color mode
 Font page
 
 
-=== misc/run ===
+=== components/Input16 ===
 
-$67345621265845* Запуск тактов (Горячая клавиша: F6)
+$80992639558333* 16 Bit Input
 
 
 === trans/panel_and ===
@@ -5274,6 +5340,11 @@ $17509974261453* Output
 
 $55408021160573* Побитово XOR два значения
 $47846591761838* 16 битный XOR
+
+
+=== components/LevelInput8 ===
+
+$40943344093513* Вход
 
 
 === trans/panel_not_input ===
@@ -5468,7 +5539,7 @@ $59032985199739* Spider
 
 === components/Bidirectional8 ===
 
-$20234315861487* 8 bit bidirectional pin
+$20234315861487* 8 bit Bidirectional Pin
 $49499540884410* Can circumvent certain circular dependency errors
 
 
@@ -5614,7 +5685,7 @@ $39941195789458* 16 bit Maker
 
 === components/Output64 ===
 
-$43552728118031* 64 битный выход
+$77952953696011* 64 Bit Output
 
 
 === trans/level_decoder_description ===
@@ -5728,7 +5799,7 @@ $96269858195218* Выход
 
 === components/Output 1B ===
 
-$77044600156969* 8 битный выход
+$15931283897895* 8 Bit Output
 
 
 === components/Xor64 ===
@@ -6119,8 +6190,8 @@ This can be used to connect the assembly editor to registers, counters or probes
 
 === components/Output32z ===
 
+$20432213737411* 32 Bit Switched Output
 $73681609562628* Only outputs if the switch pin is [ON]
-$92749186427039* Switched Output
 
 
 === trans/level_byte_equal_description ===
@@ -6484,6 +6555,11 @@ $44867305035474* Memory Probe
 $49182380646128* Использовать
 
 
+=== components/LevelOutput8 ===
+
+$77044600156969* 8 битный выход
+
+
 === misc/StateProbe ===
 
 $54427436420428* Wire Probe
@@ -6499,11 +6575,10 @@ This simulator uses 3 byte RGB colors for some components. Color are 1 byte each
 
 === levels/sr_latch ===
 
-$11150103897185*
-In this level, components may depend on themselves or form loops of up to two components. Despite depending on their own output, some of these wires have stable outputs, at least for some inputs.
-
-The circuit you are asked to construct here has a circular dependency. The circuit also has 2 "stable states" for most inputs. A stable state here means that every component's output agrees with its input. As an example, an OR gate with one input disconnected and the other connected to its own output is stable. If the output is [OFF], both inputs are [OFF], which agrees with the OR gate. If the output is [ON], then so is one of the inputs. However, a NOT gate connected to its own input is not stable. If the output is [ON], then the input is [ON] as well. This will cause the NOT gate to try and make the output [OFF], which will also make the input [OFF]. The circuit will switch between these two states forever, so it is not stable.
+$11150103897185* In this level, components may depend on themselves or form loops of up to two components. Despite depending on their own output, some of these wires have stable outputs, at least for some inputs.
 $15754153332116* Этот уровень вводит концепцию триггеров. Эта механика не обязательна для завершения игры.
+
+# The circuit you are asked to construct here has a circular dependency. The circuit also has 2 "stable states" for most inputs. A stable state here means that every component's output agrees with its input. As an example, an OR gate with one input disconnected and the other connected to its own output is stable. If the output is [OFF], both inputs are [OFF], which agrees with the OR gate. If the output is [ON], then so is one of the inputs. However, a NOT gate connected to its own input is not stable. If the output is [ON], then the input is [ON] as well. This will cause the NOT gate to try and make the output [OFF], which will also make the input [OFF]. The circuit will switch between these two states forever, so it is not stable.
 $18165461234561* Delay lines are easy to understand and can be used to build any computer architecture. However, modern hardware no longer use these as a basis for memory.
 $15213907597666* Используя 2 NOR элемента, Создайте цепь, которая соответствует таблице. Вам понадобится триггер.
 $19448398663695*
@@ -6514,6 +6589,8 @@ $19448398663695*
 
 === trans/complete_unlocks ===
 
+
+# When you have a circuit where the wires can settle in either of 2 different stable states, you have a basis for memory. The next state will depend on the values the wires had last tick. Such wires are called "latches".
 $45250062735373* Unlocks
 
 
