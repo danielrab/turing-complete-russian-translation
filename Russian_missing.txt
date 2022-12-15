@@ -1467,15 +1467,15 @@ $40263928358112* Circular dependency
 
 === misc/overture_add_assembly ===
 
-$10565133223872* Never
+$10565133223872 Никогда
 $62421757655527* Name a code and click save.
-$24281479096246* When [color=#2b8738]result[/color] {condition}
-$63525237058165* Copy from {source} to {destination}
-$32873193471770* UNUSED
+$24281479096246 Когда [color=#2b8738]результат[/color] {condition}
+$63525237058165 Скопировать {source} в {destination}
+$32873193471770 НЕИСПОЛЬЗОВАННО
 $88446594314360* Immediate: {number}
-$94278717238239* Always
-$79398554520691* {opcode} {reg_1} and {reg_2}
-$72740868980397* {condition} copy {register} to counter
+$94278717238239 Всегда
+$79398554520691* {opcode} {reg_1} и {reg_2}
+$72740868980397* {condition} скопировать {register} в Счетчик
 
 
 === trans/panel_keyboard_right ===
@@ -1485,17 +1485,17 @@ $90098719956554* Key value
 
 === levels/binary_count_down ===
 
-$56999237564848* {x} seconds left
+$56999237564848 осталось {x} секунд
 
 
 === misc/save_size ===
 
-$71918065858983* Save
+$71918065858983 Сохранить
 
 
 === components/Timing ===
 
-$96011300295966* Time
+$96011300295966 Время
 
 
 === rpg/maps/overworld/dr draco ===
@@ -1505,17 +1505,17 @@ $23996965687702* I am unhappy with my bed\nThe blanket doesn't cover my feet
 
 === components/Output32 ===
 
-$82172858698449* 32 Bit Output
+$82172858698449 32 Битный Выход
 
 
 === trans/panel_on ===
 
-$77349453746493* Always
+$77349453746493 Всегда
 
 
 === trans/level_complete_level_complete ===
 
-$49647690443210* [center]Level Complete[/center]
+$49647690443210 [center]Уровень завершен[/center]
 
 
 === trans/options_setting_export_assembled ===
@@ -1545,7 +1545,7 @@ $34912798641933* 1 bit Bidirectional Pin
 
 === trans/panel_program_1edit_program ===
 
-$65592803016716* Edit program
+$65592803016716 Редактировать программу
 
 
 === trans/panel_clock_output ===
@@ -1566,12 +1566,12 @@ $55603111039626* The stew is so good today!
 
 === trans/rpg_you_died ===
 
-$66723789644528* [center]YOU [color=#eb5260]DIED[/color][/center]
+$66723789644528 [center]ТЫ [color=#eb5260]УМЕР[/color][/center]
 
 
 === misc/program_edit ===
 
-$57861256694537* Bytes {bytes_from} - {bytes_to}
+$57861256694537 Байты {bytes_from} - {bytes_to}
 
 
 === trans/level_wide_instructions_description ===
@@ -1581,8 +1581,8 @@ $60538893544456* [center]Build a wide instruction program component[/center]
 
 === misc/specifications ===
 
-$56390619785555* View instructions definitions
-$68054407020318* Instructions
+$56390619785555 посмотреть значения инструкций
+$68054407020318 Инструкции
 
 
 === trans/manual_component_factory_text ===
@@ -1601,7 +1601,7 @@ For the component factory, the file manager also manages the custom components. 
 
 === trans/level_complete_stat_delay ===
 
-$43118901497406* Delay
+$43118901497406 Задержка
 
 
 === trans/level_byte_adder_you_carry_text2 ===
@@ -1611,7 +1611,7 @@ $87943759248740* Carry
 
 === levels/negative_numbers/test ===
 
-$64427417171037* Test
+$64427417171037 Тест
 
 
 === trans/manual_binary ===
@@ -1621,30 +1621,30 @@ $19098578855427* Binary
 
 === misc/controls2 ===
 
-$38773676077206* Edit Instructions
+$38773676077206 Редактировать Инструкции
 
 
 === trans/pabel_or3 ===
 
-$77994083578205*
-[right]Input 1
-Input 2
-Input 3
+$77994083578205
+[right]Вход 1
+Вход 2
+Вход 3
 Output[/right]
 
 
 === trans/panel_and3 ===
 
-$96299326024757*
-[right]Input 1
-Input 2
-Input 3
+$96299326024757
+[right]Вход 1
+Вход 2
+Вход 3
 Output[/right]
 
 
 === trans/manual_terminology ===
 
-$13311390759928* Terminology
+$13311390759928 Терминология
 
 
 === components/NetworkClient ===
@@ -1655,14 +1655,14 @@ $90462653419289* Handles network connections
 
 === rpg/maps/overworld/door2 ===
 
-$40757019106897* Door
+$40757019106897 Дверь
 
 
 === trans/panel_equal_input ===
 
-$51485224340167*
-[right]Input 1
-Input 2[/right]
+$51485224340167
+[right]Вход 1
+Вход 2[/right]
 
 
 === trans/levels_negative_descriptions ===
@@ -1675,30 +1675,30 @@ Works with adder:
 
 === trans/panel_cond_input_1 ===
 
-$99239506734191* Bit 1:
+$99239506734191 Бит 1:
 
 
 === trans/panel_rom_setting_labels ===
 
-$95314636684817*
-[right]Size (bytes):
+$95314636684817
+[right]Размер (байты):
 
-Data width:[/right]
+Ширина данных:[/right]
 
 
 === trans/panel_splitter32_output ===
 
-$18283412227212*
-Byte 1
-Byte 2
-Byte 3
-Byte 4
+$18283412227212
+Байт 1
+Байт 2
+Байт 3
+Байт 4
 
 
 === components/Byte Expander ===
 
-$60488114435022* Splits a byte into 8 bits
-$21904470559153* Byte Splitter
+$60488114435022 Разделяет байт на 8 битов 
+$21904470559153 Байтовый разделитель
 
 
 === trans/panel_not_description ===
